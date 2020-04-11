@@ -1,0 +1,130 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header> 
+
+  <div id="content">
+<!-- ARTIKLE START --->
+<br>
+<br>
+<h2>sd karten flashen</h2>
+<br>
+Wenn man viel mit Kleincomputern rumspielt, braucht man auch Betriebssysteme die meißtens auf SD-Karten bzw. Micro-SD-Karten geflasht werden müssen.
+Dieser Vorgang ist recht simpel und unter Linux oder macOS mit den gleichen Tools zu bewerkstelligen.
+<br>
+<br>
+Als erstes müssen wir rausfinden, welche Bezeichnung bzw. Adresse unsere SD Karte hat. Das machen wir wie gewohnt über das Terminal:
+<br>
+<br>
+<pre class="code"><code>diskutil list</code></pre>
+<br>
+<br>
+Dieser Befehl zeigt alle gemounteten Devices in eurem System:
+<br>
+<br>
+<pre class="code"><code>/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       ID
+   0:      GUID_partition_scheme                        *251.0 GB   disk0
+   1:                        EFI EFI                     314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         250.0 GB   disk0s2
+
+/dev/disk2 (synthesized):
+   #:                       TYPE NAME                    SIZE       ID
+   0:                    SD CARD -                      +250.0 GB   disk2s2
+</code></pre>
+<br>
+<br>
+Damit haben wir schonmal die ID unserer SD-Karte. In diesem Fall "disk2".
+Damit wir das OS darauf flashen können, müssen wir die SD-Karte unmounten.
+Das geschieht mit:
+<br>
+<br>
+<pre class="code"><code>diskutil unmountdisk disk2</code></pre>
+<br>
+<br>
+Sobald ihr die Nachricht bekommen habt, dass die SD-Karte unmountet ist, kann es mit dem flashen losgehen.
+Dafür nehmen wir das Tool dd das unter macOS und Linux vorinstalliert ist.
+ACHTUNG: Wenn ihr aus versehen die Falsche ID verwendet, kann euch das eure komplette interne Festplatte überschreiben und eure Daten sind weg.
+Also lieber vorher doppelt versichern, dass ihr das richtige Device flasht!
+<br>
+<br>
+<pre class="code"><code>sudo dd if="/Pfad/zum/Image" of="/dev/disk2" bs=8m</code></pre>
+<br>
+<br>
+Was macht "dd" hier?
+Der Parameter "if=" gibt den Pfad zum OS-Image an,
+der Parameter "of=" weist auf den Pfad zur SD-Karte,
+und "bs=8m" ist die Blockgröße mir der das Image auf die SD-Karte geschrieben wird.
+<br>
+<br>
+Nicht wundern wenn im Terminal lange nichts passiert - "dd" zeigt per default keinen Status des Schreibvorgangs an.
+Seit Version 8.24 von "dd" gibt es wohl die Möglichkeit sich den Status anzeigen zu lassen - ausprobiert hab ich das selber noch nicht.
+Mit Status würde der Befehl dann wie folgt aussehen:
+<br>
+<br>
+<pre class="code"><code>sudo dd if="/Pfad/zum/Image" of="/dev/disk2" bs=8m status=progress</code></pre>
+<br>
+<br>
+Wenn "dd" durchgerattert ist bekommt ihr eine Meldung die ähnlich wie diese hier aussieht:
+<br>
+<br>
+<pre class="code"><code>12780+0 records in 12780+0 records  out  6543360  bytes
+  (6.4 MB) copied, 5.9723 seconds, 1 MB/s</code></pre>
+<br>
+<br>
+Wenn das flashen abgeschlossen ist, kann die SD-Karte in euren Raspberry Pi oder ähnlichen Computer und ihr könnt loslegen.
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

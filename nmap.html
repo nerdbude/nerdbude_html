@@ -1,0 +1,249 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="./rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header>
+  
+  <div id="content">
+<!-- ARTIKLE START --->
+<h2>nmap basics</h2>
+Nmap (Network Mapper) ist ein freier Portscanner zum scannen und auswerten von Hosts in einem Netzwerk. Das, unter der GNU Public Licence veröffentlichte Tool wurde von einem findigen Hacker, bekannt als Fydor, entwickelt. Selbstverständlich rate ich euch an nur Netzwerke zu scannen, die euch gehören oder die von euch administriert werden - alles andere könnte illegal sein und bestraft werden.
+
+Nmap läuft unter:
+<ul>
+ 	<li>Windows</li>
+ 	<li>macOS</li>
+ 	<li>Linux</li>
+ 	<li>Unix</li>
+</ul>
+<br>
+====
+<br>
+<br>
+<strong>Installation:</strong>
+<br>
+<br>
+macOS
+<br>
+<br>
+<pre class="code"><code>brew install nmap</code></pre>
+<br>
+<br>
+Linux (Ubuntu / Debian):
+<br>
+<br>
+<pre class="code"><code>sudo apt-get install nmap</code></pre>
+<br>
+<br>
+Windows (.exe):
+<br>
+<br>
+<a href="https://nmap.org/download.html">https://nmap.org/download.html</a>
+<br>
+<br>
+====
+<br>
+<br>
+<strong>Benutzung:</strong>
+<br>
+<br>
+<pre class="code"><code>$ nmap -h</code></pre>
+<br>
+<br>
+<strong>Wozu kann man nmap verwenden?</strong>
+<br>
+<br>
+Nmap ist vorrangig ein Portscanner, d.h. nmap klopft die laufenden Protokolle einer Domain, die man nmap mit gibt, auf ihre Verfügbarkeit ab. Ports sind, wie bereits gesagt, Protokolle und Teile einer Netzwerkedresse die die Zuordnung von TCP und UDP Verbindungen und Datenpakete zwischen Server und Client übernimmt. Zu jeder Verbindung gehören immer zwei gleiche Ports je einer auf der Seite des Server und des Clients. Ports dienen also als Merkmal zur Unterscheidung mehrerer Verbindungen zwischen demselben Paar von Endpunkten und Ports können Netzwerkprotokolle und -dienste identifizieren.
+Eine Liste aller standardisierten Ports findet ihr hier:
+<br>
+<br>
+<a href="https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports">https://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports</a>
+<br>
+<br>
+Wer selber rumspielen will kann sich mit
+<br>
+<br>
+<pre class="code"><code>nmap -h</code></pre>
+<br>
+<br>
+Die Liste aller Optionen und Parameter anzeigen lassen.
+<br>
+<br>
+====
+<br>
+<br>
+<strong>Einfacher Port Scan</strong>
+<br>
+<br>
+Die einfachste Scanvariante von nmap ist:
+<br>
+<br>
+<pre class="code"><code>nmap 127.0.0.1</code></pre>
+<br>
+<br>
+und die bringt folgenden Output:
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/nmap_simple.png" alt="nmap_simple"/>
+<br>
+<br>
+<pre class="code"><code>Host is up (0.00026s latency)</code></pre>
+<br>
+<br>
+Heißt soviel, dass der gescannte Host antwortet und dafür 0.00026 sek. gebraucht hat.
+<br>
+<br>
+<pre class="code"><code>Not shown: 999 closed Ports</code></pre>
+<br>
+<br>
+999 Ports werden nicht angezeigt, da sie nicht offen sind
+<br>
+<br>
+<pre class="code"><code>631/TCP open ipp</code></pre>
+<br>
+<br>
+Port 631 ist offen und wird vom Service IPP benutzt. IPP ist ein Druckdienst der über Netzwerk bereitgestellt wird.
+<br>
+<br>
+====
+<br>
+<br>
+<strong>Definition von Zielen</strong>
+<br>
+<br>
+Zeile eines Scans mit nmap können als IP Adressen vorliegen (bspw. 127.0.0.1), als Hostnames (www.nerdbude.com), Netzwerkranges (127.0.0.1-255) und so weiter.
+Bei mehreren zu scannenden Zielsystemen, gibt es auch verschiedene Parameter die man nmap mitgeben kann:
+<br>
+<br>
+<pre class="code"><code>-iL  (verarbeitet eine Datei mit einer Liste an Zielen) </code></pre>
+<br>
+<br>
+<pre class="code"><code>-iR  (sucht sich eine zufällige Anzahl an Zielen)</code></pre>
+<br>
+<br>
+<pre class="code"><code>--exclude host1[,host2]... (ignoriert die definierten Ziele) </code></pre>
+<br>
+<br>
+<pre class="code"><code>--excludefile filename (ignoriert die Ziele in der übergebenen Datei) </code></pre>
+<br>
+<br>
+====
+<br>
+<br>
+<strong>Definition von Ports</strong>
+<br>
+<br>
+Ähnlich wie die Ziele können auch die Ports die gescannt werden sollen definiert werden.
+<br>
+<br>
+<pre class="code"><code>-p  (scannt nur bestimmte Ports (z.B. -p22 / -p1-65535 usw.)</code></pre>
+<br>
+<br>
+<pre class="code"><code>--exclude-ports (schließt definierte Ports vom scan aus)</code></pre>
+<br>
+<br>
+<pre class="code"><code>-F (Fast-Mode / Scannt nur die ersten 100 Ports)</code></pre>
+<br>
+<br>
+<pre class="code"><code>-r (Scannt Ports nacheinander nicht durcheinander) </code></pre>
+<br>
+<br>
+====
+<br>
+<br>
+<strong>Scans</strong>
+<br>
+<br>
+Nachdem wir unsere Ziele und die Port definiert haben kann das scannen losgehen.
+<br>
+<br>
+<pre class="code"><code>nmap -sn 127.0.0.1</code></pre>
+<br>
+<br>
+Pingt das Ziel nur an und schaut ob es antwortet und online ist
+<br>
+<br>
+<pre class="code"><code>nmap -p1-65535 127.0.0.1</code></pre>
+<br>
+<br>
+Scannt das Ziel auf alle 65535 existierenden Ports und deren Zustand.
+<br>
+<br>
+<pre class="code"><code>nmap -PO [Protokollliste] 127.0.0.1</code></pre>
+<br>
+<br>
+Scannt ausschließlich IP Protokolldienste die auf dem Ziel laufen.
+<br>
+<br>
+<pre class="code"><code>nmap -O 127.0.0.1</code></pre>
+<br>
+<br>
+Dieser Parameter aktiviert die OS (Operating System) Prüfung, sodass am Ende des Scans das benutzte OS rausfällt.
+<br>
+<br>
+Das sind nur ein paar wenige Scan-Optionen die nmap bietet aber ein Anfang und Grundverständnis sollte damit gemacht sein. Wenn ihr die volle Liste der aktuellen Parameter und Optionen haben wollt, die findet ihr hier:
+<br>
+<br>
+<a href="https://nmap.org/data/nmap.usage.txt">https://nmap.org/data/nmap.usage.txt</a>
+<br>
+<br>
+und die nmap Seite gibt es hier:
+<br>
+<br>
+<a href="https://nmap.org">https://nmap.org</a>
+<br>
+<br>
+<br>
+<br>
+//EOF
+
+
+<!-- ARTIKEL ENDE -->
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

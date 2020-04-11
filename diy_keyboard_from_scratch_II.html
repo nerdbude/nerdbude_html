@@ -1,0 +1,147 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="./rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START --->
+<h2>diy keyboard from scratch (II)</h2>
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/keyboard.png" alt="KEYBOARD"/>
+<br>
+<br>
+In Teil 1 (<a href="https://www.nerdbude.com/diy_keyboard_from_scratch_I.html"><b>LINK</b></a>) ging es um die Überlegungen die es bedarf bevor es losgeht mit der Bastelei. Weiter geht's mit einem Hybrid aus Planung und Spaß am Gerät (... das wir uns erst bauen).
+<br>
+<br>
+<h3><b>Microcontroller</b></h3>
+Damit das Keyboard tut was es soll - die Zeichen an den Rechner weitergeben die wir tippen - braucht es mehr als Schalter.<br>Hier kommt unser Microcontroller zum Einsatz. Dieser erkennt welche Taste gedrückt wird und gleicht mit dem Code, der auf ihm läuft, ab zu welchem Zeichen die Taste gehört und schickt diese weiter an den Rechner.
+<br>
+<br>
+Welche Microcontroller sind geeignet?
+<br>
+<br>
+Als DIY Keyboard Controller eignen sich ATmega32u4 (<a href="http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf">DOKU</a>), STM32F303xC (<a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/4a/19/6e/18/9d/92/43/32/DM00043574.pdf/files/DM00043574.pdf/jcr:content/translations/en.DM00043574.pdf">DOKU</a>) und AT90USB1286 (<a href="http://ww1.microchip.com/downloads/en/devicedoc/doc7593.pdf">DOKU</a>.<br>
+<br>
+Der Vorteil ist, dass der Microcontroller ohne viel zutun die Kommunikation zwischen USB und Keyboard regeln kann. Man muss zum Glück nicht eigene PCBs erstellen um den Controller zu benutzen. Es gibt fertige Boards die mit diesem Controller bestückt sind. Hier kann man die Kontakte der Switches einfach an die Pins des Boards löten und diese werden passend an den Controller weitergeleitet.<br>
+Folgende Boards eignen sich für ein DIY Keyboard:
+<br>
+<br>
+[+] Pro Micro (<a href="https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf">Datasheet</a>)<br>
+[+] Elite C (gleiches Board wie "Pro Micro" nur mit USB-C Connector)<br>
+[+] Teensy 2.0 (<a href="https://www.pjrc.com/teensy/schematic.html">Datasheet</a>)<br>
+[+] QMK Proton C (<a href="https://qmk.fm/proton-c/">Datasheet</a>)<br>
+[+] Teensy++ 2.0 (<a href="https://www.pjrc.com/teensy/schematic.html">Datasheet</a>)<br>
+<br>
+<br>
+Das nächste Rabbithole? Ja - wenn man sich mit Microcontrollern auseinandersetzen will. Wenn nicht nimmt man die am besten dokumentierten Boards und das sind Teensy 2.0 und Teensy++ 2.0. In dem Fall ist der ATmega32u4 noch ein klein wenig besser dokumentiert als der AT90USB1286 - aber das sind Kleinigkeiten. <br>
+<br>
+Meine Wahl fiel auf den Teensy 2.0  mit ATmega32u4 Microcontroller.<br>
+<br>
+Wenn das Board + Microcontroller ausgewählt sind geht es um die Firmware des Controllers.<br>
+Auch hier muss das Rad zum Glück nicht neu erfunden werden. Im ersten Teil hatte ich bereits den <a href="http://www.keyboard-layout-editor.com">Keyboard-layout-editor</a> verlinkt. Mit diesem Tool hat man die Möglichkeit, sich von seinem Layout die Roh-Daten zu schnappen und sie an ein weiteres praktisches Tool weiter zu geben.<br>
+Zudem werden hier die Pins festgelegt welche für vertikale und welche für horizontale Reihen benutzt werden, aber dazu später mehr.
+Hier der Link dazu: <a href="https://kbfirmware.com/">Keyboard-Firmware-Creator</a><br>
+<br>
+Das Tool gibt einem alle Drehregler die man haben möchte. Man kann die komplette Tastaturbelegung definieren, verschiedene Layer anlegen (grade bei 65% und kleineren Keyboards sinnvoll), man kann seine LEDs direkt mit in die Firmware packen und und und.<br>
+<br>
+Ist man mit seinen Einstellungen zufrieden, wird das ganze kompiliert, das Tool spuckt euch ein *.hex File aus, und auf den Microcontroller geflasht. Damit wäre Microcontroller + Software erledigt.<br>
+<br>
+<br>
+Was außerdem aus dem Keyboard-Firmware-Builder rausfällt, ist die Verkabelung der Switches, das wiring.<br>
+<br>
+<h3><b>Verkabelung (wiring)</b></h3>
+<br>
+<br>
+Das Grundkonzept des wiring ist ein Raster aus Zeilen und Spalten. Beim Plankh Ortholinear Keyboard am einfachsten nachzuvollziehen.<br>
+Für die grundlegende Verkabelung braucht es nicht viel - was es braucht ist:<br>
+<br>
+[+] Draht
+[+] Lötzinn
+[+] x-Dioden (x = Anzahl der Switches / 1N4148 Dioden)
+<br>
+<br>
+Die Dioden werden benötigt für den Fall, dass immernoch das richtige Tastensignal am Microcontroller ankommt, auch wenn mehrere Tasten gleichzeitig gedrückt werden. Besonders von Vorteil bei Tastenkombinationen.
+<br>
+<br>
+Ist also die Plate mit den Switches bestückt geht´s ans Löten. Standartswitches haben 2 Pins. Einer wird für die horizontale Verbindung und die Dioden genutzt, der andere für die vertikale Verbindung. Wichtig ist nur, dass immer die gleichen Pins benutzt werden.
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/keyboard_wiring.png" alt="wiring"/>
+<br>
+<br>
+rot - vertikale Verkabelung
+grün - Dioden
+blau - horizontale Verkabelung
+<br>
+<br>
+<br>
+Damit wären die Switches mit einander verbunden. Fehlt noch die Verbindung zum Board mit dem Controller.
+<br>
+Wie vorhin werden nun die Zeilen und Spalten mit dem Board verbunden. Dazu braucht man exakt einen Kontakt von jeder Spalte zum Board und einen von jeder Zeile. Diese werden dann wie in der Firmware festgelegt ans Board gelegt.
+<br>
+<br>
+<br>
+Damit haben wir theoretisch ein funktionsfähiges selbstgebautes Keyboard!
+Kabel anschließen - VIM öffnen und loslegen.
+<br>
+<br>
+Bei der Gestaltung das Cases sind natürlich der Fanatsie keine Grenzen gesetzt. Mein Case besteht aus einem alten Stück Brett, aus dem das Innere rausgesägt wurde, die Plate für die Tasten und die Unterseite sind die Seitenwand eines alten Lautsprechers - alles gut abschleifen - fertig.
+<br>
+<br>
+<br>
+<br>
+//EOF
+<br>
+<br>
+<br>
+<!-- ARTIKEL ENDE -->
+ </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

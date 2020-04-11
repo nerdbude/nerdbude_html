@@ -1,0 +1,154 @@
+/*
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+*/
+@font-face {
+   font-family: 'Share Tech Mono', monospace;
+   src: url('/fonts/ShareTechMono-Regular.ttf') format('ttf');
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  color: #b6a200;
+  font-size: 16px;
+  font-weight: 200;
+  background-color: #272727;
+  min-height: 100%;;
+  {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+  padding: 0;
+  margin: 0 0 0px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+span {
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+li {
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #b6a200;
+  transition-duration: 0.2s;
+}
+
+a:hover  {
+  color: #272727;
+  font-weight:500;
+  background-color: #b6a200
+}
+
+a:active {
+  color: #b6a200;
+}
+
+p {
+  padding: 0;
+  margin: 10px 0 30px 0;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+#header {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  top: 0;
+  height: auto;
+  position: fixed;
+  letter-spacing: 0px;
+  z-index: 1;
+}
+
+header img {
+  width: 50em;
+}
+
+#navigation {
+  float: left;
+  background-color: #272727;
+  color: #b6a200;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
+
+header nav ul li {
+  float: left;
+  margin-right: 12px;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+#content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  z-index: 1;
+
+}
+
+.categories		{max-width: 300px; right:0; margin: 40px 60px 0 0; position: fixed; background: #222;
+				text-align: right; z-index: 0;}
+
+@media 			all and (max-width: 1000px) and (min-width: 20px) {
+
+.categories 	{visibility: hidden;}
+
+.catbox			{visibility: hidden;}
+}
+.catbox			{width: 300px; height: 160px; right:0; margin:0; position: absolute; background: #222;
+				display: block; z-index: 999;}
+.tag            {color: ##b6a200;}
+.important      {margin-left: -18px;}
+.title          {display: inline-block; margin-bottom: 20px; margin-top: 20px;}
+.subtitle       {display: inline-block; margin: 20px 0;}
+.code           {color: #b6a200; max-width: 100%; background: #202020; padding: 2px; margin:2px 0 2px 0;}
+.codesmall      {background: #272727; display:inline-block;}
+.filter         {display:block; margin-bottom: 30px; margin-top: -20px;}
+.description    {background: #272727; padding: 10px 0 10px 10px; margin-top: 0px;}

@@ -1,0 +1,139 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header> 
+
+  <div id="content">
+<!-- ARTIKLE START --->
+<h2>osi_layer_model</h2>
+Bevor es zu TCP/IP geht, sollte man wissen wie Netzwerkprotokolle organisiert sind. Um Kommunikation über verschiedene Systeme hinweg zu gewährleisten gibt es das OSI-Modell. Hier werden für jede Schicht (layer) eng begrenzte Aufgaben definiert. In einer Schicht mit klaren Schnittstellen definierte Netzwerkprotokolle sind einfach untereinander austauschbar.
+<br>
+<br>
+<strong>OSI-Schicht Modell</strong>
+<br>
+<br>
+Aufgeteilt in 7 Schichten (layer) werden die verschiedenen Protokolle nach ihren Aufgaben und Funktionen eingeordnet.
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/osi.png" alt="OSI"/>
+<br>
+<br>
+In Netzwerken werden den Clients verschiedene Dienste unterschiedlichster Art bereitgestellt. Um die Kommunikation beider Clients zu Gewährleisten, Mus eine Vielzahl an Aufgaben, im Bezug auf Zuverlässigkeit, Sicherheit, Effizienz usw., bewältigt werden. Angefangen beim einfachen Signal bis hin zur komplexen Verarbeitung bei Anwendungen.
+Durch die hohe Anzahl der Aufgaben wurde das OSI Modell eingeführt und in sieben Schichten aufgeteilt. Auf jedem einzelnen Layer werden die Anforderungen separat umgesetzt.
+Die Instanzen müssen auf beiden Seiten (Sender und Empfänger) nach den gleichen festen Regeln arbeiten. Diese Regeln werden als Protokoll festgehalten und wird durch die logische horizontale Verbindung zweier Instanzen in einer Schicht definiert. Jede Instanz stellt hierbei Dienste zur Verfügung die, die darüberliegende Instanz nutzen kann. der reale Datenfluss findet also vertikal statt.
+<br>
+<br>
+<strong>Layer-1 (Physical Layer)</strong>
+<br>
+<br>
+Layer-1 ist die unterste Schicht. Dieser Layer stellt die physischen Komponenten zur mechanischen, elektrischen oder anders gearteten Datenübertragung zur Verfügung. Aktiviert, erhält sie aufrecht oder deaktiviert die Verbindungen und überträgt Bits darüber. Die Art der Signale reicht von Schall über elektromagnetische Wellen, optische Signale hin zu elektrischen Signalen. Geräte bzw. Netzwerkkomponenten die zum Layer-1 zählen sind z.B:
+<br>
+<br>
+<ul>
+ 	<li>Antennen</li>
+ 	<li>Verstärker</li>
+ 	<li>Stecker/Buchse für Netzwerkkabel</li>
+ 	<li>Repeater</li>
+ 	<li>Hub</li>
+ 	<li>Transceiver</li>
+</ul>
+<br>
+<br>
+Im Layer-1 muss auch definiert werden wie die Bits übertragen werden sollen (Bit- oder Symbolfolgen, Wellen usw.) die Codierung muss ebenfalls im 1. Layer definiert sein.
+<br>
+<br>
+<strong>Layer-2 (Data-Link)</strong>
+<br>
+<br>
+Layer-2 kümmert sich um die weitgehend fehlerfreie Übertragung der Daten und regelt den Zugriff auf das Übertragungsmedium. Hier werden Bitströme in Blöcke aufgeteilt (Frames) und Prüfsummen den Blöcken zugewiesen, so das der Empfänger fehlerhafte Blöcke verwerfen bzw. korrigieren kann. Die Datenflusskontrolle in Layer-2 lässt den Empfänger steuern in welcher Geschwindigkeit die Gegenseite seine Blöcke senden darf.
+Eingesetzte Hardware in dieser Schicht sind bspw. Bridge und Switches (Multiportbridge).
+<br>
+<br>
+<strong>Layer-3 (Networklayer)</strong>
+<br>
+<br>
+Layer-3 übernimmt die Schaltung von Verbindungen (bei leistungsorientierten Diensten) und die Weitervermittlung von Paketen (bei paketorientierten Diensten). Die Datenübertragung geschieht hier über das gesamte Kommunikationsnetz inklusive des Routings zwischen den Netzwerkknoten. Sollten Sender und Empfänger nicht direkt mit einander verbunden sein werden die Pakete auf der gleichen Schicht weitergereicht und gelangen nicht in obere Schichten. Das geschieht von Knoten zu Knoten bis der Empfänger erreicht ist.
+Der Networklayer kümmert sich außerdem um die Bereitstellung von Netzwerkübergreifenden Adressen, das dazugehörige Routing bzw. um den Aufbau und die Aktualisierung von Routingtabellen. Deswegen sind hier auch das Internet Protokoll (IP) und NSAP Adressen anzutreffen, da man diese benötigt um das Routing zu gewährleisten.
+Hardwareseitig wird Layer-3 von Routern und Layer-3-Switches übernommen.
+<br>
+<br>
+<strong>Layer-4 (Transport Layer)</strong>
+<br>
+<br>
+Layer-4 sorgt für die Segmentierung des des Datenstroms bzw. für dessen Aufteilung um einen konstanten Datenstrom sicherzustellen. Layer-4 stellt außerdem einheitlichen Zugriff auf Datenströme für Layer-5 bis Layer-7 zur Verfügung.
+<br>
+<br>
+<strong>Layer-5 (Session Layer)</strong>
+<br>
+<br>
+Dieser Layer übernimmt die Steuerung logischer Verbindungen, d.h. er kümmert sich um die Prozesskommunikation zwischen zwei Verbindungen. Daraus resultiert ein stabile Verbindung die durch Fixpunkte realisiert wird. An diesen Fixpunkten kann eine Sitzung nach dem Ausfall einer Transportverbindung wieder synchronisiert werden ohne dabei von vorn beginnen zu müssen.
+<br>
+<br>
+<strong>Layer-6 (Presentation Layer)</strong>
+<br>
+<br>
+In Layer-6 finden wir z.B. Datenkompression und Verschlüsselung genau so wie die Umsetzung der Darstellung der Daten zum syntaktisch korrekten Darstellung auf unterschiedlichen Systemen.
+<br>
+<br>
+<strong>Layer-7 (Application Layer)</strong>
+<br>
+<br>
+Hier finden sich alle Anwendungen und Dienste der End-User wieder (Webbrowser, Mail, Instant Messaging usw.) aber auch das Netzmanagment. Außerdem findet auf Layer-7 die Dateien- und ausgabe statt.
+<br>
+<br>
+Soweit der Aufbau des OSI Modells. Das sollte euch helfen zu verorten wo was im Netzwerkverkehr passiert bzw. bringt die erste Grundlage zum Verständnis von TCP/IP (was hier auch noch folgen wird)
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

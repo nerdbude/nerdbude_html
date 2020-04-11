@@ -1,0 +1,144 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header> 
+
+  <div id="content">
+<!-- ARTIKLE START --->
+<h2>raid_systeme</h2>
+RAID-Systeme (RAID ist ein Akronym für "redundant array of independent disks") dienen zur Organisation von mehreren physischen Massenspeichern. Dabei werden alle Speicher zu einem logischen Laufwerk verbunden. Dadurch steigt die Ausfallsicherheit und der Datendurchsatz enorm. Normalerweise verzichtet man bei normalen PC auf die mehrfach Speicherung (Redundanz) von Daten. Bei RAID-Systemen ist dies allerdings gewollt. Durch das redundante Vorhanden sein der Daten, kann eine Festplatte ausfallen und ausgetauscht werden ohne dass Daten verloren gehen. Meist werden RAID Systeme im Serverbetrieb eingesetzt. Eins vorweg: Ein RAID-System ist keine Datensicherung!
+<br>
+<br>
+Für ein RAID-System braucht es mindestens zwei Speichermedien welche als Verbund zu betrachten sind.
+Die Vorteile von RAID-Systemen sind folgende:
+<br>
+<br>
+<ul>
+ 	<li>Redundanz / Erhöhte Ausfallsicherheit</li>
+ 	<li>Höhere Datenübertragungsrate</li>
+ 	<li>Aufbau großer logischer Laufwerke</li>
+ 	<li>Austausch von Festplatten während des laufenden Betriebs</li>
+ 	<li>Vergrößerung des Speichers während des Betriebs</li>
+</ul>
+<br>
+<br>
+Wie ein RAID-System aufgebaut ist, wird durch das RAID-Level spezifiziert (üblicherweise RAID 0,RAID 1 und RAID 5).
+<br>
+<br>
+<strong>Hardware-RAID / Software-RAID</strong>
+<br>
+<br>
+Beim Hardware-RAID wird ein RAID-Controller benutzt. Ein elektronisches Bauteil, meist in der Nähe der Festplatten. Durch die CPU auf dem Controller kann ein großer Teil der Rechenlast auf dem Controller stattfinden und die Haupt-CPU entlastet werden.
+<br>
+<br>
+Beim Software-RAID wird das RAID-Controlling komplett vom Rechner übernommen. Moderne Betriebssystem (macOS, FreeBSD, OpenBSD, Linux, Windows ...) sind in der Lage dazu. Hier sind die Festplatten direkt am Mainboard bzw. Rechner angeschlossen. Nach dem Einbinden der Festplatten am Rechner wird das RAID per Software realisiert.
+<br>
+<br>
+Vorteil daran ist, es wird keine extra Hardware benötigt wie ein RAID-Controller. Ein weiterer Vorteil wenn es zum Crash kommt können die Festplatten einfacher ausgelesen bzw. wiederhergestellt werden.
+<br>
+<br>
+Nachteile sind die höhere Belastung des Rechners da hier die Haupt-CPU die RAID Organisation übernimmt und dafür natürlich Rechenleistung braucht. Weiterer Nachteil ist der Datenverlust bei Stromausfall. Wenn die Daten nicht verloren gehen sollen muss beim Software-RAID mit einer USV (Unterbrechungsfreien Stromversorgung) gearbeitet werden.
+<br>
+<br>
+RAID 0 (striping)
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/RAID0.png" alt="RAID0"/>
+<br>
+<br>
+Streng genommen ist RAID 0 kein wirkliches RAID-System da bei dem Verbund die Redundanz fehlt. Beim RAID 0 werden die Festplatten in zusammenhängende Blöcke gleicher Größe aufgeteilt und dann im Reissverschlussverfahren zu einer großen Festplatte angeordnet. Da die Daten bzw. die Abgriffe auf den Festplatten parallel ablaufen können entstehen dadurch höhere Datentransferraten. Nachteil am RAID 0 ist, sollte eine Festplatte ausfallen, ist es im Regelfall kaum möglich die Daten zu retten. Deshalb sollte ein RAID 0 System nur dann eingesetzt werden, wenn Redundanz keine Rolle spielt, meist dort wo kurzfristig große Daten gelesen werden müssen. Audio- und Videowiedergabe sind meist die Einsatzgebiete.
+<br>
+<br>
+RAID 1 (mirroring)
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/RAID1.png" alt="RAID1"/>
+<br>
+<br>
+Für ein RAID 1 Verbund werden mindestens 2 Festplatten benötigt. Bei diesem Verbund werden auf allen Festplatten die gleichen Daten gespeichert (Mirroring) dadurch ist im Gegensatz zum RAID 0 Redundanz gegeben was es deutlich ausfallsicherer macht. Die Kapazität des Verbunds ist dabei maximal so groß wie die kleinste benutzte Festplatte. Ein großer Vorteil gegenüber anderen Verbünden ist, dass hier auf allen Festplatten die gleichen Daten liegen und die Festplatten im Normalfall auch unabhängig von einander funktionieren und betrieben werden können. Fällt also eine Platte aus liegen die Daten immer noch auf der anderen. Das darf man allerdings nicht mit einem Backup verwechseln. Bei Angriffen, Virenbefahl oder ähnlichem landet die Schadsoftware direkt auf allen Platten. Sollte jemand per Exploit in den Verbund eindringen und eine Platte abschießen ist das Exploit "dank" Redundanz auch auf den anderen Platten.
+<br>
+<br>
+Ein weiterer Vorteil von RAID 1 Verbünden ist, dass die Leseleistung enorm ansteigt, da auf beiden Platten die gleichen Daten liegen und dadurch die Lesegeschwindigkeit sogar verdoppelt wird.
+<br>
+<br>
+RAID 5 (blocklevel striping + verteilte Paritätsinfos)
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/RAID5.png" alt="RAID5"/>
+<br>
+<br>
+Bei RAID 5 läuft die Verteilung ein wenig anders ab. Beim RAID 5 werden die Daten ähnlich dem RAID 0 per striping auf die unterschiedlichen Platten verteilt. Zusätzlich gibt es Paritätsinformationen die auf Block-Level verteilt werden. Es werden logische Gruppen gebildet mit den Datenblöcken der gleichen Adresse. Pro Gruppe gibt es immer einen Block der die Paritätsinformation enthält.
+<br>
+<br>
+A1 / A2 = Datenblöcke
+AP = Datenblock mit Paritätsdaten
+<br>
+<br>
+Bei vier Festplatten a' 1TB sind am Ende 3TB Speicher verfügbar und 1TB wird für die Paritätsdaten reserviert.
+<br>
+<br>
+Nutzerdaten und Paritätsdaten werden auf alle Platten verteilt. RAID 5 bietet gesteigerten Datendurchsatz beim lesen und zusätzlich Redundanz. Da RAID 5 dadurch relativ kostengünstig zu betreiben ist, ist es eins der beliebtesten RAID Verbünde. Drei oder fünf Festplatten sind bei RAID 5 häufig anzutreffen, da die Anzahl der Festplatten Einfluss nimmt auf die Schreibleistung.
+<br>
+<br>
+Außerdem lassen sich die RAID Typen auch mit einander kombinieren. So entstehen RAID 01 Verbünde oder auch RAID 03/RAID 30, RAID 05, RAID 10 usw.
+<br>
+<br>
+Das waren die gängigsten RAID Verbünde. Es gibt noch einige mehr. Es gibt unkonventionelle Verbünde bzw. bedeutungslosgewordene wie RAID 2, RAID 3, RAID 4, RAID 6, RAIDn RAID DP usw.
+<br>
+<br>
+Ich denke die wichtigsten habe ich hier erläutert und euch die Basics beschrieben. Grade zum Thema RAID gibt es unzählige Fachbücher die da noch tiefer in die Materie einsteigen. Ich glaube für die zukünftigen Projekte hier ist es ausreichend.
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

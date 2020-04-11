@@ -1,0 +1,155 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header> 
+
+  <div id="content">
+
+    <h2>sys monitor tools [gtop | vtop | gotop]</h2>
+
+      <p>Man sollte sein System oder seine Systeme immer gut im Blick behalten. Dafür gibt es wunderbare Lösungen wie Grafana und ähnliches welche das Monitoring in einer ausgereiften GUI abbilden, aber bevor ich mich an Grafana inkl. Influx DB wage, werden die kleinen Geschwister getestet, die zum jetzigen Zeitpunkt erstmal völlig ausreichend sind. Für mich am besten bewehrt haben sich gtop, vtop und gotop. Das alles natürlich im Terminal mit ordentlich Hackeroptik! </p>
+<p><strong>gtop</strong></p>
+<p><img src="https://www.nerdbude.com/images/gtop.png" alt="gtop_screenshot"/><br />Unter der Haube von gtop läuft NodeJS bzw. JavaScript. Im Tool selber gibt es das Monitoring für CPU Auslastung, die Memory und Swap History. Einmal als Graph und einmal als Diagramm direkt daneben. Es gibt eure erhaltene Datenmange und Geschwindigkeit im Netzwerk an, die aktiven Prozesse inkl. PID und zu guter letzt euren Speicherverbrauch in Prozent. gtop ist lauffähig unter:</p>
+<ul>
+<li>macOS</li>
+<li>Linux</li>
+<li>Windows</li>
+</ul></<br>
+<p>Einzige Voraussetzung hierfür ist Node.js in Version 4 oder höher.</p>
+<p><strong>Installation</strong></p>
+<pre class="code"><code>$ npm install gtop -g</code></pre><br>
+<br><p><strong>Benutzung</strong></p>
+<pre class="code"><code>$ gtop</code></pre><br>
+<br><p>um gtop zu beenden nutzt man</p>
+<pre class="code"><code>q oder ctrl+c</code></pre></<br></<br>
+<br><p>Prozesse kann man auch sortieren</p>
+<pre class="code"><code>p </code> (sortiert nach PID)</pre><br>
+<pre class="code"><code>c </code> (sortiert nach CPU Auslastung)</pre><br>
+<pre class="code"><code>m </code> (sortiert nach Speicherauslastung)</pre><br>
+<p>&nbsp;</p>
+<p>Link: <a href="https://github.com/aksakalli/gtop">https://github.com/aksakalli/gtop</a></p>
+<p>======</p>
+<p><strong>vtop</strong></p>
+<p><img src="https://www.nerdbude.com/images/vtop.png" alt="vtop_screenshot"></p>
+<p>vtop ist gegenüber gtop etwas spartanischer. Hier werden CPU Auslastung und Speichernutzung als Grafen angezeigt und eine Liste mit Prozessen. </p>
+<p>vtop ist lauffähig unter:</p>
+<ul>
+<li>macOS</li>
+<li>Linux</li>
+<li>Windows</li>
+</ul><br>
+<p>Auch hier ist die einzige Voraussetzung Node.js in Version 4 oder höher.</p>
+<p><strong>Installation</strong></p>
+<pre class="code"><code>$ npm install -g vtop</code></pre><br><br>
+<p><strong>Benutzung</strong></p>
+<pre class="code"><code>$ vtop</code></pre><br><br>
+<p>Um vtop zu beenden benutzt man:</p>
+<pre class="code"><code>ctrl+c</code></pre><br><br>
+<p>Auch bei vtop gibt es shortcuts die man verwenden kann:</p>
+<pre class="code"><code>u  (Update)</code></pre><br>
+<pre class="code"><code>k / Pfeil hoch  (Durch Prozessliste scrollen)</code></pre><br>
+<pre class="code"><code>j / Pfeil runter  (Durch Prozessliste scrollen)</code></pre><br>
+<pre class="code"><code>h / Pfeil links  (in Graphen reinzoomen)</code></pre><br>
+<pre class="code"><code>l / Pfeil rechts  (aus Graphen rauszoomen)</code></pre><br>
+<pre class="code"><code>g  (an den Beginn der Prozessliste)</code></pre><br>
+<pre class="code"><code>G  (an das Ende der Prozessliste)</code></pre><br>
+<pre class="code"><code>dd  (killt alle Prozesse in der Gruppe)</code></pre><br>
+<p>Link: <a href="https://github.com/MrRio/vtop">https://github.com/MrRio/vtop</a></p>
+<p>======</p>
+<p><strong>gotop</strong></p>
+<p><img src="https://www.nerdbude.com/images/gotop.png" alt="gotop_screenshot"></p>
+<p>Zu guter Letzt mein momentaner Favorit unter den "einfachen" Monitoring tools: gotop. Angelehnt an und inspiriert durch die beiden Ersten hat man hier doch deutlich mehr Informationen die man über sein System bekommt. Hier bekommt man die CPU Auslastung pro Prozessorkern, Haupt und Swap Benutzung, die Temperaturen verschiedener Module, TX und RX eurer Netzwerkverbindung, die Prozessliste und die Speicherbelegung eurer Festplatten. Also ein rundum Sorglos-Monitor. Gotop wurde im Gegensatz zu den anderen beiden in GO geschrieben. </p>
+<p>gotop läuft auf folgenden Systemen:</p>
+<ul>
+<li>Linux</li>
+<li>macOS</li>
+<li>FreeBSD</li>
+</ul><br>
+<p><strong>Installation</strong></p>
+<p>Source</p>
+<pre class="code"><code>go get GitHub.com/cjbassi/gotop</code></pre><br><br>
+<p>Prebuilt binaries</p>
+<pre class="code"><code>git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
+/tmp/gotop/scripts/download.sh</code></pre><br><br>
+<p>FreeBSD</p>
+<pre class="code"><code>pkg install gotop</code></pre><br><br>
+<p>Homebrew</p>
+<pre class="code"><code>brew tap cjbassi/gotop</code></pre><br>
+<pre class="code"><code>brew install gotop</code></pre><br><br>
+<p>Shortcuts gibts natürlich auch:</p>
+<p>Beenden</p>
+<pre class="code"><code>q / ctrl+c (Beenden)</code></pre><br><br>
+<p>Prozess Navigation</p>
+<pre class="code"><code>k / Pfeil hoch (hoch)</code></pre><br>
+<pre class="code"><code>j / Pfeil runter (runter)</code></pre><br>
+<pre class="code"><code>ctrl+u (Halbe Seite hoch)</code></pre><br>
+<pre class="code"><code>ctrl+d (Halbe Seite runter)</code></pre><br>
+<pre class="code"><code>ctrl+b (Volle Seite hoch)</code></pre><br>
+<pre class="code"><code>ctrl+f (Volle Seite runter)</code></pre><br>
+<pre class="code"><code>gg (erster Prozess)</code></pre><br>
+<pre class="code"><code>G (letzter Prozess)</code></pre><br><br>
+<p>Prozess Aktionen</p>
+<pre class="code"><code>Tab (Ändert Prozess Auflistung)</code></pre><br>
+<pre class="code"><code>dd (killt den Prozess oder die Gruppe)</code></pre><br><br>
+<p>Prozess Sortierung</p>
+<pre class="code"><code>c (nach CPU)</code></pre><br>
+<pre class="code"><code>m (nach Memory)</code></pre><br>
+<pre class="code"><code>p (nach PID)</code></pre><br><br>
+<p>Graphen Optionen</p>
+<pre class="code"><code>h (reinzoomen)</code></pre><br>
+<pre class="code"><code>l (rauszoomen)</code></pre><br><br>
+<p>Link:</p>
+<p><a href="https://github.com/cjbassi/gotop">https://github.com/cjbassi/gotop</a></p>
+<br>
+<br>
+<p>//EOF</p>
+
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>
