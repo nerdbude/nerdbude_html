@@ -1,0 +1,174 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START --->
+<h2>XMONAD</h2>
+<br>
+<br>
+<img src="https://www.github.com/nerdbude/dotfiles/raw/master/xmonad.jpg">
+<br>
+<br>
+<br>
+Kurzes Update - Viel ist passiert seit dem letzten Artikel. Der Sommer ist da, mein MacBook Pro ist einem Thinkpad T470 gewichen und, ach ja COVID-19.<br>
+Alles drei lässt sich wunderbar in Einklang bringen. Das Wetter bringt gute Laune, ein T470 wartet auf seine Konfiguration und durch COVID-19 hat man jede Menge Zeit skurile Sachen auszuprobieren so wie XMonad. <br>
+<br>
+<br>
+XMonad ist ein Tiling WindowManager (WM) - was soviel heißt wie: 
+- keine unnütze Deko an Fenstern<br>
+- das Keyboard als Haupteingabegerät<br>
+- hohe Konfigurierbarkeit<br>
+- sehr sehr wenig Speicherverbrauch<br>
+- Stabilität<br>
+- Optimale Platznutzung des Displays.<br>
+<br>
+<br>
+Xmonad ist in den Paketen von Debian und kann bequem per<br>
+<br>
+<pre class="code"><code>sudo apt-get install xmonad</code></pre>
+<br>
+<br>
+installiert werden.<br>
+<br>
+Der Xmonad WM ist in Haskell geschrieben, keine Sorge die config files sind trotzdem gut lesbar, und kommt nackt und pur wie er geschrieben wurde. Das wichtigste was es zu diesem Zeitpunkt zu wissen gibt ist, wie man das Terminal öffnet:
+<br>
+<br>
+<pre class="code"><code>MOD + Enter</code></pre>
+<br>
+<br>
+Wobei MOD standartmäßig die linke "Alt" Taste ist. Der Rest ist erstmal normale Terminalumgebung.<br>
+Wenn man Xmonad nun konfigurieren will (eigene Tastaturkürzel, Farben, Verhalten etc.) muss eine xmonad.hs erstellt werden.<br>
+Ich habe meine xmonad.hs mittlerweile auf GitHub in meinen Dotfiles:
+<br>
+<br>
+<a href="https://github.com/nerdbude/dotfiles">DOTFILES</a>
+<br>
+<br>
+Eure xmonad.hs kopiert ihr euch in folgendes Verzeichnis:
+<br>
+<br>
+<pre class="code"><code> /home/user/.xmonad/ </code></pre><br>
+<br>
+Reboot und schon sollte XMonad eure xmonad.hs benutzen und anders aussehen.
+<br>
+<br>
+<h3>xmonad.hs</h3>
+<br>
+<br>
+Der Aufbau der config ist recht überschaubar.<br>
+<br>
+1. IMPORTS
+<br>
+<br>
+Hier werden sämtliche Module geladen die wir in unserer config file benutzen wollen.
+<br>
+<br>
+2. CONFIG
+<br>
+<br>
+In dieser Sektion beginnt die eigentliche Konfiguration.<br>
+myFont - definiert die Systemfont (inkl. Größe)<br>
+myModMask - definiert den Mod-Key (mod4Mask nimmt WIN/SUPER Key)<br>
+myTerminal - Standart Terminal Emulator welcher verwendet werden soll<br>
+myTextEditor - VIM ;) <br>
+myBorderWidth - Ist der Rahmen der um das aktive Fenster gezogen wird<br>
+<br>
+<br>
+3. main = do
+<br>
+<br>
+Der Hauptteil der xmonad.hs. Hier werden die Farben definiert in denen XMonad erscheint und Variablen für den späteren Gebrauch angelegt sowie xmobar (die XMonad eigene Systemleiste) auf verschiedene Monitore verteilt.
+<br>
+<br>
+4. AUTOSTART
+<br>
+<br>
+Wie der Name schon sagt, kommen hier die Sachen rein die bei jedem Boot gestartet werden sollen. In meinem Fall sind das:<br>
+- nitrogen (zum setzen des Desktop-Background)<br>
+- compton (ganz ohne Transparenz geht es dann doch nicht)<br>
+<br>
+<br>
+5. SET KEYS
+<br>
+<br>
+Unter SET KEYS findet die wahre Workflow-Optimierung statt. Hier werden alle Tastenkombinationen festgelegt die man benutzen möchte. MOD+Enter = Terminal, MOD+Shift+Enter=dmenu usw.<br>
+<br>
+<br>
+6. WORKSPACES
+<br>
+<br>
+In XMonad gibt es neun Workspaces die man nutzen kann. In verbindung mit XMobar und angezeigten Workspaces macht es Sinn diese auc hzu benennen, damit man den Überblick nicht verliert. Das passiert in dieser Sektion. 
+<br>
+<br>
+7. LAYOUTS
+<br>
+<br>
+Layouts definiert wie Fenster in XMonad angeordnet werden.<br>
+In meiner config kann man mit MOD+SPACE zwischen den Layouts hin und her schalten und so für die jeweilige Aufgabe das beste Layout ausfindig machen.
+<br>
+<br>
+8. SCRATCHPADS
+<br>
+<br>
+Scratchpads sind einzelne Programme die im Hintergrund laufen und per Befehl in den Vordergrund gerufen werden können - bspw. Musikplayer die man nicht die ganze Zeit offen haben muss weil diese nur Platz verschwenden würden.
+<br>
+<br>
+Bleibt nur zu sagen:<br>
+XMonad einer der besten WMs überhaupt.
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>
