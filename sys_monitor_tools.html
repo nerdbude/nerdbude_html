@@ -46,17 +46,17 @@
     <h2>sys monitor tools [gtop | vtop | gotop]</h2>
 
       <p>Man sollte sein System oder seine Systeme immer gut im Blick behalten. Dafür gibt es wunderbare Lösungen wie Grafana und ähnliches welche das Monitoring in einer ausgereiften GUI abbilden, aber bevor ich mich an Grafana inkl. Influx DB wage, werden die kleinen Geschwister getestet, die zum jetzigen Zeitpunkt erstmal völlig ausreichend sind. Für mich am besten bewehrt haben sich gtop, vtop und gotop. Das alles natürlich im Terminal mit ordentlich Hackeroptik! </p>
-<p><strong>gtop</strong></p>
+<p><h3>gtop</h3></p>
 <p><img src="https://www.nerdbude.com/images/gtop.png" alt="gtop_screenshot"/><br />Unter der Haube von gtop läuft NodeJS bzw. JavaScript. Im Tool selber gibt es das Monitoring für CPU Auslastung, die Memory und Swap History. Einmal als Graph und einmal als Diagramm direkt daneben. Es gibt eure erhaltene Datenmange und Geschwindigkeit im Netzwerk an, die aktiven Prozesse inkl. PID und zu guter letzt euren Speicherverbrauch in Prozent. gtop ist lauffähig unter:</p>
 <ul>
 <li>macOS</li>
 <li>Linux</li>
 <li>Windows</li>
-</ul></<br>
+</ul></br>
 <p>Einzige Voraussetzung hierfür ist Node.js in Version 4 oder höher.</p>
-<p><strong>Installation</strong></p>
+<p><h3>Installation</h3></p>
 <pre class="code"><code>$ npm install gtop -g</code></pre><br>
-<br><p><strong>Benutzung</strong></p>
+<br><p><h3>Benutzung</h3></p>
 <pre class="code"><code>$ gtop</code></pre><br>
 <br><p>um gtop zu beenden nutzt man</p>
 <pre class="code"><code>q oder ctrl+c</code></pre></<br></<br>
@@ -67,7 +67,7 @@
 <p>&nbsp;</p>
 <p>Link: <a href="https://github.com/aksakalli/gtop">https://github.com/aksakalli/gtop</a></p>
 <p>======</p>
-<p><strong>vtop</strong></p>
+<p><h3>vtop</h3></p>
 <p><img src="https://www.nerdbude.com/images/vtop.png" alt="vtop_screenshot"></p>
 <p>vtop ist gegenüber gtop etwas spartanischer. Hier werden CPU Auslastung und Speichernutzung als Grafen angezeigt und eine Liste mit Prozessen. </p>
 <p>vtop ist lauffähig unter:</p>
@@ -77,9 +77,9 @@
 <li>Windows</li>
 </ul><br>
 <p>Auch hier ist die einzige Voraussetzung Node.js in Version 4 oder höher.</p>
-<p><strong>Installation</strong></p>
+<p><h3>Installation</h3></p>
 <pre class="code"><code>$ npm install -g vtop</code></pre><br><br>
-<p><strong>Benutzung</strong></p>
+<p><h3>Benutzung</h3></p>
 <pre class="code"><code>$ vtop</code></pre><br><br>
 <p>Um vtop zu beenden benutzt man:</p>
 <pre class="code"><code>ctrl+c</code></pre><br><br>
@@ -94,7 +94,7 @@
 <pre class="code"><code>dd  (killt alle Prozesse in der Gruppe)</code></pre><br>
 <p>Link: <a href="https://github.com/MrRio/vtop">https://github.com/MrRio/vtop</a></p>
 <p>======</p>
-<p><strong>gotop</strong></p>
+<p><h3>gotop</h3></p>
 <p><img src="https://www.nerdbude.com/images/gotop.png" alt="gotop_screenshot"></p>
 <p>Zu guter Letzt mein momentaner Favorit unter den "einfachen" Monitoring tools: gotop. Angelehnt an und inspiriert durch die beiden Ersten hat man hier doch deutlich mehr Informationen die man über sein System bekommt. Hier bekommt man die CPU Auslastung pro Prozessorkern, Haupt und Swap Benutzung, die Temperaturen verschiedener Module, TX und RX eurer Netzwerkverbindung, die Prozessliste und die Speicherbelegung eurer Festplatten. Also ein rundum Sorglos-Monitor. Gotop wurde im Gegensatz zu den anderen beiden in GO geschrieben. </p>
 <p>gotop läuft auf folgenden Systemen:</p>
@@ -103,7 +103,7 @@
 <li>macOS</li>
 <li>FreeBSD</li>
 </ul><br>
-<p><strong>Installation</strong></p>
+<p><h3>Installation</h3></p>
 <p>Source</p>
 <pre class="code"><code>go get GitHub.com/cjbassi/gotop</code></pre><br><br>
 <p>Prebuilt binaries</p>

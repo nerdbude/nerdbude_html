@@ -47,9 +47,7 @@
 Bevor es zu TCP/IP geht, sollte man wissen wie Netzwerkprotokolle organisiert sind. Um Kommunikation über verschiedene Systeme hinweg zu gewährleisten gibt es das OSI-Modell. Hier werden für jede Schicht (layer) eng begrenzte Aufgaben definiert. In einer Schicht mit klaren Schnittstellen definierte Netzwerkprotokolle sind einfach untereinander austauschbar.
 <br>
 <br>
-<strong>OSI-Schicht Modell</strong>
-<br>
-<br>
+<h3>OSI-Schicht Modell</h3>
 Aufgeteilt in 7 Schichten (layer) werden die verschiedenen Protokolle nach ihren Aufgaben und Funktionen eingeordnet.
 <br>
 <br>
@@ -61,9 +59,7 @@ Durch die hohe Anzahl der Aufgaben wurde das OSI Modell eingeführt und in siebe
 Die Instanzen müssen auf beiden Seiten (Sender und Empfänger) nach den gleichen festen Regeln arbeiten. Diese Regeln werden als Protokoll festgehalten und wird durch die logische horizontale Verbindung zweier Instanzen in einer Schicht definiert. Jede Instanz stellt hierbei Dienste zur Verfügung die, die darüberliegende Instanz nutzen kann. der reale Datenfluss findet also vertikal statt.
 <br>
 <br>
-<strong>Layer-1 (Physical Layer)</strong>
-<br>
-<br>
+<h3>Layer-1 (Physical Layer)</h3>
 Layer-1 ist die unterste Schicht. Dieser Layer stellt die physischen Komponenten zur mechanischen, elektrischen oder anders gearteten Datenübertragung zur Verfügung. Aktiviert, erhält sie aufrecht oder deaktiviert die Verbindungen und überträgt Bits darüber. Die Art der Signale reicht von Schall über elektromagnetische Wellen, optische Signale hin zu elektrischen Signalen. Geräte bzw. Netzwerkkomponenten die zum Layer-1 zählen sind z.B:
 <br>
 <br>
@@ -80,42 +76,30 @@ Layer-1 ist die unterste Schicht. Dieser Layer stellt die physischen Komponenten
 Im Layer-1 muss auch definiert werden wie die Bits übertragen werden sollen (Bit- oder Symbolfolgen, Wellen usw.) die Codierung muss ebenfalls im 1. Layer definiert sein.
 <br>
 <br>
-<strong>Layer-2 (Data-Link)</strong>
-<br>
-<br>
+<h3>Layer-2 (Data-Link)</h3>
 Layer-2 kümmert sich um die weitgehend fehlerfreie Übertragung der Daten und regelt den Zugriff auf das Übertragungsmedium. Hier werden Bitströme in Blöcke aufgeteilt (Frames) und Prüfsummen den Blöcken zugewiesen, so das der Empfänger fehlerhafte Blöcke verwerfen bzw. korrigieren kann. Die Datenflusskontrolle in Layer-2 lässt den Empfänger steuern in welcher Geschwindigkeit die Gegenseite seine Blöcke senden darf.
 Eingesetzte Hardware in dieser Schicht sind bspw. Bridge und Switches (Multiportbridge).
 <br>
 <br>
-<strong>Layer-3 (Networklayer)</strong>
-<br>
-<br>
+<h3>Layer-3 (Networklayer)</h3>
 Layer-3 übernimmt die Schaltung von Verbindungen (bei leistungsorientierten Diensten) und die Weitervermittlung von Paketen (bei paketorientierten Diensten). Die Datenübertragung geschieht hier über das gesamte Kommunikationsnetz inklusive des Routings zwischen den Netzwerkknoten. Sollten Sender und Empfänger nicht direkt mit einander verbunden sein werden die Pakete auf der gleichen Schicht weitergereicht und gelangen nicht in obere Schichten. Das geschieht von Knoten zu Knoten bis der Empfänger erreicht ist.
 Der Networklayer kümmert sich außerdem um die Bereitstellung von Netzwerkübergreifenden Adressen, das dazugehörige Routing bzw. um den Aufbau und die Aktualisierung von Routingtabellen. Deswegen sind hier auch das Internet Protokoll (IP) und NSAP Adressen anzutreffen, da man diese benötigt um das Routing zu gewährleisten.
 Hardwareseitig wird Layer-3 von Routern und Layer-3-Switches übernommen.
 <br>
 <br>
-<strong>Layer-4 (Transport Layer)</strong>
-<br>
-<br>
+<h3>Layer-4 (Transport Layer)</h3>
 Layer-4 sorgt für die Segmentierung des des Datenstroms bzw. für dessen Aufteilung um einen konstanten Datenstrom sicherzustellen. Layer-4 stellt außerdem einheitlichen Zugriff auf Datenströme für Layer-5 bis Layer-7 zur Verfügung.
 <br>
 <br>
-<strong>Layer-5 (Session Layer)</strong>
-<br>
-<br>
+<h3>Layer-5 (Session Layer)</h3>
 Dieser Layer übernimmt die Steuerung logischer Verbindungen, d.h. er kümmert sich um die Prozesskommunikation zwischen zwei Verbindungen. Daraus resultiert ein stabile Verbindung die durch Fixpunkte realisiert wird. An diesen Fixpunkten kann eine Sitzung nach dem Ausfall einer Transportverbindung wieder synchronisiert werden ohne dabei von vorn beginnen zu müssen.
 <br>
 <br>
-<strong>Layer-6 (Presentation Layer)</strong>
-<br>
-<br>
+<h3>Layer-6 (Presentation Layer)</h3>
 In Layer-6 finden wir z.B. Datenkompression und Verschlüsselung genau so wie die Umsetzung der Darstellung der Daten zum syntaktisch korrekten Darstellung auf unterschiedlichen Systemen.
 <br>
 <br>
-<strong>Layer-7 (Application Layer)</strong>
-<br>
-<br>
+<h3>Layer-7 (Application Layer)</h3>
 Hier finden sich alle Anwendungen und Dienste der End-User wieder (Webbrowser, Mail, Instant Messaging usw.) aber auch das Netzmanagment. Außerdem findet auf Layer-7 die Dateien- und ausgabe statt.
 <br>
 <br>
