@@ -1,0 +1,200 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @NERDBUDE
+[mastodon] @NERDBUDE@chaos.social
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="!!!">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <a href="https://www.nerdbude.com/contact.html">[+] INFO</a>
+    </div>
+
+  <!--MENU
+    <nav id="navigation">
+      <ul>
+        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
+        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
+      </ul>
+    </nav> -->
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START --->
+<h2>xpm</h2>
+<br>
+<br>
+In meiner neusten Variante der XMobar sitzt ein kleiner grüner Space Invader oben links im Eck. Das kann man bei XMobar per *.xpm file realisieren.<br> 
+Deswegen gibt es heute "Spaß mit außergewöhnlichen Fileformaten". XPM steht für "X PixMap" und ist ein ASCII-Text-Format. Es wird dazu benutzt Rastergrafiken darzustellen. Meistens wird es bei Icons verwendet. XPM wurde 1989 von Daniel Dardailler und Colas Nahaboo entwickelt. Letzterer vielleicht bekannt durch den GWM Windowmanager für X-Window-Systeme.
+<br>
+<br>
+Das *.xpm Format wurde so definiert, dass ein .xpm file stets gültiger C-Quellcode ist. Dadurch können *.xpm files direkt per #include in C-Code eingebunden werden.<br>
+<br>
+<br>
+Die Syntax eines .xpm File ist überschaubar und leicht verständlich.<br>
+<br>
+Hier mein SpaceInvader:<br>
+<br>
+<pre class="code"><code>/* XPM */
+static char * spaceinvader_xpm[] = {
+"20 20 2 1 XPMEXT",
+"       c None",
+".      c #afd75f",
+"                    ",
+"    ..        ..    ",
+"    ..        ..    ",
+"      ..    ..      ",
+"      ..    ..      ",
+"    ............    ",
+"    ............    ",
+"  ....  ....  ....  ",
+"  ....  ....  ....  ",
+"....................",
+"....................",
+".. .............. ..",
+".. .............. ..",
+".. ..          .. ..",
+".. ..          .. ..",
+"     ....  ....     ",
+"     ....  ....     ",
+"                    ",
+"                    ",
+"                    ",
+"XPMEXT author PHØ   ",
+"mailto:post@nerdbude.com",
+"XPMENDEXT           "};
+</code></pre>
+<br>
+<br>
+Das *.xpm File besteht aus sieben Teilen:<br>
+<br>
+- header line<br>
+- declaration and beginning of assignment line<br>
+- values<br>
+- cColors<br>
+- pixels<br>
+- extensions<br>
+- end of assignment<br>
+<br>
+<br>
+<h3>header line</h3>
+Die header line besteht aus einem C-Kommentar.<br><br>
+<pre class="code"><code>/* XPM */</code></pre><br>
+<br>
+Dieser Kommentar gilt hier als "magic number" und definiert, dass es sich um ein .xpm file handelt.<br>
+<br>
+<h3>declaration and beginning of assignment line</h3>
+In der Deklarationszeile wird eine C-Variable deklariert. Der Name der Variable ist frei wählbar, muss allerdings ein gültiger C-Bezeichner sein. Meistens wird hier einfach der Bildname verwendet.<br>
+<br>
+<pre class="code"><code>static char * spaceinvader_xpm[] = {
+</code></pre>
+<br>
+<br>
+<h3>values</h3>
+Die Values enthalten 4 bzw 6 Dezimalzahlen (im Beispiel nur 4)<br>
+<br>
+<pre class="code"><code>20 20 2 1 
+</code></pre><br>
+<br>20 - Breite des Bildes in px<br>
+20 - Höhe des Bildes in px<br>
+2 - Anzahl der Farben im Bild<br>
+1 - Anzahl der Zeichen pro Pixelwert<br>
+</code></pre>
+<br>
+<br>
+Die letzten beiden Zeichen (5 + 6) sind Werte die sogenannte Hotspots angeben, etwa bei einem Cursor die Stelle an die der Cursor zeigt.<br>
+Bei normalen Bildern kann man diese aber getrost ignorieren und brauch diese auch nicht.<br>
+Wenn in der Datei extensions benutzt weden, folgt den 4/6 Zahlen noch XPMEXT (xpm extension).<br>
+<br>
+<br>
+<h3>cColors</h3>
+Die Anzahl der Farben wurde schon in den Values bestimmt (2).<br>
+Nun geht es an die Definition der Farben.<br>
+<br>
+<pre class="code"><code>"           c None",
+".          c #afd75f",
+</code></pre><br>
+<br>
+Jede Farbdefinition besteht aus einem Zeichencode. Für verschiedene Darstellungsarten können hier auch unterschiedliche Farbdefinitionen angegeben werden. So kann die *.xpm für unterschiedliche Farbtiefen optimiert werden und brauch nicht jedesmal auf b/w runtergerechnet weden. Folgende Optionen stehen zur Verfügung:<br>
+<br>
+c - Farbig<br>
+g - mehr als vier Graustufen<br>
+g4 - vier Graustufen<br>
+m - Monochrom<br>
+s - symbolscher Wert (wie Foreground oder Background)<br>
+<br>
+Auf diese Optionen folgt die eigentliche Farbdefinition.<br>
+Entweder in HEX (#afd75f) oder HSV (%80, 55.8, 84.3). Transparenz wird einfach mit "None" festgelegt.<br>
+<br>
+<br>
+<h3>pixels</h3>
+Nun kommt das eigentliche Bild bzw. die Informationen welcher Pixel Farbe abbekommt und welcher transparent bleibt.<br>
+Eine Pixelzeile im Bild entspricht auch einer Zeile in der *.xpm Datei.
+Herrlich für ASCII Art und der Fantasie sind keine Grenzen gesetzt.
+<br>
+<br>
+Wenn man *.xpm files in C-Code verwendet lässt sich das bild auch schon im Quellcode erahnen.<br>
+<br>
+<h3>extensions</h3>
+Zu guter letzt hat unser *.xpm file noch die extensions. Die extensions sollten in folgendem Format benutzt werden:<br>
+<br>
+<pre class="code"><code>"XPMEXT extension_name extension_value"
+</code></pre><br>
+<br>
+Im Falle des Space Invaders also so:<br>
+<br>
+<pre class="code"><code>"XPMEXT author PHØ"
+"mailto:post@nerdbude.com",
+"XPMENDEXT"};
+</code></pre>
+<br>
+<br>
+Das XPMENDEXT am Ende schließt die extensions. Und "};" schließt die C-Deklaration ab.<br>
+<br>
+Also wozu *.jpg und *.gif wenn man *.xpm haben kann.<br>
+So sieht der kleine Kerl im übrigen aus:<br>
+<img src="https://www.nerdbude.com/images/spin.jpg">
+<br>
+<br>
+und finden könnt ihr ihn auf Github:<br>
+<br>
+<a href="https://www.github.com/nerdbude/dotfiles/blob/master/xmonad/xpm/spaceinvader.xpm">Link (Github)</a>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>
