@@ -8,8 +8,7 @@
 
 [website] https://www.nerdbude.com
 [mail] post@nerdbude.com
-[twitter] @NERDBUDE
-[mastodon] @NERDBUDE@chaos.social
+[twitter] @PH_0x17
 [github] https://www.github.com/nerdbude
 */
 @font-face {
@@ -60,7 +59,6 @@ a {
 
 a:hover  {
   color: #272727;
-  font-weight:500;
   background-color: #afd75f
 }
 
@@ -123,7 +121,7 @@ header nav ul li a {
 .link		{color: #afd75f; background: #272727;}
 .title          {display: inline-block; margin-bottom: 20px; margin-top: 20px;}
 .subtitle       {display: inline-block; margin: 20px 0;}
-.code           {color: #87afd7; background: #272727; padding: 2px; margin:2px 0 2px 0;}
+.code           {font-family: 'Share Tech Mono', monospace; color: #87afd7; background: #272727; padding: 2px; margin:2px 0 2px 0;}
 .codesmall      {background: #272727; display:inline-block;}
 .filter         {display:block; margin-bottom: 30px; margin-top: -20px;}
 .description    {background: #272727; padding: 10px 0 10px 10px; margin-top: 0px;}
