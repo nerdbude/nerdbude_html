@@ -19,8 +19,8 @@
 
 body {
   font-family: 'Share Tech Mono', monospace;
-  color: #b6a200;
-  font-size: 16px;
+  color: #d7d7d7;
+  font-size: 14px;
   font-weight: 200;
   background-color: #272727;
   min-height: 100%;;
@@ -54,14 +54,14 @@ li {
 
 a {
   text-decoration: none;
-  color: #b6a200;
+  color: #d7d7d7;
   transition-duration: 0.2s;
 }
 
 a:hover  {
   color: #272727;
   font-weight:500;
-  background-color: #b6a200
+  background-color: #afd75f
 }
 
 a:active {
@@ -87,21 +87,6 @@ img {
   position: fixed;
   letter-spacing: 0px;
   z-index: 1;
-}
-
-header img {
-  width: 50em;
-}
-
-#navigation {
-  float: left;
-  background-color: #272727;
-  color: #b6a200;
-  width: 100%;
-  margin-bottom: 20px;
-  margin-left: 1em;
-  margin-right: 1em;
-  text-align: left;
 }
 
 header nav ul li {
@@ -130,25 +115,15 @@ header nav ul li a {
   bottom: 0;
   margin-bottom: 10px;
   z-index: 1;
+  background-color: #272727
 
 }
-
-.categories		{max-width: 300px; right:0; margin: 40px 60px 0 0; position: fixed; background: #222;
-				text-align: right; z-index: 0;}
-
-@media 			all and (max-width: 1000px) and (min-width: 20px) {
-
-.categories 	{visibility: hidden;}
-
-.catbox			{visibility: hidden;}
-}
-.catbox			{width: 300px; height: 160px; right:0; margin:0; position: absolute; background: #222;
-				display: block; z-index: 999;}
-.tag            {color: ##b6a200;}
+.tag            {color: #afd75f;}
 .important      {margin-left: -18px;}
+.link		{color: #afd75f; background: #272727;}
 .title          {display: inline-block; margin-bottom: 20px; margin-top: 20px;}
 .subtitle       {display: inline-block; margin: 20px 0;}
-.code           {color: #b6a200; max-width: 100%; background: #202020; padding: 2px; margin:2px 0 2px 0;}
+.code           {color: #87afd7; background: #272727; padding: 2px; margin:2px 0 2px 0;}
 .codesmall      {background: #272727; display:inline-block;}
 .filter         {display:block; margin-bottom: 30px; margin-top: -20px;}
 .description    {background: #272727; padding: 10px 0 10px 10px; margin-top: 0px;}
