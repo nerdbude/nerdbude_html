@@ -117,8 +117,25 @@ header nav ul li a {
   margin-bottom: 10px;
   z-index: 1;
   background-color: #272727
-
 }
+#cssyn {
+  background: transparent;
+  padding: 20px 0 20px 10px;
+  margin: 2px 0 2px 0;
+  border-style: solid;
+  border-color: #afd75f;
+  border-width: 1px;
+  }
+
+
+.unixshell 	{color: #87afd7; font-style: italic;}
+.comment	{color: #8a8a8a;}
+.url		{color: #00ffd7; font-style: italic; text-decoration: underline;}
+.value		{color: #875fff;}
+.header-file	{color: #afd75f;}
+.selector	{color: #ff5f5f;}
+.subselector	{color: #ffff5f;}
+ 
 .tag            {color: #afd75f;}
 .important      {margin-left: -18px;}
 .link		{color: #afd75f; background: #272727;}
