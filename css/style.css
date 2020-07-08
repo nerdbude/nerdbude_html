@@ -12,12 +12,16 @@
 [github] https://www.github.com/nerdbude
 */
 @font-face {
-   font-family: 'Share Tech Mono', monospace;
-   src: url('/fonts/ShareTechMono-Regular.ttf') format('ttf');
+   font-family: 'share_tech_monoregular';
+   src: url('/fonts/ShareTechMono-Regular.ttf') format('ttf'),
+   	url('/fonts/sharetechmono-regular-webfont.woff2') format('woff2'),
+	url('/fonts/sharetechmono-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'share_tech_monoregular';
   color: #d7d7d7;
   font-size: 14px;
   font-weight: 200;
