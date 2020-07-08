@@ -37,17 +37,10 @@
       <a href="https://www.nerdbude.com/readme.html">[+] readme.txt</a>
     </div>
 
-  <!--MENU
-    <nav id="navigation">
-      <ul>
-        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
-        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
-      </ul>
-    </nav> -->
   </header>
   
   <div id="content">
-<!-- ARTIKLE START --->
+<!-- ARTIKLE START -->
 <h2>nmap basics</h2>
 Nmap (Network Mapper) ist ein freier Portscanner zum scannen und auswerten von Hosts in einem Netzwerk. Das, unter der GNU Public Licence veröffentlichte Tool wurde von einem findigen Hacker, bekannt als Fydor, entwickelt. Selbstverständlich rate ich euch an nur Netzwerke zu scannen, die euch gehören oder die von euch administriert werden - alles andere könnte illegal sein und bestraft werden.
 
@@ -68,13 +61,19 @@ Nmap läuft unter:
 macOS
 <br>
 <br>
-<pre class="code"><code>brew install nmap</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">brew install nmap</span>
+</div>
 <br>
 <br>
 Linux (Ubuntu / Debian):
 <br>
 <br>
-<pre class="code"><code>sudo apt-get install nmap</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">sudo apt-get install nmap</span>
+</div>
 <br>
 <br>
 Windows (.exe):
@@ -87,7 +86,10 @@ Windows (.exe):
 <br>
 <br>
 <h3>Benutzung:</h3>
-<pre class="code"><code>$ nmap -h</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixsell">$ nmap -h</span>
+</div>
 <br>
 <br>
 <h3>Wozu kann man nmap verwenden?</h3>
@@ -101,7 +103,10 @@ Eine Liste aller standardisierten Ports findet ihr hier:
 Wer selber rumspielen will kann sich mit
 <br>
 <br>
-<pre class="code"><code>nmap -h</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">nmap -h</span>
+</div>
 <br>
 <br>
 Die Liste aller Optionen und Parameter anzeigen lassen.
@@ -114,7 +119,10 @@ Die Liste aller Optionen und Parameter anzeigen lassen.
 Die einfachste Scanvariante von nmap ist:
 <br>
 <br>
-<pre class="code"><code>nmap 127.0.0.1</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">nmap 127.0.0.1</span>
+</div>
 <br>
 <br>
 und die bringt folgenden Output:
@@ -123,19 +131,28 @@ und die bringt folgenden Output:
 <img src="https://www.nerdbude.com/images/nmap_simple.png" alt="nmap_simple"/>
 <br>
 <br>
-<pre class="code"><code>Host is up (0.00026s latency)</code></pre>
+<span class="label">output</span>
+<div id="cssyn">
+<span class="unixshell">Host is up (0.00026s latency)</span>
+</div>
 <br>
 <br>
 Heißt soviel, dass der gescannte Host antwortet und dafür 0.00026 sek. gebraucht hat.
 <br>
 <br>
-<pre class="code"><code>Not shown: 999 closed Ports</code></pre>
+<span class="lable">output</span>
+<div id="cssyn">
+<span class="unixshell">Not shown: 999 closed Ports</span>
+</div>
 <br>
 <br>
 999 Ports werden nicht angezeigt, da sie nicht offen sind
 <br>
 <br>
-<pre class="code"><code>631/TCP open ipp</code></pre>
+<span class="label">output</span>
+<div id="cssyn">
+<span class="unixshell">631/TCP open ipp</span>
+</div>
 <br>
 <br>
 Port 631 ist offen und wird vom Service IPP benutzt. IPP ist ein Druckdienst der über Netzwerk bereitgestellt wird.
@@ -149,16 +166,16 @@ Zeile eines Scans mit nmap können als IP Adressen vorliegen (bspw. 127.0.0.1), 
 Bei mehreren zu scannenden Zielsystemen, gibt es auch verschiedene Parameter die man nmap mitgeben kann:
 <br>
 <br>
-<pre class="code"><code>-iL  (verarbeitet eine Datei mit einer Liste an Zielen) </code></pre>
+<span class="unixshell">-iL  (verarbeitet eine Datei mit einer Liste an Zielen)
 <br>
 <br>
-<pre class="code"><code>-iR  (sucht sich eine zufällige Anzahl an Zielen)</code></pre>
+-iR  (sucht sich eine zufällige Anzahl an Zielen)
 <br>
 <br>
-<pre class="code"><code>--exclude host1[,host2]... (ignoriert die definierten Ziele) </code></pre>
+--exclude host1[,host2]... (ignoriert die definierten Ziele)
 <br>
 <br>
-<pre class="code"><code>--excludefile filename (ignoriert die Ziele in der übergebenen Datei) </code></pre>
+--excludefile filename (ignoriert die Ziele in der übergebenen Datei) </span>
 <br>
 <br>
 ====
@@ -168,16 +185,18 @@ Bei mehreren zu scannenden Zielsystemen, gibt es auch verschiedene Parameter die
 Ähnlich wie die Ziele können auch die Ports die gescannt werden sollen definiert werden.
 <br>
 <br>
-<pre class="code"><code>-p  (scannt nur bestimmte Ports (z.B. -p22 / -p1-65535 usw.)</code></pre>
+<span class="unixshell">
+-p  (scannt nur bestimmte Ports (z.B. -p22 / -p1-65535 usw.)
 <br>
 <br>
-<pre class="code"><code>--exclude-ports (schließt definierte Ports vom scan aus)</code></pre>
+--exclude-ports (schließt definierte Ports vom scan aus)
 <br>
 <br>
-<pre class="code"><code>-F (Fast-Mode / Scannt nur die ersten 100 Ports)</code></pre>
+-F (Fast-Mode / Scannt nur die ersten 100 Ports)
 <br>
 <br>
-<pre class="code"><code>-r (Scannt Ports nacheinander nicht durcheinander) </code></pre>
+-r (Scannt Ports nacheinander nicht durcheinander)
+</span>
 <br>
 <br>
 ====
@@ -187,25 +206,37 @@ Bei mehreren zu scannenden Zielsystemen, gibt es auch verschiedene Parameter die
 Nachdem wir unsere Ziele und die Port definiert haben kann das scannen losgehen.
 <br>
 <br>
-<pre class="code"><code>nmap -sn 127.0.0.1</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">nmap -sn 127.0.0.1</span>
+</div>
 <br>
 <br>
 Pingt das Ziel nur an und schaut ob es antwortet und online ist
 <br>
 <br>
-<pre class="code"><code>nmap -p1-65535 127.0.0.1</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">nmap -p1-65535 127.0.0.1</span>
+</div>
 <br>
 <br>
 Scannt das Ziel auf alle 65535 existierenden Ports und deren Zustand.
 <br>
 <br>
-<pre class="code"><code>nmap -PO [Protokollliste] 127.0.0.1</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+	<span class="unixshell">nmap -PO [Protokollliste] 127.0.0.1</span>
+</div>
 <br>
 <br>
 Scannt ausschließlich IP Protokolldienste die auf dem Ziel laufen.
 <br>
 <br>
-<pre class="code"><code>nmap -O 127.0.0.1</code></pre>
+<span class="label">shell</span>
+<div id="cssyn">
+	<span class="unixshell">nmap -O 127.0.0.1</span>
+</div>
 <br>
 <br>
 Dieser Parameter aktiviert die OS (Operating System) Prüfung, sodass am Ende des Scans das benutzte OS rausfällt.
