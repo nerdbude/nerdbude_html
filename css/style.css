@@ -121,11 +121,20 @@ header nav ul li a {
 #cssyn {
   background: transparent;
   padding: 20px 0 20px 10px;
-  margin: 2px 0 2px 0;
+  margin: 0 0 2px 0;
   border-style: solid;
   border-color: #afd75f;
   border-width: 1px;
   }
+
+.label		{background-color: #afd75f;
+		 border-style: solid;
+		 border-width: 1px;
+		 border-color: #afd75f;
+		 padding-left: 15px;
+		 padding-right: 15px;
+		 color: #272727;
+	 }
 
 
 .unixshell 	{color: #87afd7; font-style: italic;}
