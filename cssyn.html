@@ -47,15 +47,13 @@
 <br>
 <br>
 Um Code oder Linux Befehle auf der Website darzustellen braucht es einen Syntax-Highlighter. Die meisten sind allerdings nur in Verbindung mit JavaScript - will man nicht unbedingt haben.<br>
-Also das ganze mal als reine CSS Lösung versuchen. Das ist cssyn, ein leichtgewichtiger Syntax Highlighter in purem CSS. Aktuell zwar noch in der Alpha-Version aber das einfache highlighting funktioniert bereits. Zu erst einmal die Resultate:<br>
+Also das ganze mal als reine CSS Lösung versuchen. Das ist cssyn, ein leichtgewichtiger Syntax Highlighter in purem CSS.<br>
+Dieser Post stellt gleichzeitig die Dokumentation dar und wird regelmäßig erneuert.<br>
 <br>
-<span class="label">bash</span>
-<div id="cssyn">
-	<span class="unixshell"> apt-get install vim </span>
-</div>
-(einfache Unix Shell)
+Github: <a href="https://www.github.com/nerdbude/cssyn/"><span class="link">CSSYN</span></a><br>
+Aktuelle Version: 0.2-alpha<br>
 <br>
-<br>
+Aktueller Stand:<br>
 <br>
 <span class="label">C++</span>
 <div id="cssyn">
@@ -66,14 +64,11 @@ Also das ganze mal als reine CSS Lösung versuchen. Das ist cssyn, ein leichtgew
 	&emsp;&emsp;&emsp;std::cout <span class="subselector">&lt;&lt; </span><span class="value">"HELLO WORLD!" </span><span class="subselector">&lt;&lt; </span>std::endl;<br>
 	}<br>
 </div>
-("HELLO WORLD in C++)
 <br>
 <br>
-Da das ganze in reinem CSS geschrieben ist, funktioniert das highlighting nicht vollautomatisch, d.h. es ist viel Handarbeit im HTML Code nötig.<br>
+cssyn ist in reinem CSS geschrieben, dadurch funktioniert das highlighting nicht vollautomatisch, d.h. es ist viel Handarbeit im HTML Code nötig.<br>
 <br>
-Das Projekt steht auf Github (<a href="https://www.github.com/nerdbude/cssyn/">LINK</a>)<br>
-<br>
-Zur Installation:<br>
+Installation:<br>
 <br>
 Wer cssyn benutzen will kopiert sich entweder die cssyn.css in seinen /css folder auf dem Webserver und verlinkt sie in der *.html oder kopiert den Inhalt in seine eigene style.css. Damit ist cssyn schon einsatzbereit.<br>
 <br>
