@@ -154,7 +154,5 @@ header nav ul li a {
 .link		{color: #afd75f; background: #272727;}
 .title          {display: inline-block; margin-bottom: 20px; margin-top: 20px;}
 .subtitle       {display: inline-block; margin: 20px 0;}
-.code           {color: #87afd7; background: #272727; padding: 2px; margin:2px 0 2px 0;}
-.codesmall      {background: #272727; display:inline-block;}
 .filter         {display:block; margin-bottom: 30px; margin-top: -20px;}
 .description    {background: #272727; padding: 10px 0 10px 10px; margin-top: 0px;}
