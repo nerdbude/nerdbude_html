@@ -37,13 +37,6 @@
       <a href="https://www.nerdbude.com/readme.html">[+] readme.txt</a>
     </div>
 
-  <!--MENU
-    <nav id="navigation">
-      <ul>
-        <li><a href="https://www.nerdbude.com">./CONTENT </a></li>
-        <li><a href="https://www.nerdbude.com/contact.html">./CONTACT </a></li>
-      </ul>
-    </nav> -->
   </header> 
 
   <div id="content">
@@ -60,15 +53,23 @@
 </ul></br>
 <p>Einzige Voraussetzung hierfür ist Node.js in Version 4 oder höher.</p>
 <p><h3>Installation</h3></p>
-<pre class="code"><code>$ npm install gtop -g</code></pre><br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">$ npm install gtop -g</span><br>
+</div>
 <br><p><h3>Benutzung</h3></p>
-<pre class="code"><code>$ gtop</code></pre><br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">$ gtop</span>
+</div>
+<br>
 <br><p>um gtop zu beenden nutzt man</p>
-<pre class="code"><code>q oder ctrl+c</code></pre></<br></<br>
+<span class="unixshell">q oder ctrl+c</span><br><br>
 <br><p>Prozesse kann man auch sortieren</p>
-<pre class="code"><code>p </code> (sortiert nach PID)</pre><br>
-<pre class="code"><code>c </code> (sortiert nach CPU Auslastung)</pre><br>
-<pre class="code"><code>m </code> (sortiert nach Speicherauslastung)</pre><br>
+<span class="unixshell">p - (sortiert nach PID)<br>
+c - (sortiert nach CPU Auslastung)<br>
+m - (sortiert nach Speicherauslastung)<br>
+</span>
 <p>&nbsp;</p>
 <p>Link: <a href="https://github.com/aksakalli/gtop">https://github.com/aksakalli/gtop</a></p>
 <p>======</p>
@@ -83,20 +84,24 @@
 </ul><br>
 <p>Auch hier ist die einzige Voraussetzung Node.js in Version 4 oder höher.</p>
 <p><h3>Installation</h3></p>
-<pre class="code"><code>$ npm install -g vtop</code></pre><br><br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">$ npm install -g vtop</span>
+</div>
+<br><br>
 <p><h3>Benutzung</h3></p>
-<pre class="code"><code>$ vtop</code></pre><br><br>
+<span class="unixshell">$ vtop</span><br><br>
 <p>Um vtop zu beenden benutzt man:</p>
-<pre class="code"><code>ctrl+c</code></pre><br><br>
+<span class="unixshell">ctrl+c</span><br><br>
 <p>Auch bei vtop gibt es shortcuts die man verwenden kann:</p>
-<pre class="code"><code>u  (Update)</code></pre><br>
-<pre class="code"><code>k / Pfeil hoch  (Durch Prozessliste scrollen)</code></pre><br>
-<pre class="code"><code>j / Pfeil runter  (Durch Prozessliste scrollen)</code></pre><br>
-<pre class="code"><code>h / Pfeil links  (in Graphen reinzoomen)</code></pre><br>
-<pre class="code"><code>l / Pfeil rechts  (aus Graphen rauszoomen)</code></pre><br>
-<pre class="code"><code>g  (an den Beginn der Prozessliste)</code></pre><br>
-<pre class="code"><code>G  (an das Ende der Prozessliste)</code></pre><br>
-<pre class="code"><code>dd  (killt alle Prozesse in der Gruppe)</code></pre><br>
+<span class="unixshell">u  (Update)<br>
+k / Pfeil hoch  (Durch Prozessliste scrollen)<br>
+j / Pfeil runter  (Durch Prozessliste scrollen)<br>
+h / Pfeil links  (in Graphen reinzoomen)<br>
+l / Pfeil rechts  (aus Graphen rauszoomen)<br>
+g  (an den Beginn der Prozessliste)<br>
+G  (an das Ende der Prozessliste)<br>
+dd  (killt alle Prozesse in der Gruppe)</span><br>
 <p>Link: <a href="https://github.com/MrRio/vtop">https://github.com/MrRio/vtop</a></p>
 <p>======</p>
 <p><h3>gotop</h3></p>
@@ -110,44 +115,49 @@
 </ul><br>
 <p><h3>Installation</h3></p>
 <p>Source</p>
-<pre class="code"><code>go get GitHub.com/cjbassi/gotop</code></pre><br><br>
-<p>Prebuilt binaries</p>
-<pre class="code"><code>git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
-/tmp/gotop/scripts/download.sh</code></pre><br><br>
-<p>FreeBSD</p>
-<pre class="code"><code>pkg install gotop</code></pre><br><br>
-<p>Homebrew</p>
-<pre class="code"><code>brew tap cjbassi/gotop</code></pre><br>
-<pre class="code"><code>brew install gotop</code></pre><br><br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">go get GitHub.com/cjbassi/gotop<br>
+git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
+/tmp/gotop/scripts/download.sh<br>
+</span>
+</div>
+<br>
+<br>
 <p>Shortcuts gibts natürlich auch:</p>
 <p>Beenden</p>
-<pre class="code"><code>q / ctrl+c (Beenden)</code></pre><br><br>
-<p>Prozess Navigation</p>
-<pre class="code"><code>k / Pfeil hoch (hoch)</code></pre><br>
-<pre class="code"><code>j / Pfeil runter (runter)</code></pre><br>
-<pre class="code"><code>ctrl+u (Halbe Seite hoch)</code></pre><br>
-<pre class="code"><code>ctrl+d (Halbe Seite runter)</code></pre><br>
-<pre class="code"><code>ctrl+b (Volle Seite hoch)</code></pre><br>
-<pre class="code"><code>ctrl+f (Volle Seite runter)</code></pre><br>
-<pre class="code"><code>gg (erster Prozess)</code></pre><br>
-<pre class="code"><code>G (letzter Prozess)</code></pre><br><br>
-<p>Prozess Aktionen</p>
-<pre class="code"><code>Tab (Ändert Prozess Auflistung)</code></pre><br>
-<pre class="code"><code>dd (killt den Prozess oder die Gruppe)</code></pre><br><br>
-<p>Prozess Sortierung</p>
-<pre class="code"><code>c (nach CPU)</code></pre><br>
-<pre class="code"><code>m (nach Memory)</code></pre><br>
-<pre class="code"><code>p (nach PID)</code></pre><br><br>
-<p>Graphen Optionen</p>
-<pre class="code"><code>h (reinzoomen)</code></pre><br>
-<pre class="code"><code>l (rauszoomen)</code></pre><br><br>
+<span class="unixshell">q / ctrl+c (Beenden)</span><br><br>
+<span class="label">Prozess Navigation</span>
+<div id="cssyn">
+	<span class="unixshell">k / Pfeil hoch (hoch)<br>
+j / Pfeil runter (runter)<br>
+ctrl+u (Halbe Seite hoch)<br>
+ctrl+d (Halbe Seite runter)<br>
+ctrl+b (Volle Seite hoch)<br>
+ctrl+f (Volle Seite runter)<br>
+gg (erster Prozess)<br>
+G (letzter Prozess)</span>
+</div><br><br>
+<span class="label">Prozess Aktionen</span>
+<div id="cssyn">
+<span class="unixshell">Tab (Ändert Prozess Auflistung)<br>
+dd (killt den Prozess oder die Gruppe)<br>
+c (nach CPU)<br>
+m (nach Memory)<br>
+p (nach PID)</span>
+</div
+<br>
+<br>
+<span class="label">Graphen Optionen</span>
+<div id="cssyn">
+<span class="unixshell">h (reinzoomen)<br>
+l (rauszoomen)</span>
+</div><br><br>
 <p>Link:</p>
 <p><a href="https://github.com/cjbassi/gotop">https://github.com/cjbassi/gotop</a></p>
 <br>
 <br>
 <p>//EOF</p>
-
-  </div>
 
   <!-- Footer -->
 

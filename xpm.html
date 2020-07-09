@@ -102,27 +102,27 @@ Das *.xpm File besteht aus sieben Teilen:<br>
 <br>
 <h3>header line</h3>
 Die header line besteht aus einem C-Kommentar.<br><br>
-<pre class="code"><code>/* XPM */</code></pre><br>
+<span class="unixshell"><code>/* XPM */</span>
 <br>
 Dieser Kommentar gilt hier als "magic number" und definiert, dass es sich um ein .xpm file handelt.<br>
 <br>
 <h3>declaration and beginning of assignment line</h3>
 In der Deklarationszeile wird eine C-Variable deklariert. Der Name der Variable ist frei wählbar, muss allerdings ein gültiger C-Bezeichner sein. Meistens wird hier einfach der Bildname verwendet.<br>
 <br>
-<pre class="code"><code>static char * spaceinvader_xpm[] = {
-</code></pre>
+<span class="unixshell">static char * spaceinvader_xpm[] = {
+</span>
 <br>
 <br>
 <h3>values</h3>
 Die Values enthalten 4 bzw 6 Dezimalzahlen (im Beispiel nur 4)<br>
 <br>
-<pre class="code"><code>20 20 2 1 
-</code></pre><br>
+<span class="unixshell">20 20 2 1 
+<br>
 <br>20 - Breite des Bildes in px<br>
 20 - Höhe des Bildes in px<br>
 2 - Anzahl der Farben im Bild<br>
 1 - Anzahl der Zeichen pro Pixelwert<br>
-</code></pre>
+</span>
 <br>
 <br>
 Die letzten beiden Zeichen (5 + 6) sind Werte die sogenannte Hotspots angeben, etwa bei einem Cursor die Stelle an die der Cursor zeigt.<br>
@@ -134,9 +134,9 @@ Wenn in der Datei extensions benutzt weden, folgt den 4/6 Zahlen noch XPMEXT (xp
 Die Anzahl der Farben wurde schon in den Values bestimmt (2).<br>
 Nun geht es an die Definition der Farben.<br>
 <br>
-<pre class="code"><code>"           c None",
+<span class="unixshell">"           c None",
 ".          c #afd75f",
-</code></pre><br>
+</span><br>
 <br>
 Jede Farbdefinition besteht aus einem Zeichencode. Für verschiedene Darstellungsarten können hier auch unterschiedliche Farbdefinitionen angegeben werden. So kann die *.xpm für unterschiedliche Farbtiefen optimiert werden und brauch nicht jedesmal auf b/w runtergerechnet weden. Folgende Optionen stehen zur Verfügung:<br>
 <br>
@@ -161,15 +161,15 @@ Wenn man *.xpm files in C-Code verwendet lässt sich das bild auch schon im Quel
 <h3>extensions</h3>
 Zu guter letzt hat unser *.xpm file noch die extensions. Die extensions sollten in folgendem Format benutzt werden:<br>
 <br>
-<pre class="code"><code>"XPMEXT extension_name extension_value"
-</code></pre><br>
+<span class="unixshell">"XPMEXT extension_name extension_value"
+</span><br>
 <br>
 Im Falle des Space Invaders also so:<br>
 <br>
-<pre class="code"><code>"XPMEXT author PHØ"
+<span class="unixshell">"XPMEXT author PHØ"
 "mailto:post@nerdbude.com",
 "XPMENDEXT"};
-</code></pre>
+</span>
 <br>
 <br>
 Das XPMENDEXT am Ende schließt die extensions. Und "};" schließt die C-Deklaration ab.<br>
