@@ -26,7 +26,7 @@ body {
   font-size: 14px;
   font-weight: 200;
   background-color: #272727;
-  min-height: 100%;;
+  min-height: 100%;
   {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 }
 
@@ -66,7 +66,7 @@ a {
 
 a:hover  {
   color: #272727;
-  background-color: #afd75f
+  background-color: #afd75f;
 }
 
 a:active {
@@ -120,8 +120,9 @@ header nav ul li a {
   bottom: 0;
   margin-bottom: 10px;
   z-index: 1;
-  background-color: #272727
+  background-color: #272727;
 }
+
 #cssyn {
   background: transparent;
   padding: 15px 0 15px 0px;
@@ -132,14 +133,15 @@ header nav ul li a {
   counter-reset: line;
   }
 
-pre		{font-family: 'Share Tech Mono', monospace;}
+pre		{font-family: 'Share Tech Mono', monospace;
+		 padding-left: 15px;}
 ln		{font-family: 'Share Tech Mono', monospace;}
 
 ln::before 	{content: counter(line, decimal-leading-zero);
 		 background: #282828;
 		 color: #444444;
 		 padding: 0 10px 0;
-		 margin: 0 20px 0 0;
+		 margin: 0 10px 0 0;
 		 border-right: 1px solid #444444;
 		 counter-increment: line;
 		 -webkit-user-select: none;
