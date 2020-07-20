@@ -35,7 +35,7 @@
   <!--- HEADER -->
   <header>
     <div id="headerimage">
-      <h1><a href="https://www.nerdbude.com">[ NERDBUDE ]</a></h1>
+      <h1><a href="https://www.nerdbude.com">[$nb]</a></h1>
       <a href="https://www.nerdbude.com/readme.html">[+] readme.txt</a>
     </div>
 
@@ -52,8 +52,7 @@ Dieser Post stellt gleichzeitig die Dokumentation dar und wird regelmäßig erne
 <br>
 Github: <a href="https://www.github.com/nerdbude/cssyn/"><span class="link">CSSYN</span></a><br>
 Aktuelle Version: 0.2-alpha<br>
-<br>
-Aktueller Stand:<br>
+Last Update: 20-07-2020<br>
 <br>
 <span class="label">C++</span>
 <div id="cssyn">
@@ -71,33 +70,78 @@ Aktueller Stand:<br>
 <br>
 cssyn ist in reinem CSS geschrieben, dadurch funktioniert das highlighting nicht vollautomatisch, d.h. es ist viel Handarbeit im HTML Code nötig.<br>
 <br>
-Installation:<br>
+<h3>Installation</h3>
 <br>
 Wer cssyn benutzen will kopiert sich entweder die cssyn.css in seinen /css folder auf dem Webserver und verlinkt sie in der *.html oder kopiert den Inhalt in seine eigene style.css. Damit ist cssyn schon einsatzbereit.<br>
 <br>
-cssyn besteht aus dem "codeblock", der gibt die allgemeinen styles vor und den verschiedenen Klassen, welche die einzelnen Module im code wiedergeben und formatieren.<br>
+CSS stylesheet verlinken:<br>
 <br>
-Der codeblock wird wie folgt definiert:<br>
-<br>
-<span class="label">html</span>
+<span class="label">HTML</span>
 <div id="cssyn">
 <pre>
-<ln>&lt;div id="cssyn"&gt;&lt;/div&gt;</ln>
+<ln>&lt;link rel="stylesheet" type="text/css" href="css/style.css" media="screen"&gt;</ln>
+</pre>
+</div><br>
+<br>
+<h3>Aufbau</h3>
+<br>
+Begonnen wird mit der Klasse "label".<br>
+Das "Label" erzeugt ein keines Rechteck an der oberen rechten Ecke des Codelocks. Der Inhalt ist beliebig aber sollte den content des Codeblocks gut beschreiben (Sprache, Datei, etc.).<br>
+<br>
+<span class="label">HTML</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">&lt;span class="label"&gt; HTML &lt;/span&gt;</span></ln>
 </pre>
 </div>
+<br>
+Darauf folgt der Codeblock selber.<br>
+Dieser wird mit dem div-container "cssyn" eingeleitet.<br>
+<br>
+<span class="label">HTML</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">&lt;div id="cssyn"&gt; ... &lt;/div&gt;</span></ln>
+</pre>
+</div>
+<br>
+Innerhalb des div containers erfolgt das eigentliche highlihgting.<br>
+Damit die Zeilennummern funktionieren wird der Codeblock zusätzlich mit &lt;pre&gt; eingeleitet und mit &lt;/pre&gt; abgeschlossen.<br>
+Jede Zeile Code beginnt mit &lt;ln&gt; und endet mit &lt;/ln&gt; dami die Zeilen fortlaufend dargestellt werden.<br>
+<br>
+<h3>Klassen</h3>
+Innerhalb des Codeblocks werden die verschiedenen Module des Codes mit Hilfe von Klassen eingefärbt.<br>
+Aktuell sind folgende Klassen verfügbar:<br>
+<br>
+- unixshell<br>
+- comment<br>
+- url<br>
+- value<br>
+- header-file<br>
+- selector<br>
+- subselector<br>
+- unit<br>
+<br>
 <br>
 Um den Code oder den Befehl einzufärben werden &lt;span&gt; tags benutz, z.B.:<br>
 <br>
-<span class="label">html</span>
+<span class="label">HTML</span>
 <div id="cssyn">
 <pre>
-<ln>&lt;span class="comment"&gt; /* simple comment */ &lt;/span&gt;</ln>
+<ln><span class="value">&lt;ln&gt;</span><span class="selector">&lt;</span>span <span class="subselector">class="comment"</span><span class="selector">&gt;</span> /* simple comment */ <span class="selector">&lt;</span>/span<span class="selector">&gt;</span><span class="value">&lt;/ln&gt;</span></ln>
 </pre>
 </div>
 <br>
+Das wäre eine komplette Zeile in cssyn.<br>
 Das gibt einen simplen Kommentar aus und benutzt die Formatierung für Kommentare.<br>
 <br>
-Aktuell ist das cssyn.css file noch sehr übersichtlich. Ich werde es nach und nach weiter ausbauen mit mehr Colorschemes, Klassen, und angepasster Syntax an verschiedene Sprachen.<br>
+<h3>to do</h3>
+[ ] - mehr Klassen<br>
+[ ] - mehr Color schemes<br>
+[ ] - Custom HTML5 Tags (erspart viel Tipperei)<br>
+[ ] - Highlighting nach Sprachen sortiert<br>
+... <br>
+<br>
 <!-- ARTIKEL ENDE -->
 <br>
 <br>
