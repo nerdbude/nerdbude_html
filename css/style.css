@@ -13,9 +13,9 @@
 */
 @font-face {
    font-family: 'share_tech_monoregular';
-   src: url('/fonts/ShareTechMono-Regular.ttf') format('ttf'),
-   	url('/fonts/sharetechmono-regular-webfont.woff2') format('woff2'),
-	url('/fonts/sharetechmono-regular-webfont.woff') format('woff');
+   src: url('./fonts/ShareTechMono-Regular.ttf') format('ttf'),
+   	url('./fonts/sharetechmono-regular-webfont.woff2') format('woff2'),
+	url('./fonts/sharetechmono-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,7 +23,7 @@
 body {
   font-family: 'share_tech_monoregular';
   color: #d7d7d7;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 100;
   background-color: #272727;
   min-height: 100%;
@@ -53,14 +53,8 @@ span {
   margin: 0;
 }
 
-li {
-  margin: 15px 0;
-  padding: 0;
-  list-style: none;
-}
-
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #afd75f;
   transition-duration: 0.2s;
   padding-top: 3px;
@@ -90,8 +84,6 @@ a.front:active {
   color: #8787ff;
 }
 
-
-
 p {
   padding: 0;
   margin: 10px 0 30px 0;
@@ -102,35 +94,32 @@ img {
   margin-bottom: 20px;
 }
 
-#header {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+header {
+  width: 100%;
   top: 0;
+  background-color: #272727;
   height: auto;
-  position: fixed;
+  padding-bottom: 10px;
+  margin-bottom:10px;
   letter-spacing: 0px;
+  border-bottom: 1px dashed #afd75f;
   z-index: 1;
 }
 
-header nav ul li {
-  float: left;
-  margin-right: 12px;
+th {
+  text-align: left;
+  font-weight: 100;
+  padding-right: 15px;
 }
 
-header nav a {
-  text-decoration: none;
+th.desc {
+  color: #8a8a8a;
 }
 
-header nav ul li a {
-  font-size: 20px;
-  font-weight: 400;
-
-}
 
 #content {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 #footer {
@@ -146,6 +135,7 @@ header nav ul li a {
   background: transparent;
   padding: 15px 0 15px 0px;
   margin: 0 0 2px 0;
+  width: 70%;
   border-style: solid;
   border-color: #afd75f;
   border-width: 1px;
