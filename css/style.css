@@ -114,7 +114,13 @@ th {
 th.desc {
   color: #8a8a8a;
 }
-
+th.date {color: #8a8a8a;}
+th.time {color: #8a8a8a;}
+th.change {color: #d7d7d7;}
+th.red {color: #ff5f5f;}
+th.green {color: #5fd75f;}
+th.yellow {color: #ffff5f;}
+th.user {color: #8787ff;}
 
 #content {
   margin-left: 0%;
