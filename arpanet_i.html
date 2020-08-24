@@ -1,0 +1,149 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/arpanet_i.html">
+    <meta property="og:title" content="ARPANET (I)">
+    <meta property="og:description" content="Die Ursprünge des Internets ... im Nachbau. Phase I: Recherche, Basics, wtf">
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+	<!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com" class="front">[$nb]</a></h1>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[+]readme.txt</a></th>
+		      <th><a href="https://www.nerdbude.com/syslog.html" class="front">[+]sys.log</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>ARPANET (I)</h2>
+Das Internet. Unendliche Weiten. Das war nicht immer so.<br>
+Ganz am Anfang war das "Internet" noch überschaubar und man konnte die Rechner die beteiligt waren noch zählen, wenn auch nicht an einer<br>
+Hand aber dafür in kleiner Stückzahl.<br>
+<br>
+Bevor man die Möglichkeit hatte online cyberspacig unterwegs zu sein, online einzukaufen, mails zu schreiben<br>
+seinen geistigen Unfug auf Facebook oder in Blogform zu verbreiten ( ;) ) sah das Internet anders aus und hieß ARPANET.<br>
+Das ARPANET beschränkte sich bei seiner Entstehung rein auf die USA und wurde als Forschungsnetz konzipiert.<br>
+Wer mehr über die geschichtliche Entwicklung des ARPANET lernen will der muss sich entsprechende Literatur besorgen,<br>
+denn auf den Geschichtlichen Aspekt werde ich nur bedingt eingehen.<br>
+Da das ARPANET so übersichtlich aufgebaut war bietet sich ein Nachbau ja quasi an.<br>
+<br>
+<h3>Warum das alles</h3>
+Hauptsächlich aus Spaß am lernen und weil mich das ARPANET seit vielen Jahren fasziniert und gefangen hält.<br>
+Da ich nicht beliebig viel Zeit zur Verfügung habe wird sich das Projekt mit Sicherheit uach in die Länge ziehen.<br>
+Wer also schnellen Fortschritt und das fertige Projekt innerhalb einer Woche sehen will, den muss ich enttäuschen<br>
+oder ihm raten es selber zu machen ;)<br>
+<br>
+<h3>Aufbau des ARPANET</h3>
+Nun aber genug der Worte. Darf ich vorstellen, das ARPANET (Stand: Mai 1973):<br>
+<br>
+<img src="https://www.nerdbude.com/images/arpanet_map.png" alt="arpanet map"><br>
+<br>
+... zumindest mal grob skizziert.<br>
+<br>
+Was sieht man nun auf der Karte?<br>
+Zunächst einmal sehen wir alle Universitäten die am ARPANET beteiligt waren (Harvard, UCLA, Carnegie etc.)<br>
+und welche Rechner dort benutzt wurden bzw. am ARPANET hingen (PDP-1, PDP-11, PDP-15 usw.)<br>
+<br>
+<h3>Module</h3>
+Die einzelenen Bestandteile/Module des ARPANET sind folgende:<br>
+<br>
+IMP<br>
+IMPs (Interface Message Processor) sind Paketvermittlungsknoten und die direkten Vorläufer heutiger Router.<br>
+Das allererste Request for Comments (<a href="https://tools.ietf.org/html/rfc1">RFC1</a>) handelt unteranderem davon. Die IMPs basieren auf Minirechnern der Serie 16<br>
+von Honeywell. Die ersten Knoten waren Honeywell DDP-516, später wurden die schnelleren H316 eingesetzt.<br>
+(Wikipedia: <a href="https://en.wikipedia.org/wiki/Interface_Message_Processor">IMP</a>)<br>
+<br>
+316IMP<br>
+Die H316 IMPs waren die Nachfolger der ursprünglich plazierten DDP-516 und boten spezielle serielle Highspeedinterfaces.<br>
+Die H316 gehörten zu den ersten 16bit Rechnern überhaupt.<br>
+(Wikipedia: <a href="https://en.wikipedia.org/wiki/Honeywell_H316">H316</a>)<br>
+<br>
+TIP<br>
+TIPs, oder ausgeschrieben Terminal IMP, waren die Möglichkeit für Benutzer der ARPANETs direkt per Console auf das Netzwerk zuzugreifen.<br>
+<br>
+Die erste erfolgreiche Verbindung kam zwischen der Universität Stanford und der UCLA zustande.<br>
+Einer der ersten Befehle die probiert wurden war "login". Bei der Eingabe von "login" stürtzte der Rechner allerdings nach dem zweiten<br>
+Buchstaben ab. Das Problem war ein paar Stunden später aber behoben und login funktionierte.<br>
+<br>
+Für die grobe Netzstruktur braucht es also:<br>
+15x - TIPs<br>
+15x - IMPs<br>
+06x - 316IMP<br>
+<br>
+<br>
+An den einzelnen Knoten der Universitäten hingen unterschiedliche Großrechner.<br>
+<br>
+02x - <a href="https://en.wikipedia.org/wiki/PDP-15">PDP15</a><br>
+15x - <a href="https://en.wikipedia.org/wiki/PDP-10">PDP10</a><br>
+04x - <a href="https://en.wikipedia.org/wiki/PDP-11">PDP11</a><br>
+02x - <a href="https://en.wikipedia.org/wiki/PDP-1">PDP1</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/GE_645">H645</a><br>
+02x - <a href="https://en.wikipedia.org/wiki/IBM_System/360_Model_67">IBM 360/67</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/IBM_System/360_Model_75">IBM 360/75</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/IBM_System/360_Model_65">IBM 360/65</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/IBM_System/360_Model_44">IBM 360/44</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/IBM_System/370_Model_145">IBM 370/145</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/IBM_System/360_Model_91">IBM 360/91</a><br>
+01x - <a href="https://de.wikipedia.org/wiki/Data_General">NOVA</a><br>
+01x - MAXC (PDP-10 Klon)<br>
+01x - <a href="https://de.wikipedia.org/wiki/Trommelspeicher">TSP</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/TX-2">TX-2</a><br>
+01x - MICRO 810<br>
+01x - <a href="https://en.wikipedia.org/wiki/Burroughs_large_systems">B6700</a><br>
+01x - <a href="https://en.wikipedia.org/wiki/IBM_1800_Data_Acquisition_and_Control_System">IBM-1800</a><br>
+<br>
+Unser ARPANET umfasst also insgesamt 36 Knotenpunkte und 38 Großrechner.<br>
+<br>
+Da 38 Großrechner und 36 Knotenpunkte viel Platz brauchen, wird das Projekt ein wenig runterskaliert.<br>
+Für Großrechner und Knotenpunkte werden ESP32 Microcontroller Boards zum Einsatz kommen.<br>
+Die sind ausreichend von der Leistung, platzsparender als eine (oder mehrere) PDP-11 und zu guter letzt in der Menge auch noch bezahlbar.<br>
+<br>
+In Teil II geht es mit der Hardware weiter.<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>
