@@ -11,6 +11,21 @@
       <title>$NB</title>
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
+    <item>
+      <title>Unit-1</title>
+      <description>WEin kleines feine Zsh Theme</description>
+      <link>https://www.nerdbude.com/unit-1.html</link>
+      <author>PHO / post@nerdbude.com</author>
+      <pubDate>2020-11-19</pubDate>
+    </item>
+
+    <item>
+      <title>ARPANET (II)</title>
+      <description>Weiter gehts mit den Überlegungen zur Hardware die im DIY ARPANET verwendet werden soll.</description>
+      <link>https://www.nerdbude.com/arpanet_ii.html</link>
+      <author>PHO / post@nerdbude.com</author>
+      <pubDate>2020-10-23</pubDate>
+    </item>
 
     <item>
       <title>ARPANET (I)</title>
