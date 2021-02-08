@@ -109,6 +109,18 @@ th {
   font-weight: 100;
 }
 
+ln		{font-family: 'Share Tech Mono', monospace;}
+
+ln::before 	{content: counter(line, decimal-leading-zero);
+		 background: #282828;
+		 color: #444444;
+		 padding: 0 10px 0;
+		 margin: 0 10px 0 0;
+		 border-right: 1px solid #444444;
+		 counter-increment: line;
+		 -webkit-user-select: none;
+	 	}
+
 td.maintitle {color: #875fff; font-size: 14px}
 td.episodenr {color: #875fff; font-size: 22px;}
 td.title {color: #875fff; font-size: 22px;}
