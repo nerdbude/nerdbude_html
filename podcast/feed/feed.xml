@@ -6,7 +6,7 @@
 	<title>Click! Clack! Hack!</title>
 	<link>cch.nerdbude.com</link>
 	<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-	<lastBuildDate>Fri, 05 Feb 2021 14:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 08 Feb 2021 14:30:00 +0000</lastBuildDate>
 
 <image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
 <atom:link rel="self" type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
@@ -28,8 +28,8 @@
 	<itunes:explicit>no</itunes:explicit>
 	<item>
     <title>News und meine klickenden Hackbretter</title>
-		<link>https://www.nerdbude.com/podcast/audio/</link>
-		<pubDate>Mon, 08 Feb 2021 09:30:00 +0000</pubDate>
+    <link>https://www.nerdbude.com/podcast/index.html</link>
+		<pubDate>Mon, 08 Feb 2021 14:30:00 +0000</pubDate>
 		<guid isPermaLink="false">EVY5sF7OakOKSgak3j4e1w</guid>
     	<description><![CDATA[In der ersten regulären Therapiestunde für Hackbrettsüchtige erzähle ich was hier auf, unter, neben und über meinem Schreibtisch alles rumliegt an Tastaturen und ein paar News gibts auch.]]></description>
 		<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
@@ -42,39 +42,10 @@
 		<itunes:title>Meine klickenden Hackbretter</itunes:title>
 		<itunes:episode>1</itunes:episode>
 		<itunes:episodeType>full</itunes:episodeType>
-
-
-		<content:encoded><![CDATA[
-			<p>Die erste reguläre Episode mit News, Keycapsets und meinen mechanischen Tastaturen die hier im Labor verstreut sind.</p>
-			<p></p>
-			<p><a href="https://www.twitter.com/cchpod">Click! Clack! Hack! auf Twitter</a></p>
-		  <p><a href="https://www.github.com/nerdbude/podcast">DIY Feed</a></p>
-		  <p><a href="https://podcast.hack-the-planet.tv/">Hack the Planet! Podcast</a></p>
-		  <p><a href="https://www.landnerdschaft.com/lns/show">Landnerdschaft Podcast</a></p>
-		  <p><a href="https://www.hackster.io/news/this-keyboard-shocks-you-into-typing-properly-67a450693a6c">Elektroschock Keyboard</a></p>
-		  <p><a href="https://drop.com/buy/drop-mito-sa-laser-custom-keycap-set">Drop + Mito Laser Keycapset</a></p>
-		  <p><a href="https://gizmo.engineering/">Gizmo GK6</a></p>
-		  <p><a href="https://novelkeys.xyz/products/kam-superuser-gb">KAM Superuser Keycapset</a></p>
-		  <p></p>
-		  <p><a href="https://www.csv.de/artinfo.php?artnr=A3114215&KATEGORIE=312#">Lioncast LK20 (Keyboard)</a></p>
-		  <p><a href="https://epomaker.com/products/ajazz-ak33?_pos=1&_sid=eb9ba2ab6&_ss=r">Ajazz AK33 (Keyboard)</a></p>
-		  <p><a href="http://en.obins.net/anne-pro">Anne Pro I (Keyboard)</a></p>
-		  <p><a href="https://deskthority.net/wiki/Noppoo_Choc_Mini">Noppoo Choc Mini (Keyboard)</a></p>
-		  <p><a href="https://www.instagram.com/p/CG8Qhy7HbJS/">Siemens Sinix Terminal (Keyboard)</a></p>
-		  <p><a href="http://www.motospeed.cc/index.php?ac=article&at=read&did=500">Motospeed CK61 (Keyboard)</a></p>
-		  <p><a href="https://github.com/foostan/crkbd">Corne (Keyboard)</a></p>
-		  <p></p>
-		  <p><a href="https://nerdbude.com/diy_keyboard_from_scratch_I.html">DIY Keyboards (I)</a></p>
-		  <p><a href="https://nerdbude.com/diy_keyboard_from_scratch_II.html">DIY Keyboards (II)</a></p>
-		  <p></p>
-		  <p><a href="mailto:cch@nerdbude.com">MAIL</a></p>
-			<p></p>
-]]></content:encoded>
 </item>
-
 	<item>
         <title>CCH000 - hello_world.cpp</title>
-		<link>https://www.nerdbude.com/podcast/audio/</link>
+		<link>https://www.nerdbude.com/podcast/index.html</link>
 		<pubDate>Tue, 02 Jan 2021 12:00:00 +0000</pubDate>
 		<guid isPermaLink="false">GFFluoKIOkKC6EE-QLgDXA</guid>
     	<description><![CDATA[Mechanische Tastaturen als Fetisch in Podcastform!]]></description>
@@ -88,12 +59,6 @@
 		<itunes:title>CCH 000</itunes:title>
 		<itunes:episode>0</itunes:episode>
 		<itunes:episodeType>full</itunes:episodeType>
-
-
-		<content:encoded><![CDATA[
-			<p>Ein Podcast über mechanische Tastaturen und alles was dzu gehört! Ich erzähle kurz worum es geht, was alles kommen wird und wie ihr mich erreichen könnt.</p>
-			<p>cch.nerdbude.com</p>
-]]></content:encoded>
 </item>
 
 
