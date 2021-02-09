@@ -110,7 +110,6 @@ th {
 }
 
 ln		{font-family: 'Share Tech Mono', monospace;}
-
 ln::before 	{content: counter(line, decimal-leading-zero);
 		 background: #282828;
 		 color: #444444;
@@ -160,7 +159,7 @@ th.user {color: #8787ff;}
   border-style: solid;
   border-color: #875fff;
   border-width: 1px;
-  }
+  counter-reset: line;}
 
 
 #cssyn {
