@@ -6,10 +6,10 @@
 	<title>Click! Clack! Hack!</title>
 	<link>cch.nerdbude.com</link>
 	<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-	<lastBuildDate>Mon, 08 Feb 2021 14:30:00 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 22 Feb 2021 09:15:00 +0000</lastBuildDate>
 
 <image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
-<atom:link rel="self" type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
+<atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
 	<atom:link rel="first" href="https://www.nerdbude.com/podcast/feed/" />
 	<language>de-DE</language>
 	<itunes:author>PH_0x17</itunes:author>
@@ -26,6 +26,23 @@
 	<itunes:subtitle>Ein Podcast über mechanische Tastaturen</itunes:subtitle>
 	<itunes:block>no</itunes:block>
 	<itunes:explicit>no</itunes:explicit>
+	<item>
+		<title>Keyboardgrößen</title>
+		<link>https://www.nerdbude.com/podcast/index.html</link>
+		<pubDate>Mon, 22 Feb 2021 10:00:00 +0000</pubDate>
+		<guid isPermaLink="false">fbivkGFAZUuKhgSnvPmarA</guid>
+			<description><![CDATA[News, Neue Keycapsets und die Frage wie klein ein Keyboard eigentlich sein kann.]]></description>
+		<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_002.mp3" type="audio/mpeg"/>
+
+		<itunes:duration>00:28:19</itunes:duration>
+		<itunes:author>PH_0x17</itunes:author>
+		<itunes:subtitle>Wie klein kann ein Keyboard werden und warum will man das überhaupt haben.</itunes:subtitle>
+		<itunes:title>Keyboardgrößen</itunes:title>
+		<itunes:episode>2</itunes:episode>
+		<itunes:episodeType>full</itunes:episodeType>
+</item>
 	<item>
     <title>News und meine klickenden Hackbretter</title>
     <link>https://www.nerdbude.com/podcast/index.html</link>
