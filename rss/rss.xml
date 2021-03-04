@@ -12,6 +12,13 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>Podstats</title>
+      <description>Wer podcastet will auch Statistiken. Aber nicht jeder will große Datenbanken im Hintergrund und bloated Dashboards wir Grafana. Hier eine kleine Anleitung wie das auch mit weniger Software (aber ein bisschen mehr Handarbeit) funktioniert.</description>
+      <link>https://www.nerdbude.com/podstats.html</link>
+      <author>PHO / post@nerdbude.com</author>
+      <pubDate>2021-03-04 11:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Click! Clack! Hack!</title>
       <description>Was macht man, wenn man diverse Projekte hat? Richtig! Mehr Projekte! Deswegen gibt es ab sofort den "Click! Clack! Hack!"-Podcast in dem es um mechanische Tastaturen und allem was dazu gehört, gehen wird. Am besten direkt abonnieren damit keine Folge verpasst wird!</description>
       <link>https://www.nerdbude.com/clickclackhack.html</link>
