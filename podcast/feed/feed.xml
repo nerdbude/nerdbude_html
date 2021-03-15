@@ -6,7 +6,7 @@
 	<title>Click! Clack! Hack!</title>
 	<link>cch.nerdbude.com</link>
 	<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-	<lastBuildDate>Mon, 22 Feb 2021 09:15:00 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 08 Mar 2021 09:00:00 +0100</lastBuildDate>
 
 <image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
 <atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
@@ -26,6 +26,23 @@
 	<itunes:subtitle>Ein Podcast über mechanische Tastaturen</itunes:subtitle>
 	<itunes:block>no</itunes:block>
 	<itunes:explicit>no</itunes:explicit>
+	<item>
+		<title>Keyboardswitches</title>
+		<link>https://www.nerdbude.com/podcast/index.html</link>
+		<pubDate>Mon, 08 Mar 2021 09:00:00 +0100</pubDate>
+		<guid isPermaLink="false">1X2LrOKugEWRFBCcpAn2_g</guid>
+			<description><![CDATA[Natürlich wieder News, diesmal viel Statistik über Keyboardswitches und eine kleine Überraschung am Ende.]]></description>
+		<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_003.mp3" type="audio/mpeg"/>
+
+		<itunes:duration>00:38:01</itunes:duration>
+		<itunes:author>PH_0x17</itunes:author>
+		<itunes:subtitle>Natürlich wieder News, diesmal viel Statistik über Keyboardswitches und eine kleine Überraschung am Ende.</itunes:subtitle>
+		<itunes:title>Keyboardswitches</itunes:title>
+		<itunes:episode>3</itunes:episode>
+		<itunes:episodeType>full</itunes:episodeType>
+</item>
 	<item>
 		<title>Keyboardgrößen</title>
 		<link>https://www.nerdbude.com/podcast/index.html</link>

@@ -1,0 +1,200 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/podstats.html">
+    <meta property="og:title" content="PODSTATS">
+    <meta property="og:description" content="Podcast Statistiken ohne Datenbank aber mit Dashboard">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+	<!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com" class="front">[$nb]</a></h1>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[+]readme.txt</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[+]aboutme.txt</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[+]podcast.txt</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>Podstats</h2>
+Der ein oder andere hat ja mitbekommen, dass es den <a href="cch.nerdbude.com">Click! Clack! Hack!</a> Podcast gibt. Unbedingt abonieren, wenn ihr das noch nicht gemacht habt.<br>
+Wenn man podcastet will man natürlich auch wissen, ob und wie oft man gehört wird.<br>
+Nun gibt es die Möglichkeit Wordpress oder ähnliche CMS zu verwenden die einem in Verbindung mit Podlove-Plugins alles fertig zur Verfügung stellen.<br>
+Naja - wer die Nerdbude kennt, dem ist klar, dass das nicht in Frage kommt.<br>
+(Podlove ist natürlich trotzdem unterstützenswert - keine Frage)<br>
+<br>
+Ich habe auf Github ein <a href="https://www.github.com/nerdbude/podcast">PODCAST REPO</a> begonnen.<br>
+Dort findet sich alles was man zum DIY Podcasten braucht.<br>
+Unteranderem auch eine Möglichkeit Statistiken zu bekommen.<br>
+<br>
+<h3>Übersicht</h3>
+Um Statistiken (Downloads, Player, etc.) von seinem Podcast zu bekommen, benutzen Wordpress und Co. Datenbanken.<br>
+Kann man machen. Muss man aber nicht. Ich will hier eigentlich alles so klein halten wie möglich, also kein Wordpress und keine DB.<br>
+Was also steht zur Verfügung um an Statistiken zu kommen?<br>
+Wenn der Webspace-Provider schon Logs schreibt, dann nutzen wir die doch auch.<br>
+(Vorab: Die IP-Adressen werden anonymisiert.)<br>
+Zusätzlich braucht es für Visualisierung noch separate Software in Form von GoAccess.<br>
+<br>
+<h3>Log-Files</h3>
+Der Provider muss, dank Gesetzeslage, Access-Logs schreiben.<br>
+In diesen Logs befinden sich natürlich auch die Zugriffe auf die einzelnen Podcast-Episoden.<br>
+Man muss sie nur filtern.<br>
+So sieht ein Entry im Access-Log aus den man haben will:<br>
+<br>
+anon - - [04/Mar/2021:23:23:00 +0100] "GET /podcast/audio/CCH_001.mp3 HTTP/2.0" 200 11376985 "-" "Pocket Casts"<br>
+<br>
+Der Aufbau:<br>
+[IP] - - [DATE:TIME] [FILE] [HTTP CODE] [FILESIZE] [CLIENT]<br>
+<br>
+Der Aufbau wird später noch wichtig zu Analyse.<br>
+Nun befinden sich im Logfile aber auch noch andere Zugriffe die für den Podcast nicht relevant sind.<br>
+Dazu hab ich ein kleines Shell script im Repository, dass die Logfile aufsplittet.<br>
+<br>
+Zuerst werden nur die Einträge rausgefiltert die sich auf des Verzeichnis mit den Episoden beziehen:<br>
+<br>
+<span class="label">BASH</span>
+<div id="cssyn">
+<pre>
+<ln><span class="comment">grep "/podcast/audio" $newlog &gt; filtered.log </span></ln>
+</pre>
+</div>
+<br>
+<br>
+Hier werden per grep alle Einträge die "/podcast/audio" enthalten, aus der Logfile in eine temporäre filtered.log geschrieben.<br>
+Dadurch bekommen wir alle Einträge die sich auf die Episoden beziehen und werfen den Rest weg.<br>
+Danach wird nach Episoden gefiltert, sprich alle Einträge für jede einzelne Episode.<br>
+<br>
+<span class="label">BASH</span>
+<div id="cssyn">
+<pre>
+<ln><span class="comment">grep "GET /podcast/audio/CCH_000.mp3" filtered.log &gt; f000.log</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Hier holt grep die Lines aus der filtered.log die, die Episode enthält und schreibt sie in eine neue temporäre Log-File die episodenspeziefisch ist (f000.log).<br>
+Das wird nun für jede Episode gemacht, so das man einen Log Katalog bekommt mit allen Episoden (f000.log, f001.log usw.).<br>
+Weiter gehts mit den Downloads.<br>
+<br>
+<span class="label">BASH</span>
+<div id="cssyn">
+  <pre>
+  <ln><span class="comment">grep "200 234223" f000.log &gt; fs000.log</span></ln>
+  </pre>
+</div>
+<br>
+<br>
+Hier greift sich grep alle Lines mit dem HTTP Code 200 (für Download) und die komplette Dateigröße in Byte (233223) aus dem File "f000.log" und schreibt sie wiederum in die temoräre "fs000.log"<br>
+Damit bekommen wir nur die Einträge für abgeschlossene Downloads.<br>
+Nun wird der Inhalt der temporären "fs000.log" an die episode0.log angefügt:<br>
+<br>
+<span class="label">BASH</span>
+<div id="cssyn">
+  <pre>
+  <ln><span class="comment">cat fs000.log episode0.log &gt; episode0.log</span></ln>
+  </pre>
+</div>
+<br>
+<br>
+Cat liest den Inhalt aus "fs000.log" und "episodeo.log" und schreibt beide Inhalte in "episode0.log". So bekommt man die gesamten Log Einträge seit anbeginn.<br>
+Zum Schluss fügen wir noch alle verfügbaren Episoden-Logs zu einem Master zusammen:<br>
+<br>
+<span class="label">BASH</span>
+<div id="cssyn">
+  <pre>
+  <ln><span class="comment">cat fs000.log fs001.log fs002.log &gt; fsmaster.log</span></ln>
+  <ln><span class="comment">cat master.log fsmaster.log &gt; final_master.log</span></ln>
+  </pre>
+</div>
+<br><br>
+Hier auch wieder alle temporären Episoden-Logs (fs000.log, fs001.log etc) werden in eine temporäre Master-Log-File geschrieben (fsmaster.log)<br>
+und anschliesend in die final_master.log geschrieben, so das man eine Log-File hat in der alle Episoden-Downloads drin sind.<br>
+<br>
+Anschließend werden noch die temporären log-files gelöscht, da wir die nicht mehr brauchen.<br>
+<br>
+Wem das alles zu viel Aufwand ist, benutzt die "sortlog.sh" im Repository.<br>
+<br>
+An dieser Stelle sind die Log-Files fertig.<br>
+<br>
+<br>
+<h3>Dashboard</h3>
+Nun sehen Statistiken besser aus, wenn man sie in einem schönen Dashboard hat.<br>
+Es gibt Möglichkeiten sich das ganze mit Grafana und ähnlichen Tools darstellen zu lassen, allerdings hängt auch auch eine DB dran und das ist für meinen kleinen Podcast mit Kanonen auf Spatzen geschossen.<br>
+Deswegen bemühen wir ein Tool namens <a href="https://goaccess.io">"GoAccess"</a> - ein kleiner feiner Log-File-Viewer der vorrangig im Terminal läuft aber auch die Möglichkeit eines HTML-Dashboards zur Verfügung stellt.<br>
+Damit GoAccess mit den Log-Files umgehen kann, müssen Parameter mitgegeben werden. In meinem Fall (Beispiel siehe oben) sehe das so aus:<br>
+<br>
+<span class="label">BASH</span>
+<div class="cssyn">
+  <pre>
+  <ln><span class="comment">goaccess master.log --log-format='%h %^[%d:%t %^] "%r" %s %D "%u"' --date-format=%d/%b/%Y --time-format=%T --no-ip-validation</span></ln>
+  </pre>
+</div>
+<br>
+<br>
+Das startet GoAccess im Terminal mit der master.log.<br>
+Das HTML Dashboard lässt sich mit den folgenden Parametern starten:<br>
+<br>
+<span class="label">BASH</span>
+<div class="cssyn">
+  <pre>
+  <ln><span class="comment">goaccess master.log --log-format='%h %^[%d:%t %^] "%r" %s %D "%u"' --date-format=%d/%b/%Y --time-format=%T --no-ip-validation -o /home/ph_0x17/dashboard.html --real-time-html</span></ln>
+  </pre>
+</div>
+<br>
+<br>
+Nun sieht man im Terminal, dass ein kleiner Dashboard-Server gestartet wird.<br>
+Unter: /home/ph_0x17/dashboard.html ist das Dashboard per Browser erreichbar.<br>
+Taddaaaa! Statistiken!<br>
+<br>
+<img src="https://www.nerdbude.com/images/dashboard.png" width="700px">
+<br>
+Viel Spaß damit.
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>
