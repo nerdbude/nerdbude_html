@@ -12,6 +12,13 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>PinePhone</title>
+      <description>Ich hab mich mal die letzten drei Monate hingesetzt und getestet ob das PinePhone alltagstauglich ist.</description>
+      <link>https://www.nerdbude.com/pinephone.html</link>
+      <author>PHO / post@nerdbude.com</author>
+      <pubDate>2021-03-17 11:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Podstats</title>
       <description>Wer podcastet will auch Statistiken. Aber nicht jeder will große Datenbanken im Hintergrund und bloated Dashboards wir Grafana. Hier eine kleine Anleitung wie das auch mit weniger Software (aber ein bisschen mehr Handarbeit) funktioniert.</description>
       <link>https://www.nerdbude.com/podstats.html</link>
