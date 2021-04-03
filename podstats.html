@@ -49,7 +49,7 @@
   <div id="content">
 <!-- ARTIKLE START -->
 <h2>Podstats</h2>
-Der ein oder andere hat ja mitbekommen, dass es den <a href="cch.nerdbude.com">Click! Clack! Hack!</a> Podcast gibt. Unbedingt abonieren, wenn ihr das noch nicht gemacht habt.<br>
+Der ein oder andere hat ja mitbekommen, dass es den <a href="https://www.nerdbude.com/podcast/index.html">Click! Clack! Hack!</a> Podcast gibt. Unbedingt abonieren, wenn ihr das noch nicht gemacht habt.<br>
 Wenn man podcastet will man natürlich auch wissen, ob und wie oft man gehört wird.<br>
 Nun gibt es die Möglichkeit Wordpress oder ähnliche CMS zu verwenden die einem in Verbindung mit Podlove-Plugins alles fertig zur Verfügung stellen.<br>
 Naja - wer die Nerdbude kennt, dem ist klar, dass das nicht in Frage kommt.<br>
@@ -131,14 +131,16 @@ Nun wird der Inhalt der temporären "fs000.log" an die episode0.log angefügt:<b
 Cat liest den Inhalt aus "fs000.log" und "episodeo.log" und schreibt beide Inhalte in "episode0.log". So bekommt man die gesamten Log Einträge seit anbeginn.<br>
 Zum Schluss fügen wir noch alle verfügbaren Episoden-Logs zu einem Master zusammen:<br>
 <br>
+<br>
 <span class="label">BASH</span>
 <div id="cssyn">
   <pre>
-  <ln><span class="comment">cat fs000.log fs001.log fs002.log &gt; fsmaster.log</span></ln>
-  <ln><span class="comment">cat master.log fsmaster.log &gt; final_master.log</span></ln>
+    <ln><span class="comment">cat fs000.log fs001.log fs002.log &gt; fsmaster.log</span></ln>
+    <ln><span class="comment">cat master.log fsmaster.log &gt; final_master.log</span></ln>
   </pre>
 </div>
-<br><br>
+<br>
+<br>
 Hier auch wieder alle temporären Episoden-Logs (fs000.log, fs001.log etc) werden in eine temporäre Master-Log-File geschrieben (fsmaster.log)<br>
 und anschliesend in die final_master.log geschrieben, so das man eine Log-File hat in der alle Episoden-Downloads drin sind.<br>
 <br>
@@ -156,21 +158,22 @@ Deswegen bemühen wir ein Tool namens <a href="https://goaccess.io">"GoAccess"</
 Damit GoAccess mit den Log-Files umgehen kann, müssen Parameter mitgegeben werden. In meinem Fall (Beispiel siehe oben) sehe das so aus:<br>
 <br>
 <span class="label">BASH</span>
-<div class="cssyn">
-  <pre>
-  <ln><span class="comment">goaccess master.log --log-format='%h %^[%d:%t %^] "%r" %s %D "%u"' --date-format=%d/%b/%Y --time-format=%T --no-ip-validation</span></ln>
-  </pre>
+<div id="cssyn">
+<pre>
+<ln><span class="comment">goaccess master.log --log-format='%h %^[%d:%t %^] "%r" %s %D "%u"' --date-format=%d/%b/%Y --time-format=%T --no-ip-validation</span></ln>
+</pre>
 </div>
 <br>
 <br>
 Das startet GoAccess im Terminal mit der master.log.<br>
 Das HTML Dashboard lässt sich mit den folgenden Parametern starten:<br>
 <br>
+<br>
 <span class="label">BASH</span>
-<div class="cssyn">
-  <pre>
-  <ln><span class="comment">goaccess master.log --log-format='%h %^[%d:%t %^] "%r" %s %D "%u"' --date-format=%d/%b/%Y --time-format=%T --no-ip-validation -o /home/ph_0x17/dashboard.html --real-time-html</span></ln>
-  </pre>
+<div id="cssyn">
+<pre>
+<ln><span class="comment">goaccess master.log --log-format='%h %^[%d:%t %^] "%r" %s %D "%u"' --date-format=%d/%b/%Y --time-format=%T --no-ip-validation -o /home/ph_0x17/dashboard.html --real-time-html</span></ln>
+</pre>
 </div>
 <br>
 <br>

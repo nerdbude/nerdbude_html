@@ -149,7 +149,8 @@ th.user {color: #8787ff;}
 
 pre		{font-family: 'Share Tech Mono', monospace;
 		 padding-left: 15px;}
-ln		{font-family: 'Share Tech Mono', monospace;}
+ln		{font-family: 'Share Tech Mono', monospace;
+        white-space:pre-wrap;}
 
 ln::before 	{content: counter(line, decimal-leading-zero);
 		 background: #282828;

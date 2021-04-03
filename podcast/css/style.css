@@ -13,9 +13,9 @@
 */
 @font-face {
    font-family: 'share_tech_monoregular';
-   src: url('https://www.nerdbude.com/fonts/ShareTechMono-Regular.ttf') format('ttf'),
-   	url('https://www.nerdbude.com/fonts/sharetechmono-regular-webfont.woff2') format('woff2'),
-	url('https://www.nerdbude.com/fonts/sharetechmono-regular-webfont.woff') format('woff');
+   src: url('/fonts/ShareTechMono-Regular.ttf') format('ttf'),
+   	url('/fonts/sharetechmono-regular-webfont.woff2') format('woff2'),
+	url('/fonts/sharetechmono-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -109,18 +109,6 @@ th {
   font-weight: 100;
 }
 
-ln		{font-family: 'Share Tech Mono', monospace;
-        white-space:pre-wrap;}
-ln::before 	{content: counter(line, decimal-leading-zero);
-		 background: #282828;
-		 color: #444444;
-		 padding: 0 10px 0;
-		 margin: 0 10px 0 0;
-		 border-right: 1px solid #444444;
-		 counter-increment: line;
-		 -webkit-user-select: none;
-	 	}
-
 td.maintitle {color: #875fff; font-size: 14px}
 td.episodenr {color: #875fff; font-size: 22px;}
 td.title {color: #875fff; font-size: 22px;}
@@ -160,7 +148,7 @@ th.user {color: #8787ff;}
   border-style: solid;
   border-color: #875fff;
   border-width: 1px;
-  counter-reset: line;}
+  }
 
 
 #cssyn {
