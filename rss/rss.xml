@@ -12,6 +12,14 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>nixOS</title>
+      <description>Nach 15 Jahren Debian wird es mal Zeit für was neues. Deshalb kam vor einiger Zeit nixOS auf den Rechner. Was ist das und wie bekomm ich das auch? Hier im Post.</description>
+      <link>https://www.nerdbude.com/nixos.html</link>
+      <author>PHO / post@nerdbude.com</author>
+      <pubDate>2021-04-06 16:00:00 +0100</pubDate>
+    </item>
+    <item>
+    <item>
       <title>PinePhone</title>
       <description>Ich hab mich mal die letzten drei Monate hingesetzt und getestet ob das PinePhone alltagstauglich ist.</description>
       <link>https://www.nerdbude.com/pinephone.html</link>

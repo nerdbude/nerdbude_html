@@ -6,7 +6,7 @@
 	<title>Click! Clack! Hack!</title>
 	<link>cch.nerdbude.com</link>
 	<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-	<lastBuildDate>Sat, 03 Apr 2021 23:00:00 +0100</lastBuildDate>
+	<lastBuildDate>Sat, 03 Apr 2021 23:45:00 +0100</lastBuildDate>
 
 <image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
 <atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
@@ -27,9 +27,9 @@
 	<itunes:block>no</itunes:block>
 	<itunes:explicit>no</itunes:explicit>
 	<item>
-		<title>Firmwares II</title>
+		<title>Switches II</title>
 		<link>https://www.nerdbude.com/podcast/index.html</link>
-		<pubDate>Sat, 01 Apr 2021 23:00:00 +0100</pubDate>
+		<pubDate>Sat, 01 Apr 2021 23:45:00 +0100</pubDate>
 		<guid isPermaLink="false">oI2dCvw4JkyuZdQJ0J-CbA</guid>
 			<description><![CDATA[Die Yogarunde für Tastatursportler in der fünften Runde. Mit wenig News, viel Feedback und noch viel mehr Switches!]]></description>
 		<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
@@ -39,7 +39,7 @@
 		<itunes:duration>00:38:47</itunes:duration>
 		<itunes:author>PH_0x17</itunes:author>
 		<itunes:subtitle>Die Yogarunde für Tastatursportler in der fünften Runde. Mit wenig News, viel Feedback und noch viel mehr Switches!</itunes:subtitle>
-		<itunes:title>Firmwares</itunes:title>
+		<itunes:title>Switches II</itunes:title>
 		<itunes:episode>5</itunes:episode>
 		<itunes:episodeType>full</itunes:episodeType>
 </item>
