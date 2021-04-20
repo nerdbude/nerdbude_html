@@ -21,8 +21,8 @@
     <meta name="twitter:site" content="@PH_0x17">
 
     <meta property="og:url" content="https://www.nerdbude.com/nixos.html">
-    <meta property="og:title" content="nixOS">
-    <meta property="og:description" content="Nach 15 Jahren Debian wird es mal Zeit für etwas neues, nämlich nixOS. Noch nie hab ich ein OS so geliebt und gehasst.">
+    <meta property="og:title" content="NixOS">
+    <meta property="og:description" content="Nach 15 Jahren Debian wird es mal Zeit für etwas neues, nämlich NixOS. Noch nie hab ich ein OS so geliebt und gehasst.">
 
     <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
     <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
@@ -48,46 +48,46 @@
 
   <div id="content">
 <!-- ARTIKLE START -->
-<h2>nixOS</h2>
+<h2>NixOS</h2>
 Seit nun mehr 15 Jahren (shit bin ich alt) bin ich treuer Debian User.<br>
 Wer sein System schon mal neu aufsetzen musste und das hab ich in den 15 Jahren doch das ein oder andere Mal machen müssen, der weiß wie nervig es sein kann sein System wieder auf den Stand zu bringen wie davor.<br>
 Filebackups ist das eine, das System selber ist aber ein anderes Blatt.<br>
-Da aus Neugier öfter mal was neues ausprobiert werden muss kam also nixOS ins Spiel.<br>
-Ursprünglich stand Arch Linux zur Auswahl aber durch einen kleinen Tipp bin ich dann direkt zu nixOS gewechselt.<br>
+Da aus Neugier öfter mal was neues ausprobiert werden muss kam also NixOS ins Spiel.<br>
+Ursprünglich stand Arch Linux zur Auswahl aber durch einen kleinen Tipp bin ich dann direkt zu NixOS gewechselt.<br>
 Der Installations-Aufwand ist im Grunde ähnlich wie bei Arch-Linux, also pure Handarbeit inkl. händischer Formatierung und Partitionierung der Festplatte, und Installation des Systems von Grund auf.<br>
-Die Installationsanleitung gibt es auf <a href="http://nixos.org">https://nixos.org</a> und ist wirklich sehr einfach und übersichtlich.<br>
+Die Installationsanleitung gibt es auf <a href="http://NixOS.org">https://NixOS.org</a> und ist wirklich sehr einfach und übersichtlich.<br>
 <br>
-Warum will man dann nixOS haben?<br>
+Warum will man dann NixOS haben?<br>
 Mittlerweile will ich ein System haben, dass so minimalistisch wie möglich daher kommt.<br>
 Klar Debian kann als pure "minimalistische" Installation hergenommen werden, hat aber dennoch Pakete die übermäßig groß sind und unnötig Platz fressen.<br>
 Die Pakete haben selbstverständlich unter Debian ihre Daseinsberechtigungen aber ob man die haben will ist eine andere sache.<br>
 <br>
-nixOS belegt ungefähr 1.5GB.<br>
+NixOS belegt ungefähr 1.5GB.<br>
 Das ist ordentlich schlank und auch interessant für ältere Hardware.<br>
 Als WM kommt hier natürlich auch wieder XMonad drauf. Spart auch Platz und meine Finger haben sich schon daran gewöhnt.<br>
 <br>
 Neben dem Vorteil der Größe ist aber noch ein anderer Punkt ausschlaggebend für meine Entscheidung.<br>
-nixOS selber nennt drei Hauptvorteile: reproducible, declarativ und reliable.<br>
+NixOS selber nennt drei Hauptvorteile: reproducible, declarativ und reliable.<br>
 <br>
 Reproducable: Die nix Pakete sind isoliert von einander, das stellt sicher, dass sie reproduzierbar sind und keine nicht deklarierten Dependencies hat. Funktioniert ein Paket auf einem Rechner, funktioniert es auch auf einem anderen.<br>
-Declarativ: Mit nixOS kann man Entwicklungsumgebungen freigeben unabhängig davon welche Sprache oder Tools.<br>
+Declarativ: Mit NixOS kann man Entwicklungsumgebungen freigeben unabhängig davon welche Sprache oder Tools.<br>
 Reliable: Durch die Installation eines Paketes werden keine anderen beschädigt. Man kann ein Rollback auf frühere Versionen durchführen und sicherstellen, dass sich während eines Upgrades kein Paket in einem inkonsistenten Zustand befindet.<br>
-<br> 
-Im absoluten Minimum ist nixOS komplett reproducable aus einer einzigen config-file.<br>
+<br>
+Im absoluten Minimum ist NixOS komplett reproducable aus einer einzigen config-file.<br>
 Die magische "configuration.nix".<br>
 In diesem File werden einerseits das gesamte System konfiguriert und alle nötigen Pakete, wie Sound, Wifi, WM usw. hinterlegt aber auch Programme wie Vim, Git, Python, GoAccess und alles was man braucht.<br>
-Das heißt im Umkehrschluss, wenn man ein nixOS auf einem anderen Rechner installiert und die "configuration.nix" extern gebackuped hat, kopiert man sich diese auf das neue System startet einen Rebuild und hat sein bisheriges System wieder hergestellt.<br>
+Das heißt im Umkehrschluss, wenn man ein NixOS auf einem anderen Rechner installiert und die "configuration.nix" extern gebackuped hat, kopiert man sich diese auf das neue System startet einen Rebuild und hat sein bisheriges System wieder hergestellt.<br>
 Einfacher geht es nicht. Kein lässtiges installieren von Hand mehr.<br>
 <br>
-Wenn man nixOS auf einem gleichen System wie dem Vorherigen laufen lassen möchte, gibt es auch noch die Möglichkeit sämtliche Hardwarespezifikationen in der "hardware-configuration.nix" zu hinterlegen.<br>
+Wenn man NixOS auf einem gleichen System wie dem Vorherigen laufen lassen möchte, gibt es auch noch die Möglichkeit sämtliche Hardwarespezifikationen in der "hardware-configuration.nix" zu hinterlegen.<br>
 Würde beispielsweise mein T470 hier den Geist aufgeben und ich mir wieder ein T470 zulegen würde (kein so abwegiger Gedanke), bräuchte ich nur die "configuration.nix" und die "hardware-configuration.nix" Files und hätte innerhalb von wenigen Minuten mein System sofort wieder einsatzbereit.<br>
 Das einzige was dann noch händisch drauf gepackt werden muss sind die dotfiles der einzelnen Programme.<br>
 Da bin ich aber dran und das gibt dann nen separaten Blogpost.<br>
 <br>
 <h3>Installation</h3>
-Wie installiert man nixOS:<br>
+Wie installiert man NixOS:<br>
 <br>
-Als allererstes holt man sich die aktuelle nixOS ISO-File hier: <a href="https://nixos.org/download.html">https://nixos.org/download</a><br>
+Als allererstes holt man sich die aktuelle NixOS ISO-File hier: <a href="https://nixos.org/download.html">https://nixos.org/download</a><br>
 <br>
 Die iso packt man sich auf einen USB-Stick oder irgendein bootfähiges Medium. (Ich hatte <a href="https://www.nerdbude.com/sd_card.html">HIER</a> mal erklärt. Ob SD-Karte oder USB Stick ist dabei egal).<br>
 Danach bootet man vom Stick.<br>
@@ -140,7 +140,7 @@ MBR<br>
 <br>
 <br>
 Weiter gehts mit dem Filesystem.<br>
-nixOS bietet verschiedene Filesysteme an.<br>
+NixOS bietet verschiedene Filesysteme an.<br>
 <br>
 <span class="label">Ext4</span>
 <div id="cssyn">
@@ -211,7 +211,7 @@ Das geht bequem per Befehl.<br>
 <br>
 <br>
 Nun kann man entweder seine bereits vorhandene configfile hier einsetzen oder belässt die neue configfile, wenn man neu starten möchte.<br>
-In jedemfall lohnt es sich die "configuration.nix" vor dem nächsten Schritt anzuschauen, da es sonst sein kann, dass nixOS nicht bootet.<br>
+In jedemfall lohnt es sich die "configuration.nix" vor dem nächsten Schritt anzuschauen, da es sonst sein kann, dass NixOS nicht bootet.<br>
 <br>
 Der nächste Schritt ist die Installation.<br>
 <br>
@@ -224,7 +224,7 @@ Der nächste Schritt ist die Installation.<br>
 </div>
 <br>
 <br>
-Nun rattert nixOS durch bis alles nötige installiert ist. Zwischdrin wird noch ein root-passwort vergeben und wenn alles geklappt hat könnt ihr rebooten und habt ein wundervolles OS auf dem Rechner.<br>
+Nun rattert NixOS durch bis alles nötige installiert ist. Zwischdrin wird noch ein root-passwort vergeben und wenn alles geklappt hat könnt ihr rebooten und habt ein wundervolles OS auf dem Rechner.<br>
 <br>
 Soweit wäre das Grundsystem fertig und weitestgehend benutzbar.<br>
 <br>
@@ -272,11 +272,11 @@ Nachdem Vim im configfile eingetragen ist, muss ein rebuild ausgeführt werden.<
 <br>
 Dann hat man die, in der configuration.nix file hinterlegte config.<br>
 <br>
-Das sind die Grundlagen um nixOS zum laufen zu bringen, zu mindest als grundlegendes System.<br>
+Das sind die Grundlagen um NixOS zum laufen zu bringen, zu mindest als grundlegendes System.<br>
 <br>
 <br>
-Über die configuration.nix file oder auch andere nixOS Themen werd ich in Zukunft noch den ein oder anderen Post raushauen.<br>
-nixOS ist mit Sicherheit kein OS für jeden Menschen aber wenn man es mal hat will man es eigentlich auch nicht mehr missen.<br>
+Über die configuration.nix file oder auch andere NixOS Themen werd ich in Zukunft noch den ein oder anderen Post raushauen.<br>
+NixOS ist mit Sicherheit kein OS für jeden Menschen aber wenn man es mal hat will man es eigentlich auch nicht mehr missen.<br>
 Ausprobieren lohnt sich allemale.<br>
 <!-- ARTIKEL ENDE -->
 <br>

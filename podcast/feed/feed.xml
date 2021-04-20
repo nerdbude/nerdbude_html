@@ -6,7 +6,7 @@
 	<title>Click! Clack! Hack!</title>
 	<link>cch.nerdbude.com</link>
 	<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-	<lastBuildDate>Sat, 03 Apr 2021 23:45:00 +0100</lastBuildDate>
+	<lastBuildDate>Mon, 19 Apr 2021 09:00:00 +0100</lastBuildDate>
 
 <image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
 <atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
@@ -26,6 +26,23 @@
 	<itunes:subtitle>Ein Podcast über mechanische Tastaturen</itunes:subtitle>
 	<itunes:block>no</itunes:block>
 	<itunes:explicit>no</itunes:explicit>
+	<item>
+		<title>Basics</title>
+		<link>https://www.nerdbude.com/podcast/index.html</link>
+		<pubDate>Mon, 19 Apr 2021 09:00:00 +0100</pubDate>
+		<guid isPermaLink="false">iUrjilAPZ0WP8Jd5WebKDA</guid>
+			<description><![CDATA[Die 6. Folge eurer Bibliothek von Click! bis Clack! Heute mit den Basics über Tastaturen, damit ihr euch im Hobby besser zurechtfindet und mir folgen könnt wenn ich über mechanische Tastaturen schwadroniere. News gibts auch und natürlich euer Feedback.]]></description>
+		<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_006.mp3" type="audio/mpeg"/>
+
+		<itunes:duration>00:28:22</itunes:duration>
+		<itunes:author>PH_0x17</itunes:author>
+		<itunes:subtitle>Die 6. Folge eurer Bibliothek von Click! bis Clack! Heute mit den Basics über Tastaturen, damit ihr euch im Hobby besser zurechtfindet und mir folgen könnt wenn ich über mechanische Tastaturen schwadroniere. News gibts auch und natürlich euer Feedback.</itunes:subtitle>
+		<itunes:title>Basics</itunes:title>
+		<itunes:episode>6</itunes:episode>
+		<itunes:episodeType>full</itunes:episodeType>
+</item>
 	<item>
 		<title>Switches II</title>
 		<link>https://www.nerdbude.com/podcast/index.html</link>

@@ -12,39 +12,45 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>GNU/Linux.ch</title>
+      <description>GNU/Linux.ch hat gefragt ob ich mit schreiben möchte. Da lass ich mich nicht lange bitten. Ab sofort wird es von mir dort in unregelmäßigen Abständen News, Tooltips und vieles mehr geben.</description>
+      <link>https://www.nerdbude.com/gnulinux.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 08 Apr 2021 15:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>nixOS</title>
       <description>Nach 15 Jahren Debian wird es mal Zeit für was neues. Deshalb kam vor einiger Zeit nixOS auf den Rechner. Was ist das und wie bekomm ich das auch? Hier im Post.</description>
       <link>https://www.nerdbude.com/nixos.html</link>
-      <author>PHO / post@nerdbude.com</author>
-      <pubDate>2021-04-06 16:00:00 +0100</pubDate>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 06 Apr 2021 16:00:00 +0100</pubDate>
     </item>
-    <item>
     <item>
       <title>PinePhone</title>
       <description>Ich hab mich mal die letzten drei Monate hingesetzt und getestet ob das PinePhone alltagstauglich ist.</description>
       <link>https://www.nerdbude.com/pinephone.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2021-03-17 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Podstats</title>
       <description>Wer podcastet will auch Statistiken. Aber nicht jeder will große Datenbanken im Hintergrund und bloated Dashboards wir Grafana. Hier eine kleine Anleitung wie das auch mit weniger Software (aber ein bisschen mehr Handarbeit) funktioniert.</description>
       <link>https://www.nerdbude.com/podstats.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2021-03-04 11:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Click! Clack! Hack!</title>
       <description>Was macht man, wenn man diverse Projekte hat? Richtig! Mehr Projekte! Deswegen gibt es ab sofort den "Click! Clack! Hack!"-Podcast in dem es um mechanische Tastaturen und allem was dazu gehört, gehen wird. Am besten direkt abonnieren damit keine Folge verpasst wird!</description>
       <link>https://www.nerdbude.com/clickclackhack.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2021-02-02 12:00:00 +0100</pubDate>
     </item>
     <item>
       <title>Audio Cortex</title>
       <description>Die Geburt eines kleinen feinen Sci-Fi Cyberpunk Podcastnetzwerkes</description>
       <link>https://www.nerdbude.com/audiocortex.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-11-20 09:36:00 +0100</pubDate>
     </item>
 
@@ -52,7 +58,7 @@
       <title>Unit-1</title>
       <description>Wein kleines feine Zsh Theme</description>
       <link>https://www.nerdbude.com/unit-1.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-11-19</pubDate>
     </item>
 
@@ -60,7 +66,7 @@
       <title>ARPANET (II)</title>
       <description>Weiter gehts mit den Überlegungen zur Hardware die im DIY ARPANET verwendet werden soll.</description>
       <link>https://www.nerdbude.com/arpanet_ii.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-10-23</pubDate>
     </item>
 
@@ -68,7 +74,7 @@
       <title>ARPANET (I)</title>
       <description>Das Internet. Unendliche Weiten. Das war nicht immer so. Ganz am Anfang war das "Internet" noch überschaubar. Zeit für einen Nachbau.</description>
       <link>https://www.nerdbude.com/arpanet_i.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-08-24</pubDate>
     </item>
 
@@ -76,7 +82,7 @@
       <title>HACK THE PLANET</title>
       <description>Ich durfte im Hack the Planet Podcast zu Gast sein und habe mit Andreas und Daniel über mechanische Tastaturen, Bar-Top-Game-Kisten, Monitor-Bugs und vieles mehr geredet. </description>
       <link>http://nerdbude.com/hacktheplanet.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-08-02</pubDate>
     </item>
 
@@ -84,7 +90,7 @@
       <title>SYSLOG</title>
       <description>Die NERDBUDE hat jetzt ein SYSLOG. Alles für die Transparenz.</description>
       <link>http://nerdbude.com/sys_log.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-07-30</pubDate>
     </item>
 
@@ -92,7 +98,7 @@
       <title>CSSYN</title>
       <description>Für alle die JS hassen, aber dennoch Syntax-Highlighting auf ihrer Website wollen hab ich da mal was geschustert.</description>
       <link>http://nerdbude.com/cssyn.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-07-20</pubDate>
     </item>
 
@@ -100,7 +106,7 @@
       <title>DS</title>
       <description>Die Datenschleuder war so freundlich mir ein paar Seiten zur Verfügung zu stellen um mich über DIY Keyboards auszulassen.</description>
       <link>http://nerdbude.com/datenschleuder.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-07-15</pubDate>
     </item>
 
@@ -108,7 +114,7 @@
       <title>XPM</title>
       <description>Funky-File-Formats! Diesmal: *.XPM</description>
       <link>http://nerdbude.com/xpm.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-07-08</pubDate>
     </item>
 
@@ -116,7 +122,7 @@
       <title>IWTB COLORSCHEME</title>
       <description>Bunt ist gut! Wer mal Abwechslung von gängigen Color-Schemes braucht, für den habe ich das IWTB Color-Scheme zusammengerührt.</description>
       <link>http://nerdbude.com/iwtb.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-06-30</pubDate>
     </item>
 
@@ -124,7 +130,7 @@
       <title>XMONAD WINDOW MANAGER</title>
       <description>Eine kurze Einführung in XMonad, einen leichtgewichtigen und ressourcenschonenden WM für Linux.</description>
       <link>http://nerdbude.com/xmonad.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-06-28</pubDate>
     </item>
 
@@ -132,7 +138,7 @@
       <title>DIY KEYBOARD (II)</title>
       <description>Die Bauanleitung zur eigenen Tastatur (teil 2)</description>
       <link>http://nerdbude.com/diy_keyboard_from_scratch_II.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-06-26</pubDate>
     </item>
 
@@ -140,7 +146,7 @@
       <title>DIY KEYBOARD (I)</title>
       <description>Die Bauanleitung zur eigenen Tastatur (teil 1)</description>
       <link>http://nerdbude.com/diy_keyboard_from_scratch_I.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-06-25</pubDate>
     </item>
 
@@ -148,7 +154,7 @@
       <title>SYSTEMABSTURZ - VERDÄCHTIG</title>
       <description>Hui! Musik! ... und ich durfte mich am Cover austoben!</description>
       <link>http://nerdbude.com/systemabsturz.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-00-00</pubDate>
     </item>
 
@@ -156,7 +162,7 @@
       <title>SD KARTEN FLASHEN</title>
       <description>Man braucht sie am RaspberryPi oder als Livesystem auf dem USB Stick. Aber wie wird geflasht?</description>
       <link>http://nerdbude.com/sd_card.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-05-11</pubDate>
     </item>
 
@@ -164,7 +170,7 @@
       <title>HARDWARE INTERFACES</title>
       <description>Auf vielen Geräten läuft Linux. Wenn man da ran will sollte man wissen wie man mit seriellen Schnittstellen redet.</description>
       <link>http://nerdbude.com/schnittstellen.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-04-19</pubDate>
     </item>
 
@@ -172,7 +178,7 @@
       <title>OSI LAYER MODELL</title>
       <description>Das OSI-Layer Modell Schicht für Schicht erklärt.</description>
       <link>http://nerdbude.com/osi.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-04-10</pubDate>
     </item>
 
@@ -180,7 +186,7 @@
       <title>RAID</title>
       <description>Die gängigsten RAID Architekturen kurz zusammengefasst</description>
       <link>http://nerdbude.com/raid.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-04-08</pubDate>
     </item>
 
@@ -188,7 +194,7 @@
       <title>HOW TO DISAPPEAR</title>
       <description>Spionage, Datenmissbrach und so weiter. Nix wie raus aus den antisozialen netzwerken</description>
       <link>http://nerdbude.com/disappear_1.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-03-03</pubDate>
     </item>
 
@@ -196,7 +202,7 @@
       <title>LORD NIKON</title>
       <description>Da hat sich wer den Laptop von Lord Nikon (Hackers, 1995) nachgebaut!</description>
       <link>http://nerdbude.com/lord_nikon.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-02-20</pubDate>
     </item>
 
@@ -204,7 +210,7 @@
       <title>NMAP</title>
       <description>Klopfen wir doch mal an ein paar Türen und schauen ob wir offene finden.</description>
       <link>http://nerdbude.com/nmap.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-02-17</pubDate>
     </item>
 
@@ -212,7 +218,7 @@
       <title>NERDBUDE AUF GITHUB</title>
       <description>Das ganze Machwerk ist auf Github zu finden.</description>
       <link>http://nerdbude.com/git_html.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-01-06</pubDate>
     </item>
 
@@ -220,7 +226,7 @@
       <title>SYSTEM MONITORING</title>
       <description>Wenn man wissen will was im eigenen Netzwerk so los ist braucht man Monitoring-Tools.</description>
       <link>http://nerdbude.com/sys_monitor_tools.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-01-05</pubDate>
     </item>
 
@@ -228,7 +234,7 @@
       <title>HELLO WORLD</title>
       <description>Hallo Welt! Hier ist die Nerdbude!</description>
       <link>http://nerdbude.com/hello_world.html</link>
-      <author>PHO / post@nerdbude.com</author>
+      <author>post@nerdbude.com (PH_0x17)</author>
       <pubDate>2020-01-01</pubDate>
     </item>
   </channel>
