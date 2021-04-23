@@ -12,9 +12,11 @@
 <atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
 	<atom:link rel="first" href="https://www.nerdbude.com/podcast/feed/" />
 	<language>de-DE</language>
+	<fyyd:verify>93qh5x4mvk2d52nGqi2948li6xcbyd8e1y5BrxbD</fyyd:verify>
+	<copyright>CC BY-NC-ND</copyright>
 	<itunes:author>PH_0x17</itunes:author>
 	<itunes:type>episodic</itunes:type>
-	<itunes:summary><![CDATA[Ein Podcast über mechanische Tastaturen und alles was dazu gehört!]]></itunes:summary>
+	<itunes:summary>Ein Podcast über den nahezu unendlich tiefen Kaninchenbau der mechanische Tastaturen. Ich erzähle euch was es neues im Hobby gibt, Groupbuys, Interestchecks, Neue Keyboards, Keycaps und Switches und noch viel viel mehr.</itunes:summary>
 	<itunes:category text="Technology">
 	</itunes:category>
 
