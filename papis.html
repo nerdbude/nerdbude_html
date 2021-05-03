@@ -1,0 +1,119 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/papis.html">
+    <meta property="og:title" content="PAPIS">
+    <meta property="og:description" content="PDF Dokumentenverwaltun für die Commandline.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+	<!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com" class="front">[$nb]</a></h1>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[+]readme.txt</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[+]aboutme.txt</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[+]podcast.txt</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>PAPIS</h2>
+Mit dem Post über "Fyyd" hab ich angefangen coole und unterstützenswerte Projekte mit hier auf die Nerdbude zu bringen.<br>
+Damit gehts hier weiter und zwar mit "PAPIS".<br>
+Im Laufe der Zeit sammeln sich diverse PDFs zu einer großen Sammlung an.<br>
+Kennt glaube ich jeder.<br>
+Wer gerne die command-line nutzt und einen guten Überblick über seine Dokumente haben will, dem sei "PAPIS" ans Herz gelegt.<br>
+"PAPIS" ist enorm erweiterbar und hilft dabei die Übersicht zu wahren.<br>
+<br>
+"PAPIS" ist komplett in Python geschrieben und per "pip" installierbar.<br>
+Der Funktionsumfang von "PAPIS" ist enorm:<br>
+<br>
+<span class="label">FEATURES</span>
+<div id="cssyn">
+  <ln><span class="comment">Synchronisatoin mit git, dropbox, rsync, OwnCloud, Google Drive u.a.</span></ln><br>
+  <ln><span class="comment">Bibliotheken mit Kollegen teilen</span></ln><br>
+  <ln><span class="comment">Informationen per DOI Nummer via Crossref abrufen</span></ln><br>
+  <ln><span class="comment">Scihub support</span></ln><br>
+  <ln><span class="comment">Zotero (und andere) Import </span></ln><br>
+  <ln><span class="comment">Export in verschiedene Formate (bibtex, yaml usw.)</span></ln><br>
+</div>
+<br>
+<br>
+Um "PAPIS" zu installieren benutzt man folgenden Befehl:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+  <ln><span class="comment">sudo pip3 install papis</span></ln><br>
+</div>
+<br>
+<br>
+Die Benutzung von "PAPIS" ist ähnlich simpel.<br>
+Gehen wir davon aus wir haben die PDF namens "Hackers" von Steven Levy und wollen diese in eine Bibliothek packen.<br>
+Das funktioniert mit folgendem Kommando:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+  <ln><span class="comment">papis add hackers.pdf --set author "Steven Levy" --set title "Hackers" --set year 1984 --set tags history --confirm</span></ln><br>
+</div>
+<br>
+Um sich die Bibliothek anzeigen zu lassen reicht folgendes:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+  <ln><span class="comment">papis open history</span></ln><br>
+</div>
+<br>
+<br>
+Und schon hat man eine wunderbare Übersicht über alle Dokumente mit dem Tag "history"<br>
+Ein wunderbares Terminal tool zur Dokumentenverwaltung.<br>
+<br>
+Hier findet ihr "PAPIS":<br>
+Github: <a href="https://github.com/papis/papis">PAPIS</a>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

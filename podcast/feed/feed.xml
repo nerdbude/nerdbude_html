@@ -6,14 +6,13 @@
 	<title>Click! Clack! Hack!</title>
 	<link>cch.nerdbude.com</link>
 	<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-	<lastBuildDate>Mon, 19 Apr 2021 09:00:00 +0100</lastBuildDate>
+	<lastBuildDate>Mon, 03 May 2021 10:00:00 +0100</lastBuildDate>
 
 <image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
 <atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
 	<atom:link rel="first" href="https://www.nerdbude.com/podcast/feed/" />
 	<language>de-DE</language>
-	<fyyd:verify>93qh5x4mvk2d52nGqi2948li6xcbyd8e1y5BrxbD</fyyd:verify>
-	<copyright>CC BY-NC-ND</copyright>
+	<copyright>© 2021 Click! Clack! Hack!</copyright>
 	<itunes:author>PH_0x17</itunes:author>
 	<itunes:type>episodic</itunes:type>
 	<itunes:summary>Ein Podcast über den nahezu unendlich tiefen Kaninchenbau der mechanische Tastaturen. Ich erzähle euch was es neues im Hobby gibt, Groupbuys, Interestchecks, Neue Keyboards, Keycaps und Switches und noch viel viel mehr.</itunes:summary>
@@ -28,6 +27,23 @@
 	<itunes:subtitle>Ein Podcast über mechanische Tastaturen</itunes:subtitle>
 	<itunes:block>no</itunes:block>
 	<itunes:explicit>no</itunes:explicit>
+	<item>
+		<title>Seltsame Hackbretter</title>
+		<link>https://www.nerdbude.com/podcast/index.html</link>
+		<pubDate>Mon, 03 May 2021 10:00:00 +0100</pubDate>
+		<guid isPermaLink="false">p5cSTYyvDEeKUqGo2LZI0A</guid>
+			<description><![CDATA[Die AG Hackbrett hat ihre 7. Sitzung und dreht diesmal völlig durch mit Keyboards die mit Sicherheit kaum einer auf dem Schreibtisch stehen hat. Es geht in mindestens 3 Dimensionen und Rückspiegel gibt es auch. News und herzliches Feedback hat es natürlich auch wieder gegeben.]]></description>
+		<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_007.mp3" type="audio/mpeg"/>
+
+		<itunes:duration>00:35:31</itunes:duration>
+		<itunes:author>PH_0x17</itunes:author>
+		<itunes:subtitle>Die AG Hackbrett hat ihre 7. Sitzung und dreht diesmal völlig durch mit Keyboards die mit Sicherheit kaum einer auf dem Schreibtisch stehen hat. Es geht in mindestens 3 Dimensionen und Rückspiegel gibt es auch. News und herzliches Feedback hat es natürlich auch wieder gegeben.</itunes:subtitle>
+		<itunes:title>Seltsame Hackbretter</itunes:title>
+		<itunes:episode>7</itunes:episode>
+		<itunes:episodeType>full</itunes:episodeType>
+</item>
 	<item>
 		<title>Basics</title>
 		<link>https://www.nerdbude.com/podcast/index.html</link>

@@ -12,11 +12,18 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
-      <title>GNU/Linux.ch</title>
-      <description>GNU/Linux.ch hat gefragt ob ich mit schreiben möchte. Da lass ich mich nicht lange bitten. Ab sofort wird es von mir dort in unregelmäßigen Abständen News, Tooltips und vieles mehr geben.</description>
-      <link>https://www.nerdbude.com/gnulinux.html</link>
+      <title>PAPIS</title>
+      <description>Ein wunderbares Tool zur Dokumentenverwaltung in der command-line.</description>
+      <link>https://www.nerdbude.com/papis.html</link>
       <author>post@nerdbude.com (PH_0x17)</author>
-      <pubDate>Thu, 08 Apr 2021 15:00:00 +0100</pubDate>
+      <pubDate>Tue, 27 Apr 2021 15:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>FYYD</title>
+      <description>Ein Podcastnetwerk das einen Blick wert ist und absolut unterstützenswert noch dazu.</description>
+      <link>https://www.nerdbude.com/fyyd.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 27 Apr 2021 12:00:00 +0100</pubDate>
     </item>
     <item>
       <title>nixOS</title>
