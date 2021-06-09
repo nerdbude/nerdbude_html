@@ -1,0 +1,123 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/splitsey.html">
+    <meta property="og:title" content="Ein Mini-Split-Keyboard">
+    <meta property="og:description" content="Ich hab mir gedacht ich bau mal ein Paradoxon und zwar ein Split-Onehanded Keyboard.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+	<!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1><a href="https://www.nerdbude.com" class="front">[$nb]</a></h1>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[+]readme.txt</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[+]aboutme.txt</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[+]podcast.txt</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>SPLITSEY</h2>
+Wer Lust auf ein kleines Wochenend-Löt-Projekt hat, für den ist eventuell das <a href="https://artsey.io">ARTSEY</a> etwas.<br>
+Die ARTSEY ist eine Ein-Hand-Tastatur mit 2x4 Keys. Zeichen werden auf der ARTSEY mit Tastenkombinationen erzeugt.<br>
+So ist bspw. die Leerstaste mit einem druck auf alle vier unteren Tasten zu erreichen.<br>
+In der ARTSEY läuft die "heilige" QMK und kümmert sich um die Tastenkombinationen.<br>
+<br>
+Nun ja - die ARTSEY ist definitiv interessant. Drehen wir aber noch ein bisschen durch und bauen wir uns eine "Split ARTSEY" die so genannte "SPLITSEY".<br>
+Klar ist die ARTSEY für die Einhandbedienung gedacht, was durch das splitten nicht mehr möglich ist, aber kann ja ein wenig rumspielen.<br>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/splitsey_1.jpeg"></center>
+<br>
+<br>
+<h3>PARTLISTE</h3>
+Was braucht man für die SPLITSEY:<br>
+<br>
+<span class="label">PARTLIST</span>
+<div id="cssyn">
+  <ln><span class="value">1N4148 Dioden - 8 Stk.</span></ln><br>
+  <ln><span class="value">Switches - 8 Stk.</span></ln><br>
+  <ln><span class="value">Keycaps - 8 Stk.</span></ln><br>
+  <ln><span class="value">Microcontroller - 1 Stk.</span></ln><br>
+  <ln><span class="value">Material für Plate</span></ln><br>
+</div>
+<br>
+Ihr braucht natürlich auch Lötkolben, Lötzinn, Kabel und ein Kabel, das zu eurem Microcontroller passt.<br>
+Wenn ihr die Plate aus Holz wollt, natürlich auch noch Bohrer und Säge.<br>
+<br>
+<h3>PLATE</h3>
+Das ausarbeiten der Plate ist, durch die geringe Switchanzahl recht schnell gemacht. Layout auf euer Material übertragen - aussägen - fertig.<br>
+In die Aussparungen packt ihr eure Switches.<br>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/splitsey_4.JPEG"></center>
+<br>
+<br>
+<h3>VERKABELUNG</h3>
+Nun geht es ans Verkabeln. Wie üblich bei Keyboards gibt es pro Switch eine 1N4148 Diode und die Switches werden in Reihe und Spalte verbunden.<br>
+Anschließend noch die Reihen und Zeilen an den Microcontroller legen und fertig ist das Raster.<br>
+Hier noch das Schema zur Verkabelung der Switches:<br>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/split_matrix.png"></center>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/splitsey_3.JPEG"></center>
+<br>
+<br>
+Soweit die Hardware. Weiter geht es mit der Software.<br>
+<br>
+<h2>QMK</h2>
+Als Firmware kommt natürlich die QMK zum Einsatz.<br>
+Praktischerweise ist die ARTSEY schon im Repository der QMK und kann problemlos benutzt werden.<br>
+<br>
+Viel Spaß beim bauen!<br>
+<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

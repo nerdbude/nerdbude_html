@@ -4,7 +4,7 @@
 		<title>Click! Clack! Hack!</title>
 		<link>cch.nerdbude.com</link>
 		<description><![CDATA[ein Podcast über mechanische Tastaturen]]></description>
-		<lastBuildDate>Mon, 31 May 2021 10:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 03 May 2021 10:00:00 +0100</lastBuildDate>
 
 	<image><url>https://www.nerdbude.com/podcast/images/cover.png</url><title>Click!Clack!Hack!</title><link>https://www.nredbude.com</link></image>
 	<atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
@@ -25,121 +25,6 @@
 		<itunes:subtitle>Ein Podcast über mechanische Tastaturen</itunes:subtitle>
 		<itunes:block>no</itunes:block>
 		<itunes:explicit>no</itunes:explicit>
-		<item>
-		  <title>Die heilige QMK</title>
-		  <link>https://www.nerdbude.com/podcast/index.html</link>
-		  <pubDate>Mon, 31 May 2021 10:00:00 +0000</pubDate>
-		  <guid isPermaLink="false">2sT5uSNsOk-iUzagFCiJDg</guid>
-		    <description><![CDATA[Die 9. Ausgabe eures Schmuddelhefts für Hackbretter in Podcastform. Diesmal wird die QMK auseinander genommen und der exorbitante Funktionsumfang ergründet. Dazu natürlich Neuigkeiten und diesmal eine recht kurze News Sektion.]]></description>
-		  <atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
-
-		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_009.mp3" type="audio/mpeg"/>
-
-		  <itunes:duration>00:35:12</itunes:duration>
-		  <itunes:author>PH_0x17</itunes:author>
-		  <itunes:subtitle>Die 9. Ausgabe eures Schmuddelhefts für Hackbretter in Podcastform. Diesmal wird die QMK auseinander genommen und der exorbitante Funktionsumfang ergründet. Dazu natürlich Neuigkeiten und diesmal eine recht kurze News Sektion.</itunes:subtitle>
-		  <itunes:title>Die heilige QMK</itunes:title>
-		  <itunes:episode>9</itunes:episode>
-		  <itunes:episodeType>full</itunes:episodeType>
-		  <content:encoded>
-		    <![CDATA[Die 9. Ausgabe eures Schmuddelhefts für Hackbretter in Podcastform. Diesmal wird die QMK auseinander genommen und der exorbitante Funktionsumfang ergründet. Dazu natürlich Neuigkeiten und diesmal eine recht kurze News Sektion.<br><br>
-		      <br>
-						<li><a href="https://www.wishsite.de/wishlist/clickclackhack">Unterstützt den Click! Clack! Hack! Podcast (... nur wenn ihr wollt :) )</a></li>
-					  <br>
-							<br>
-					  <li><a href="https://teleprost.podigee.io/14-014_dein_erster_kauf_ist_nicht_dein_ende">TELEPROST Podcast</a></li>
-					  <li><a href="https://system76.com/accessories/launch">System76 The Launch Keyboard</a></li>
-					  <li><a href="https://twitter.com/cchpod/status/1394703148623794180">ERGO DOX PCBs</a></li>
-					  <li><a href="https://twitter.com/cchpod/status/1397501272366923783">Schmuggelware</a></li>
-					  <li><a href="https://www.twitch.tv/azur1o_">Der azur1o baut Keyboards auf Twitch</a></li>
-					  <br><br>
-					  <li><a href="https://candykeys.com/product/ev-00-switch">EV-00 Switches</a></li>
-					  <li><a href="https://www.reddit.com/r/MechanicalKeyboards/comments/n8pqvl/ic_thinkeys_13_split_ortho_with_trackpoint_for/">ThinkKeys13 - Split Keyboard für Thinkpads</a></li>
-					  <li><a href="https://hackaday.com/2021/05/14/go-ape-with-a-banana-macropad/">Banana Macropad</a></li>
-					  <li><a href="https://twitter.com/KailhSwitch/status/1394475438257307651">Kailh Coco Pink Switches</a></li>
-					  <br><br>
-					  <li><a href="https://qmk.fm/">QMK Firmware</a></li>
-					  <li><a href="https://docs.qmk.fm/#/newbs_getting_started">QMK Installation</a></li>
-					  <li><a href="https://github.com/qmk/qmk_firmware">QMK auf Github</a></li>
-					  <li><a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards">QMK Keyboards</a></li>
-					  <li><a href="https://docs.qmk.fm/#/keycodes">QMK Keycodes</a></li>
-					  <br><br>
-					  <li><a href="https://github.com/mihaiolteanu/mugur">QMK Configurator for Emacs</a></li>
-					  <li><a href="https://config.qmk.fm/#/">QMK Configurator</a></li>
-					  <li><a href="https://github.com/qmk/qmk_toolbox">QMK Toolbox</a></li>
-					  <li><a href="https://www.reddit.com/r/olkb/comments/lmtgxc/introducing_luna_the_qmk_keyboard_pet/">LUNA the QMK Pet</a></li>
-					  <br><br>
-					  <li><a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Musik im Intro: Rolemusic - Shaanti (CC-BY)</a></li>
-					  <li><a href="https://freemusicarchive.org/music/Pocketmaster/Residue/10_-_Information_Rmx">Musik im Outro: Pocketmaster - Information RMX (CC BY-NC-ND)</a></li>
-					  <br><br>
-					  <li><a href="https://www.twitter.com/PH_0x17">PH_0x17 [Twitter]</a></li>
-					  <li><a href="https://www.twitter.com/CCHPOD">CCHPOD [Twitter]</a></li>
-					  <li><a href="mailto:cch@nerdbude.com">MAIL</a></li>
-					  <li><a href="https://www.wishsite.de/wishlist/clickclackhack">Den Podcast unterstützen</a></li>]]>
-		  </content:encoded>
-		</item>
-		<item>
-		  <title>Community!</title>
-		  <link>https://www.nerdbude.com/podcast/index.html</link>
-		  <pubDate>Sat, 16 May 2021 10:00:00 +0100</pubDate>
-		  <guid isPermaLink="false">spXD5nQUz0aP9pPmxlfviQ</guid>
-		    <description><![CDATA[Episode Nummer 8 von Blödsinn mit Lötzinn und News, nem erhobenen Zeigefinger aber dafür auch wunderschöne Communityprojekte.]]></description>
-		  <atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
-
-		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_008.mp3" type="audio/mpeg"/>
-
-		  <itunes:duration>00:41:32</itunes:duration>
-		  <itunes:author>PH_0x17</itunes:author>
-		  <itunes:subtitle>Episode Nummer 8 von Blödsinn mit Lötzinn und News, nem erhobenen Zeigefinger aber dafür auch wunderschöne Communityprojekte.</itunes:subtitle>
-		  <itunes:title>Community!</itunes:title>
-		  <itunes:episode>8</itunes:episode>
-		  <itunes:episodeType>full</itunes:episodeType>
-		  <content:encoded>
-		    <![CDATA[Episode Nummer 8 von Blötsinn mit Lötzinn und News, nem erhobenen Zeigefinger aber dafür auch wunderschöne Communityprojekte.<br><br>News:<br>
-		      <br>
-		        <li><a href="https://www.trommelspeicher.de/blog/eurkey_das_europaeische_tastaturlayout">MacMittwoch Gewinnspiel zur Keychron K8</a></li>
-		        <li><a href="https://github.com/mmalecki/qmk_rc">QMK RC</a></li>
-		        <li><a href="https://github.com/mihaiolteanu/mugur">QMK Configurator for Emacs</a></li>
-		        <li><a href="https://www.reddit.com/r/MechanicalKeyboards/comments/n31ai8/3d_printed_keycap_case/">3D Printed Keycap case</a></li>
-		        <li><a href="https://www.nerdbude.com/splitsey.html">SPLITSEY Keyboard</a></li>
-		        <li><a href="https://mechsandco.com/products/gb-gmk-arch?variant=39359718785159">GMK ARCH</a></li>
-		        <li><a href="https://geekhack.org/index.php?topic=109035.0">GMK RETROWAVE</a></li>
-		        <li><a href="https://oblotzky.industries/products/gmk-dualshot-2">GMK DualShot 2</a></li>
-		        <li><a href="https://astrobunnystudios.com/project/dsa-encore/">DSA ENCORE</a></li>
-		        <li><a href="https://1upkeyboards.com/shop/switches/set-packs/ttc-bluish-white-tactile-switches/">TTC bluish white Switches</a></li>
-		        <li><a href="https://1upkeyboards.com/product-category/keycaps/">1UP Blank Keycaps</a></li>
-		        <li><a href="https://cannonkeys.com/products/durock-t1-dark-amber-switches">Cannonkeys Durock T1 Dark Amber Switches</a></li>
-		        <li><a href="https://www.pikatea.com/">Pikatea Macropad</a></li>
-		        <li><a href="https://www.etsy.com/listing/980169278/giant-mx-switch-container?ref=shop_home_active_1&crt=1">Rieser Switch als Box</a></li>
-		        <br>
-		          <br>
-		        <li><a href="https://www.theremingoat.com/">Theremin Goat</a></li>
-		        <li><a href="https://www.golem.hu">Keyboard Builders Digest</a></li>
-		        <li><a href="https://www.switches.mx">Switches.mx</a></li>
-		        <li><a href="https://www.geekhack.org">GEEKHACK</a></li>
-		        <li><a href="https://www.keebtalk.com">KEEBTALK</a></li>
-		        <li><a href="https://thethocc.libsyn.com/">The THOCC</a></li>
-		        <li><a href="https://www.alexotos.com/keebcast/">Keebcast</a></li>
-		        <li><a href="https://www.the-international-kit.com/">The International Kit</a></li>
-		        <li><a href="https://anchor.fm/keebzdotnet">Coffe & Keebz</a></li>
-		        <li><a href="https://theboard.libsyn.com/">The Board</a></li>
-		        <br>
-		          <br>
-		        <li><a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Musik im Intro: Rolemusic - Shaanti (CC-BY)</a></li>
-		        <li><a href="https://freemusicarchive.org/music/Pocketmaster/010010/06_-_Just_A_Minute">Musik im Outro: Pocketmaster - Just a minute (CC BY-NC-ND)</a></li>
-		        <br><br>
-		        <li><a href="https://www.twitter.com/PH_0x17">PH_0x17 [Twitter]</a></li>
-		        <li><a href="https://www.twitter.com/CCHPOD">CCHPOD [Twitter]</a></li>
-		        <li><a href="mailto:cch@nerdbude.com">MAIL</a></li>
-		        <li><a href="https://www.wishsite.de/wishlist/clickclackhack">Den Podcast unterstützen</a></li>
-		      Kontakt:<br>
-		      <br>
-		      <a href="https://www.twitter.com/PH_0x17">PH_0x17 [Twitter]</a><br>
-		      <a href="https://www.twitter.com/CCHPOD">CCHPOD [Twitter]</a><br>
-		      <a href="mailto:cch@nerdbude.com">MAIL</a><br>
-		      <a href="https://www.wishsite.de/wishlist/clickclackhack">Den Podcast unterstützen</a><br>]]>
-		  </content:encoded>
-		</item>
 		<item>
 			<title>Seltsame Hackbretter</title>
 			<link>https://www.nerdbude.com/podcast/index.html</link>
