@@ -1,0 +1,209 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+    <meta property="og:url" content="https://www.nerdbude.com/xpm.html">
+    <meta property="og:title" content="xpm">
+    <meta property="og:description" content="Die wunderbare Welt der seltenen Dateiformate, heute: XPM">
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/xpm.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>xpm</h2>
+<br>
+<br>
+In my latest variant of XMobar sits a small green Space Invader in the upper left corner. This can be realized with XMobar by *.xpm file.<br>
+That's why today we have "fun with unusual file formats". XPM stands for "X PixMap" and is an ASCII text format. It is used to represent raster graphics. Mostly it is used for icons. XPM was developed in 1989 by Daniel Dardailler and Colas Nahaboo. The latter perhaps known by the GWM Windowmanager for X-Window systems.
+<br>
+<br>
+The *.xpm format was defined so that an .xpm file is always valid C source code. This allows *.xpm files to be directly included in C code via #include.<br>
+<br>
+<br>
+The syntax of an .xpm file is straightforward and easy to understand.<br>
+<br>
+Here is my SpaceInvader:<br>
+<br>
+<span class="label">space_invader.xpm</span>
+<div id="cssyn">
+<span class="unixshell">
+/* XPM */<br>
+static char * spaceinvader_xpm[] = {<br>
+"20 20 2 1 XPMEXT",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c None",<br>
+".&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c #afd75f",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;............&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;............&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;....&nbsp;&nbsp;....&nbsp;&nbsp;....&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;....&nbsp;&nbsp;....&nbsp;&nbsp;....&nbsp;&nbsp;",<br>
+"....................",<br>
+"....................",<br>
+"..&nbsp;..............&nbsp;..",<br>
+"..&nbsp;..............&nbsp;..",<br>
+"..&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;..",<br>
+"..&nbsp;..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;..",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;....&nbsp;&nbsp;....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;....&nbsp;&nbsp;....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",<br>
+"XPMEXT author PHØ&nbsp;&nbsp;&nbsp;",<br>
+"mailto:post@nerdbude.com",<br>
+"XPMENDEXT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"};<br>
+</span>
+</div>
+<br>
+<br>
+The *.xpm file consists of seven parts:<br>
+<br>
+- header line<br>
+- declaration and beginning of assignment line<br>
+- values<br>
+- cColors<br>
+- pixels<br>
+- extensions<br>
+- end of assignment<br>
+<br>
+<br>
+<h3>header line</h3>
+The header line consists of a C comment.<br><br>
+<span class="unixshell">/* XPM */</span>
+<br>
+This comment here is considered a "magic number" and defines that this is an .xpm file.<br>
+<br>
+<h3>declaration and beginning of assignment line</h3>
+In the declaration line a C variable is declared. The name of the variable is arbitrary, but must be a valid C identifier. Most often, simply the image name is used here.<br>
+<br>
+<span class="unixshell">static char * spaceinvader_xpm[] = {
+</span>
+<br>
+<br>
+<h3>values</h3>
+The values contain 4 or 6 decimal numbers (only 4 in the example)<br>
+<br>
+<span class="unixshell">20 20 2 1
+<br>
+<br>20 - width of the image in px<br>
+20 - Height of the image in px<br>
+2 - number of colors in the image<br>
+1 - Number of characters per pixel value<br>
+</span>
+<br>
+<br>
+The last two characters (5 + 6) are values that indicate so-called hotspots, such as in a cursor the place to which the cursor points.<br>
+For normal images, however, you can safely ignore these and do not need them.<br>
+If extensions are used in the file, the 4/6 numbers are followed by XPMEXT (xpm extension).<br>
+<br>
+<br>
+<h3>cColors</h3>
+The number of colors has already been determined in the Values (2).<br>
+Now it goes to the definition of the colors.<br>
+<br>
+<span class="unixshell">"           c None",
+".          c #afd75f",
+</span><br>
+<br>
+Each color definition consists of a character code. Different color definitions can also be specified here for different display types. Thus the *.xpm can be optimized for different color depths and need not be down-calculated to b/w each time. The following options are available:<br>
+<br>
+c - colored<br>
+g - more than four shades of gray<br>
+g4 - four shades of gray<br>
+m - Monochrome<br>
+s - symbolic value (like Foreground or Background)<br>
+<br>
+These options are followed by the actual color definition.<br>
+Either in HEX (#afd75f) or HSV (%80, 55.8, 84.3). Transparency is simply specified as "None".<br>
+<br>
+<br>
+<h3>pixels</h3>
+Now comes the actual image or the information which pixel gets color and which remains transparent.<br>
+One pixel line in the image also corresponds to one line in the *.xpm file.
+Wonderful for ASCII Art and there are no limits to the imagination.
+<br>
+<br>
+If you use *.xpm files in C code the image can also be guessed already in the source code.<br>
+<br>
+<h3>extensions</h3>
+Last but not least, our *.xpm file has the extensions. The extensions should be used in the following format:<br>
+<br>
+<span class="unixshell">"XPMEXT extension_name extension_value"
+</span><br>
+<br>
+So in the case of the Space Invader like this:<br>
+<br>
+<span class="unixshell">"XPMEXT author PHØ"
+"mailto:post@nerdbude.com",
+"XPMENDEXT"};
+</span>
+<br>
+<br>
+The XPMENDEXT at the end closes the extensions. And "};" closes the C declaration.<br>
+<br>
+So what's the point of *.jpg and *.gif when you can have *.xpm.<br>
+By the way, this is what the little guy looks like:<br>
+<img src="https://www.nerdbude.com/images/spin.jpeg">
+<br>
+<br>
+and you can find it on Github:<br>
+<br>
+<a href="https://www.github.com/nerdbude/dotfiles/blob/master/xmonad/xpm/spaceinvader.xpm">Link (Github)</a>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

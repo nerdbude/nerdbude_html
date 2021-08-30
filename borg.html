@@ -1,0 +1,221 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/borg.html">
+    <meta property="og:title" content="BORG Backup">
+    <meta property="og:description" content="Bevor einem des Mitleid verweigert wird weil kein Backup vorhanden ist, sollte selbiges gemacht werden und das mit BORG.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_borg.html" class="front">[ENGLISH]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>BORG BACKUP</h2>
+"Kein Backup - Kein Mitleid" kennt jeder denke ich.<br>
+Wer das nicht mehr hören will, sollte Backups machen.<br>
+Es gibt nen exorbitanten Haufen an GUI Backup Tools für Linux. GUI will man aber unter umständen nicht haben.<br>
+Die command-line taugt da schon mehr und für die command-line gibt es BORG (allein wegen dem Namen sollte man BORG verwenden).<br>
+<br>
+<h3>Was ist BORG?</h3>
+BORG ist ein "deduplicate backup tool". Dabei prüft BORG die zu sichernden Daten auf Redundanz und sichert nur die Daten die sich geändert haben.<br>
+Also exakt das, was man haben möchte um platzsparende Backups zu erstellen.<br>
+BORG selber verschlüsselt zudem die erstellten Backups und kann diese bei Bedarf auch komprimieren.<br>
+<br>
+Die Kompressionsverfahren sind folgende:<br>
+<br>
+- lz4 (sehr schnell, geringe Kompression)<br>
+- zstd (von Schnell und ohne Kompression bis Hohe Kompression und langsam)<br>
+- zlib (mittlere Geschwindigkeit und Kompression)<br>
+- lzma (langsam aber hohe Kompression)<br>
+<br>
+BORG kann auch off-site Backups. Das heißt sobald eine SSH Verbindung besteht kann diese genutzt werden um mit BORG Backups dort hin zu schreiben.<br>
+<br>
+Die erstellten Backups sind sogar als eigenes Filesystem mountbar.<br>
+<br>
+Also das perfekte Backupsystem.<br>
+<br>
+<h3>Installation (NixOS)</h3>
+Die BORG Pakete sind in den NixOS Packages vorhanden und können entweder in die configarations.nix geschrieben werden und wird dann neu gebaut mit folgendem Befehl:<br>
+<br>
+<span class="label">Rebuild</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nixos-rebuild switch</span></ln>
+</pre>
+</div>
+<br>
+Die Pakete können auch per nix-env installiert werden:<br>
+<br>
+<span class="label">local</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nix-env -iA nixos.borgbackup</span></ln>
+</pre>
+</div>
+<br>
+So fertig installiert und direkt einsetzbar.<br>
+<br>
+<h3>Usage</h3>
+Bei BORG werden für Backups Repositorys angelegt.<br>
+<br>
+<br>
+<span class="label">INIT REPO</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg init -e repokey /path/to/repo</span></ln>
+</pre>
+</div>
+<br>
+Statt "repo" wird hier natürlich der Name des Repositorys vergeben.<br>
+Beim erstellen wird direkt das Passwort vergeben, welches man sich natürlich merken sollte, da sonst das Backup nicht mehr brauchbar wäre.<br>
+<br>
+Um ein Backup zu erstellen und in das Repository zu schreiben benutzt man folgenden Befehl:<br>
+<br>
+<span class="label">CREATE BACKUP</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg create /path/to/repo::DATE ~/Documents ~/Mail</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Hier wird bei "::DATE" der Name des einzelnen Backups vergeben (empfehlenswert ist natürlich das Datum in irgendeiner Weise) und danach werden alle Ordner die gesichert werden sollen nacheinander aufgelistet. In diesem Fall "Documents" und "Mail".<br>
+<br>
+Damit wäre das erste lokale Backup erstellt.<br>
+<br>
+<h3>Off-Site Backups</h3>
+Nun sollten Backups allerdings nicht auf der Maschine gesichert werden von der das Backup stammt. Die Gründe sollten klar sein.<br>
+Zum einen gibt es die Möglichkeit die Backups auf externe Speichermedien auszulagern, zum Andere via SSH auf Server.<br>
+Letzeres wird wie folgt gemacht. Als erstes muss natürlich das Remote-Repo angelegt werden:<br>
+<br>
+<span class="label">REMOTE REPO ANLEGEN </span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg init user@hostname:/path/to/repo</span></ln>
+</pre>
+</div>
+<br>
+damit hat man sein Ziel-Repository angelegt.<br>
+Um nun Backups remote rauszuschreiben benutzt man:<br>
+<br>
+<span class="label">REMOTE BACKUP</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg create user@hostname:/path/to/repo::Monday ~/src ~/Documents</span></ln>
+</pre>
+</div>
+<br>
+Fertig.<br>
+<br>
+<h3>Restore Backup</h3>
+Nun gibt es ab und zu den Bedarf ein Backup wiederherstellen zu müssen.<br>
+Bei BORG gibt es zwei Möglichkeiten "mount" und "extract".<br>
+"Mount" mounted wie der Name schon sagt, das Backup als Filesystem zum wiederherstellen einzelner Files.<br>
+"Extract" extrahiert das gesamte Backup, bspw. um ein komplettes System wiederherzustellen.<br>
+<br>
+Für lokale Backups:<br>
+<br>
+<span class="label">BORG MOUNT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg list /mnt/backup/borg_repo</span></ln>
+<ln><span class="unixshell">borg mount /mnt/backup/borg_repo::myserver-system-2021-06-09 /mnt/borg</span></ln>
+<ln><span class="unixshell">borg mount /mnt/backup/borg_repo /mnt/borg</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<span class="label">BORG EXTRACT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mkdir borg_restore</span></ln>
+<ln><span class="unixshell">cd borg_restore</span></ln>
+<ln><span class="unixshell">borg list /mnt/backup/borg_repo</span></ln>
+<ln><span class="unixshell">borg list /mnt/backup/borg_repo::myserver-system-2021-06-09</span></ln>
+<ln><span class="unixshell">borg extract /mnt/backup/borg_repo::myserver-system-2021-06-09 path/to/extract</span></ln>
+<ln><span class="unixshell">borg extract /mnt/backup/borg_repo::myserver-system-2021-06-09</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Für Remote (SSH) Backups:<br>
+<br>
+<span class="label">BORG MOUNT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg mount ssh://borg@backup.example.org:2222/path/to/repo /mnt/borg</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<span class="label">BORG EXTRACT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">borg extract ssh://borg@backup.example.org:2222/path/to/repo</span></ln>
+</pre>
+</div>
+<br>
+<br>
+BORG bringt natürlich noch viele viele Optionen der Anpassung mit. Die gibt es in der Dokumentation (<a href="https://borgbackup.readthedocs.io">LINK</a>).<br>
+Für ein simples Backup sollten die oben genannten commands ausreichend sein.<br>
+<br>
+Viel Spaß beim Backup!<br>
+
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

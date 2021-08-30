@@ -1,0 +1,148 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+    <meta property="og:url" content="https://www.nerdbude.com/raid.html">
+    <meta property="og:title" content="RAID">
+    <meta property="og:description" content="Ist ein RAID ein Backup? Spoiler: Nein!">
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/raid.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>raid_systems</h2>
+RAID systems (RAID is an acronym for "redundant array of independent disks") are used to organize multiple physical mass storage devices. All storage devices are connected to form a logical drive. This increases the reliability and the data throughput enormously. Normally, normal PCs do not have multiple storage (redundancy) of data. With RAID systems, however, this is intentional. Due to the redundant existence of the data, a hard disk can fail and be replaced without losing data. Mostly RAID systems are used in server operation. One thing in advance: A RAID system is not a data backup!
+<br>
+<br>
+For a RAID system it needs at least two storage media which are to be regarded as group.
+The advantages of RAID systems are as follows:
+<br>
+<br>
+<ul>
+ 	<li>Redundancy / Increased reliability</li>.
+ 	<li>Increased data transfer rate</li>.
+ 	<li>Construction of large logical drives</li>.
+ 	<li>Replacement of hard drives during operation</li>
+ 	<li>Increasing the amount of memory during operation</li>.
+</ul>
+<br>
+<br>
+How a RAID system is constructed is specified by the RAID level (usually RAID 0,RAID 1 and RAID 5).
+<br>
+<br>
+<h3>Hardware RAID / Software RAID</h3>.
+In hardware RAID, a RAID controller is used. An electronic component, usually located near the hard drives. The CPU on the controller allows much of the computational load to take place on the controller, relieving the load on the main CPU.
+<br>
+<br>
+With software RAID, the RAID controlling is completely taken over by the computer. Modern operating systems (macOS, FreeBSD, OpenBSD, Linux, Windows ...) are able to do this. Here the hard disks are connected directly to the mainboard or computer. After mounting the hard drives on the computer, the RAID is implemented by software.
+<br>
+<br>
+Advantage of it is, no extra hardware is needed like a RAID controller. Another advantage if it comes to a crash, the hard drives can be easier to read out or recover.
+<br>
+<br>
+Disadvantages are the higher load of the computer since here the main CPU takes over the RAID organization and needs for it naturally computing power. Another disadvantage is the loss of data in case of power failure. If the data should not be lost must be worked with the software RAID with a UPS (uninterruptible power supply).
+<br>
+<br>
+RAID 0 (striping)
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/RAID0.png" alt="RAID0"/>
+<br>
+<br>
+Strictly speaking, RAID 0 is not a real RAID system because the composite lacks redundancy. In RAID 0, the hard drives are divided into contiguous blocks of equal size and then arranged in the zipper process to a large hard drive. Since the data or the taps on the hard disks can run in parallel, this results in higher data transfer rates. The disadvantage of RAID 0 is that if a hard disk fails, it is usually almost impossible to recover the data. Therefore, a RAID 0 system should only be used when redundancy is not important, usually where large data must be read in the short term. Audio and video playback are usually the areas of application.
+<br>
+<br>
+RAID 1 (mirroring)
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/RAID1.png" alt="RAID1"/>
+<br>
+<br>
+For a RAID 1 network, at least 2 hard drives are required. In this network, the same data is stored on all hard drives (mirroring) thereby is given in contrast to RAID 0 redundancy which makes it much more fail-safe. The capacity of the array is at most as large as the smallest hard disk used. A big advantage compared to other RAIDs is that the same data is stored on all hard disks and that the hard disks can normally function and be operated independently of each other. So if one disk fails, the data is still on the other one. However, this should not be confused with a backup. In the case of attacks, virus infections or similar, the malware lands directly on all disks. If someone should penetrate by Exploit into the group and shoot down a disk is the Exploit "thanks" redundancy also on the other disks.
+<br>
+<br>
+Another advantage of RAID 1 is that the read performance increases enormously, because on both disks are the same data and thus the read speed is even doubled.
+<br>
+<br>
+RAID 5 (blocklevel striping + distributed parity information)
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/RAID5.png" alt="RAID5"/>
+<br>
+<br>
+With RAID 5, the distribution runs a little differently. In RAID 5, the data is distributed to the different disks by striping, similar to RAID 0. In addition, there is parity information that is distributed at block level. Logical groups are formed with the data blocks of the same address. Per group there is always a block which contains the parity information.
+<br>
+<br>
+A1 / A2 = data blocks
+AP = data block with parity data
+<br>
+<br>
+With four disks a' 1TB, 3TB of storage is available at the end and 1TB is reserved for parity data.
+<br>
+<br>
+User data and parity data are distributed across all disks. RAID 5 provides increased data throughput when reading and additional redundancy. Since RAID 5 is relatively inexpensive to operate, it is one of the most popular RAID groups. Three or five disks are often found in RAID 5, because the number of disks influences the write performance.
+<br>
+<br>
+In addition, the RAID types can also be combined with each other. Thus, RAID 01 networks or RAID 03/RAID 30, RAID 05, RAID 10, etc. are created.
+<br>
+<br>
+These were the most common RAID arrays. There are some more. There are unconventional alliances or those that have become meaningless, such as RAID 2, RAID 3, RAID 4, RAID 6, RAIDn RAID DP, etc.
+<br>
+<br>
+I think the most important I have explained here and described to you the basics. Grade on the subject of RAID, there are countless books that go deeper into the matter. I think for the future projects here it is sufficient.
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

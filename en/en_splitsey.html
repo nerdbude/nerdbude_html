@@ -1,0 +1,126 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/splitsey.html">
+    <meta property="og:title" content="Ein Mini-Split-Keyboard">
+    <meta property="og:description" content="Ich hab mir gedacht ich bau mal ein Paradoxon und zwar ein Split-Onehanded Keyboard.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/splitsey.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>SPLITSEY</h2>
+If you're up for a little weekend soldering project, the <a href="https://artsey.io">ARTSEY</a> might be something for you.<br>
+The ARTSEY is a one-hand keyboard with 2x4 keys. Characters are created on the ARTSEY with key combinations.<br>
+Thus, for example, the space bar can be reached by pressing all four lower keys.<br>
+In the ARTSEY runs the "holy" QMK and takes care of the key combinations.<br>
+<br>
+Well - the ARTSEY is definitely interesting. But let's go a little crazy and build ourselves a "Split ARTSEY" the so-called "SPLITSEY".<br>
+Clearly the ARTSEY is intended for one-handed operation, which is no longer possible by splitting, but can play around a bit.<br>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/splitsey_1.jpeg"></center>
+<br>
+<br>
+<h3>PARTLIST</h3>
+What do you need for the SPLITSEY:<br>
+<br>
+<span class="label">PARTLIST</span>
+<div id="cssyn">
+  <ln><span class="value">1N4148 Diodes - 8 Pcs.</span></ln><br>
+  <ln><span class="value">Switches - 8 Pcs.</span></ln><br>
+  <ln><span class="value">Keycaps - 8 Pcs.</span></ln><br>
+  <ln><span class="value">Microcontroller - 1 Pcs.</span></ln><br>
+  <ln><span class="value">Material for Plate</span></ln><br>
+</div>
+<br>
+You will also need a soldering iron, solder, cable and a cable that fits your microcontroller.
+If you want the plate made of wood, of course also drill and saw.<br>
+<br>
+<h3>PLATE</h3>
+The elaboration of the plate is, due to the small number of switches made quite quickly. Transfer layout to your material - saw out - done.<br>
+In the recesses you pack your switches.<br>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/splitsey_4.JPEG"></center>
+<br>
+<br>
+<h3>Wiring</h3>
+Now it goes to the wiring. As usual with keyboards there is a 1N4148 diode per switch and the switches are connected in row and column.<br>.
+Then connect the rows and rows to the microcontroller and the grid is ready.<br>
+Here still the diagram for the wiring of the switches:<br>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/split_matrix.png"></center>
+<br>
+<br>
+<center><img src="https://www.nerdbude.com/images/splitsey_3.JPEG"></center>
+<br>
+<br>
+So much for the hardware. Let's continue with the software.<br>
+<br>
+<h2>QMK</h2>
+The firmware used is of course the QMK.<br>
+Conveniently, the ARTSEY is already in the repository of the QMK and can be used without any problems.<br>
+<br>
+Have fun building!<br>
+<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

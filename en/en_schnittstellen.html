@@ -1,0 +1,178 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+    <meta property="og:url" content="https://www.nerdbude.com/schnittstellen.html">
+    <meta property="og:title" content="Serielle Schnittstellen">
+    <meta property="og:description" content="Hat es vier unverlötete PINs auf dem PCB kann man es hacken!">
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/schnittstellen.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>Talk to serials (usb -- ttl)</h2>
+There are several reasons why you might want to talk to serial ports.
+<br>
+<br>
+A serial console allows for example to configure the RaspberryPi without having to connect it to a display or network or you have old hardware like routers and the like lying around at home and want to know what's going on inside. With a little bit of luck there is a hidden serial port which is not really meant to be used as a "normal user".
+<br>
+<br>
+One thing first, opening and modifying devices will almost certainly void your warranty if there is still one on the device. The other makes that only with devices that belong to you. Who unscrews things that do not belong to him and is asked to pay should not claim I said nothing.
+<br>
+<br>
+So what do we need to get started?
+<br>
+<br>
+First of all a USB &lt;-&gt; TTL adapter
+<br>
+<br>
+<img src="http://nerdbude.com/images/usb_ttl.png" alt=""/>
+<br>
+<br>
+The adapter (see picture) is available from 3,00€ - 30,00€ in the net. It has in this case a USB 2.0 type A connector that goes into the computer and 6 pins that are wired to our serial port. For wiring we recommend to use jumper cables, which can easily be plugged to the pins of the adapter and to possible existing pins on the interface. If there are no pins on the interface but only solder pads you can simply shorten the jumper cables and solder them on. Jumper cables are available in different colors and you should also use them to not lose the overview.
+<br>
+<br>
+<img src="http://nerdbude.com/images/jumper_cable.png" alt="jumper_cable"/>
+<br>
+<br>
+What it still needs is of course a device with a serial port. Most routers have one, but so do other devices running some OS (mostly Linux). How to recognize the interface? Suspicious are for example solder points which are not used. In some cases the interfaces have pins like our adapter. This makes it much easier because you only have to plug in the jumper cables instead of soldering them.
+<br>
+<br>
+<img src="http://nerdbude.com/images/serielle.png" alt="serielle"/>
+<br>
+<br>
+Since I don't have a device here that I want to disassemble or a device with an interface, we can try it out on a Raspberry Pi. Most people should have one lying around at home to experiment with. We use the standard OS Raspian. However, this should also work with any other supported OS. We write the OS as usual on the Raspberry Pi to the SD card and insert it.
+<br>
+<br>
+<img src="http://nerdbude.com/images/raspi.png" alt="raspberry_pi" />
+<br>
+<br>
+Now we have to connect the pins of our adapter with the GPIO pins of the Raspberry. For this we need the following 3 pins on the adapter and on the Pi:
+<br>
+<br>
+<ul>
+ 	<li>GND (Ground)</li>
+ 	<li>RXD (receive data)</li>
+ 	<li>TXD (transmit data)</li>
+</ul>
+<br>
+<br>
+The GPIO pinout of the Raspberry Pi can be found on the net. Pay attention to the model, because the pinout differs for different models.
+<br>
+<br>
+<img src="http://nerdbude.com/images/pi_ttl.png" alt="pi_ttl"/>
+<br>
+<br>
+Now the adapter only has to be connected to the computer. In principle, it does not matter which computer this is. Every OS can basically talk to the Raspberry Pi via the serial interface. With Windows it needs the tool PuTTy and with Linux and macOS we take the terminal tool "screen" (is preinstalled with Linux and macOS).
+<br>
+<br>
+Used it as follows:
+<br>
+<br>
+Linux / macOS
+<br>
+<br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">screen -h</span>
+</div>
+<br>
+<br>
+But before you can work with "screen", we need the hardware address of the adapter.
+<br>
+<br>
+macOS / Linux:
+<br>
+<br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">ls -l /dev/tty.*</span>
+</div>
+<br>
+<br>
+<span class="label">shell</span>
+<div id="cssyn">
+	<span class="unixshell">crw-rw-rw-  1 root  wheel   33,   2  3 Feb 06:59 /dev/tty.Bluetooth-Modem<br>
+		crw-rw-rw-  1 root  wheel   33,   0  3 Feb 06:59 /dev/tty.Bluetooth-PDA-Sync<br>
+		crw-rw-rw-  1 root  wheel   33,   8  3 Feb 11:28 /dev/tty.PL2303-00001004<br></span>
+</div>
+<br>
+<br>
+Let's assume that a PL2303 chipset from Prolific is installed, so the latter is the address we are looking for.
+Now we can address the serial interface via the adapter with the following command:
+<br>
+<br>
+<span class="label">shell</span>
+<div id="cssyn">
+<span class="unixshell">screen /dev/tty.PL2303-00001004 115200</span>
+</div>
+<br>
+<br>
+115200 defines the baud rate here - that is, the transmission speed.
+<br>
+<br>
+Now connect power to the Raspberry Pi and you should be able to see the boot sequence of the Raspberry Pi in the terminal or log in to it.
+<br>
+<br>
+This is of course only the basis for many gimmicks that are possible with the serial interface. The limit is only the imagination and the presence of the interface.
+<br>
+<br>
+Have fun trying it out.
+<br>
+<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

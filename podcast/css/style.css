@@ -190,3 +190,8 @@ pre		{font-family: 'Share Tech Mono', monospace;
 .subtitle       {display: inline-block; margin: 20px 0;}
 .filter         {display:block; margin-bottom: 30px; margin-top: -20px;}
 .description    {background: #272727; padding: 10px 0 10px 10px; margin-top: 0px;}
+
+/* EPISODE GRID */
+.episodegrid {
+  display: grid;
+}

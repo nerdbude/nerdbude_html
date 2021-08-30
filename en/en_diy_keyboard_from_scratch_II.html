@@ -1,0 +1,151 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+    <meta property="og:url" content="https://www.nerdbude.com/diy_keyboard_from_scratch_II.html">
+    <meta property="og:title" content="DIY Keyboardbau Teil II ">
+    <meta property="og:description" content="Die nächsten Schritte zum Tastatureigenbau">
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/diy_keyboard_from_scratch_II.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>diy keyboard from scratch (II)</h2>
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/keyboard.png" alt="KEYBOARD"/>
+<br>
+<br>
+In part 1 (<a href="https://www.nerdbude.com/en_diy_keyboard_from_scratch_I.html"><b>LINK</b></a>) it was about the considerations it takes before it starts with the tinkering. Moving on, here's a hybrid of planning and having fun with the device (... which we're building first).
+<br>
+<br>
+<h3><b>Microcontroller</b></h3>.
+For the keyboard to do what it is supposed to do - pass the characters we type to the computer - it needs more than switches.<br>This is where our microcontroller comes in. This recognizes which key is pressed and compares with the code, which runs on it, to which character the key belongs and sends this further to the computer.
+<br>
+<br>
+Which microcontrollers are suitable?
+<br>
+<br>
+Suitable DIY keyboard controllers are ATmega32u4 (<a href="http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf">DOKU</a>), STM32F303xC (<a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/4a/19/6e/18/9d/92/43/32/DM00043574.pdf/files/DM00043574.pdf/jcr:content/translations/en.DM00043574.pdf">DOKU</a>), and AT90USB1286 (<a href="http://ww1.microchip.com/downloads/en/devicedoc/doc7593.pdf">DOKU</a>.<br>
+<br>
+The advantage is that the microcontroller can handle the communication between USB and keyboard without doing much. You don't have to create your own PCBs to use the controller, fortunately. There are ready boards which are equipped with this controller. Here you can simply solder the contacts of the switches to the pins of the board and these are passed on suitably to the controller.<br>
+The following boards are suitable for a DIY keyboard:
+<br>
+<br>
+[+] Pro Micro (<a href="https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Pro_Micro_v13b.pdf">Datasheet</a>)<br>
+[+] Elite C (gleiches Board wie "Pro Micro" nur mit USB-C Connector)<br>
+[+] Teensy 2.0 (<a href="https://www.pjrc.com/teensy/schematic.html">Datasheet</a>)<br>
+[+] QMK Proton C (<a href="https://qmk.fm/proton-c/">Datasheet</a>)<br>
+[+] Teensy++ 2.0 (<a href="https://www.pjrc.com/teensy/schematic.html">Datasheet</a>)<br>
+<br>
+<br>
+The next Rabbithole? Yes - if you want to deal with microcontrollers. If not you take the best documented boards and those are Teensy 2.0 and Teensy++ 2.0. In that case the ATmega32u4 is still a little bit better documented than the AT90USB1286 - but those are small things. <br>
+<br>
+My choice fell on the Teensy 2.0 with ATmega32u4 microcontroller.<br>
+<br>
+If the board + microcontroller are selected it goes about the firmware of the controller.<br>
+Again, fortunately, the wheel does not have to be reinvented. In the first part I had already linked the <a href="http://www.keyboard-layout-editor.com">keyboard-layout-editor</a>. With this tool you have the possibility to grab the raw data from your layout and pass it on to another handy tool.<br>.
+Also, this is where you set the pins which are used for vertical rows and which are used for horizontal rows, but more on that later.
+Here's the link to it:<a href="https://kbfirmware.com/">Keyboard Firmware Creator</a><br>.
+<br>
+The tool gives you all the knobs you want. You can define the complete keyboard layout, create different layers (especially useful for 65% and smaller keyboards), you can pack your LEDs directly into the firmware and and and.<br>
+<br>
+If you are satisfied with your settings, the whole thing is compiled, the tool spits out a *.hex file, and flashed to the microcontroller. This would be microcontroller + software done.<br>
+<br>
+<br>
+What also falls out of the keyboard firmware builder, is the wiring of the switches, the wiring.<br>
+<br>
+<h3><b>Wiring (wiring)</b></h3>
+The basic concept of wiring is a grid of rows and columns. Easiest to follow on the Plankh Ortholinear Keyboard.<br>
+For basic wiring, it doesn't take much - what it does take is:<br>
+<br>
+[+] wire
+[+] solder
+[+] x-diodes (x = number of switches / 1N4148 diodes).
+<br>
+<br>
+The diodes are needed in case the correct key signal still arrives at the microcontroller, even if several keys are pressed at the same time. Especially advantageous for key combinations.
+<br>
+<br>
+Once the plate is equipped with the switches, it's time for soldering. Standard switches have 2 pins. One is used for the horizontal connection and the diodes, the other for the vertical connection. It is only important that always the same pins are used.
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/keyboard_wiring.png" alt="wiring"/>
+<br>
+<br>
+red - vertical wiring
+green - diodes
+blue - horizontal wiring
+<br>
+<br>
+<br>
+This would connect the switches to each other. Still missing is the connection to the board with the controller.
+<br>
+As before, the rows and columns are now connected to the board. For this you need exactly one contact from each column to the board and one from each row. These are then connected to the board as specified in the firmware.
+<br>
+<br>
+<br>
+With this we have theoretically a working homemade keyboard!
+Connect the cable - open VIM and start.
+<br>
+<br>
+In the design of the case, of course, the Fanatsie no limits. My case consists of an old piece of board, from which the inside was sawed out, the plate for the keys and the bottom are the side of an old speaker - sand everything well - done.
+<br>
+<br>
+<br>
+<br>
+//EOF
+<br>
+<br>
+<br>
+<!-- ARTIKEL ENDE -->
+ </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

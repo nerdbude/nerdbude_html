@@ -1,0 +1,131 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/pcbdebugging.html">
+    <meta property="og:title" content="Bugs finden auf PCBs">
+    <meta property="og:description" content="Auf eBay sind mir PCBs für ein custom Splitkeyboard in die Hände gefallen. Genauer gesagt ich hab es geschenkt bekommen weil der Besitzer den Fehler auf der PCB nicht findet. Also lernen wir mal PCB Debugging.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_pcbdebugging.html" class="front">[ENGLISH]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>PCB DEBUGGING</h2>
+Vor Kurzem habe ich eine wunderschöne CORNE auf eBay gefunden und das für ein wahres Schnäppchen.<br>
+Der (Vor-)Besitzer hat mir nach ein wenig Plausch auch noch offenbart, dass er noch ein weiteres Splitkeyboard hat: eine 3W6.<br>
+Eine an die CORNE angelegte Tastatur die aber komplett custom ist. Einziges Problem - irgendwas stimmt nicht mit der Platine.<br>
+Macht nix - lernen wir eben wie man PCBs debugged.<br>
+<br>
+Ein paar Hilfsmittel und Gerätschaften habe ich hier um das mal anzugehen:<br>
+<br>
+- Durchgangsprüfer<br>
+- Multimeter <br>
+- Test Microcontroller<br>
+- Lupe<br>
+- KiCAD Files der Platine<br>
+<br>
+Los gehts mit der optischen Prüfung der Platine.<br>
+<br>
+<h3>Optische Prüfung</h3>
+Bei der optischen Prüfung wird geschaut:<br>
+<br>
+- Ob grundsätzlich Fehler im PCB Design passiret sind<br>
+- hat die PCB grobe Beschädigungen<br>
+- sind Bauteile falsch aufgelötet<br>
+- sind Lötstellen fehlerhaft<br>
+- sind Bauteile beschädigt <br>
+- sind Steckverbindungen locker<br>
+- sind Kurzschlüsse durch aufgesprengte Bauteile oder Kabelreste vorhanden<br>
+<br>
+Als erstes gilt es zu Prüfen ob im Design der PCB eventuelle Fehler passiert sind. Da der Vorbesitzer bereits funktionierende PCBs aus der selben Charge hat, kann ich davon ausgehen, dass das Layout keine Fehler hat.<br>
+Die Prüfung der KiCAD Files ist ähnlich der wirklichen Hardwareprüfung. Also wird Stück für Stück die PCB mit der Lupe angeschaut. Im übrigen lohnt sich hier die Lupenfunktion des iPhones - vorrausgesetzt ihr habt eine Halterung für das iPhone, da es sonst eine sehr wackelige Angelegenheit ist.<br>
+Einerseits sollten die Bauteile komplett angeschaut werden als auch die Leiterbahnen.<br>
+Bei Unklarheiten sollten die KiCAD Files zu Rate gezugen werden. Auf denen sieht man einerseits die Leiterbahnen deutlicher wenn sie über mehrere Layer gehen und man erkennt auch wie welche Bauteile auf die PCB gehören. Dadurch lassen sich Bauteile identifizieren, die eventuell falsch herum aufgelötet sind.<br>
+<br>
+BILD
+<br>
+<br>
+Ergebnis bei der 3W6: nichts gefunden -.- <br>
+<br>
+<h3>Durchgangsprüfung</h3>
+Da die optische Kontrolle nichts gebracht hat gehts weiter mit der Durchgangsprüfung. Also prüfen ob alle Bauteile das Siganl richtig durchgeben bzw. ob die Leiterbahnen keine unterbrechung haben.<br>
+Hier kommt das Multimeter zum Einsatz. Aktuelle Multimeter haben eine Funktion zur Durchgangsprüfung verbaut.<br>
+<br>
+Ablauf:<br>
+<br>
+1. Das Multimeter auf Durchgangsprüfung stellen:<br>
+<br>
+BILD
+<br>
+<br>
+2. Die schwarze Messspitze kommt in die "COM" Buchse.<br>
+3. Die rote Messspitze kommt in die "V/Ohm" Buchse.<br>
+4. Messen<br>
+<br>
+Da es hier um eine Tastatur geht, ist der Stromkreis regelmäßig unterbrochen, da keine Switches aufgelötet sind. Das vereinfacht die Fehlersuche enorm, da man sonst schauen müsste, dass eventuelle Kreise unterbrochen werden um Fehlmessungen zu vermeiden.<br>
+Nun hangelt man sich Schritt für Schritt durch die PCB.<br>
+Man misst alle Bauteile, Leiterbahnen, Switchpositions und Anschlüsse. Wenn der Durchfluss des Signals bewerkstelligt ist, ertönt ein Piepton aus dem Multimeter.<br>
+Piep = alles OK!<br>
+<br>
+Zu beachten ist, dass die Dioden die auf der Platine sind, das Signal bzw. den Strom nur in eine Richtung durchlassen dürfen. Piept das Multimeter in beide Richtungen ist die Diode fehlerhaft.<br>
+
+
+
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>$nb / NERDBUDE</title>
+    <link>https://www.nerdbude.com</link>
+    <description>[code. keyboards. terminals. cyber]</description>
+    <language>de-de</language>
+    <copyright>PHO</copyright>
+    <image>
+      <url>https://www.nerdbude.com/images/fav.png</url>
+      <title>$NB</title>
+      <link>https://www.nerdbude.com/en/en_readme.html</link>
+    </image>
+    <item>
+      <title>NERDBUDE REBUILD</title>
+      <description>I had vacation and sat down times to the dear NERDBUDE and things built in which I have so thought - so quasi NERDBUDE 2.0</description>
+      <link>https://www.nerdbude.com/en/en_log30082021.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 30 Aug 2021 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Metrics about ergonomics in mechanical keyboards</title>
+      <description>I want to collect some metrics about ergonimcs in mechanical keyboards and also share them later with the community. So feel free to participate and be part of this small experiment.</description>
+      <link>https://www.nerdbude.com/en/en_survey.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 02 Aug 2021 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>NixOS 21.05 Upgrade</title>
+      <description>Make backups and start with NixOS 21.05. The best OS in the world has been upgraded.</description>
+      <link>https://www.nerdbude.com/en/en_nixos_2105.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 09 Jun 2021 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>BORG</title>
+      <description>Backups are important! For this purpose there is BORG. A terminal backup tool that is simple but powerful.</description>
+      <link>https://www.nerdbude.com/en/en_borg.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>TELEPROST</title>
+      <description>I got to talk on the Teleprost Podcast about the Nerd Den, keyboards, podcasting, and The Blair Witch Project.</description>
+      <link>https://www.nerdbude.com/en/en_teleprost.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 02 Jun 2021 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>SPLITSEY</title>
+      <description>A split-one-hand keyboard - makes little sense but is fun to use.</description>
+      <link>https://www.nerdbude.com/en/en_splitsey.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 10 May 2021 10:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>MacMittwoch</title>
+      <description>I got to talk mechanical keyboards with Farid and Gordon on the MacMittwoch podcast.</description>
+      <link>https://www.nerdbude.com/en/en_macmittwoch.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 06 May 2021 10:45:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>PAPIS</title>
+      <description>A wonderful tool for document management in command-line.</description>
+      <link>https://www.nerdbude.com/en/en_papis.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 27 Apr 2021 15:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>FYYD</title>
+      <description>A podcast network that is worth a look and absolutely worth supporting.</description>
+      <link>https://www.nerdbude.com/en/en_fyyd.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 27 Apr 2021 12:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>nixOS</title>
+      <description>After 15 years of Debian it's time for something new. That's why nixOS came on the computer some time ago. What is it and how do I get it? Here in the post.</description>
+      <link>https://www.nerdbude.com/en/en_nixos.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 06 Apr 2021 16:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>PinePhone</title>
+      <description>I sat down for the last three months and tested whether the PinePhone is suitable for everyday use.</description>
+      <link>https://www.nerdbude.com/en/en_pinephone.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2021-03-17 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Podstats</title>
+      <description>Those who podcast also want statistics. But not everyone wants big databases in the background and bloated dashboards like Grafana. Here's a little tutorial on how to do it with less software (but a little more manual work).</description>
+      <link>https://www.nerdbude.com/en/en_podstats.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2021-03-04 11:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Click! Clack! Hack!</title>
+      <description>What do you do when you have various projects? Right! More projects! That's why there is now the "Click! Clack! Hack!" podcast, which will be about mechanical keyboards and everything that goes with it. Subscribe directly so that you don't miss an episode!</description>
+      <link>https://www.nerdbude.com/en/en_clickclackhack.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2021-02-02 12:00:00 +0100</pubDate>
+    </item>
+    <item>
+      <title>Audio Cortex</title>
+      <description>The birth of a fine little sci-fi cyberpunk podcast network.</description>
+      <link>https://www.nerdbude.com/en/en_audiocortex.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-11-20 09:36:00 +0100</pubDate>
+    </item>
+
+    <item>
+      <title>Unit-1</title>
+      <description>a small fine Zsh theme</description>
+      <link>https://www.nerdbude.com/en/en_unit-1.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-11-19</pubDate>
+    </item>
+
+    <item>
+      <title>ARPANET (II)</title>
+      <description>Let's continue with the considerations about the hardware to be used in the DIY ARPANET.</description>
+      <link>https://www.nerdbude.com/en/en_arpanet_ii.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-10-23</pubDate>
+    </item>
+
+    <item>
+      <title>ARPANET (I)</title>
+      <description>The Internet. Infinite expanses. That wasn't always the case. At the very beginning, the "Internet" was still manageable. Time for a replica.</description>
+      <link>https://www.nerdbude.com/en/en_arpanet_i.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-08-24</pubDate>
+    </item>
+
+    <item>
+      <title>HACK THE PLANET</title>
+      <description>I got to be a guest on the Hack the Planet Podcast and talked with Andreas and Daniel about mechanical keyboards, bar-top gaming boxes, monitor bugs, and more. </description>
+      <link>https://www.nerdbude.com/en/en_hacktheplanet.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-08-02</pubDate>
+    </item>
+
+    <item>
+      <title>SYSLOG</title>
+      <description>The NERDBUDE now has a SYSLOG. Everything for transparency.</description>
+      <link>https://www.nerdbude.com/en/en_sys_log.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-07-30</pubDate>
+    </item>
+
+    <item>
+      <title>CSSYN</title>
+      <description>For all those who hate JS, but still want syntax highlighting on their website, I've cobbled together something.</description>
+      <link>https://www.nerdbude.com/en/en_cssyn.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-07-20</pubDate>
+    </item>
+
+    <item>
+      <title>DS</title>
+      <description>The data slingshot was kind enough to provide me with a few pages to let me vent about DIY keyboards.</description>
+      <link>https://www.nerdbude.com/en/en_datenschleuder.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-07-15</pubDate>
+    </item>
+
+    <item>
+      <title>XPM</title>
+      <description>Funky-File-Formats! Today: *.XPM</description>
+      <link>https://www.nerdbude.com/en/en_xpm.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-07-08</pubDate>
+    </item>
+
+    <item>
+      <title>IWTB COLORSCHEME</title>
+      <description>Colorful is good! If you need a change from the usual color schemes, I've put together the IWTB Color Scheme.</description>
+      <link>https://www.nerdbude.com/en/en_iwtb.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-06-30</pubDate>
+    </item>
+
+    <item>
+      <title>XMONAD WINDOW MANAGER</title>
+      <description>A brief introduction to XMonad, a lightweight and resource-efficient WM for Linux.</description>
+      <link>https://www.nerdbude.com/en/en_xmonad.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-06-28</pubDate>
+    </item>
+
+    <item>
+      <title>DIY KEYBOARD (II)</title>
+      <description>The construction manual for your own keyboard (part 2)</description>
+      <link>https://www.nerdbude.com/en/en_diy_keyboard_from_scratch_II.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-06-26</pubDate>
+    </item>
+
+    <item>
+      <title>DIY KEYBOARD (I)</title>
+      <description>The construction manual for your own keyboard (part 1)</description>
+      <link>https://www.nerdbude.com/en/en_diy_keyboard_from_scratch_I.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-06-25</pubDate>
+    </item>
+
+    <item>
+      <title>SYSTEMABSTURZ - VERDÄCHTIG</title>
+      <description>Whoo! Music! ... and I was allowed to let off steam on the cover!</description>
+      <link>https://www.nerdbude.com/en/en_systemabsturz.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-00-00</pubDate>
+    </item>
+
+    <item>
+      <title>SD KARTEN FLASHEN</title>
+      <description>You need it on the RaspberryPi or as a live system on the USB stick. But how is it flashed?</description>
+      <link>https://www.nerdbude.com/en/en_sd_card.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-05-11</pubDate>
+    </item>
+
+    <item>
+      <title>HARDWARE INTERFACES</title>
+      <description>Many devices run Linux. If you want to get there you should know how to talk to serial ports.</description>
+      <link>https://www.nerdbude.com/en/en_schnittstellen.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-04-19</pubDate>
+    </item>
+
+    <item>
+      <title>OSI LAYER MODELL</title>
+      <description>The OSI layer model explained layer by layer.</description>
+      <link>https://www.nerdbude.com/en/en_osi.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-04-10</pubDate>
+    </item>
+
+    <item>
+      <title>RAID</title>
+      <description>The most common RAID architectures briefly summarized</description>
+      <link>https://www.nerdbude.com/en/en_raid.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-04-08</pubDate>
+    </item>
+
+    <item>
+      <title>HOW TO DISAPPEAR</title>
+      <description>Espionage, data abuse and so on. Let's get out of the anti-social networks</description>
+      <link>https://www.nerdbude.com/en/en_disappear_1.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-03-03</pubDate>
+    </item>
+
+    <item>
+      <title>LORD NIKON</title>
+      <description>Someone has copied Lord Nikon's laptop (Hackers, 1995)!</description>
+      <link>https://www.nerdbude.com/en/en_lord_nikon.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-02-20</pubDate>
+    </item>
+
+    <item>
+      <title>NMAP</title>
+      <description>Let's knock on a few doors and see if we can find any open ones.</description>
+      <link>https://www.nerdbude.com/en/en_nmap.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-02-17</pubDate>
+    </item>
+
+    <item>
+      <title>NERDBUDE AUF GITHUB</title>
+      <description>The whole thing is on Github.</description>
+      <link>https://www.nerdbude.com/en/en_git_html.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-01-06</pubDate>
+    </item>
+
+    <item>
+      <title>SYSTEM MONITORING</title>
+      <description>If you want to know what is going on in your network, you need monitoring tools.</description>
+      <link>https://www.nerdbude.com/en/en_sys_monitor_tools.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-01-05</pubDate>
+    </item>
+
+    <item>
+      <title>HELLO WORLD</title>
+      <description>Hello world! This is the NERDBUDE!</description>
+      <link>https://www.nerdbude.com/en/en_hello_world.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>2020-01-01</pubDate>
+    </item>
+  </channel>
+
+</rss>

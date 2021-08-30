@@ -12,24 +12,39 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>NERDBUDE REBUILD</title>
+      <description>Ich hatte Urlaub und habe mich mal an die liebe NERDBUDE gesetzt und Sachen eingebaut die mir so eingefallen sind - also quasi NERDBUDE 2.0</description>
+      <link>https://www.nerdbude.com/log30082021.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 30 Aug 2021 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Metrics about ergonomics in mechanical keyboards</title>
+      <description>I want to collect some metrics about ergonimcs in mechanical keyboards and also share them later with the community. So feel free to participate and be part of this small experiment.</description>
+      <link>https://www.nerdbude.com/survey.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 02 Aug 2021 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>NixOS 21.05 Upgrade</title>
+      <description>Backups machen und los gehts mit NixOS 21.05. Das beste OS der Welt hat ein Upgrade bekommen.</description>
+      <link>https://www.nerdbude.com/nixos_2105.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 09 Jun 2021 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>BORG</title>
+      <description>Backups sind wichtig! Dazu gibt es BORG. Ein Terminal Backuptool das einfach aber mächtig ist.</description>
+      <link>https://www.nerdbude.com/borg.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 09 Jun 2021 11:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>TELEPROST</title>
-      <description>Irgendwie treibe ich mich in letzter Zeit in anderen Podcasts rum.<br>
-      So nun auch im TELEPROST Podcast von Hannes und Frank.<br>
-      Ein Podcast über Nerdkram. Jede Folge gibts ein Getränk und einen Film als Hausaufgabe und als buntes Rahmenprogramm noch andere Topics aus der Nerdbubble.<br>
-      <br>
-      Wer mich im Podcast hat kommt natürlich an mechanischen Tastaturen nicht vorbei.<br>
-      Wir haben aber auch über Linux, Podcasting und Podcast-DIY-Hosting ohne Wordpress, die Nerdbude, das Pinephone und zu guter letzt noch The Blair Witch Project" gequatscht.<br>
-      Also schnappt euch ein kühles Störtebeker Schwarz Bier und lauscht dem TELEPROST.<br>
-      <br>
-      Episode: <a href="https://teleprost.podigee.io/14-014_dein_erster_kauf_ist_nicht_dein_ende">TP014 - Dein erster Kauf ist nicht dein Ende</a><br>
-      Podcast: <a href="https://teleprost.podigee.io/">TELEPROST</a><br>
-      Twitter: <a href="https://twitter.com/teleprost">TELEPROST</a><br>
-      <br>
-      Frank auf Twitter: <a href="https://twitter.com/VonMumpitz">Link</a><br>
-      Hannes auf Twitter: <a href="https://twitter.com/Deathmatcher51">Link</a><br></description>
+      <description>Ich durfte im Teleprost Podcast über die Nerdbude, Tastaturen, Podcasting und The Blair Witch Project reden.</description>
       <link>https://www.nerdbude.com/teleprost.html</link>
       <author>post@nerdbude.com (PH_0x17)</author>
-      <pubDate>Wed, 02 Jun 2021 15:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Jun 2021 10:00:00 +0000</pubDate>
     </item>
     <item>
       <title>SPLITSEY</title>

@@ -1,0 +1,300 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/nixos.html">
+    <meta property="og:title" content="NixOS">
+    <meta property="og:description" content="Nach 15 Jahren Debian wird es mal Zeit für etwas neues, nämlich NixOS. Noch nie hab ich ein OS so geliebt und gehasst.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/nixos.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>NixOS</h2>
+For more than 15 years (shit am I old) I am a loyal Debian user.<br>
+Who ever had to rebuild his system and I have in the 15 years but the one or other time to do, who knows how annoying it can be to bring his system back to the state as before.<br>
+Filebackups is one thing, but the system itself is another leaf.<br>
+Since out of curiosity often times what new must be tried thus NixOS came into play.<br>
+Originally Arch Linux stood to the selection but by a small tip I changed then directly to NixOS.<br>
+The installation effort is basically similar to Arch Linux, so pure manual work including manual formatting and partitioning of the hard drive, and installing the system from scratch.<br>
+The installation instructions are available at <a href="http://NixOS.org">https://NixOS.org</a> and are really very simple and clear.<br>
+<br>
+Why then want to have NixOS?<br>
+Meanwhile I want to have a system that comes along as minimalist as possible.<br>
+Sure Debian can be taken as a pure "minimalist" installation, but still has packages that are excessively large and eat unnecessary space.<br>
+The packages have of course under Debian their raison d'être but whether you want to have them is another matter.<br>
+<br>
+NixOS occupies about 1.5GB.<br>
+This is neatly slim and also interesting for older hardware.<br>
+As WM comes here of course again XMonad on it. Also saves space and my fingers have already gotten used to it.<br>
+<br>
+Beside the advantage of the size however still another point is crucial for my decision.<br>
+NixOS itself cites three main advantages: reproducible, declarative and reliable.<br>
+<br>
+Reproducible: the nix packages are isolated from each other, this ensures that they are reproducible and have no undeclared dependencies. If a package works on one machine, it will work on another.<br>
+Declarative: With NixOS you can share development environments regardless of what language or tools.<br>
+Reliable: installing one package does not corrupt others. One can rollback to previous versions and ensure that no package is in an inconsistent state during an upgrade.<br>
+<br>
+At the absolute minimum, NixOS is completely reproducible from a single config-file.<br>
+The magic "configuration.nix".<br>
+In this file on the one hand the whole system is configured and all necessary packages, like sound, Wifi, WM etc. are stored but also programs like Vim, Git, Python, GoAccess and everything you need.<br>
+That means in reverse, if one installs a NixOS on another computer and the "configuration.nix" externally gebackuped has, one copies itself these on the new system starts a Rebuild and has its past system again restored.<br>
+Easier it does not go. No more installing by hand.<br>
+<br>
+If you want to run NixOS on the same system as the previous one, there is also the possibility to store all hardware specifications in the "hardware-configuration.nix".<br>
+If, for example, my T470 would give up the ghost here and I would get myself a T470 again (not such a far-fetched thought), I would only need the "configuration.nix" and the "hardware-configuration.nix" files and would have my system immediately ready for use again within a few minutes.<br>
+The only thing which must be packed then still manually on it are the dotfiles of the individual programs.<br>
+There I am but on it and that gives then nen separate Blogpost.<br>
+<br>
+<h3>Installation</h3>
+How to install NixOS:<br>
+<br>
+The very first thing to do is to get the latest NixOS ISO file here: <a href="https://nixos.org/download.html">https://nixos.org/download</a><br>
+<br>
+You put the iso on a USB stick or any bootable media. (I had <a href="https://www.nerdbude.com/en/en_sd_card.html">HIER</a> once explained. Whether SD card or USB stick does not matter).<br>
+Then you boot from the stick.<br>
+If everything worked, then you are greeted by a shell.<br>
+Default login is User:nixos with empty password.<br>
+<br>
+As the very first thing it is recommended to set the keyboard layout:<br>
+<br>
+<span class="label">CONSOLE</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">loadkeys de de</span></ln>
+</pre>
+</div>
+<br>
+<br>
+That would change the layout to German.<br>
+<br>
+Next is the partitioning of the hard disk.<br>
+This goes once with UEFI and once with MBR.<br>
+In the example here the disk is mounted as /sda.<br>
+<br>
+UEFI<br>
+<br>
+<span class="label">CONSOLE</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">parted /dev/sda -- mklabel gpt</span></ln>
+<ln><span class="unixshell">parted /dev/sda -- mkpart primary 512MiB -8GiB</span></ln>
+<ln><span class="unixshell">parted /dev/sda -- mkpart primary linux-swap -8GiB 100%</span></ln>
+<ln><span class="unixshell">parted /dev/sda -- mkpart ESP fat32 1MiB 512MiB</span></ln>
+<ln><span class="unixshell">parted /dev/sda -- set 3 esp on</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Here root and swap partition are created.<br>
+<br>
+<br>
+MBR<br>
+<br>
+<span class="label">CONSOLE</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">parted /dev/sda -- mklabel msdos</span></ln>
+<ln><span class="unixshell">parted /dev/sda -- mkpart primary 1MiB -8GiB</span></ln>
+<ln><span class="unixshell">parted /dev/sda -- mkpart primary linux-swap -8GiB 100%</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Continue with the file system.<br>
+NixOS offers several file systems.<br>
+<br>
+<span class="label">Ext4</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mkfs.ext4 -L nixos /dev/sda1</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<span class="label">Swap</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mkswap -L swap /dev/sda2</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<span class="label">FAT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mkfs.fat -F 32 -n boot /dev/sda3</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<span class="label">RAID</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mdadm</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Last step - the final installation.<br>
+First, the drive is mounted:<br>
+<br>
+<br>
+<span class="label">MOUNT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mount /dev/disk/by-label/nixos /mnt</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Under UEFI systems, this works a little differently:<br>
+<br>
+<br>
+<span class="label">MOUNT</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">mkdir -p /mnt/boot</span></ln>
+<ln><span class="unixshell">mount /dev/disk/by-label/boot /mnt/boot</span></ln>
+</pre>
+</div>
+<br>
+<br>
+When all this is done, the configuration.nix file mentioned earlier is created.<br>
+This is done conveniently by command.<br>
+<br>
+<br>
+<span class="label">CREATE CONFIG</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nixos-generate-config --root /mnt</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Now you can either use your existing configfile here or leave the new configfile if you want to reboot.<br>.
+In any case it is worth to look at the "configuration.nix" before the next step, otherwise it can be that NixOS does not boot.<br>
+<br>
+The next step is the installation.<br>
+<br>
+<br>
+<span class="label">INSTALLATION</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nixos-install</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Now NixOS rattles through until everything necessary is installed. In between, a root password is assigned and if everything has worked, you can reboot and have a wonderful OS on the computer.
+<br>
+So far the basic system would be ready and largely usable.<br>
+<br>
+<h3>Software</h3>
+But now you want to have 'nen WM, Python, Vim and and and.<br>
+There are two ways to install programs or packages.<br>
+<br>
+First, packages can be installed locally, in the sense only for the current system:<br>
+<br>
+<br>
+<span class="label">local</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nix-env -iA nixos.vim</span></ln>
+</pre>
+</div>
+<br>
+<br>
+The command would install Vim for the current user.<br>
+However, this is more recommended for testing the package, since in this case Vim is not in the "configuration.nix" and will not be installed when the system is reproduced.<br>
+To have Vim in the transfer of the system, Vim must be in the "configuration.nix".<br>
+<br>
+<br>
+<span class="label">configuration.nix</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">environment.systemPackages = with pkgs; [</span></ln>
+<ln><span class="unixshell">vim</span></ln>
+<ln><span class="unixshell">   ];</span></ln>
+</pre>
+</div>
+<br>
+<br>
+This entry must be in the "configuration.nix", so that Vim is installed with the rebuild.<br>
+After Vim is entered in the configfile, a rebuild must be executed.<br>
+<br>
+<br>
+<span class="label">Rebuild</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nixos-rebuild switch</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Then you have the, in the configuration.nix file deposited config.<br>
+<br>
+These are the basics to get NixOS running, at least as a basic system.<br>
+<br>
+<br>
+About the configuration.nix file or other NixOS topics I will in the future still one or other post raushauen.<br>
+NixOS is certainly not an OS for everyone but if you have it once you do not want to miss it.<br>
+Try it out is worth it all.<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

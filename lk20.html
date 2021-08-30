@@ -32,19 +32,22 @@
 
 <body>
 
-	<!--- HEADER -->
+  <!--- HEADER -->
   <header>
     <div id="headerimage">
-      <h1><a href="https://www.nerdbude.com" class="front">[$nb]</a></h1>
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
       <table>
 	      <tr>
-		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[+]readme.txt</a></th>
-          <th><a href="https://www.nerdbude.com/about.html" class="front">[+]aboutme.txt</a></th>
-          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[+]podcast.txt</a></th>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_lk20.html" class="front">[ENGLISH]</a></th>
 	      </tr>
       </table>
     </div>
   </header>
+
 
   <div id="content">
 <!-- ARTIKLE START -->
@@ -57,7 +60,7 @@ Kurz ein paar Worte zum Aufbau der LK20.<br>
 <h3>Aufbau</h3>
 Die LK20 hat platemounted Switches von Cherry, eine Plate aus Metall (genaues kann ich hier leider nicht sagen), eine von Lioncast entwickelte PCB und einen mittig rausgeführtes USB Kabel.<br>
 Das Gehäuse ist aus ABS Plastik und besteht aus zwei Teilen. Oberseite und Unterseite.<br>
-Das alles brauchen wir nicht mehr bis auf das Gehäuse.<br>
+Das alles brauchen wir nicht mehr bis auf das Gehäuse und die Plate (zumindest einen Teil der Plate).<br>
 Weiter gehts mit dem öffnen der LK20.<br>
 <br>
 <h3>Öffnen der LK20</h3>
@@ -71,7 +74,7 @@ Nun sehen wir die nackten Switches auf der Plate.<br>
 Die PCB ist mit zwei Schrauben an der Gehäuseunterseite fixiert. Diese Schrauben müsst ihr auch lösen und aufbewahren.<br>
 Nun könnt ihr die Plate + PCB aus dem Gehäuse nehmen.<br>
 <h3>Switches auslöten</h3>
-Auch wenn es blaue Switches sind, wäre es schade sie einfach zu entsorgen. Deswegen löten wir die Switches aus der PCB. Ich musste die Switches außerdem auslöten, da ich die Maße der Plate brauchte. Die Plate machen wir nämlich neu.<br>
+Auch wenn es blaue Switches sind, wäre es schade sie einfach zu entsorgen. Deswegen löten wir die Switches aus der PCB. Ich musste die Switches außerdem auslöten, da ich die Plate brauche. Die Plate machen wir nämlich neu bzw. modden die ein wenig.<br>
 Ihr könnt Switch für Switch auslöten, bis ihr die Plate mit den Switches von der PCB trennen könnt.<br>
 Die Switches sind meistens nur mit zwei Pins fixiert:<br>
 <br>
@@ -84,13 +87,20 @@ Die Tasten "W, A, S, D" und die Cursortasten haben Backlight-LEDs. Hier müsst i
 Wenn ihr alle Switches ausglötet habt, könnt ihr die aus der Plate drücken und in den Schrank stellen.<br>
 <br>
 <h3>Plate</h3>
-Die Plate ist nah an einer Standard TKL Plate. Zum Glück bietet der QMK-Plate-Genartor schon mal die richtige Vorlage. Nun wird gemessen ob die Löcher für die Switches zum Case passen und wir fügen die Löcher für die Schrauben hinzu.<br>
-Eine weitere Änderung ist folgende. Die Reihe mit den Tasten "Pause", "Scroll" und "Print" oben rechts werde ich gegen ein kleines Display tauschen. Hier entfernen wir die drei Löcher für Switches und lassen ein zentriertes Loch als Kabeldurchlass.<br>
-Das Layout wird ein ANSI US Layout.<br>
-Im Internet gibt es diverse Anbieter die Plates aus diversen Materialien fräsen können. Ich habe mich für Acryl in "Frosting" entschieden, so können wir später noch mit RGB rumspielen.<br>
-Nun haben wir das Case und die Plate. Weiter gehts mit den Teilen die wir noch benötigen:<br>
+Die Plate ist eine Standard TKL ISO DE Plate.<br>
+Das einzige das behalten wird, sind die Function-Row, die Cursorkeys und den Block rechts.<br>
+Der Rest wird mit der Metallsäge grob entfernt vom Rest.<br>
+Ich finde das Gewicht der Plate super und wollte deswegen wenigstens einen Teil davon erhalten. Außerdem ist die Plate an den oberen und unteren Enden leicht gebogen und passt so perfekt in das Case.<br>
+Als Einsatz für die Alphas und Modifier habe ich mir eine 60% Steel Plate im Netz geordert, die passen (meistens zumindest) gut in das Layout.<br>
+Die 60% Plate wird mit 2K-Epoxidharzkleber in der LK20 Plate fixiert. Passt auf, dass ihr euch nirgends festklebt - das Zeug ist die Hölle.<br>
+<br>
+[BILD]
+<br>
+<br>
+Als Finish wird die "neue" Plate noch ordentlich abgeschliffen und bekommt wird in schickem XXX lakiert! Soll ja auch schön aussehen.<br>
 <br>
 <h3>Teilliste</h3>
+Nun sind die groben Arbeiten abgeschlossen und wir können anfangen das Board wieder zusammenzubauen.<br>
 Folgende Parts brauchen wir um das Keyboard wieder zusammen zu bauen.<br>
 <br>
 - Switches (85 Stk.)<br>
@@ -98,48 +108,49 @@ Folgende Parts brauchen wir um das Keyboard wieder zusammen zu bauen.<br>
 - Kabel<br>
 - Stabilizer<br>
 - Microcontroller (1 Stk)<br>
-- Display<br>
 - Lötkolben<br>
 - Lötzinn<br>
 - USB Kabel<br>
 - Keycapset<br>
 <br>
 Switches<br>
-Als Switches kommen auf die neue Tastatur lineare, harte ............<br>
+Als Switches kommen auf die neue Tastatur Keyfirst / Gateron Cream Switches.<br>
+<br>
+Type: Linear<br>
+Travel (total): 4.0mm<br>
+Pre-Travel: 2.0mm<br>
+Force: 62g<br>
+Feder: Edelstahl<br>
+<br>
 <br>
 Stabilizer<br>
-Als Stabilizer nehm ich .........<br>
+Als Stabilizer nehm ich Everglide Panda Stabalizer mit goldummantelter Stabbar.<br>
 <br>
 <h3>Aufbau</h3>
 Nun geht es ans Zusammenbauen. Die als erstes stecken wir die Switches und Stabilizer in die Plate.<br>
-Anschließend werden die Switches nach folgender Matrix miteinander verlötet:<br>
+Anschließend werden die Switches nach folgender Matrix miteinander verlötet. Die Matrix lässt sich wunderar mithilfe des <a href="https://www.http://www.keyboard-layout-editor.com/">Keyboard Layout Editor</a> und anschließend mit dem <a href="https://kbfirmware.com/">Keyboard Firmware Builder</a> erstellen.<br>
 <br>
 [BILD]
 <br>
 Und zum Schluss wird das Raster noch am Microcontroller angelötet.<br>
+Aber es wird kein simpler Micro-USB am Board verwendet.<br>
+Als Anschluss kommt ein wunderschön brachialer VGA-Anschluss zum Einsatz.<br>
+Sieht schick aus und ist mal was anderes.<br>
+Dazu wird ein altes Micro-USB Kabel zerlegt. Der Micro-USB Stecker bleibt und kommt an den Microcontroller und die Adern werden an den VGA-Connector gelegt. Wichtig ist hier, dass man sich die Belegung merkt (oder noch besser Aufschreibt).<br>
+
 Das war auch schon der größte Aufwand.<br>
 <br>
-<h3>Display</h3>
-Nun zum kleinen Extrafeature. Das kleine Display oben rechts.<br>
-#
-#
-#
-#
-#
-#
-#
-#
-#
+<h3>QMK - Firmware</h3>
+Ein weitere Pluspunkt des Neuaufbaus ist die QMK.<br>
+Also kann man sich das Layout des Keyboards frei konfigurieren und das auch über mehrere Layer hinweg.<br>
+Die QMK Files pack ich euch ins Github [LINK]<br>
+Wichtig: Probiert die QMK aus bevor ihr das Board wieder zusammensetzt. So könnt ihr immernoch intervenieren wenn Fehler beim Löten passiert sein sollten.<br>
+<br>
 <h3>Abschluss</h3>
 Nun schrauben wir die Plate inkl. unserem Lötkonstrukt an die Unterseite des Case.<br>
 Danach Drücken wir die Oberseite oben drauf und fixieren es wieder mit der Schraube an der Unterseite.<br>
-Nun kann unser Keyboard mit der QMK geflashed werden.<br>
 <br>
-<h3>QMK</h3>
-
-
-
-
+<br>
 
 <!-- ARTIKEL ENDE -->
 <br>

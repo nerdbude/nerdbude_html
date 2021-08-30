@@ -44,9 +44,38 @@ ul {
   padding: 0;
 }
 
-h1 {color: #afd75f; background-color: #272727;}
+/* for the animations */
+@media (prefers-reduced-motion: no-preference) {
+
+	@keyframes reveal {
+		from { width: 2em; } /* Width of ::before */
+		  to { width: 100%; }
+	}
+	#terminal {
+		overflow: hidden;
+		white-space: nowrap;
+		animation: reveal 4s linear;
+		text-overflow: "|";
+	}
+	#terminal::after {
+		content: "_";
+		animation: flash 0.5s step-end infinite;
+	}
+}
+
+h1 {color: #ffffff; background-color: #272727;}
 h2 {color: #afd75f; background-color: #272727;}
 h3 {color: #afd75f; background-color: #272727;}
+
+h1::before {color: #afd75f; content: "$"}
+h1::after {color: #afd75f; content: "_"; animation: flash 0.5s step-end infinite;}
+
+h2::before {color: #afd75f; content:"~$: "}
+
+
+#terminal {overflow: hidden;
+  white-space: nowrap;
+  animation: reveal 4s linear;}
 
 span {
   padding: 0;
@@ -128,9 +157,10 @@ th.user {color: #8787ff;}
 }
 
 #footer {
-  width: 100%;
+  width: 200px;
   position: fixed;
   bottom: 0;
+  right: 0;
   margin-bottom: 10px;
   z-index: 1;
   background-color: #272727;

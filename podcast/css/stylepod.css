@@ -87,6 +87,8 @@ a.front:active {
 p {
   padding: 0;
   margin: 10px 0 30px 0;
+  background-color: #272727;
+  font-size: 14px;
 }
 
 img {
@@ -153,6 +155,7 @@ th.user {color: #8787ff;}
 }
 
 #nbpp {
+  font-family: 'Share Tech Mono', monospace;
   background: transparent;
   padding: 15px 15px 15px 15px;
   margin: 0 0 2px 0;
@@ -202,3 +205,71 @@ pre		{font-family: 'Share Tech Mono', monospace;
 .subtitle       {display: inline-block; margin: 20px 0;}
 .filter         {display:block; margin-bottom: 30px; margin-top: -20px;}
 .description    {background: #272727; padding: 10px 0 10px 10px; margin-top: 0px;}
+
+/* EPISODE GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #transparent;
+  padding: 10px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* FLIP CARDS */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  background-color: #272727;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  background-color: #272727;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #272727;
+  color: #875fff;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #272727;
+  border: 2px solid #875fff;
+  color: #875fff;
+  transform: rotateY(180deg);
+}
+
+.cardbutton {
+  border-color: #875fff
+  background-color: #875fff;
+  color: #272727;
+}
