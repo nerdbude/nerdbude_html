@@ -1,0 +1,163 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en/en_vim_3.html">
+    <meta property="og:title" content="VIM (III)">
+    <meta property="og:description" content="The VISUAL mode and his three sub modes">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/vim_3.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM III</h2>
+<h3>The VISUAL Mode</h3>
+In the <a href="https://www.nerdbude.com/en/en_vim_1.html">first part</a> of my small series "I learn Vim new and more detailed" I had explained the basic features of Vim and the simple way to enter and edit text. This is basically enough for the first steps in Vim.<br>
+But if the editing of text should be a bit bigger and not limited to the single deletion of characters, the VISUAL mode comes into play.
+The VISUAL mode serves thus purely the modification of text.
+Starting from NORMAL Mode (which we always enter by pressing "ESC"), there are three ways to switch to VISUAL Mode:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">v - starts VISUAL in character mode</span></ln>.
+<ln><span class="unixshell">V - starts VISUAL in line mode</span></ln>
+<ln><span class="unixshell">CTRL + V - starts VISUAL in block mode</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<h2>VISUAL CHARACTER MODE (VCM)</h2>
+The VCM can highlight either a sentence in a paragraph or a phrase in a sentence. The highlighted text can then be either deleted, copied, changed, or otherwise modified with any Vim edit command.<br>
+<br>
+<h3>Highlight and edit text</h3>.
+In some cases (e.g.: when writing articles for the Nerdbude), an entire sentence needs to be moved to a different location in the document.<br>
+To do this, navigate the cursor to the first letter in the sentence that needs to be moved and press "v" to activate VISUAL Mode.<br>
+After that we have the following options for text marking:<br>
+<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">H/L - mark Characters</span></ln>
+<ln><span class="unixshell">w - mark until beginning of the next word</span></ln>
+<ln><span class="unixshell">$ - mark until the lineend</span></ln>
+</pre>
+</div>
+<br>
+Now that the text we want to modify is highlighted we continue to modify:<br><br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">d - delete</span></ln>
+<ln><span class="unixshell">p - paste</span></ln>
+<ln><span class="unixshell">y - yank / copy</span></ln>
+<ln><span class="unixshell">u - undo</span></ln>
+</pre>
+</div>
+<br>
+<h3>Change phrases</h3>
+If you want to change a whole phrase in a text, it is just as easy in VISUAL mode.<br>
+Again with the cursor at the beginning of the phrase to be changed and with "v" in the VISUAL mode. Then again as described above, select the phrase that is to be changed and replace with the following keys:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">c - change</span></ln>
+</pre>
+</div>
+<br>
+After that, the selected text will disappear and you will be taken directly to INSERT mode and you can change the text.<br>
+<h2>VISUAL LINE MODE (VLM)</h2>
+VCM lets me work "character by character". So if we are sure that the individual words and characters are correct, but the line is wrong (happens especially when coding often)? Here the VISUAL LINE MODE takes effect.<br>
+With the VLM can be marked and modified over several lines and that fortunately with the same commands as in the VCM.<br>
+So we navigate again to the beginning of the lines that should be marked. Then we switch to the VLM with "SHIFT + V".<br>
+After that there are the usual commands like:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">d - delete</span></ln>
+  <ln><span class="unixshell">p - paste</span></ln>
+  <ln><span class="unixshell">y - yank</span></ln>
+  <ln><span class="unixshell">u - undo</span></ln>
+</pre>
+</div>
+<br>
+Especially when writing code, we want to have indented text. So navigate to the beginning of the text again, switch to VLM with "SHIFT + v" and mark the code block. After that the whole paragraph can be indented:<br><br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell"> &gt; - moves the selected to the right  </span></ln>
+  <ln><span class="unixshell"> &lt; - moves the selected to the left</span></ln>
+</pre>
+</div>
+<br>
+<h3>VISUAL BLOCK MODE (VBM)</h3>
+The VISUAL BLOCK MODE is structured somewhat differently. Here it is not operated on character or line level but in columns. This can be quite helpful with CSV files or with YAML files.<br>
+So you can delete or indent columns without having to go through line by line. This also works almost identically to VCM or VLM.<br>
+We navigate to the beginning of the block to be edited, switch to VISUAL BLOCK MODE with "CTRL + v" and select the block. Here, the block is automatically selected downwards, i.e. column by column, not horizontally in the line.<br>
+The modifications we can now make are known:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">d - delete</span></ln>
+  <ln><span class="unixshell">u - undo</span></ln>
+  <ln><span class="unixshell"> &gt; - moves the selected to the right  </span></ln>
+  <ln><span class="unixshell"> &lt; - moves the selected to the left</span></ln>
+</pre>
+</div>
+<br>
+Ta-da! The VISUAL MODE. Practical and easier to use than you think.
+I'll save the practice this time, because it would simply be the same as everything I've written here ;)
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/vim_4.html">
+    <meta property="og:title" content="VIM (IV)">
+    <meta property="og:description" content="Die Grundfunktionen haben wir. Vim kann aber mit Plugins erweitert werden und darum geht's in Teil IV">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_vim_4.html" class="front">[ENGLISH]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM IV</h2>
+<h3>PLUGINS</h3>
+Die Grundfunktionen wie Schreiben, Markieren, Löschen, Kopieren, Einfügen usw. haben wir also in den ersten drei Teilen abgehakt, d.h. grundsätzlich können wie mit Vim arbeiten.<br>
+Vim bietet aber (wie bei allem) mehr. Was wenn wir Syntax-Highlighting haben wollen, die Folderstruktur, vielleicht eine schickere Statusline usw.? Dafür gibt es Plugins und zum sorgt der <a href="https://de.wikipedia.org/wiki/Vi#Humor">CULT OF VIM</a> für zahlreiche Plugins die Vim in seinem Funktionsumfang stark erweitern.<br>
+<br>Bevor ich aber zu den Plugins selber komme, kurz zur Frage wie Plugins in Vim benutzt werden.<br>
+Für Vim gibt es verschiedene Pluginmanager. Die bekanntesten sind folgende:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell"><a href="https://github.com/tpope/vim-pathogen">Pathogen</a></span></ln>
+  <ln><span class="unixshell"><a href="https://vimhelp.org/repeat.txt.html#packages">Vim Packages</a></span></ln>
+  <ln><span class="unixshell"><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a></span></ln>
+  <ln><span class="unixshell"><a href="https://github.com/Shougo/neobundle.vim">Neobundle</a></span></ln>
+  <ln><span class="unixshell"><a href="https://github.com/junegunn/vim-plug">vim-plug</a></span></ln>
+  <ln><span class="unixshell"><a href="https://github.com/Shougo/dein.vim">dein.vim</a></span></ln>
+</pre>
+</div>
+<br>
+Welches ihr benutzt ist natürlich euch frei überlassen. Ich benutze hier PATHOGEN und bin damit sehr zufrieden.<br>
+Um PATHOGEN zu installieren reichen zwei einfache Terminals-Commands und eine Anpassung der .VIMRC Configfile (auf die werde ich noch in einem anderen Teil eingehen):<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">mkdir -p ~/.vim/autoload ~/.vim/bundle && \</span></ln>
+  <ln><span class="unixshell">curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim</span></ln>
+</pre>
+</div>
+<br>
+In die .VIMRC File wird noch folgende Zeile eingefügt und danach ist Pathogen einsatzbereit:<br>
+<br>
+<span class="label">.VIMRC</span>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">execute pathogen#infect()</span></ln>
+</pre>
+</div>
+<br>
+Wenn diese drei Schritte gemacht sind, könnt ihr anfangen Plugins zu installieren. Die meisten Plugins unterstützen die Benutzung via Pathogen und das macht es recht einfach sich Plugins zu Vim hinzuzufügen. Da kommt die nächste Frage auf: "Wo finde ich Plugins?". Zum einen könnt ihr natürlich Github, Gitlab und ähnliche Ansammlungen durchforsten. Das kann unter Umständen aber schnell nerven und kostet viel Zeit. Zum Glück gibt es <a href="https://vimawesome.com/">VIMAWESOME</a>. VIMAWESOME ist eine Sammlung an Vim Plugins wunderbar kategorisiert und überschaubar präsentiert.<br>
+<br>
+Wenn ihr nun ein Plugin gefunden habt, das ihr nutzen wollt ist die Installation via Pathogen schnell erledigt (hier am Beispiel NERDtree):<br>
+<br>
+<span class="label">.VIMRC</span>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">cd ~/.vim/bundle</span></ln>
+  <ln><span class="unixshell">git clone https://github.com/scrooloose/nerdtree</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Fertig! Nun kann in Vim mit dem Command ":NERDtree" welches im NORMAL Mode eingegeben wird, der Filetree eingeblendet werden. Wollen wir nun, das NERDtree von Anfang an gestartet wird, muss noch ein Eintrag in die .VIMRC Configfile:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">let g:NERDtree</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Nun haben wir die Grundlage für Plugins geschaffen. Im folgenden noch ein paar Plugins die ich installiert habe und die ich zum aktuellen Zeitpunkt uneingeschränkt empfehlen kann.<br>
+<h2>FUNKY PLUGINS</h2>
+<br>
+<h3><a href="https://github.com/mhinz/vim-startify">vim-startify</a></h3>
+<br>
+<img src="https://www.nerdbude.com/images/vim_startify.jpg">
+<br><br>
+Vim-startify bietet einen wunderschönen Startscreen wenn Vim ohne Angabe von Files gestartet wird und bietet sich an, wenn ihr Files habt die häufig bearbeitet werden (configs) und ihr schnellen Zugriff darauf haben wollt, ohne jedesmal den Pfad zum File tippen wollt. Vim-startify hat die Möglichkeit eine Liste an zuletzt geöffneten Files anzuzeigen aber auch statische Links zu Files die häufig benutzt werden.<br>
+Aber - und das Auge hackt ja mit - auch die Möglichkeit eine einfache ASCII-Art Grafik anzuzeigen (bei mir das einfache "HACK!").
+Erspart einem viel tipperei und sieht obendrein noch schick aus.<br>
+<br>
+<h2><a href="https://github.com/vimwiki/vimwiki">vimwiki</a></h2>
+<br>
+<img src="https://www.nerdbude.com/images/vim_vimwiki.jpg">
+<br>
+<br>
+Über VimWiki habe ich hier schon geschrieben (<a href="https://www.nerdbude.com/vimwiki.html">VIMWIKI</a>). Ein kleines lokales Wiki mit dem wir unsere Notizen, Projektdaten, Aufgaben und alles was die Fantasie her gibt. Also alles was eine Knowledgebase braucht. Die Seiten werden per Markdown gestyled und helfen wunderbar die wirren Gedanken wenigstens sortiert zu halten.<br>
+<br>
+<br>
+<h3><a href="https://github.com/itchyny/lightline.vim">lighline</a></h3>
+<br>
+<img src="https://www.nerdbude.com/images/vim_lightline.jpg">
+<br><br>
+Die Statusleiste von Vim ist recht simple und einfach. Leider auch etwas langweilig. Dafür gibts zum Glück Lightline. Die ersetzt die Standard-Statuszeile von Vim gegen eine hübschere Variante. Lightline unterstützt viele Themes und Colorschemes. Wer es also etwas bunter haben will, nutzt Lightline.<br>
+<br>
+<br>
+<h3><a href="https://github.com/lilydjwg/colorizer">colorizer</a></h3>
+<br>
+<img src="https://www.nerdbude.com/images/vim_colorizer.jpg">
+<br><br>
+Ich hab hier des öfteren mit HTML Farbcodes zu tun. Praktisch ist es, wenn diese gleich in Vim bzw. im Codefile angezeigt werden. Grade wenn es um die NERDBUDE files geht oder wenn ihr selber Colorschemes für euer System zusammenschraub ganz praktisch.<br>
+<br>
+<br>
+<h3><a href="https://github.com/preservim/nerdtree">NERDtree</a></h3>
+<br>
+<img src="https://www.nerdbude.com/images/vim_NERDtree.jpg">
+<br><br>
+NERDtree, welches vorhin schon als Beispiel herhalten musste, bietet einen Filetree der links oder rechts in Vim angezeigt werden kann. So müsst ihr eure Vim-Instanz nicht mehr verlassen wenn ihr andere Files gemütlich öffnen wollt.<br>
+<br>
+<br>
+Viel Spaß beim Zeit vergessen beim Plugins suchen!
+<p>//EOF</p>
+</div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

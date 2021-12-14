@@ -20,9 +20,9 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@PH_0x17">
 
-    <meta property="og:url" content="URL">
-    <meta property="og:title" content="TITLE">
-    <meta property="og:description" content="DESCRIPTION">
+    <meta property="og:url" content="https://www.nerdbude.com/vim_3.html">
+    <meta property="og:title" content="VIM (III)">
+    <meta property="og:description" content="Der dritte Teil meiner kleinen Reihe über Vim. Diesmal der VISUAL Mode und was hier alles angestellt werden kann.">
 
     <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
     <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
@@ -50,6 +50,29 @@
 
   <div id="content">
 <!-- ARTIKLE START -->
+<h2>VIM III</h2>
+<h3>Der VISUAL Mode</h3>
+Im <a href="https://www.nerdbude.com/vim_1.html">ersten Teil</a> meiner kleinen Reihe "Ich lerne Vim neu und ausführlicher" hatte ich die Grundzüge von Vim erklärt und die einfache Art text einzugeben und zu bearbeiten. Das reicht prinzipiell für die ersten Schritte in Vim vollkommen aus.<br>
+Soll nun aber die Bearbeitung von Text etwas größer ausfallen und sich nicht auf das einzelne Löschen von Zeichen beschränken, kommt der VISUAL Mode ins Spiel.<br>
+Der VISUAL Mode dient also rein der Modifikation von Text.
+Ausgehend vom NORMAL Mode (in den wir immer per "ESC" kommen), gibt es drei Möglichkeiten in den VISUAL Mode zu wechseln:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">v - startet VISUAL im Character-Mode</span></ln>
+<ln><span class="unixshell">V - startet VISUAL im Line-Mode</span></ln>
+<ln><span class="unixshell">CTRL + V - startet VISUAL im Block-Mode</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<h2>VISUAL CHARACTER MODE (VCM)</h2>
+Der VCM kann entweder einen Satz in einem Absatz oder eine Phrase in einem Satz hervorheben. Der gehighlightete Text kann danach mit jedem Vim Bearbeitungsbefehl entweder gelöscht, kopiert, geändert oder andersweitig modifiziert werden.<br>
+<br>
+<h3>Text markieren und bearbeiten</h3>
+In manchen Fällen (z.B.: beim Artikel schreiben für die Nerdbude) muss ein ganzer Satz an eine andere Stelle im Dokument.<br>
+Dazu wird der Cursor zum ersten Buchstaben im Satz, der verschoben werden soll, navigiert.<br>
+
 
 
 

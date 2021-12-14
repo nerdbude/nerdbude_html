@@ -1,0 +1,234 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/poddevice.html">
+    <meta property="og:title" content="DIY Podcast device">
+    <meta property="og:description" content="Der Standalone Podcastplayer für den Schreibtisch">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_XXX.html" class="front">[ENGLISH]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>$NB_PD</h2>
+Wenn das liebe Smartphone abraucht, welches zum Podcasthören benutzt wird, schreit das Gehirn wenn kein Audioinput mehr kommt.<br>
+Also selber einen kleinen, relativ günstigen "Schreibtisch-Podcast-Player" bauen - kurz "$NB_PD".<br>
+<br>
+Der Player steht auf dem Schreibtisch, hat 5 Tasten als Interface, ist (selbstverständlich) vollkommen terminal-based und aktualisiert die abonnierten Feeds selbstständig, also alles was ein Podcastplayer braucht.<br>
+<br>
+<h3>PARTLIST</h3>
+Das $NB_PD basiert auf OpenSource Hardware und Software, so das jede:r es nachbauen kann.<br>
+Was wird gebraucht für das NB_PODDEVICE:<br>
+<br>
+1. Raspberry Pi (Die version ist völlig egal, gebaut wurde Basis eines Model B Ver.: 1.1 )<br>
+2. Display (In meinem Fall das Adafruit PiTFT - 320x240 2.8" TFT+Touchscreen)<br>
+3. Case (alter Walkman)<br>
+4. MX styled Switches (Cherry oder jede andere Marke)<br>
+5. Keycaps<br>
+6. Kabel <br>
+7. Lötkolben / Lötzinn<br>
+8. Dioden <br>
+<br>
+Wen der Preis interessiert: ca. €70,- für alles drum und dran.<br>
+<br>
+<h3>HARDWARE</h3>
+Das einfachste zu erst. Das Adafruit Display wird, dank bereits aufgelötetem Connector direkt auf den Raspberry Pi gesteckt.<br>
+Ab hier brauchts dann etwas mehr gefrickel.<br>
+<br>
+Das Gehäuse ist, in meinem Fall, ein alter Walkman - perfektes Cyberpunk-Design. Das Auge hört schließlich mit.<br>
+<br>
+Der Walkman wird zu erst komplett ausgeschlachtet, das tut mir natürlich leid für den Walkman - geht aber leider nicht anders. Weiter wird in die Klappe die früher dazu gedient hat Tapes aufzunehmen eine Öffnung gesägt in die das Display passt. Das Display selber wird dann per Heißkleber in der Klappe befestigt. Der Klappe selber wird ihre Funktion als Klappe genommen und am Case mittels Sekundenkleber fixiert. So klappt nix mehr auf und bleibt dort wo es sein soll.<br>
+An den Außenseiten des Walkmans werden Löcher für die Switches gesägt. Es braucht 5 löcher für die MX Switches und ein Loch für den Kippschalter für die Tastensperre.<br>
+Der Raspberry Pi kommt in das Gehäuse und das Gehäuse wird wieder zusammengeschraubt. 
+<br>
+Weiter gehts mit dem Lötkolben. Die Switches werden in einem kleinen Raster mit den Dioden verlötet.<br>
+Das Schema nachdem gelötet wird ist folgendes:<br>
+<br>
+<BILD SWITCHES LÖTEN><br>
+<br>
+Damit wären die Hardwarebasteleien auch schon fertig und auch ohne große Lötkentnisse zu bewerkstelligen.<br>
+<br>
+<h3>SOFTWARE</h3>
+Nun kommt die Software. Das Herz des $NB_PD.<br>
+Das Base-System des $NB_PD ist ein headless <a href="">Raspian</a> - ein auf Debian basierendes Betriebssystem, das auf den Raspberry Pi abgestimmt ist.<br>
+Da SSH per default deaktiviert ist, muss der Rasperry Pi beim ersten Start an ein Monitor angeschlossen werden. Da das headless Raspian ohne Windowmanager kommt, landet man direkt in einer Konsole<br>
+<br>
+Um SSH zu aktivieren auf dem Raspberry Pi geht man wie folgt vor:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">$ sudo systemctl start ssh</span></ln>
+<ln><span class="unixshell">$ sudo systemctl enable ssh</span></ln>
+</pre>
+</div>
+<br>
+Der erste Befehl startet SSH und der zweite Befehl lässt SSH bei jedem Reboot automatisch starten.<br>
+ACHTUNG: Der default User und default Passwort für den Raspberry Pi sind frei zugänglich also direkt (am besten vor dem ersten connect mit dem Internet) Passwort ändern.<br>
+Es werden prinzipiell keine sensiblen Daten auf dem $NB_PD gespeichert, aber jedes mal alles neu aufsetzen weil $random_hacker den Pi geowned hat, ist nervig. Also Passwort ändern.<br>
+<br>
+Ab jetzt kann alles remote, per SSH gemacht werden auf dem Raspberry Pi.<br>
+Bei mir hängt der Raspberry Pi per LAN-Kabel an einem Switch. Das ganze könnte natürlich auch per WLAN geregelt werden. Hierzu müsst ihr natürlich euer WLAN noch konfigurieren.<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">$ ssh user@192.0.0.1</span></ln>
+<ln><span class="unixshell">$ Passwort: **********</span></ln>
+</pre>
+</div>
+<br>
+... und schon habt ihr eine Remoteshell auf dem Raspberry Pi.<br>
+<br>
+Weiter geht's mit den Tools die das $NB_PD braucht.<br>
+Folgende Tools werden benötigt:<br>
+<br>
+- Python 3.9<br>
+- npyscreen <br>
+- VLC <br>
+- podfox<br>
+- cmus   <br>
+<br>
+Dazu gibts für's Terminal:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">sudo apt-get install python3 && podfox && vlc && cmus</span></ln>
+</pre>
+</div>
+<br>
+Damit wäre die Grundlage für das $NB_PD schon fertig.<br>
+Um die Funktionalität der Switches zu gewährleisten, braucht es noch ein Script, dass ebenfalls beim Boot gestartet werden muss. Das Script gibt es auf dem NERDBUDE Github (<a href="">LINK</a>).
+Mit einem Eintrag in der .bashrc lassen wir das Script beim Boot direkt starten:<br>
+<br>
+<span class="label">TERMINAL (PI)</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">$ sudo vim .bashrc</span></ln>
+<ln><span class="unixshell">echo LOADING INTERFACE</span></ln>
+<ln><span class="unixshell">python3 /home/pi/interface.py</span></ln> 
+</pre>
+</div>
+<br>
+<br>
+So wird die Tastenbelegung direkt beim Start initialisiert. Hier kommen später noch ein paar Einträge dazu, damit VLC, podfox und anderes direkt nach dem booten verfügbar sind.<br>
+Damit das $NB_PD nicht als reine Shell daherkommt, braucht es noch die interface.py aus dem GitHub Repository. Die packt ihr am besten mit in den Scripts Ordner.<br>
+Zuletzt noch die fehlenden Einträge in die .bashrc:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">@reboot python3 /home/pi/scripts/interface.py</span></ln>
+<ln><span class="unixshell">@reboot podfox</span></ln>
+<ln><span class="unixshell">@reboot vlc-terminal</span></ln>
+</pre>
+</div>
+<br>
+Damit sollte beim Start alles laufen was wir brauchen.<br>
+<br>
+<h3>INTERFACE</h3>
+Nach einem Reboot sollte das $NB_PD einsatzbereit sein und so aussehen.<br>
+<br>
+<BILD VON FERTIGEM DEVICE>
+<br><br>
+Das Interface ist wie folgt aufgebaut:<br>
+<br>
+<BILD VOM INTERFACE><br>
+<br>
+(1) - Aktuelle Episode<br>
+(2) - Queue <br>
+(3) - ??? <br>
+<br>
+Die Belegung der Tasten ist relativ einfach.<br>
+(1) Play<br>
+(2) Pause<br>
+(3) Up<br>
+(4) Down<br>
+(5) Enter<br>
+<br>
+Nun ist das $NB_PD am Anfang einfach leer und ohne Podcasts. Um Podcast Feeds hinzuzufügen gibt es zwei Möglichkeiten. Entweder auf dem Device selber per Konsole und einfacher wieder per SSH.<br>
+Zum hinzufügen eines Feeds braucht es nur einen einfachen Befehl:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">$ podfox.py import feedurl [shortname]</span></ln>
+</pre>
+</div>
+<br>
+Mit diesem Befehl importiert man einen neuen Podcastfeed mit Hilfe von podfox, das sich im Hintergrund um die Feeds kümmert.<br>
+Um den wunderbaren <a href="https://www.clickclackhack.de">CCH!</a> zu abonnieren, bräuchte es also folgenden Befehl:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">$ podfox.py import https://www.nerdbude.com/podcast/feed/feed.xml CCH</span></ln>
+</pre>
+</div>
+<br>
+Die Shortname Variable zum schluss definiert einen Kurznamen unter dem der Feed verwaltet werden kann.<br>
+<br>
+
+
+
+
+
+
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

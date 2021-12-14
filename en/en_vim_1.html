@@ -1,0 +1,179 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en_vim_1.html">
+    <meta property="og:title" content="VIM (1)">
+    <meta property="og:description" content="VIM - One Editor for everything">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com/en/en_index.html" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/vim_1.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM</h2>
+It was bound to happen. At some point Vim had to show up here and since Vim has just turned 30 years old it justifies it all the more.<br>
+I thought, let's start a small series in which I (try to) explain what Vim is and how it is used.<br>
+The good thing is I will also learn a lot in the process. :D<br>
+Who wants to have all parts clearly together uses <a href="https://www.nerdbude.com/index_vim.html">[VIM]</a> as sorting.<br>
+This first part is about what Vim is, where Vim comes from and how it is used.<br>
+The later parts of the series will then go into more detail about usage, configuration and modification.<br>
+So let's start with the (in my opinion) best editor there is.<br>
+<br>
+<h3>What IS VIM</h3>
+Vim is basically a text editor and is based on "vi" and stands for "Vi IMproved". However, not a simple one like Notepad but a highly customizable and extensible editor.<br>
+Vim can be used to edit simple files (the NERDBUDE HTML files are completely edited in Vim), to create local wikis for own structuring, to read RSS feeds and many many more.<br>
+Vim is available for almost every operating system and is usually even pre-installed.<br>
+Vim was developed by <a href="https://de.wikipedia.org/wiki/Bram_Moolenar">Bram Moolenar</a> and released on 02.11.1991.<br>
+Vim was originally developed for the terminal, but now also offers a GUI version with extended mouse support - but that's not what we're here for. I stay with the terminal version. That should be it in history - let's go with Vim.<br>
+<br>
+Vim can do everything you can find in modern editors and IDEs:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">Syntaxhighlighting</span></ln>
+<ln><span class="unixshell">Linenumbers</span></ln>
+<ln><span class="unixshell">Diff Checks</span></ln>
+<ln><span class="unixshell">Git support</span></ln>
+<ln><span class="unixshell">Colorscheming</span></ln>
+<ln><span class="unixshell">Markdownsupport</span></ln>
+<ln><span class="unixshell">Filemanagment</span></ln>
+<ln><span class="unixshell">....</span></ln>
+</div>
+<br>
+<br>
+Not all of these features are usable out of the box, but must be reloaded via plugin.<br>
+<br>
+<h3>START VIM</h3>
+To start Vim is enough a simple:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">vim</span></ln>
+</pre>
+</div>
+<br>
+<br>
+When Vim is started for the first time, you will see the following startup screen:<br>
+<br>
+<img src="https://www.nerdbude.com/images/vim1.jpg">
+<br>
+<br>
+To debunk the myth here in advance that it would be difficult to close Vim again - it even says in the startup screen how to close Vim again:<br>
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:q</span></ln>
+</pre>
+</div>
+<br>
+<br>
+So if you type ":" and "q" and confirm with ENTER, Vim is gone.<br>
+Now we want to use Vim and not immediately shoot down again.<br>
+So open Vim again and start typing. However, not much happens.<br>
+What is the reason for this? Quite simply. Vim has basically 3 different modes in which it can be operated. The individual modes are activated by a simple keystroke:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">I   - Insert Mode</span></ln>
+<ln><span class="unixshell">V   - Visual Mode</span></ln>
+<ln><span class="unixshell">ESC - Normal Mode</span></ln>
+</pre>
+</div>
+<br>
+<br>
+The modes are relatively self-explanatory.<br>
+INSERT mode is used for inserting, i.e. writing. In VISUAL mode the content of the file is manipulated or changed and the NORMAL mode offers the possibility to use commands, copy and paste text and various other possibilities.<br>
+<br>
+The only special feature here has the VISUAL mode. This can be used in three different variants:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">v   // Character Mode</span></ln>
+<ln><span class="unixshell">V   // Line Mode</span></ln>
+<ln><span class="unixshell">CTRL + v   // Block Mode</span></ln>
+</pre>
+</div>
+<br>
+<br>
+How the VISUAL mode works exactly I explain in a later part still more exactly.<br>
+<br>
+<br>
+<h3>NAVIGATION</h3>
+Vim can be controlled by cursor keys on the one hand but also by "HJKL". This Atr of the Steureung comes still from "vi" times and is back on the computer on which "vi" was developed. That was an ADM-3A terminal without cursor keys as they are common today, but with cursor arrows on said HJKL.<br>.
+The change from cursor keys to HJKL takes some time but, once it is in muscle memory, it is much more comfortable. In addition, there are various tools that are also coded with the "Vim Keys" or plugins that also makes current tools with the "Vim Keys" operable.<br>
+<br>
+<h3>PRAXIS</h3>
+At the end of this series will always follow a small example. So this time open Vim, activate insert mode, save and close.<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">$ vim htp.md (open vim with a file named htp.md)</span></ln>
+  <ln><span class="unixshell">I (activate insert mode)</span></ln>
+  <ln><span class="unixshell">Hack the Planet! (simple text)</span></ln>
+  <ln><span class="unixshell">ESC (back to normal mode)</span></ln>
+  <ln><span class="unixshell">:w (save)</span></ln>
+  <ln><span class="unixshell">:q (quit)</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

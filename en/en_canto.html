@@ -1,0 +1,174 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en_canto.html">
+    <meta property="og:title" content="Canto">
+    <meta property="og:description" content="A RSS feedreader for the Commandline including Vim keybindings. I love it.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com/en/en_index.html" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/canto.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>CANTO</h2>
+GUI sucks. Terminal is better and finally I have found (hopefully) the last RSS feed reader I will install in my life.<br>
+The good piece of code is called "CANTO".<br>
+CANTO runs exclusively in the terminal - no fancy graphics and long loading times.<br>
+Coded in Python CANTO is even very easy to configure or extend.<br>
+The most important first how does CANTO look like (oh if it's about the terminal, it may still look good ;) ):<br>
+<br>
+<img src="https://www.nerdbude.com/images/canto_1.jpg">
+<br>
+<br>
+So it doesn't get much clearer than this.<br>
+<br>
+<h3>Installation</h3>
+Under NixOS there are two packages that can be installed:<br>
+- canto-curses (the CANTO reader)<br>
+- canto-daemon (for remote stuff)<br>
+<br>
+For local operation "canto-curses" is perfectly sufficient.<br>
+<br>
+<span class="label">NixOS</span>
+<div id="cssyn">
+  <ln><span class="value">nix-env -iA nixos.canto-curses</span></ln><br>
+</div>
+<br>
+Afterwards CANTO can be used.<br>
+<h3>Use</h3>
+Once CANTO is started, the feeds are also displayed directly (see image above).<br>
+<br>
+Those who work with Vim will also quickly get to grips with CANTO.<br>
+The navigation through the feeds works via HJKL.<br>
+<br>
+<span class="label">Navigation</span>
+<div id="cssyn">
+  <ln><span class="value">H -- mark as read </span></ln><br>
+  <ln><span class="value">J -- next post</span></ln><br>
+  <ln><span class="value">K -- prev post</span></ln><br>
+  <ln><span class="value">L -- mark as unread</span></ln><br>
+</div>
+<br>
+<br>
+Since the view of all elements of all feeds is somewhat confusing and overwhelming, the feeds can be collapsed with "C".<br>.
+To expand an article "SPACE" is used. When pressing again, the article is collapsed again.<br>
+<br>
+In the default CANTO provides three feeds, which not necessarily everyone wants to have. So the own favorite feeds are inserted.<br>
+CANTO provides the Vim-typical procedure to enter commands. To use commands within CANTO ":" is used.<br>
+Adding feeds would then look like this:<br>
+<br>
+<span class="label">CANTO</span>
+<div id="cssyn">
+  <ln><span class="value">:add https://www.nerdbude.com/rss/en_feed.xml</span></ln><br>
+</div>
+<br>
+This adds the pure feed (incl. the title used in the feed) to the configfile.<br>.
+But now it can happen that the feed title should be adjusted. For this the "add" command gets an argument named "name=":<br>
+<br>
+<span class="label">CANTO</span>
+<div id="cssyn">
+  <ln><span class="value">:add https://www.nerdbude.com/rss/feed.xml name=NB</span></ln><br>
+</div>
+<br>
+Now the feed is displayed under the name "NB".<br>
+If the desire for a feed sinks and it should be out of CANTO, this is just as simple:<br>
+<br>
+<span class="label">CANTO</span>
+<div id="cssyn">
+  <ln><span class="value">:del</span></ln><br>
+</div>
+<br>
+This will delete the feed at the current cursor position.<br>
+Another wonderful feature of CANTO is the auto-update function.<br>
+Many terminal feed readers fail at this, unfortunately. Not CANTO.<br>
+CANTO can be configured to set up any auto-update interval:<br>
+<br>
+<span class="label">CANTO</span>
+<div id="cssyn">
+  <ln><span class="value">:set update.auto.enabled [True|False] -- activate autoupdate</span></ln><br>
+  <ln><span class="value">:set update.auto.interval n -- n is the intervall in seconds</span></ln><br>
+</div>
+<br>
+This makes it easy to run CANTO without having to manually update.<br>
+<h3>Styling</h3>
+Yes styling - just because GUI is omitted, doesn't necessarily mean that everything is only b/w.<br>
+CANTO uses the system color schemes by default, but can be conveniently configured by command:<br>
+<br>
+<span class="label">CANTO</span>
+<div id="cssyn">
+  <ln><span class="value">:color read red -- set color to red for read</span></ln><br>
+  <ln><span class="value">:style unread bold -- set unread elements to bold</span></ln><br>
+</div>
+<br>
+If you don't like the keybindings, you can also change them via command:<br>.
+<br>
+<span class="label">CANTO</span>
+<div id="cssyn">
+  <ln><span class="value">::bind j item-state read \& next-item</span></ln><br>
+</div>
+<br>
+Here "J" is mapped, that when pressed the element is marked as read and the cursor slides one element further.<br>
+<br>
+CANTO is really highly configurable and allows one more function for which the terminal must not be left.<br>
+The source code and documentation can be found here: <a href="https://codezen.org/canto-ng/">CANTO</a>.<br>
+<br>
+You could also build on CANTO and maybe use it as a podcatcher. I will report.<br>
+
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

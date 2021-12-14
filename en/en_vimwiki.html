@@ -1,0 +1,210 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en_vimwiki.html">
+    <meta property="og:title" content="Vim Wiki">
+    <meta property="og:description" content="A nice Plugin to organize everything.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com/en/en_index.html" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/vimwiki.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>vimwiki</h2>
+Sometimes you learn to love old tools and plugins only after a long time.<br>
+That's how I felt about vimwiki.<br>
+<br>
+Somehow I need yet again and again the same info in everyday life. Be it when coding, tinkering, podcasting and and and.<br>
+What offers itself there is an own Knowledgebase (which can be easily expanded and edited).<br>
+So quasi a Wiki around the own thought bits to sorti and that best for the Commandline ...  This is where vimwiki comes into play.<br>
+<br>
+vimwiki builds its own small local wiki that can be styled with Markdown in Vim and allows linking within documents.<br>
+So everything needed to organize your own thoughts.<br>
+<br>
+<h2>Installation</h2>
+Now how does vimwiki get into Vim.<br>
+vimwiki runs in every Vim from version 7.3<br>
+<br>
+Beforehand, the following entries should be made or present in the "vimrc":<br>
+<br>
+<span class="label">vimrc</span>
+<div id="cssyn">
+  <ln><span class="value">set nocompatible</span></ln><br>
+  <ln><span class="value">filetype plugin on</span></ln><br>
+  <ln><span class="value">syntax on</span></ln><br>
+</div>
+<br>
+Now you can install vimwiki<br>
+<br>
+<span class="label">Vim packages</span>
+<div id="cssyn">
+  <ln><span class="value">git clone https://github.com/vimwiki/vimwiki.git ~/.vim/pack/plugins/start/vimwiki</span></ln><br>
+</div>
+<br>
+<span class="label">Pathogen</span>
+<div id="cssyn">
+  <ln><span class="value">cd ~/.vim</span></ln><br>
+  <ln><span class="value">mkdir bundle</span></ln><br>
+  <ln><span class="value">cd bundle</span></ln><br>
+  <ln><span class="value">git clone https://github.com/vimwiki/vimwiki.git</span></ln><br>
+</div>
+<br>
+<br>
+<span class="label">Vim Plug</span>
+<div id="cssyn">
+  <ln><span class="value">Plug 'vimwiki/vimwiki'</span></ln><br>
+  <ln><span class="value">:PlugInstall</span></ln><br>
+</div>
+<br>
+<br>
+After this, vimwiki is ready to use.<br>
+vimwiki can basically be formatted using three different syntax: vimwiki (default), Markdown and MediaWiki.<br>
+The syntax that vimwiki should use can also be defined in the ".vimrc".<br>
+<br>
+<span class="label">.vimrc</span>.
+<div id="cssyn">
+  <ln><span class="value">let g:vimwiki_list = [{'path': '~/vimwiki/',</span></ln><br>
+  <ln><span class="value">\ 'syntax': 'markdown', 'ext': '.md'}]</span></ln><br>
+</div>
+<br>
+<br>
+In principle, it is also recommended to install the helpfiles for vimwiki.<br>
+<br>
+<span class="label">Terminal</span>.
+<div id="cssyn">
+  <ln><span class="value">vim -c 'helptags ~/.vim/pack/plugins/start/vimwiki/doc' -c quit</span></ln><br>
+</div>
+<br>
+<br>
+Once that's done - you're good to go.<br>
+<br>
+<h3>Use</h3>
+As Vim already does, vimwiki is controlled purely by keyboard and keybindings.<br>
+The following keybindings help to control it ([LEADER] is in the default config of Vim \, if you mapped the LEADER differently you have to take that of course):<br>
+<br>
+<span class="label">KEYBINDINGS</span>
+<div id="cssyn">
+  <ln><span class="value">[LEADER] ww -- open wiki index file</span></ln><br>
+  <ln><span class="value">[LEADER] wt -- open die index file in new tab</span></ln><br>
+  <ln><span class="value">[LEADER] ws -- open selected index file</span></ln><br>
+  <ln><span class="value">[LEADER] wd -- delete wikifile</span></ln><br>
+  <ln><span class="value">[LEADER] wr -- rename wikifile</span></ln><br>
+  <ln><ln><br>
+  <ln><span class="value">[ENTER] -- follow / create Link</span></ln><br>
+  <ln><span class="value">[BACKSPACE] -- Back</span></ln><br>
+</div>
+<br>
+<br>
+With this, vimwiki can now be operated.<br>
+Now we can install vimwiki, basically configure it and also operate it.<br>
+But now there is no content yet. Before the knowledgebase is filled, considerations about the structure must be made, this saves a lot of rework.<br>
+If the rough structure stands, the index file can be created.<br>
+The vimwiki own syntax is relatively simple and not entirely dissimilar to Markdown.<br>
+<br>
+<h3>vimwiki syntax</h3>
+The following tags can be used to style the index file and individual vimwiki pages:<br>
+<br>
+= H1 =<br>
+== H2 ==<br>
+=== H3 ===<br>
+<br>
+*bold* (bold)<br>
+_italic_ (italic)<br>
+<br>
+[[Link]] (Simple internal link)<br>
+[[Link|Description]] (Simple internal link | display name in wikifile)<br>
+<br>
+* List Pos 1<br>
+* List Pos 2<br>
+<br>
+- List Pos 1<br>
+- List Pos 2<br>
+<br>
+1st list Pos 1<br>
+2. list pos 2<br>
+<br>
+For all usable syntax tags, you can always use the internal help:<br>
+<br>
+<span class="label">VIM</span>.
+<div id="cssyn">
+  <ln><span class="value">:h vimwiki-syntax</span></ln><br>
+</div>
+<br>
+Another function is to export the wikifiles to HTML.<br>
+To do this, there are the following commands that can be used in Vim:<br>
+<br>
+<span class="label">VIM</span>
+<div id="cssyn">
+  <ln><span class="value">:vimwiki2HTML (exports the current file as HTML)</span></ln><br>
+  <ln><span class="value">:vimwikiAll2HTML (exports all file as HTML)</span></ln><br>
+</div>
+<br>
+<br>
+vimwiki makes everyday life a lot easier. With vimwiki you can organize almost everything:<br>
+- Todo lists<br>
+- Diaries<br>
+- Protocols<br>
+- Project planning<br>
+- Code documentation<br>
+<br>
+And pretty much anything you can think of. The perfect plugin if you want to do without bloat-ui-tools.<br>
+Now I need a workable calendar for Vim, but that's another story.<br>
+
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

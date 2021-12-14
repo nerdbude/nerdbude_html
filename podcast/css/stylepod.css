@@ -23,10 +23,12 @@
 body {
   font-family: 'share_tech_monoregular';
   color: #d7d7d7;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
   background-color: #272727;
   min-height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
   {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 }
 
@@ -84,16 +86,32 @@ a.front:active {
   color: #8787ff;
 }
 
+b {
+  color: #afd75f;
+}
+
 p {
   padding: 0;
-  margin: 10px 0 30px 0;
   background-color: #272727;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.nbgreen {
+  color: #afd75f;
 }
 
 img {
   max-width: 100%;
   margin-bottom: 0px;
+}
+
+.imgdistance {
+  margin-right: 20px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-style: solid;
+  border-color: #875fff;
+  border-width: 1px;
 }
 
 header {
@@ -109,6 +127,7 @@ header {
 th {
   text-align: left;
   font-weight: 100;
+  vertical-align: top;
 }
 
 ln		{font-family: 'Share Tech Mono', monospace;
@@ -272,4 +291,52 @@ pre		{font-family: 'Share Tech Mono', monospace;
   border-color: #875fff
   background-color: #875fff;
   color: #272727;
+}
+
+/* MENU BUTTON */
+
+.button {
+  background-color: #875fff;
+  color: #272727;
+  border-color: #875fff;
+  border-width: 2px;
+  border-style: solid;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #272727;
+  border-color: #875fff;
+  border-width: 2px;
+  border-style: solid;
+  color: #875fff;
+}
+
+/* POD BUTTON */
+
+.buttonepisode {
+  background-color: #875fff;
+  color: #272727;
+  border-color: #875fff;
+  border-width: 2px;
+  border-style: solid;
+  padding: 8px 10px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.buttonepisode:hover {
+  background-color: #272727;
+  border-color: #875fff;
+  border-width: 2px;
+  border-style: solid;
+  color: #875fff;
 }

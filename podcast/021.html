@@ -1,0 +1,134 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/podcast/020.html">
+    <meta property="og:title" content="CCH_021 - Debugging">
+    <meta property="og:description" content="Ihr habt euer absolutes Traumkeyboard vor euch, alles fertig gelötet und nichts funktioniert. Alles kein Problem.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/podcast/images/cover.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/podcast/cover.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/podcast/css/stylepod.css" media="screen">
+</head>
+
+<body>
+
+	<!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <center><img src="https://www.nerdbude.com/images/HEADER.png" width=500px></center>
+      <br><br>
+      <center>
+      <table>
+	      <tr>
+          <th><a href="https://www.nerdbude.com/podcast/episodes.html" class="button">EPISODEN</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/about.html" class="button">ABOUT</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/podbars.html" class="button">STATISTIKEN</a></th>
+          <th><script>window.podcastData={"title":"Click! Clack! Hack!","subtitle":"Ein Podcast über mechanische Tastaturen","description":"Ich rede über mechanische Tastaturen und alles was dazu gehört. Hardware, Software, DIY, Custom Keyboards und noch vieles mehr.","cover":"https://www.nerdbude.com/podcast/images/cover.png","feeds":[{"type":"audio","format":"mp3","url":"https://www.nerdbude.com/podcast/feed/feed.xml"}]}</script><script class="podlove-subscribe-button" src="https://cdn.podlove.org/subscribe-button/javascripts/app.js" data-language="de" data-size="big" data-json-data="podcastData" data-color="#875fff" data-format="rectangle" data-style="filled"></script><noscript><a href="https://www.nerdbude.com/podcast/feed/feed.xml">Subscribe to feed</a></noscript></th>
+        </tr>
+      </table>
+      </center>
+      <br>
+    </div>
+  </header>
+
+<!-- <div id="content"> -->
+<!-- ARTIKLE START -->
+<img class="imgdistance" src="https://www.nerdbude.com/podcast/images/cover.png" width=200px style="float:left;">
+<h1>CCH021 - DEBUGGING</h1>
+<a href="https://www.nerdbude.com/podcast/audio/CCH_021.mp3">EPISODE ABSPIELEN</a><br>
+<br>
+Stellt euch vor ihr habt endlich alle Parts für euer Traumkeyboard zusammen, ihr habt 6 Monate auf die PCB aus dem Groupbuy gewartet, habt viele Stunden überlegt welche Switches ihr verbauen wollt, habt alle Parts fertig verlötet, die PCB ins Case gepackt, mit größter Sorgfalt eure Caps auf das Hackbrett gesteckt und freudestrahlend steckt ihr euer Keyboard an den PC und ... nichts passiert. Keine Buchstaben die auf dem Bildschirm auftauchen - nichts. Das ist kein Beinbruch es gibt diverse Fehlerquellen die sich eingeschlichen haben können. Welche das sind und wie ihr die wieder beheben könnt, erfahrt ihr in dieser Episode. <br>
+  <br>
+  Neuigkeiten:<br>
+  <br>
+  Das Jahresendspecial rückt etwas näher und wird euch diesmal beschert von den wunderbaren <a href="https://www.candykeys.com">CANDYKEYS</a><br>
+  <br>
+  NEWS<br>
+  <a href="https://kbd.news/giveaway">Keyboard Builders Digest wird 1 Jahr alt</a><br>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmxv9LeS__Fa7xENwliEXOork9PByXQOJOijB7P12x8y7sFw/alreadyresponded">Keyboard Builders Digest Giveaway</a><br>
+  <a href="https://twitter.com/apiarykeyboards/status/1455992949804703748">Glourious Gaming und die Keycaps</a><br>
+  <br>
+  GROUPBUYS<br>
+  <a href="https://keygem.store/products/group-buy-dcs-solarized-dark">[GB] DCS Solarized Dark</a><br>
+  <a href="https://oblotzky.industries/products/GMK-dracula-v2">[GB] GMK Dracula V2</a><br>
+  <a href="https://mykeyboard.eu/search/?q=geoma">[GB] SA Geoma</a><br>
+  <a href="https://mykeyboard.eu/catalogue/gmk-hooty-hootcore_5082/">[GB] GMK Hooty Hootcore</a><br>
+  <a href="https://mykeyboard.eu/catalogue/category/group-buys/keycaps/gmk-terror_611/">[GB] GMK Terror</a><br>
+  <br>
+  SWITCHES<br>
+  <a href="https://loobedswitches.com/products/gateron-mini">Gateron Mini</a><br>
+  <a href="https://alphakeys.ca/products/haluhalo-switches?_pos=3&_sid=8749f1ca3&_ss=r">JWK HaluHalo</a><br>
+  <br>
+  DEBUGGING<br>
+  <a href="https://www.ergodox.io/">ErgoDox Split Keyboard</a><br>
+  <a href="https://commons.wikimedia.org/wiki/File:FunctionalCircuitDiagramOfKeyboardNumPadScanningProcedure.gif">Keyboard Raster</a><br>
+  <a href="https://www.reviewgeek.com/70291/what-is-an-ortholinear-keyboard-and-should-you-use-one/">Ortholineares Keyboard</a><br>
+  <a href="https://en.wikipedia.org/wiki/Rollover_(keyboard)#n-key_rollover">NKRO</a><br>
+  <a href="https://de.wikipedia.org/wiki/Diode">Dioden</a><br>
+  <a href="https://docs.qmk.fm/#/">QMK</a><br>
+  <a href="https://www.vim.org/">VIM ;)</a><br>
+  <a href="https://de.wikipedia.org/wiki/Multimeter">Multimeter</a><br>
+  <a href="https://multimetertests.de/durchgangspruefung-mit-multimeter/">Durchgangsprüfung mit dem Multimeter</a><br>
+  <a href="https://multimetertests.de/diodentest-mit-multimeter/">Dioden messen mit dem Multimeter</a><br>
+  <a href="https://www.technolab.de/de/loetlexikon/smd-hmd/kalte-loetstellen.php">Kalte Lötstelle</a><br>
+  <a href="https://www.reichelt.de/magazin/ratgeber/wie-sie-sicher-und-perfekt-loeten/">Reichelt erklärt wie man lötet</a><br>
+  <a href="https://www.kbfirmware.com">kbfirmware.com</a><br>
+  <a href="https://www.keyboard-test.space">keyboard-test.space</a><br>
+  <a href="https://www.keyboardtester.com">keyboardtester.com</a><br>
+  <a href="https://stendec.io/yakt/">https://stendec.io/yakt/</a><br>
+  <a href="https://w3c.github.io/uievents/tests/key-mtest-101en-us.html">Keyboard Layout Manual Test</a><br>
+  <a href="https://beta.docs.qmk.fm/faqs/faq_debug">QMK Debugging</a><br>
+  <a href="https://www.pjrc.com/teensy/hid_listen.html">HID_LISTEN</a><br>
+  <a href="https://www.maxkeyboard.com/cherry-mx-keycap-stabilizer-insert-4-pcs.html">Stabilizer Inlets (rennt weg wenn ihr die seht)</a><br>
+  <a href="https://c7.alamy.com/compde/a344kn/close-up-einer-computer-tastatur-in-brand-a344kn.jpg">Vielleicht doch 'n anderes Hobby</a><br>
+  <br>
+  <br>
+  KONTAKT:<br>
+  --------<br>
+  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a><br>
+  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+  MAIL: <a href="mailto:cch@nerdbude.com">cch@nerdbude.com</a><br>
+  <br>
+  MUSIK:<br>
+  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+  Outro: <a href="https://freemusicarchive.org/music/Captive_Portal/Toy_Sounds_Vol_1/Captive_Portal_-_Toy_Sounds_Vol_1_-_02_Me_As">Captive Portal - Me As (CC-BY)</a><br>
+  <br>
+  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.
+
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

@@ -12,6 +12,83 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>[VIM] VIM V</title>
+      <description>Im 5. Teil geht es diesmal um die .VIMRC. Das Zentrum den (Vim-)Universums. Wie sie arbeitet und was sie für Möglichkeiten birgt erfahrt ihr hier.</description>
+      <link>https://www.nerdbude.com/vim_5.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 13 Dec 2021 12:15:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[VIM] VIM IV</title>
+      <description>Die Basics haben wir abgefrühstückt. Manchmal brauchts aber etwas mehr Funktionalität. Dafür gibts Plugins in Vim.</description>
+      <link>https://www.nerdbude.com/hackbrettdiskord.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Fri, 10 Dec 2021 15:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[VIM] VIM III</title>
+      <description>In Teil III der kleinen VIM Schule geht es um den VISUAL Mode, seine drei submodi und was sich damit alles anstellen lässt.</description>
+      <link>https://www.nerdbude.com/hackbrettdiskord.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 09 Dec 2021 15:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[MIS] Die diskordische Jahresendpredigt!</title>
+      <description>Ich durfte im mir verliehenem Amt als diskordischer Papst - im Hause Zentonic die Diskordische-Hackbrett-Jahresendpredigt halten und offenbare euch nun hier das Transkript. Huldigt dem Click! Seid Chaos!</description>
+      <link>https://www.nerdbude.com/hackbrettdiskord.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 08 Dec 2021 11:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[VIM] VIM (II)</title>
+      <description>Weiter gehts mit Vim und was damit alles angestellt werden kann. Diesmal geht es um den NORMAL Mode, Commands, Tastenkombinationen, Split-Views und Tabs. Also alles in Allem ein weiterer Schritt richtung vollwertiger IDE und das alles im Terminal.</description>
+      <link>https://www.nerdbude.com/vim_2.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 06 Dec 2021 15:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[VIM] VIM (I)</title>
+      <description>Ich benutze ihn alltäglich und kenne mit Sicherheit nur einen Bruchteil der Funktionen. Wird also Zeit mehr über den besten Editor der Welt zu lernen. Das ganze kommt natürlich ab jetzt auch hier in die NERDBUDE damit ihr auch was davon habt. Teil 1 behandelt die tiefsten Grundlagen und natürlich wie Vim wieder geschlossen wird.</description>
+      <link>https://www.nerdbude.com/log_14102021.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 03 Dec 2021 13:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[LOG] 14102021</title>
+      <description>Ein kleines bisschen Bastelarbeit und zack! könnt ihr ab sofort posts auf der NERDBUDE sortieren und kategorsiert anzeigen lassen und lesen. Alles wie immer in purem HTML und ohne JS. </description>
+      <link>https://www.nerdbude.com/log_14102021.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 14 Oct 2021 09:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Canto</title>
+      <description>Canto ist ein RSS Feed Reader für das Terminal und wahrscheinlich der letzte den ich installieren werde. Canto ist komplett mit Vim-Keys steuerbar und hochkonfigurierbar. Canto updatet sich automatisch im Hintergrund und sieht wunderbar minimalistisch aus. </description>
+      <link>https://www.nerdbude.com/canto.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 29 Sep 2021 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>VimWiki - Ein Plugin sie alle zu organisieren.</title>
+      <description>Ich benutze Vim und ich möchte Vim auch möglichst wenig verlassen müssen. Außerdem brauch ich einen Ort an dem ich Infos sammeln kann und Listen anlegen kann. Beides und noch mehr bietet Vimwiki. Vimwiki baut ein komplettes lokales Wiki als Knowledgebase, Tagebuch oder als Todo-Listen App.</description>
+      <link>https://www.nerdbude.com/vimwiki.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 28 Sep 2021 10:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Der CCC wird 40! Eine Liebeserklärung</title>
+      <description>Die "galaktische Gemeinschaft von Lebewesen" feierte am 12.11.2021 ihr 40-jähriges Bestehen und da mich der Club mehr als nachhaltig beeinflusst hat und dies auc hnoch immer tut, gibt es hier eine kleine Liebeserklärung und natürlich Glückwünsche.</description>
+      <link>https://www.nerdbude.com/ccc0x28.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Mon, 13 Sep 2021 11:30:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Man nerdet nie aus</title>
+      <description>Podcasts kommen hier ja immer wieder vor. Warum? Weil Podcasts toll sind und eine Menge Spaß machen. Ich durfte mit Sabrina im "Man nerdet nie aus" über mechanische Tastaturen abnerden und Metatalk gibts auch.</description>
+      <link>https://www.nerdbude.com/mannerdetnieaus.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 08 Sep 2021 10:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>NERDBUDE REBUILD</title>
       <description>Ich hatte Urlaub und habe mich mal an die liebe NERDBUDE gesetzt und Sachen eingebaut die mir so eingefallen sind - also quasi NERDBUDE 2.0</description>
       <link>https://www.nerdbude.com/log30082021.html</link>

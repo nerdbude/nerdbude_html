@@ -35,12 +35,12 @@
   <!--- HEADER -->
   <header>
     <div id="headerimage">
-      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h1 id="terminal"><a href="https://www.nerdbude.com/en/en_index.html" class="front">NERDBUDE</a></h1>
       <h3>[ code. keyboards. terminals. cyber. ]</h3>
       <table>
 	      <tr>
-		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
-          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
           <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
           <th><a href="https://www.nerdbude.com/podstats.html" class="front">[GERMAN]</a></th>
 	      </tr>
@@ -63,7 +63,7 @@ There you can find everything you need for DIY podcasting.<br>
 Among other things, also a way to get statistics.<br>
 <br>
 <h3>Overview</h3>
-To get statistics (downloads, players, etc.) from his podcast, Wordpress and Co. use databases.<br>.
+To get statistics (downloads, players, etc.) from his podcast, Wordpress and Co. use databases.<br>
 You can do. But you don't have to. I actually want to keep everything as small as possible here, so no wordpress and no DB.<br>
 So what is available to get statistics?<br>
 If the webspace provider already writes logs, then we also use them.<br>
@@ -95,7 +95,7 @@ First, only the entries are filtered out that refer to the directory with the ep
 </div>
 <br>
 <br>
-Here we grep all entries that contain "/podcast/audio" from the logfile into a temporary filtered.log.<br>.
+Here we grep all entries that contain "/podcast/audio" from the logfile into a temporary filtered.log.<br>
 This way we get all entries that refer to the episodes and throw away the rest.<br>
 After that we filter by episodes, meaning all entries for each episode.<br>
 <br>
@@ -107,7 +107,7 @@ After that we filter by episodes, meaning all entries for each episode.<br>
 </div>
 <br>
 <br>
-Here grep fetches the lines from the filtered.log which, the episode contains and writes them into a new temporary log file which is episode-specific (f000.log).<br>.
+Here grep fetches the lines from the filtered.log which, the episode contains and writes them into a new temporary log file which is episode-specific (f000.log).<br>
 This is now done for each episode, so you get a log catalog with all episodes (f000.log, f001.log etc.).<br>
 Continue with the downloads.<br>
 <br>
@@ -119,7 +119,7 @@ Continue with the downloads.<br>
 </div>
 <br>
 <br>
-Here grep grabs all lines with the HTTP code 200 (for download) and the complete file size in bytes (233223) from the file "f000.log" and writes them again to the temporary "fs000.log"<br>.
+Here grep grabs all lines with the HTTP code 200 (for download) and the complete file size in bytes (233223) from the file "f000.log" and writes them again to the temporary "fs000.log"<br>
 This way we get only the entries for completed downloads.<br>
 Now the content of the temporary "fs000.log" is appended to the episode0.log:<br>
 <br>

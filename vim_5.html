@@ -1,0 +1,209 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/vim_5.html">
+    <meta property="og:title" content="VIM (V)">
+    <meta property="og:description" content="Diesmal schau ich Vim unter die Haube. Genauer gesagt in die .VIMRC config file.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_vim_5.html" class="front">[ENGLISH]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM V</h2>
+<h3>Konfiguration</h3>
+Da wir Vim nun einigermaßen benutzen können, schrauben wir mal ein wenig an Vim herum. Die zentrale Configfile ist die .VIMRC. Hier drin wird das komplette verhalten von Vim konfiguriert, Plugins die beim Start geladen werden sollen, Syntaxhighlighting, das Colorscheme, Keymapping usw. Die .VIMRC ist in der Vim-eigenen Scriptsprache VIMSCRIPT geschrieben.<br>
+Also benutzen wir Vim umd die .VIMRC zu bearbeiten:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">vim ~/vim/.vimrc</span></ln>
+</pre>
+</div>
+<br>
+Wie bei den meisten Linux Tools wird hier das Verhalten, Aussehen und die Erweiterung um Funktionen von Vim geregelt und konfiguriert. Die .VIMRC ist menschenlesbar geschrieben und kann dementsprechend leicht modifiziert werden (vorrausgesetzt man kennt die Variablen). Hier mal ein paar einfache Einträge die, die Benutzung von Vim deutlich schöner und angenehmer machen.<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">syntax on (aktiviert Syntaxhighlinghting)</span></ln>
+  <ln><span class="unixshell">set number (aktiviert Linenumbers)</span></ln>
+  <ln><span class="unixshell">colo iwtb (nutzt das iwtb Colorscheme)</span></ln>
+  <ln><span class="unixshell">filetype plugin on (Vim erkennt anhand der Endung welches Highlighting)</span></ln>
+  <ln><span class="unixshell">set laststatus 2 (aktiviert Statusleiste)</span></ln>
+  <ln><span class="unixshell">set history=1000 (Speichert die letzten 1000 Commands die benutzt wurden)</span></ln>
+</pre>
+</div>
+<br>
+Mit den 6 Einträgen lässt sich Vim schon besser benutzen und sieht deutlich besser aus und nicht mehr S/W. Das IWTB Colorscheme gibts im übrigen <a href="https://www.nerdbude.com/iwtb.html">HIER</a>.<br>
+Das sind allerdings einfache Erweiterungen bzw. Optionen die Vim von Haus aus mitbringt - also quasi Basic configs. Hier brauchen keine extra Plugins installiert werden. Wenn wir nun aber Plugins benutzen wollen, braucht es einen Eintrag für den verwendeten Pluginmanager (in meinem Fall Pathogen). Auf Plugins selber bin ich bereits in <a href="https://www.nerdbude.com/vim_4">Part IV</a> der kleinen Vim Reihe hier.<br>
+Um Pathogen zum Pluginmanager zu machen braucht es folgenden .VIMRC Eintrag:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">execute pathogen#infect()</span></ln>
+  <ln><span class="unixshell">call pathogen#infect()</span></ln>
+</pre>
+</div>
+<br>
+... und schon fungiert Pathogen als Pluginmanager.<br>
+<br>
+<h3>KEYMAPPING</h3>
+In der .VIMRC lassen sich auch Keys bzw. Tasten neu mappen. Der ESC Key bspw. als Exit aus den Modes, stammt noch von Keyboards der ADM-3A Rechner auf denen vi entwickelt wurde. Hier war ESC direkt neben "Q" also deutlich einfacher zu erreichen als bei moderneren Keyboards wo ESC in die Leiste mit Funktions-Keys gerutscht ist. Warum also ESC nicht auf eine andere Taste mappen damit schneller zwischen den Modes gewechslt werden kann.<br>
+Dazu reicht folgender Eintrag in der .VIMRC:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">inoremap jj &lt;ESC&gt;</span></ln>
+</pre>
+</div>
+<br>
+Mit diesem Eintrag kann der INSERT Mode mit der Tastenfolge "jj" verlassen werden. Hier macht es natürlich Sinn eine Zeichenfolge zu nehmen die nicht oft vorkommen in geschriebenem Text. Die Tastenfolge "er" würde ziemlich schnell nerven.<br>
+Der grundlegende Syntax des Remappings ist folgender:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">map_mode &lt;what_you_type&gt; &lt;what_is_executed&gt;</span></ln>
+</pre>
+</div>
+<br>
+Für den map_mode gibt es drei Optionen:<br>
+- inoremap (mapped keys im INSERT Mode)<br>
+- nnoremap (mapped keys im NORMAL Mode)<br>
+- vnoremap (mapped keys im VISUAL Mode)<br>
+<br>
+Mit diesen Optionen können die Keys sehr präzise definiert werden.<br>
+Also am besten mit Vim rumspielen und darauf achten wo angepasst und verbessert werden kann.<br>
+<br>
+Wer das NERDtree Plugin nutzt kann sich bspw. das ":NERDtree" getippe sparen und NERDtree auf eine der F-Keys mappen:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">nnoremap &lt;F3&gt; :NERDTreeToggle&lt;cr&gt;</span></ln>
+</pre>
+</div>
+<br>
+Aber nicht nur die Mappings und und Basics werden in der .VIMRC konfiguriert sondern auch das Verhalten von Plugins. Ich benutze das Plugin "startify" - das macht Vim hübsch wenn es ohne File geöffnet wird. In "startify" können zum einen die zu letzt geöffneten Files angezeigt werden aber auch statische links zu häufig genutzten Files, wie zum Beispiel die .VIMRC, xmonad.hs oder die xmobar-configfile - wer krativ ist kann obendrein noch cooles ASCII-Art reinbauen. Was genau "startify" wird in der .VIMRC konfiguriert. Das spart uns eine separate Config-File und das nervige suchen im Nachhinein wenn ihr mal was ändern wollt. Meine "startify"  config sieht folgendermaßen aus:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">let g:startify_custom_header = [</span></ln>
+  <ln><span class="unixshell">\ '   88  88 888888 888888 88   88 88 ',</span></ln>
+  <ln><span class="unixshell">\ '   88  88 88  88 88     88  88  88 ',</span></ln>
+  <ln><span class="unixshell">\ '   888888 888888 88     8888    88 ',</span></ln>
+  <ln><span class="unixshell">\ '   88  88 88  88 88     88  88     ',</span></ln>
+  <ln><span class="unixshell">\ '   88  88 88  88 888888 88   88 88 ',</span></ln>
+  <ln><span class="unixshell">\ ]</span></ln>
+  <ln><span class="unixshell"></span></ln>
+  <ln><span class="unixshell">let g:startify_lists = [</span></ln>
+  <ln><span class="unixshell">\ { 'type': 'files',	'header': ['    last modified:'] },</span></ln>
+  <ln><span class="unixshell">\ { 'type': 'bookmarks', 'header': ['    bookmarks:'] },</span></ln>
+  <ln><span class="unixshell">\ ]</span></ln>
+  <ln><span class="unixshell"></span></ln>
+  <ln><span class="unixshell">let g:startify_bookmarks = [ {'w': '~/vimwiki/index.wiki'}, {'v': '~/.vimrc'}, {'x': '~/.xmonad/xmonad.hs'}, {'b': '~/.config/xmobar/xmobarrc0'}]</span></ln>
+</pre>
+</div>
+<br>
+So sieht Vim dann aus wenn es ohne Files zum öffnen, gestartet wird:<br>
+<br>
+<img src="https://www.nerdbude.com/images/vim_startify.jpg">
+<br>
+<br>
+Also recht wenig Code für ein ganz schickes Ergebnis.<br>
+<br>
+<h3>Statusline</h3>
+Die Statusline ist ein Feature, das jeder Editor braucht und der/die Endnutzer:in auch braucht - sei es einfach um zu schauen wieviel Zeilen Code ihr geschrieben habt. Die Statusline kann - wer hätte es gedacht - in der .VIMRC konfiguriert werden.<br>
+Als erstes wird, wie oben schon beschreiben, die Statusline mit "set laststatus=2" aktiviert und in Vim angezeigt. Die Statusline kann entweder nur links Infos anzeigen, nur Rechts oder Links und Rechts. Der .VIMRC Eintrag sieht dann folgendermaßen aus:<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">set statusline+=\ %F\ %M\ %Y\ %R</span></ln>
+  <ln><span class="unixshell">set statusline+=%=</span></ln>
+  <ln><span class="unixshell">set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%</span></ln>
+</pre>
+</div>
+<br>
+Was heißt das ganze Gerümpel nun?<br>
+Die Zeile "set statusline+=\ %F\ %M\ %Y\ %R" fängt links an die vergebenen Parameter in die Statuszeile zu schreiben. Die Variablen stehen dabei für:<br>
+<br>
+%F – Zeigt den vollen Pfad zur geöffneten File<br>
+%M – Zeigt an ob das File gesaved ist oder nicht<br>
+%Y – Dateityp<br>
+%R – Zeigt an wenn die File read-only ist<br>
+<br>
+Die nächste Zeile ("set statusline+=%=") die folgt funktioniert als Separator um die Statusline in zwei Teile aufzuteilen.<br>
+<br>
+Danach wird die rechte Seite der Statusline konfiguriert. Das läuft genauso ab wie bei der linken Seite. Das gleiche Anzeigen lassen wie auf der linken Seite macht natürlich wenig Sinn:<br>
+Deswegen sieht die nächste Zeile etwas anders aus: "set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%"<br>
+<br>
+%b – Zeigt das ASCII/Unicode Zeichen unter dem Cursor.<br>
+0x%B – Zeigt das Hexadecimal Zeicehn unter dem Cursor.<br>
+%l – Zeigt die Zeilennummer in der der Cursor ist.<br>
+%c – Zeigt die Splatennummer in der der Cursor ist.<br>
+%p%% – Zeigt die Position des Cursor in Prozent.<br>
+<br>
+Für mehr Infos und Parameter lohnt es sich auch immer einen Blick in die Hilfe zu werfen. Dazu kann in Vim (Im NORMAL Mode) mit folgendem Command die Help-File angezeigt werden. Hier am Beispiel der Statusline Helpfile.<br>
+<br>
+<div id="cssyn">
+<pre>
+  <ln><span class="unixshell">help: statusline</span></ln>
+</pre>
+</div>
+<br>
+Wie ihr seht lassen sich Basisfunktionen, Colorschemes, Plugins und auch die Statusline bequem in einer File konfigurieren. Das hier ist nur ein winziger Teil der Möglichkeiten die mit der .VIMRC möglich sind. Am einfachsten könnt ihr euch wie immer durch Github oder Gitlab inspieren lassen, wass andere in ihren .VIMRC Files haben und was ihr auch haben wollt. Viel Spaß beim Konfigurieren und rumspielen mit der .VIMRC.
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/vim_2.html">
+    <meta property="og:title" content="VIM (II)">
+    <meta property="og:description" content="Der zweite Teil der VIM Reihe über den NORMAL MODE, Split-View und Tabs">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/vim_2.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM II</h2>
+<h3>Basic Commands, Split-View, Tabs</h3>
+Part 2 of "Learning Vim with the NERDBUDE".<br>
+How the basic structure and operation of Vim works I explained in <a href="https://www.nerdbude.com/en/en_vim_1.html">PART I</a>. The second part is about the NORMAL mode which is the base for everything (except text/code input).
+Last time I explained how to open a simple file, write text, save and close the file. This may be sufficient for simple notes or similar. But now Vim can be used much more complex. The basis for everything is the NORMAL mode. A short step back. NORMAL mode is reached by pressing "ESC". The status line then shows NORMAL.<br>
+Here various commands and key combinations can be used to edit text or code on the one hand and on the other hand to control functions in Vim.<br>
+<h3>KEYS</h3>
+In NORMAL mode there are two ways of using it. One is keys and key combinations and the other is commands. Key combinations can be simply pressed as usual and commands are usually started with ":" followed by the desired command. Now but enough of the theory finally we want to use Vim and not just read about it.<br>
+<br>
+Let's start with the basic keys and key combinations that make navigating the cursor in Vim much easier. We can of course use HJKL until we get to where we want to go, but this takes much more time than using keyboard shortcuts.<br>.
+There are also keys and key combinations to edit text. Basically it can be said that Vim commands and keyboard shortcuts follow the following two schemes:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">[command][number]text object</span></ln>
+<ln><span class="unixshell">[number][command]text object</span></ln>
+</pre>
+</div>
+<br>
+Looks complicated at first, but once we look at an example it becomes more understandable:<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">2dd</span></ln>
+</pre>
+</div>
+<br>
+The "2" defines the number, "d" stands for Delete and the second "d" instructs Vim to delete the complete line. Thus "2dd" deletes two lines from the file.<br>
+The keys and combinations that are often used (at least for me) are as follows:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">x  - delete single character</span></ln>
+<ln><span class="unixshell">dd - delete line</span></ln>
+<ln><span class="unixshell">2dd - delete two lines</span></ln>
+<ln><span class="unixshell">yy - copy a line</span></ln>
+<ln><span class="unixshell">2yy  - copy two lines </span></ln>
+<ln><span class="unixshell">p  - paste </span></ln>
+<ln><span class="unixshell">ZZ  - save and quit </span></ln>
+</pre>
+</div>
+<br>
+To facilitate the navigation of the cursor, the following keys can be used:<br>
+<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">b / w  - previous / next word</span></ln>
+<ln><span class="unixshell">ge / e - previous / next word to end</span></ln>
+<ln><span class="unixshell">G - last line</span></ln>
+<ln><span class="unixshell">gg - first line</span></ln>
+<ln><span class="unixshell">3G  - go to line 3</span></ln>
+</pre>
+</div>
+<br>
+With this basic text and code files can be edited conveniently and efficiently. Continue with the commands that Vim holds ready.<br>
+<h3>COMMANDS</h3>
+In addition to the keys and key combinations, Vim also provides commands that can be used. Commands are also entered in NORMAL mode and usually start with a ":".<br>
+The basic commands are as follows:<br>
+<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:q - Quit</span></ln>
+<ln><span class="unixshell">:wq - Save and quit</span></ln>
+<ln><span class="unixshell">:q! - Quit without saving</span></ln>
+<ln><span class="unixshell">:w - Save</span></ln>
+<ln><span class="unixshell">:qa - closes all files</span></ln>
+<ln><span class="unixshell">:qa! - close all files without save</span></ln>
+<ln><span class="unixshell">:e /path/to/file - open file</span></ln>
+</pre>
+</div>
+<br>
+With this we can close Vim and save files. Vim can of course not only open and edit one file. Vim can open multiple files. There are two ways to open files: Tabs or in Split-View.<br>
+<br>
+<h3>SPLITS / TABS</h3>.
+If you want to work in parallel on files that are related to each other, it is useful to see the files side by side. For this there are also split views in Vim. Horizontally split as well as vertically split.<br>
+To split a Vim instance, the following commands can be used:<br>
+<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:split - split horizontal</span></ln>
+<ln><span class="unixshell">:vsplit - split vertical</span></ln>
+</pre>
+</div>
+<br>
+Now Vim is split and we can open and edit files in the individual splits with ":e".<br>
+Since Vim runs in the terminal, the question now is how to switch between the splits.<br>
+<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">STRG + W - next split window</span></ln>
+</pre>
+</div>
+<br>
+Now we might not want to split only vertically or horizontally but have a colorful mix of both. Works of course also under Vim. For this it needs again key combinations.<br>
+<br>
+<span class="label">HORIZONTAL TO VERTICAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">STRG + W</span></ln>
+<ln><span class="unixshell">SHIFT + H</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<br>
+<span class="label">VERTICAL TO HORIZONTAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">STRG + W</span></ln>
+<ln><span class="unixshell">SHIFT + K</span></ln>
+</pre>
+</div>
+<br>
+<br>
+"CTRL + W" activates in this case the Window Command, which serves to edit the window.<br>
+But if we do not need to edit files side by side, but tabs are sufficient in principle, of course, this also works.<br>
+<h3>TABS</h3>
+Tabs should know everyone from his favorite Internet browser. Parallel open but not simultaneously visible files.<br>
+In Vim, tabs can be created with the following command:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:tabnew</span></ln>
+</pre>
+</div>
+<br>
+<br>
+This command creates a new tab without a name. However, it is also possible to specify at the start of Vim that several files are to be opened in tabs in a Vim instance.
+To do this, use the following command in the command line:<br>.
+<br>
+<span class="label">TERMINAL</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">vim -p file1.md file2.md</span></ln>
+</pre>
+</div>
+<br>
+<br>
+The option "-p" specifies that the following files (file1.md, file2.md) should be opened in tabs.
+After this command Vim opens with all specified files. But how to switch between the tabs? This is just as simple and with two key combinations<br>.
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">gt - Next Tab</span></ln>
+<ln><span class="unixshell">gT - Previous Tab</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Or we can jump directly to the 5th tab using the above scheme with the key combination:<br>.
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">5gt - to the 5th tab</span></ln>
+</pre>
+</div>
+<br>
+<br>
+There are two ways to close a tab. On the one hand the well-known ":q" or one uses the command ":tabclose".<br>
+<br>
+<h3>PRAXIS</h3>.
+With the basics to the NORMAL mode we are now able to use Vim like a modern editor with tabs, split windows, we can open, close and save files and also move in the files. So we are getting closer to a full replacement for an IDE for example. As a conclusion as already with Part I this "written learning process" a small example:<br>
+<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">vim -p file1.md file2.md - Open 2 files within tabs</span></ln>
+<ln><span class="unixshell">2gt - to tab nr. 2</span></ln>
+<ln><span class="unixshell">i - activate INSERT Mode</span></ln>
+<ln><span class="unixshell">Hack the Planet - our Text</span></ln>
+<ln><span class="unixshell">ESC - exit the INSERT Mode</span></ln>
+<ln><span class="unixshell">yy - copy a line of text...</span></ln>
+<ln><span class="unixshell">p - ... and paste it</span></ln>
+<ln><span class="unixshell">:w - save</span></ln>
+<ln><span class="unixshell">:q - quit</span></ln>
+</pre>
+</div>
+<br>
+<br>
+<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>
