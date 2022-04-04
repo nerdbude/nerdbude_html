@@ -1,0 +1,179 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en/en_vim_6.html">
+    <meta property="og:title" content="VIM (VI)">
+    <meta property="og:description" content="Integration and Fazit">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/vim_6.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM VI</h2>
+<h3>INTEGRATION</h3>
+The article title could be confusing it is not about "Vim vi" but about the 6th part of the NERDBUDE Vim series. This part will not necessarily be exciting for everyone. On my systems I try to do all tasks in the terminal. This saves resources, is faster and can be done perfectly with the keyboard (the weakness should be known). Vim itself offers the possibility of a GUI but we exclude that here. If now everything should be done in the terminal I'll have a look how far Vim can be integrated into the daily workflow. Now I use NixOS (high performance) with XMonad (small, fast and completely keyboard controllable) and as interface several mechanical keyboards. So everything is designed to move my hands as little as possible. Vim can be a valuable intersection to operate tools without having to leave the editor or to bend or use Vim so to save me intermediate steps and memory space.<br>
+<br>
+<h3>SSH</h3>
+In the course of a small project (a cyber walkman podcast player - coming soon.) or even just editing files on nem Raspberry Pi there are two possibilities.<br>
+Edit the files via SSH on the Raspi. Disadvantage: Vim must be configured first and that costs time. Option 2: Download the file, edit it and put it back on the Raspi. Much better but still too many steps.<br>
+<br>
+Now the dear <a href="https://twitter.com/cubadonis">@cubadonis</a> the last few days, in response to a tweet regarding the Vim series here, answered a possibility that, the intermediate steps significantly steamed.<br>
+Via "scp" (secure copy) files can be transferred via SSH to or from servers to which access is available.<br>
+So why not the instruction Vim should load a file via SSH from a remote instance directly into a buffer and when saving it also write it directly back to the server via SSH.<br>
+Sounds incredibly complicated, but it's really simple. The commands for this look like this:<br>
+<br>
+<span class="label">TERMINAL</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">vim scp://user@server:port//path/to/remotefile</span></ln>
+</pre>
+</div>
+<br>
+<br>
+This will open Vim and in Vim directly "scp" incl. password request for the SSH Connect. If you have entered the password, you see the file in Vim and can edit it. When saving the file with ":w" the password will be asked again and saved remotely to the server. Vim-Magic at its best. Thanks Cuba - didn't know this yet - will use it daily now.<br>
+<br>
+<h3>LINUX TERMINAL</h3>
+When writing scripts or programs, of course they want to be tested regularly. Now it is quite simple in my case under XMonad briefly initialize a new terminal (Mod + Enter). But there is also the possibility to start a new terminal directly in Vim and to work there with the known commands. This can be done in two ways:<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:! &lt;command&gt;</span></ln>
+<ln><span class="unixshell">:term &lt;command&gt; (ab Vim 8.0)</span></ln>
+</pre>
+</div>
+<br>
+<br>
+The first option ":! &lt;command&gt;" tells Vim with the command ":!" that a terminal command follows and should be executed. When the command is executed, Vim itself is pushed into the background and only when the command is finished, Vim appears in the foreground again.
+The mMn. better variant is ":term". This Vim command is available from ver8.0 of Vim. The advantage is obvious here. Vim is not pushed into the background, but the terminal is initialized as a split window in Vim. With "CTRL + W" you can then switch normally between editor and terminal window. This allows parallel working on the file and testing in the terminal.
+So quasi the terminal in Vim in the terminal.<br>
+<br>
+<h3>GIT</h3>
+Also often in use: git. The good old version control on which also GitHub and Gitlab are based. Vim can already handle "git" in simple principles. As in the section above, we can open a terminal in Vim and work there via "git" terminal commands. This way, Vim always stays nicely open and doesn't need to be exited for that. However, a little bit more integration into Vim is brought by a plugin called <a href="https://github.com/tpope/vim-fugitive">"Vim-Fugitive"</a>. Vim-Fugitive allows the use of git commands in Vim itself. The plugin can be conveniently used via Pathogen (<a href="https://www.nerdbude.com/vim_4.html">PART IV</a>). If "Vim-Fugitive" is installed, git can be used directly in Vim.<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:Git</span></ln>
+<ln><span class="unixshell">:G</span></ln>
+</pre>
+</div>
+<br>
+<br>
+This will enable the functionality of the plugin, followed by the specific git command you want:<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:G add</span></ln>
+<ln><span class="unixshell">:G commit</span></ln>
+<ln><span class="unixshell">:G diff</span></ln>
+<ln><span class="unixshell">:G log </span></ln>
+<ln><span class="unixshell">:G blame</span></ln>
+<ln><span class="unixshell">:G status</span></ln>
+</pre>
+</div>
+<br>
+<br>
+... and so on. So the full git feature set in Vim.<br>.
+<h3>TWITTER</h3>
+Yep right. Twitter is important and is part of daily life and yes Twitter exists for Vim.<br>.
+Here unfortunately not integrated from the start in Vim but fortunately usable via plugin. The plugin is available here: <a href="https://github.com/twitvim/twitvim">twitvim</a>. To use TwitVim after the installation you only need the following command (and I write it here because I have to search forever every time :) ):<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:SetLoginTwitter</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Here you are then generated a ShortURL to which you go and you only have to enter the Auth number in Vim and you can read Twitter comfortably in Vim but on tweet, search, etc.. TwitVim is operated by commands in NORMAL mode:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:PosttoTwitter</span></ln>
+<ln><span class="unixshell">:FriendsTwitter</span></ln>
+<ln><span class="unixshell">:RepliesTwitter</span></ln>
+<ln><span class="unixshell">:UserTwitter</span></ln>
+<ln><span class="unixshell">:RefreshTwitter</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Actually, the commands are quite self-explanatory, but here is the explanation for completeness:<br>.
+:PosttoTwitter - After confirming the command, you will be prompted with "tweet:" to enter your tweet text.<br>
+:FriendsTwitter - Show all the tweets of the people you follow<br>.
+:RepliesTwitter - Shows your replies.<br>
+:UserTwitter - Shows the tweets of a specific user<br>.
+:RefreshTwitter - Refreshes the timeline you are looking at.<br>
+<br>
+This is how the whole thing looks then:<br>
+<br>
+<img src="https://www.nerdbude.com/images/vim_twitter.jpg">
+<br>
+<br>
+Plugins like NERDTree and VimWiki I already described here: <a href="https://www.nerdbude.com/vim_4.html">PART 4</a><br>.
+Again, <a href="https://vimawesome.com">VIM AWESOME</a>, I think no matter what you're looking for, you'll find it here.<br>
+<h3>FAZIT</h3>.
+This little 6 part series should be enough to get you started using Vim productively. The basics like navigation, copy & paste, markups but also a step deeper in terms of plugins and modes should be understandable. Vim is a rabbit hole with many forks. No matter what you are thinking of doing with Vim, it will be possible and with the help of plugins it is usually relatively easy to integrate into Vim. This won't be the last NERDBUDE post about Vim for sure (I'm currently building the Unit-2 theme for Vim - it will all show up here, of course). If I find other stuff about Vim, I'll put it here, too, of course. But now have fun with Vim and the "wonderful" learning curve of Vim.<br>
+  <!-- Footer -->
+  <br>
+  <br>
+  <br>
+  <p>//EOF</p>
+    </div>
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

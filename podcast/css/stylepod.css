@@ -166,7 +166,7 @@ th.user {color: #8787ff;}
 
 #footer {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   margin-bottom: 10px;
   z-index: 1;

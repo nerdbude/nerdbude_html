@@ -137,6 +137,11 @@ p {
 img {
   max-width: 100%;
   margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+b {color: #afd75f; background-color: #272727;}
+
 }
 
 header {
@@ -174,7 +179,7 @@ th.user {color: #8787ff;}
 
 #footer {
   width: 200px;
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0;
   right: 0;
   margin-bottom: 10px;

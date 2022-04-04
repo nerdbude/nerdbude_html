@@ -1,0 +1,306 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en/en_plaidpad.html">
+    <meta property="og:title" content="The building log for the Plaid Pad">
+    <meta property="og:description" content="I build a Plaid pad and here is the building guide.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/plaidpad.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>PLAID PAD</h2>
+<br>
+<center><img src="https://www.nerdbude.com/images/plaidpad/plaidpad_final.png" width="300px"></center>
+<br>
+Before Christmas I stocked up again at Ben from <a href="https://www.keycapsss.com">KEYCAPSSS</a>. As I can claim my number 1 place to go for keyboard stuff. The Plaid Pad will be used here as a podcast macropad. The most important Audacity shortcuts will be put on the keys, but I'm still working on the final layout. The Plaid Pad comes as a complete kit, i.e. almost all parts that are needed are included (except switches and keycaps).
+As switches come on the Plaid Pad <b>Durock Koalas</b>:<br>
+<br>
+- Cream colored polycarbonate top<br>
+- Cream colored nylon PA Bottom<br>
+- POM Stem in an off-black<br>
+- Gold-plated Spring<br>
+- 67g Bottom out<br>
+- Tactile<br>
+<br>
+Keycaps are a noname set from AliExpress. Looks nice and has enough caps with icons that fit wonderfully on the pad.<br>
+<br>
+Switches and Caps are thus clarified. What is now all included in the kit:<br>
+<br>
+- 1x PCB<br>
+- 1x Backplate<br>
+- 1x 4x4Switch Plate<br>
+- 16x 1N4148 Diodes<br>
+- 2x Zener Diodes<br>
+- 1x Resetable Fuse<br>
+- 1x Electrolytic capacitor<br>
+- 2x 1.5k Ohm resistors<br>
+- 2x 75 Ohm resistors<br>
+- 1x 10k Ohm resistor<br>
+- 2x 5.1k ohm resistor<br>
+- 1x USB-C connector<br>
+- 1x LED<br>
+- 1x Crystal<br>
+- 2x 22pF Capacitor<br>
+- 2x 0.1uF Capacitor<br>
+- 1x IC Socket<br>
+- 2x Tactile Switch<br>
+- 1x ATMEGA328p Chip<br>
+- OLED display (Optional and not included in the kit)<br>
+- Standoffs<br>
+- Acrylic glass<br>
+<br>
+<br>
+Looks like a whole lot of soldering but is done quickly and is a good exercise to warm up to when it comes to the Plaid Keyboard.<br>
+<br>
+<h3>BUILDING GUIDE</h3>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_2.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_2.png" width="100px" style="float:left;"><br>
+</a>
+<b>01. 1N4148 diodes</b><br>
+Let's start with the diodes. It's best to bend the legs while the diodes are still held together with tape. So you save a lot of work. I have bent the diodes with the help of a plastic card (Perso etc.). It is best to bend the diodes directly behind the "diode body", so they fit perfectly on the PCB. The diodes are placed on positions D1 to D16. The diodes have a certain orientation. The small black stripe on the diode marks the cathode and must go into the square hole of the PCB.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_3.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_3.png" width="100px" style="float:left;"><br>
+</a>
+<b>02. Zener diodes</b><br>
+Next up are the Zener diodes. Watch out, they look confusingly similar to the 1N4148 diodes. The Zener diodes come in position D49 and D50. The diodes have a specific orientation. The small black stripe on the diode indicates the cathode and must go in the square hole on the PCB.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_4.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_4.png" width="100px" style="float:left;"><br>
+</a>
+<b>03. Resetable Fuse</b><br>
+We solder the resetable fuse to position F1. When it is soldered, then bend the fuse towards the diodes so that it lies flat on the PCB.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_4.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_4.png" width="100px" style="float:left;"><br>
+</a>
+<b>04. Electrolytic capacitor</b><br>
+The electrolytic capacitor goes next to the fuse in position C3. Pay attention to how you solder the capacitor. The short leg is the cathode and must go into the square hole of the PCB.
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_5.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_5.png" width="100px" style="float:left;"><br>
+</a>
+<b>05. 1.5k ohm resistor</b><br>
+Next come the 1.5k ohm resistors in position R1 and R7. The installation direction of the resistors from left to right: brown, green, black, brown, brown.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_7.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_7.png" width="100px" style="float:left;"><br>
+</a>
+<b>06. 75 Ohm resistor</b><br>
+The 75 ohm resistors come to position R2 and R3. The installation direction of the diodes: brown, gold, black, green, purple.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_8.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_8.png" width="100px" style="float:left;"><br>
+</a>
+<b>07. 10k Ohm resistor</b><br>
+The 10k ohm comes in position R4. The installation direction from left to right: brown, red, black, black, brown<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_22.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_22.png" width="100px" style="float:left;"><br>
+</a>
+<b>08. 5.1k Ohm resistors</b><br>
+The 5.1k ohm resistors come on position R8 and R9. The installation direction from left: brown, brown, black, brown, green<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_10.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_10.png" width="100px" style="float:left;"><br>
+</a>
+<b>09. USB-C Connector</b><br>
+The USB Connector comes on J1. It is a bit tricky to solder because the solder joints are very small. For me it went quite well on the hot soldering iron to distribute only a little solder and then carefully heat the individual small pads and distribute the solder with light strokes. It sounds more complicated than it is. If I can do it with my "soldering skills" then so can you.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_10.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_10.png" width="100px" style="float:left;"><br>
+</a>
+<b>10. LED</b><br>
+The red LED comes to position LED1. This LED signals that the pad is connected. If you don't want a permanently lit LED you can just leave it out. If you use it, make sure that the LED is installed correctly. The short leg is again the cathode and goes into the square hole.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_11.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_11.png" width="100px" style="float:left;"><br>
+</a><b>11. Crystal</b><br>
+The Crystal comes in position Y1 and must be installed so that the imprint is legible.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_12.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_12.png" width="100px" style="float:left;"><br>
+</a>
+<b>12. 22pF Capacitor</b><br>
+The 22pF capacitors come on C1 and C2. The 22pF ones are the ones where the legs are closer together (2.5mm).<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_13.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_13.png" width="100px" style="float:left;"><br>
+</a>
+<b>13. 0.1uF Capacitor</b><br>
+The 0.1uF Capacitors come on C4 and C5. Here the legs are a little wider (5mm) apart.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_14.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_14.png" width="100px" style="float:left;"><br>
+</a><b>14. IC Socket</b><br>
+Next comes the IC Socket on position U1. Here again pay attention to the mounting direction. The IC Socket has a small notch, which must point upwards.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_15.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_15.png" width="100px" style="float:left;"><br>
+</a><b>15. Tactile switches</b><br>
+The two switches come in position SW50 and SW51. The installation direction does not matter here.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_21.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_21.png" width="100px" style="float:left;"><br>
+</a><b>16. ATMEGA328p chip</b><br>
+Now the chip is plugged onto the IC socket. Here you also have to make sure that the small notch points upwards. Possibly the small legs of the chip must be bent inward so that it fits into the socket.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_17.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_17.png" width="100px" style="float:left;"><br>
+</a><b>17. OLED Display</b><br>
+If you want to run the pad with display, it's best to tape off the back of the display so that you don't accidentally short out diodes. If you have taped everything off the display comes to position J3 above the diodes.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="https://www.nerdbude.com/images/test.png" width="100px" style="float:left;"><br>
+<b>18. Testing</b><br>
+So far the soldering work would be done for now. Now you can connect the pad to the computer and test it. For testing you have to bridge the contacts of the switches. I always use a pointed tweezers. It's best to grab the <a href="https://config.qmk.fm/#/test">QMK keyboard test website</a> and go through switch by switch.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_20.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_20.png" width="100px" style="float:left;"><br>
+</a><b>19. Switches</b><br>
+Once everything is working, the switches go on the Plaid Pad. To do this, simply press all the switches into the plate and place them on the PCB. Always make sure that the switches are completely against the PCB. Afterwards the switches still have to be soldered.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://www.nerdbude.com/images/plaidpad/plaidpad_18.png" target="_blank">
+<img src="https://www.nerdbude.com/images/plaidpad/plaidpad_18.png" width="100px" style="float:left;"><br>
+</a><b>20. spacer</b><br>
+If everything is soldered so far and works then only the spacers must be screwed tight and on the top the acrylic glass and you have a wonderful Macropad.
+<br>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <br>
+  <br>
+  <br>
+  <p>//EOF</p>
+    </div>
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+/*
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+*/
+@font-face {
+   font-family: 'share_tech_monoregular';
+   src: url('/fonts/ShareTechMono-Regular.ttf') format('ttf'),
+   	url('/fonts/sharetechmono-regular-webfont.woff2') format('woff2'),
+	url('/fonts/sharetechmono-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  font-family: 'share_tech_monoregular';
+  color: #272727;
+  font-size: 16px;
+  font-weight: 100;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: justify;
+  background-color: #ffffff;
+  min-height: 100%;
+  {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {color: #272727; background-color: #ffffff;}
+h2 {color: #272727; background-color: #ffffff;}
+h3 {color: #272727; background-color: #ffffff;}
+
+a {
+  text-decoration: underline;
+  color: #272727;
+  transition-duration: 0.2s;
+  padding-top: 3px;
+}
+
+a.front {
+  text-decoration: none;
+  color: #272727;
+  transition-duration: 0.2s;
+  padding-top: 3px;}
+
+a:hover {
+  color: #ffffff;
+  background-color: #272727;
+}
+
+a.front:hover {
+  color: #ffffff;
+  background-color: #272727;
+}
+
+a:active {
+  color: #272727;
+}
+
+a.front:active {
+  color: #272727;
+}
+
+a.tag {
+  text-decoration: none;
+  color: #272727;
+  transition-duration: 0.2s;
+  padding-top: 3px;
+}
+
+a.tag:hover {
+  color: #ffffff;
+  background-color: #272727;
+}
+
+a.tag:active {
+  color: #272727;
+}
+
+p {
+  padding: 0;
+  margin: 10px 0 30px 0;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+
+header {
+  width: 100%;
+  top: 50px;
+  background-color: #ffffff;
+  height: auto;
+  padding-bottom: 10px;
+  margin-bottom:10px;
+  letter-spacing: 0px;
+}
+
+#content {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+th {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.card {
+  float: left;
+  width: 300px;                 /* Set width of cards */
+  display: flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+  border: 1px solid #272727;    /* Set up Border */
+  border-radius: 2px;           /* Slightly Curve edges */
+  overflow: hidden;             /* Fixes the corners */
+  margin: 10px;                  /* Add space between cards */
+}
+
+.card-header {
+  color: #272727;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #272727;
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+
+.card-main {
+  display: flex;              /* Children use Flexbox */
+  flex-direction: column;     /* Rotate Axis to Vertical */
+  justify-content: center;    /* Group Children in Center */
+  align-items: center;        /* Group Children in Center (on cross axis) */
+  padding: 15px 0;            /* Add padding to the top/bottom */
+}
+
+.main-description {
+  color: #272727;
+  font-size: 16px;
+  text-align: center;
+}

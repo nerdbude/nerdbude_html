@@ -1,0 +1,182 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/vim_6.html">
+    <meta property="og:title" content="VIM (VI)">
+    <meta property="og:description" content="Da wir hier ja nur das Terminal benutzen wollen. Stellt sich die Frage wie gut sich Vim in den täglichen Workflow integrieren lässt.">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_vim_6.html" class="front">[ENGLISH]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>VIM VI</h2>
+<h3>INTEGRATION</h3>
+Die Artikelüberschrift könnte verwirren es geht nicht um "Vim vi" sondern um den 6. Part der NERDBUDE-Vim-Reihe. Dieser Part wird nicht unbedingt für alle spannend sein. Auf meinen Systemen versuche ich sämtliche Tasks im Terminal zu erledigen. Das spart Ressourcen, geht schneller und kann perfekt per Tastatur erledigt werden (das Faible sollte bekannt sein). Vim selber bietet zwar die Möglichkeit einer GUI aber die schließen wir hier aus. Wenn nun alles im Terminal erledigt werden soll schau ich mir mal an, wie weit sich Vim in den täglichen Workflow integrieren lässt. Nun nutze ich hier NixOS (hochperformant) mit XMonad (klein, schnell und komplett per Tastatur steuerbar) und als Interface diverse mechanische Tastaturen. Also alles darauf ausgelegt meine Hände möglichst wenig zu bewegen. Vim kann dabei ein wertvoller Schnittpunkt sein um Tools zu bedienen ohne den Editor verlassen zu müssen oder um Vim so zu biegen bzw. zu benutzen, um mir Zwischenschritte und Speicherplatz zu sparen.<br>
+<br>
+<h3>SSH</h3>
+Im Zuge eines kleinen Projekts (einene Cyber-Walkman-Podcastplayer - kommt bald.) oder auch nur beim Bearbeiten von Files auf nem Raspberry Pi gibt es zwei Möglichkeiten.<br>
+Per SSH auf dem Raspi die Files bearbeiten. Nachteil: Vim muss erst konfiguriert werden und das kostet Zeit. Option 2: File runterladen, bearbeiten und wieder auf den Raspi schieben. Schon deutlich besser aber immernoch zu viele Schritte.<br>
+<br>
+Nun hat der liebe <a href="https://twitter.com/cubadonis">@cubadonis</a> die letzten Tage, als Reaktion auf einen Tweet bzgl. der Vim Reihe hier, eine Möglichkeit geantwortet die, die Zwischenschritte deutlich eindampft.<br>
+Per "scp" (secure copy) können Files per SSH an oder von Servern zu denen Zugang vorhanden ist transferiert werden.<br>
+Wieso also nicht die Anweisung Vim soll eine Datei per SSH von einer Remote-Instanz direkt in einen Buffer laden und beim Speichern auch direkt wieder per SSH auf den Server schreiben.<br>
+Kling unfassbar kompliziert, ist aber echt einfach. Die Befehle dafür sehen so aus:<br>
+<br>
+<span class="label">TERMINAL</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">vim scp://user@server:port//pfad/zur/Remotefile</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Dadurch wird Vim geöffnet und in Vim direkt "scp" inkl. Passwortabfrage für den SSH Connect. Wenn ihr das Passwort eingegeben habt, seht ihr das File in Vim und könnt es bearbeiten. Beim Speichern des Files mit ":w" wird erneut das Passwort abgefragt und direkt remote auf den Server weggespeichert. Vim-Magic at its best. Danke Cuba - kannte ich noch nicht - werde ich jetzt täglich benutzen.<br>
+<br>
+<h3>LINUX TERMINAL</h3>
+Beim schreiben von Skripten oder Programmen, wollen die natürlich auch regelmäßig getestet werden. Nun ist es in meinem Fall unter XMonad recht einfach kurz ein neues Terminal zu initialisieren (Mod + Enter). Es gibt aber auch die Möglichkeit direkt in Vim ein neues Terminal zu starten und dort mit den bekannten Commands zu arbeiten. Das kann über zwei Wege erfolgen:<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:! &lt;command&gt;</span></ln>
+<ln><span class="unixshell">:term &lt;command&gt; (ab Vim 8.0)</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Die erste Option ":! &lt;command&gt;" sagt Vim mit dem Befehl ":!", dass ein Terminal Command folgt und ausgeführt werden soll. Wenn der Befehl ausgeführt wird, wird Vim selber aber in den Hintergrund geschoben und erst wenn der Befehl abgeschlossen ist, erscheint Vim wieder im Vordergrund.<br>
+Die mMn. bessere Variante ist ":term". Dieses Vim-Command ist ab ver8.0 von Vim verfügbar. Der Vorteil ist hier offensichtlich. Vim wird nicht in den Hintergrund geschoben, sondern das Terminal wird als Split-Window in Vim initialisiert. Mit "STRG + W" kann dann normal zwischen Editor und Terminal Fenster gewechselt werden. Das ermöglicht das parallele Arbeiten an dem File und das Testen im Terminal.
+Also quasi das Terminal in Vim im Terminal.<br>
+<br>
+<h3>GIT</h3>
+Auch oft im Einsatz: git. Die gute alte Versionskontrolle auf der auch GitHub und Gitlab aufbauen. Vim kann in einfachen Grundsätzen schon mit "git" umgehen. Wie im Abschnitt oben, können wir uns ein Terminal in Vim öffnen und dort per "git" Terminalcommands arbeiten. So bleibt Vim immer schön geöffnet und muss dafür nicht verlassen werden. Ein kleines bisschen mehr integration in Vim bringt aber ein Plugin namens <a href="https://github.com/tpope/vim-fugitive">"Vim-Fugitive"</a>. Vim-Fugitive ermöglicht die Benutzung von git-Commands in Vim selber. Das plugin kann bequem per Pathogen benutzt werden (<a href="https://www.nerdbude.com/vim_4.html">PART IV</a>). Wenn "Vim-Fugitive" installiert ist, kann git direkt in Vim benutzt werden.<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:Git</span></ln>
+<ln><span class="unixshell">:G</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Das aktiviert die Funktionalität des Plugins, gefolgt von dem speziefischen Git Command das ihr haben wollt:<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:G add</span></ln>
+<ln><span class="unixshell">:G commit</span></ln>
+<ln><span class="unixshell">:G diff</span></ln>
+<ln><span class="unixshell">:G log </span></ln>
+<ln><span class="unixshell">:G blame</span></ln>
+<ln><span class="unixshell">:G status</span></ln>
+</pre>
+</div>
+<br>
+<br>
+... und so weiter. Also den vollen Git-Funktionsumfang in Vim.<br>
+<h3>TWITTER</h3>
+Jap richtig. Twitter ist wichtig und gehört zum täglichen Leben und ja Twitter gibts auch für Vim.<br>
+Hier leider nicht von vornherein in Vim integriert aber zum Glück per Plugin benutzbar. Das Plugin gibt es hier: <a href="https://github.com/twitvim/twitvim">twitvim</a>. Um TwitVim benutzen zukönnen braucht es nach der Installation nur folgendes Commando (und ich schreib es hier dazu weil ich jedesmal ewig suchen muss :) ):<br>
+<br>
+<span class="label">VIM / NORMAL MODE</span>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:SetLoginTwitter</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Hier wird euch dann eine ShortURL generiert auf die Ihr geht und ihr müsst nur noch die Auth-Nummer in Vim eingeben und schon könnt ihr Twitter bequem in Vim lesen aber auf tweeten, suchen usw. Bedient wird TwitVim per Commands im NORMAL Mode:<br>
+<br>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:PosttoTwitter</span></ln>
+<ln><span class="unixshell">:FriendsTwitter</span></ln>
+<ln><span class="unixshell">:RepliesTwitter</span></ln>
+<ln><span class="unixshell">:UserTwitter</span></ln>
+<ln><span class="unixshell">:RefreshTwitter</span></ln>
+</pre>
+</div>
+<br>
+<br>
+Eigentlich sind die Commands recht selbsterklärend, aber hier zur Vollständigkeit noch die Erklärung:<br>
+:PosttoTwitter - Nach der Bestätigung des Commands werdet Ihr mit "tweet:" aufgefordert euren Tweet-Text einzugeben.<br>
+:FriendsTwitter - Zeigt alle Tweets der Leute denen ihr folgt<br>
+:RepliesTwitter - Zeigt eure Replies.<br>
+:UserTwitter - Zeigt die Tweets eines bestimmten Users<br>
+:RefreshTwitter - Aktualisiert die Timeline die ihr grade anschaut.<br>
+<br>
+So sieht das ganze dann aus:<br>
+<br>
+<img src="https://www.nerdbude.com/images/vim_twitter.jpg">
+<br>
+<br>
+Plugins wie NERDTree und VimWiki hatte ich ja hier schon näher beschrieben: <a href="https://www.nerdbude.com/vim_4.html">PART 4</a><br>
+Auch hier sei noch mal <a href="https://vimawesome.com">VIM AWESOME</a> erwähnt, ich denke egal was ihr sucht, hier findet ihr es.<br>
+<h3>FAZIT</h3>
+Diese kleine 6-teilige Reihe sollte reichen, um Vim produktiv benutzen zu können. Die Grundlagen wie Navigation, Copy & Paste, Markierungen aber auch einen Schritt tiefer in Form von Plugins und Modes sollten nachvollziehbar sein. Vim ist ein Kaninchenbau mit vielen Abzweigungen. Egal was ihr überlegt mit Vim zu machen, es wird möglich sein und mit Hilfe von Plugins ist das meist auch relativ einfach in Vim integriert. Es wird bestimmt nicht der letzte NERDBUDE Post über Vim sein (ich bau gerade am Unit-2 Theme für Vim - wird natürlich alles hier auftauchen). Wenn mir noch andere Sachen zu Vim über den Weg laufen werden die hier natürlich auch mit reingepackt. Nun aber viel Spaß mit Vim und der "wunderbaren" Lernkurve von Vim.<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

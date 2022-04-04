@@ -12,6 +12,34 @@
       <link>https://www.nerdbude.com/readme.html</link>
     </image>
     <item>
+      <title>[POD] READY FOR REVIEW</title>
+      <description>Ich durfte im Ready for Review Podcast über mechanische Tastaturen reden und es hat sehr viel Spaß gemacht.</description>
+      <link>https://www.nerdbude.com/rfr.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 24 Mar 2022 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[KBD] DAMN FINE KEYBOARDS</title>
+      <description>Ab sofort gibt es für euch das DAMN FINE KEYBOARDS. Ein kleines SChmuddelheftchen für Keyboardnerds und -nerdettes. Voll mit wunderschönen custom Hackbrettern. Aber das DFK könnte auch die Basis für mehr sein. Für was das liegt an euch.</description>
+      <link>https://www.nerdbude.com/damnfienkeyboards.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Fri, 25 Feb 2022 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[KBD] PLAID PAD</title>
+      <description>Vor Weihnachten habe ich mir unteranderem ein Plaid Pad bei KEYCAPSSS besorgt und das natürlich auch gebaut. Hier gibts das Build Log dazu, falls ihr auch eins wollt.</description>
+      <link>https://www.nerdbude.com/plaidpad.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 11 Jan 2022 12:10:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[VIM] VIM VI</title>
+      <description>Kommen wir vorerst zum Ende der kleinen Vim Reihe. Als Abschluss gibt es noch ein paar Tips wie Vim in den täglichen Ablauf integriert werden kann.</description>
+      <link>https://www.nerdbude.com/vim_6.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Wed, 15 Dec 2021 15:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>[VIM] VIM V</title>
       <description>Im 5. Teil geht es diesmal um die .VIMRC. Das Zentrum den (Vim-)Universums. Wie sie arbeitet und was sie für Möglichkeiten birgt erfahrt ihr hier.</description>
       <link>https://www.nerdbude.com/vim_5.html</link>

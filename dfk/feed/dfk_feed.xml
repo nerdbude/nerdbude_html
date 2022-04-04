@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>DAMN FINE KEYBOARDS</title>
+    <link>https://www.damnfinekeyboards.com</link>
+    <description>Your source for beautiful keyboards</description>
+    <language>en-en</language>
+    <copyright>$NB</copyright>
+    <image>
+      <url>https://www.nerdbude.com/images/fav.png</url>
+      <title>DAMN FINE KEYBOARDS</title>
+      <link>https://www.damnfinekeyboards.com</link>
+    </image>
+    <item>
+      <title>ISSUE #2</title>
+      <description>Number two is out now! Have fun with it!</description>
+      <link>https://www.damnfinekeyboards.com</link>
+      <author>info@damnfinekeyboards.com (DFK)</author>
+      <pubDate>Fri, 25 Mar 2022 11:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>#1 ISSUE</title>
+      <description>Release-Day! The time has come! Here is the "Damn Fine Keyboards". What is it? A (still) small magazine for the keyboard-fun in between. Mainly you will find pictures of nice keyboards but the DFK is a base for your ideas. If you have pictures, want to write articles or building guides or produce keyboard art then contact me and let the "Damn Fine Keyboards" grow.
+      Have fun with it!</description>
+      <link>https://www.damnfinekeyboards.com</link>
+      <author>info@damnfinekeyboards.com (DFK)</author>
+      <pubDate>Fri, 25 Feb 2022 11:00:00 +0000</pubDate>
+    </item>
+    </channel>
+</rss>

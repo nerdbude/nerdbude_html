@@ -10,7 +10,7 @@
 	<atom:link type="application/rss+xml" title="Click! Clack! Hack!" href="https://www.nerdbude.com/podcast/feed/" />
 		<atom:link rel="first" href="https://www.nerdbude.com/podcast/feed/" />
 		<language>de-DE</language>
-		<copyright>© 2021 Click! Clack! Hack!</copyright>
+		<copyright>© 2022 Click! Clack! Hack!</copyright>
 		<itunes:author>PH_0x17</itunes:author>
 		<itunes:type>episodic</itunes:type>
 		<itunes:summary>Ein Podcast über den nahezu unendlich tiefen Kaninchenbau der mechanische Tastaturen. Ich erzähle euch was es neues im Hobby der mechanical Keyboards gibt, Groupbuys, Interestchecks, Neue Keyboards, Keycaps und Switches und noch viel viel mehr.</itunes:summary>
@@ -25,6 +25,724 @@
 		<itunes:subtitle>Ein Podcast über mechanische Tastaturen</itunes:subtitle>
 		<itunes:block>no</itunes:block>
 		<itunes:explicit>no</itunes:explicit>
+		<item>
+			<title>BUCKLING SPRING SWITCHES</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 04 Apr 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">tsGZikawOEGUxlmXdz8wvA</guid>
+				<description><![CDATA[Trotz ausgeprägter Krankheit (nein nicht das große "C") und daraus resultierender sexy Stimme erzähl ich euch diesmal was es mit dem Klassiker der Buckling Spring Switche auf sich hat und warum die Switches trotz Membran-Schaltung ihren Platz hier verdient haben. Außerdem kamen hier die Teile für die neuen Frankenswitches an, es gab Feedback und auch die ein oder andere Entdeckung unter den eher außergewöhnlichen Hackbrettern. Genießt die kränklich gehauchte Keyboard-Erotik.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_032.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>40:11</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Trotz ausgeprägter Krankheit (nein nicht das große "C") und daraus resultierender sexy Stimme erzähl ich euch diesmal was es mit dem Klassiker der Buckling Spring Switche auf sich hat und warum die Switches trotz Membran-Schaltung ihren Platz hier verdient haben. Außerdem kamen hier die Teile für die neuen Frankenswitches an, es gab Feedback und auch die ein oder andere Entdeckung unter den eher außergewöhnlichen Hackbrettern. Genießt die kränklich gehauchte Keyboard-Erotik.</itunes:subtitle>
+			<itunes:title>BUCKLING SPRING SWITCHES</itunes:title>
+			<itunes:episode>32</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[Trotz ausgeprägter Krankheit (nein nicht das große "C") und daraus resultierender sexy Stimme erzähl ich euch diesmal was es mit dem Klassiker der Buckling Spring Switche auf sich hat und warum die Switches trotz Membran-Schaltung ihren Platz hier verdient haben. Außerdem kamen hier die Teile für die neuen Frankenswitches an, es gab Feedback und auch die ein oder andere Entdeckung unter den eher außergewöhnlichen Hackbrettern. Genießt die kränklich gehauchte Keyboard-Erotik.<br>
+					<br>
+					<br>
+						NEUIGKEITEN<br>
+					  <br>
+					  <a href="https://www.nerdbude.com/podcast/014.html">CCH014 - KEYCAPS</a><br>
+					  <a href="https://switches.mx/akko-cs-silver?brand=akko&">Akko CS Silver Switches</a><br>
+					  <a href="https://twitter.com/cchpod/status/1506675256735551502">Umfrage (40% oder 60%)</a><br>
+					  <a href="https://www.nerdbude.com/dfk/dfk_issues.html">Damn Fine Keyboards Ausgabe Nr.: 2</a><br>
+					  <a href="https://www.trommelspeicher.de/podcast/das-duumvirat">Duumvirat (früher MacMittwoch) Podcast</a><br>
+					  <br>
+					  NEWS<br>
+					  <br>
+					  Shenzhen ging in den Lockdown<br>
+					  <a href="https://remap-keys.app/">remap-keys.app</a><br>
+					  <a href="https://kono.store/products/kat-cyberspace?variant=32082480988243">KAT Cyberspace Fuction Key</a><br>
+					  <a href="https://kbd.news/Ergotonic-F-24-1331.html">Ergotonic F24</a><br>
+					  <a href="https://www.reddit.com/user/MomonaBoy/">Preonic + Planck</a><br>
+					  <a href="https://www.reddit.com/r/olkb/comments/tjmccb/gherkin_310_6/">Gherkin ++</a><br>
+					  <a href="https://github.com/Baranowski/Viosuo">Viosulo</a><br>
+					  <a href="https://twitter.com/hoxyzitol/status/1506771309098770432">FCS42S Keyboard</a><br>
+					  <a href="https://www.keychron.com/pages/keychron-q4-customizable-mechanical-keyboard">Keychron Q4</a><br>
+					  <br>
+					  BUCKLING SPRING SWITCHES<br>
+					  <br>
+					  <a href="https://www.nerdbude.com/podcast/015.html">CCH015 - Model M</a><br>
+					  <a href="https://www.nerdbude.com/podcast/029.html">CCH029 - Model F</a><br>
+					  <a href="https://en.wikipedia.org/wiki/Buckling_spring">Buckling Spring Switches (Wikipedia)</a><br>
+					  <a href="https://en.wikipedia.org/wiki/Piezoelectric_sensor">Piezo Elektrische Sensoren</a><br>
+					  <a href="https://de.wikipedia.org/wiki/Kapazitiver_Sensor">Kapazitive Sensoren</a><br>
+					  <a href="https://deskthority.net/wiki/Topre_switch">Topre Switches</a><br>
+					  <a href="https://deskthority.net/wiki/Alps_buckling_spring">Alps Buckling Springs</a><br>
+					  <a href="https://deskthority.net/viewtopic.php?f=2&t=25847&start=30">Q&A mit Richard Hunter Harris (Deskthority)</a><br>
+					  <a href="https://deskthority.net/wiki/Dental_floss_mod">Dental Floss Mod</a><br>
+					  <br>
+					  <br>
+						KONTAKT:<br>
+						--------<br>
+						<br>
+						CLICK! CLACK! HACK!<br>
+						WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+						TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+						MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+						INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+						MASTODON: <a href="https://chaos.social/web/accounts/107292276869536563">@ClickClackHack@chaos.social</a><br>
+						<br>
+						------<br>
+						<br>
+						DAMN FINE KEYBOARDS<br>
+						WEB: <a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS</a><br>
+						TWITTER: <a href="https://www.twitter.com/damnfinekeebs">@damnfinekeebs</a><br>
+						<br>
+						------<br>
+						MUSIK:<br>
+						Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+						Outro: <a href="https://freemusicarchive.org/music/Azureflux/Bit_Bops/05_starbox_-_digital_dream__azureflux_remix">Starbox - Digital Dream (CC-BY)</a><br>
+						<br>
+						Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+						<a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+						Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>NIXDORF COMPUTER AG</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 21 Mar 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">1CToBxxFvUaH8BEwd6r4ng</guid>
+				<description><![CDATA[31 Episoden hat es gedauert bis die gloreichen Nixie Switches ihren Auftritt haben. Da die Switches aber eher ernüchternd sind, gibt es außerdem noch ein paar Keyboards aus dem Hause Nixdorf Computer AG. Also mal wieder ein kleines bisschen Tastaturgeschichte. natürlich gibts auch wieder die neusten Storys aus Keyboardland, Groupbuys und die obligatorische tanzbare Musik am Ende darf auch nicht fehlen.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_031.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>30:54</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>31 Episoden hat es gedauert bis die gloreichen Nixie Switches ihren Auftritt haben. Da die Switches aber eher ernüchternd sind, gibt es außerdem noch ein paar Keyboards aus dem Hause Nixdorf Computer AG. Also mal wieder ein kleines bisschen Tastaturgeschichte. natürlich gibts auch wieder die neusten Storys aus Keyboardland, Groupbuys und die obligatorische tanzbare Musik am Ende darf auch nicht fehlen.</itunes:subtitle>
+			<itunes:title>NIXDORF COMPUTER AG</itunes:title>
+			<itunes:episode>31</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[31 Episoden hat es gedauert bis die gloreichen Nixie Switches ihren Auftritt haben. Da die Switches aber eher ernüchternd sind, gibt es außerdem noch ein paar Keyboards aus dem Hause Nixdorf Computer AG. Also mal wieder ein kleines bisschen Tastaturgeschichte. natürlich gibts auch wieder die neusten Storys aus Keyboardland, Groupbuys und die obligatorische tanzbare Musik am Ende darf auch nicht fehlen.<br>
+				  <br>
+				  <br>
+						NEUIGKEITEN<br>
+					  <br>
+					  <a href="https://twitter.com/cchpod/status/1502282719035899904">CCH! Shirts</a><br>
+					  <a href="https://twitter.com/cchpod/status/1502241247288774656">Neue Frankenswitches</a><br>
+					  <a href="https://twitter.com/cchpod/status/1505074168752222209">LK20</a><br>
+					  <a href="https://twitter.com/cchpod/status/1505463192708857864">Sticker</a><br>
+					  <a href="https://twitter.com/cchpod/status/1504841222069829661">Post von Farid</a><br>
+					  <a href="https://www.trommelspeicher.de/">MacMittwoch</a><br>
+					  <br>
+					  <br>
+					  NEWS<br>
+					  <br>
+					  Shenzhen ging in den Lockdown<br>
+					  <a href="https://github.com/AtomicJon/jonkey">Jonkey Split Keyboard</a><br>
+					  <a href="https://www.youtube.com/watch?v=5RN_4PQ0j1A">Ben Vallack übre seine 16key</a><br>
+					  <a href="https://www.keychron.com/products/keychron-q60-qmk-custom-mechanical-keyboard">Keychron Q60</a><br>
+					  <a href="https://keygem.store/products/group-buy-mw-pluto">[GB] MW Pluto</a><br>
+					  <a href="https://keygem.store/collections/group-buys/products/group-buy-dcs-reaper">[GB] DCS Reaper</a><br>
+					  <a href="https://p3dstore.com/products/milk-truck-invisibolt-acrylic-case-and-pcb-group-buy">[GB] Milk Truck</a><br>
+					  <a href="https://store.aeternus.co/collections/group-buys/products/barca">[GB] Barca</a><br>
+					  <a href="https://keygem.store/collections/switches/products/grouo-buy-blue-bubblegum-linear">[GB] Blue Bubblegum Switches</a><br>
+					  <br>
+					  NIXDORF COMPUTER AG<br>
+					  <br>
+					  <a href="https://de.wikipedia.org/wiki/Labor_f%C3%BCr_Impulstechnik">Labor für Impulstechnik</a><br>
+					  <a href="https://de.wikipedia.org/wiki/Heinz_Nixdorf">Heinz Nixdorf</a><br>
+					  <a href="https://de.wikipedia.org/wiki/Nixdorf_Computer">Nixdorf Computer AG</a><br>
+					  <a href="https://deskthority.net/wiki/Nixdorf_SM_8890">Nixdrf SM 8890</a><br>
+					  <a href="https://deskthority.net/wiki/Nixdorf_CT06-CT07/2_M_Softkeys">Nixdorf CT06-CT07/2 M Softkeys</a><br>
+					  <a href="https://deskthority.net/wiki/Cherry_MX_Black#Nixie">Nixies</a><br>
+					  <a href="https://deskthority.net/wiki/Cherry_MX_Olympia_Linear_Clear">Cherry MX Olympia Linear</a><br>
+					  <a href="https://www.theremingoat.com/blog/from-the-vault-cherry-nixie-review">Theremin Goat über Nixies</a><br>
+					  <a href="https://deskthority.net/wiki/Nixdorf_CT11">Nixdorf CT11</a><br>
+					  <a href="https://deskthority.net/wiki/Nixdorf_CT22">Nixdorf CT22</a><br>
+					  <br>
+					  <br>
+					  KONTAKT:<br>
+					  --------<br>
+					  <br>
+					  CLICK! CLACK! HACK!<br>
+					  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+					  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+					  MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+					  INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+					  <br>
+					  ------<br>
+					  <br>
+					  DAMN FINE KEYBOARDS<br>
+					  WEB: <a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS</a><br>
+					  TWITTER: <a href="https://www.twitter.com/damnfinekeebs">@damnfinekeebs</a><br>
+					  <br>
+					  ------<br>
+					  MUSIK:<br>
+					  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+					  Outro: <a href="https://freemusicarchive.org/music/Simon_Mathewson/flat-blue-acid/flat-blue-acid-v1">Simon Mathewson - Flat Blue Acid (V1) (CC-BY)</a><br>
+					  <br>
+					  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+					  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+					  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>HALL EFFECT SWITCHES</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 06 Mar 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">xFyzpqBuC0SOR9AIU6a8GA</guid>
+				<description><![CDATA[Ein kleines Jubiläum - die 30. Episode des Keyboard-Consulting Podcasts. Wir graben uns weiter in die Keyboard-Wissenschaften ein und streifen diesmal die Physik und Magnetismus. Was das alles mit Keyboards zu tun hat? Nun ja - es gibt Switches die unter dem Namen "Hall Effect Switches" bekannt sind und die funktionieren ein klein wenig anders als handelsübliche MX oder Alps Switches. Außerdem verrate ich euch wer beim Special gewonnen hat und ein paar kleine News und Neuigkeiten gibt es natürlich auch wieder.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_030.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>34:34</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Ein kleines Jubiläum - die 30. Episode des Keyboard-Consulting Podcasts. Wir graben uns weiter in die Keyboard-Wissenschaften ein und streifen diesmal die Physik und Magnetismus. Was das alles mit Keyboards zu tun hat? Nun ja - es gibt Switches die unter dem Namen "Hall Effect Switches" bekannt sind und die funktionieren ein klein wenig anders als handelsübliche MX oder Alps Switches. Außerdem verrate ich euch wer beim Special gewonnen hat und ein paar kleine News und Neuigkeiten gibt es natürlich auch wieder.</itunes:subtitle>
+			<itunes:title>HALL EFFECT SWITCHES</itunes:title>
+			<itunes:episode>30</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[Ein kleines Jubiläum - die 30. Episode des Keyboard-Consulting Podcasts. Wir graben uns weiter in die Keyboard-Wissenschaften ein und streifen diesmal die Physik und Magnetismus. Was das alles mit Keyboards zu tun hat? Nun ja - es gibt Switches die unter dem Namen "Hall Effect Switches" bekannt sind und die funktionieren ein klein wenig anders als handelsübliche MX oder Alps Switches. Außerdem verrate ich euch wer beim Special gewonnen hat und ein paar kleine News und Neuigkeiten gibt es natürlich auch wieder.<br>
+				  <br>
+				  NEUIGKEITEN<br>
+				  <br>
+				  <a href="https://twitter.com/cchpod/status/1498620405833216000">Meine Discipline V2</a><br>
+				  <a href="https://www.damnfinekeyboards.com">Damn Fine Keyboards Magazin</a><br>
+				  <br>
+				  Vielen Dank an alle die beim Special mit gemacht haben.<br>
+				  Ich werde ich demnächst kontaktieren und dann schicke ich euch eure Giveaways.<br>
+				  Danke natürlich auch an <a href="https://keebstuff.com">KEEBSTUFF</a> für die Cable und auch an <a href="https://turtlecases.de/">TurtleCases</a>.<br>
+				  <br>
+				  NEWS<br>
+				  <br>
+				  <a href="https://gist.github.com/winder/bacf94d3c11acf84624c4ad19767deb2">3D print Standoffs / Spacer</a><br>
+				  <a href="https://github.com/ak66666/ThumbsUpUnsplit">ThumbsUpUnsplit Keyboard</a><br>
+				  <a href="https://qiita.com/ak1-foo/items/3a3d42ccf59bd2764555">SYNX42 Keyboard</a><br>
+				  <a href="https://mykeyboard.eu/catalogue/gmk-mercury-base-kit_5652/">[GB] GMK Mercury</a><br>
+				  <br>
+				  HALL EFFECT SWITCHES<br>
+				  <br>
+				  <a href="https://de.wikipedia.org/wiki/Edwin_Hall">Edwin Herbert Hall</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Hall-Effekt">Hall Effect</a><br>
+				  <a href="https://www.richis-lab.de/hall01.htm">B461G Hall-Sensor</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Reedschalter">Reed Switch</a><br>
+				  <a href="https://deskthority.net/viewtopic.php?t=7570">Honeywell Reed Switches</a><br>
+				  <a href="https://deskthority.net/wiki/Micro_Switch_SW_Series">Honeywell Series SW</a><br>
+				  <a href="https://deskthority.net/wiki/Micro_Switch_SD_Series">Honeywell Series SD</a><br>
+				  <a href="https://deskthority.net/wiki/RAFI_RS_74_C">RAFI RS 74 C</a><br>
+				  <a href="https://deskthority.net/wiki/RAFI_RS_76_C">RAFI RS 76 C</a><br>
+				  <a href="https://wooting.io/wooting_two_lekker">Wooting Lekker</a><br>
+				  <a href="https://deskthority.net/wiki/Input_Club_Silo">Input Club Silo</a><br>
+				  <br>
+				  <br>
+				  KONTAKT:<br>
+				  --------<br>
+				  <br>
+				  CLICK! CLACK! HACK!<br>
+				  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+				  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+				  MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+				  INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+				  <br>
+				  ------<br>
+				  <br>
+				  DAMN FINE KEYBOARDS<br>
+				  WEB: <a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS</a><br>
+				  TWITTER: <a href="https://www.twitter.com/damnfinekeebs">@damnfinekeebs</a><br>
+				  <br>
+				  ------<br>
+				  MUSIK:<br>
+				  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+				  Outro: <a href="https://freemusicarchive.org/music/Pocketmaster/Residue/06_-_It_Crowd_Remix">Pocketmaster - The IT Crowd (CC-BY)</a><br>
+				  <br>
+				  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+				  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+				  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>IBM MODEL F</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 21 Feb 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">FVdybAFn5kqRxWVP6Vm93g</guid>
+				<description><![CDATA[Die 29. Episode des einzige deutschsprachigen Podcast über Keyboardwissenschaften bringt euch wie gewohnt das volle Paket mit News, Groupbuys, Interest Checks, Neuen Projekten und natürlich der Mutter der IBM Model M - die IBM Model F. Hat er jetzt den Verstand verloren? Warum Wissenschaft? Ganz einfach - der CCH! ist jetzt Teil eines wunderbaren Podcastsnetzwerkes namens Wissenschaftspodcasts.de. Es gibt aber auch noch andere Projekte die Ihr bald bestaunen dürft und natürlich auch mal wieder etwas für euch bzw. eure Keyboards und zwar in vorm eines SPECIALS! Also alles wie immer :)]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_029.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>30:48</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Die 29. Episode des einzige deutschsprachigen Podcast über Keyboardwissenschaften bringt euch wie gewohnt das volle Paket mit News, Groupbuys, Interest Checks, Neuen Projekten und natürlich der Mutter der IBM Model M - die IBM Model F. Hat er jetzt den Verstand verloren? Warum Wissenschaft? Ganz einfach - der CCH! ist jetzt Teil eines wunderbaren Podcastsnetzwerkes namens Wissenschaftspodcasts.de. Es gibt aber auch noch andere Projekte die Ihr bald bestaunen dürft und natürlich auch mal wieder etwas für euch bzw. eure Keyboards und zwar in vorm eines SPECIALS! Also alles wie immer :)</itunes:subtitle>
+			<itunes:title>IBM MODEL F</itunes:title>
+			<itunes:episode>29</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[Die 29. Episode des einzige deutschsprachigen Podcast über Keyboardwissenschaften bringt euch wie gewohnt das volle Paket mit News, Groupbuys, Interest Checks, Neuen Projekten und natürlich der Mutter der IBM Model M - die IBM Model F. Hat er jetzt den Verstand verloren? Warum Wissenschaft? Ganz einfach - der CCH! ist jetzt Teil eines wunderbaren Podcastsnetzwerkes namens Wissenschaftspodcasts.de. Es gibt aber auch noch andere Projekte die Ihr bald bestaunen dürft und natürlich auch mal wieder etwas für euch bzw. eure Keyboards und zwar in vorm eines SPECIALS! Also alles wie immer :) <br>
+  			<br>
+  			NEUIGKEITEN<br>
+  			<br>
+  			<a href="https://podcast.hack-the-planet.tv/">Hack the Planet Podcast</a><br>
+  			<a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS (Website)</a><br>
+  			<a href="https://www.twitter.com/damnfinekeebs">DAMN FINE KEYBOARDS (Twitter)</a><br>
+  			<a href="https://www.wissenschaftspodcasts.de">Wissenschaftspodcasts.de</a><br>
+  			<a href="https://keycapsss.com/keyboard-parts/cases/115/crkbd/corne-plate-case-gatsby">CRKBD Gatsby Case</a><br>
+  			<br>
+  			<br>
+  			SPECIAL:<br>
+  			<br>
+  			Das Special wird euch bereitgestellt von:<br>
+  			<a href="https://keebstuff.com">KEEBSTUFF</a><br>
+  			<a href="https://turtlecases.de/">TURTLE CASES</a><br>
+  			<br>
+  			1. Platz: <a href="https://keebstuff.com/products/amboss?_pos=1&_psq=ambos&_ss=e&_v=1.0">AMBOSS (Custom Cable)</a><br>
+  			2. Platz: <a href="https://keebstuff.com/products/kopie-von-diplomat?_pos=1&_psq=minimal&_ss=e&_v=1.0">MINIMAL GREY (Custom Cable)</a><br>
+  			3. Platz: Artisan Keycap (links)<br>
+  			4. Platz: Artisan Keycap (rechts)<br>
+  			<br>
+  			<img src="https://www.nerdbude.com/podcast/images/special029.jpg"><br>
+  			<br>
+  			Um teilzunehmen, müsst ihr mir nur sagen welche eure bisherige Lieblingsepisode des CCH! ist. Das könnt ihr hier machen:<br>
+  			<a href="https://docs.google.com/forms/d/e/1FAIpQLSe4Sq3aNKReMHMAnC3WwK29jX4Tvj_kD0ZKj35RqpqNym7b7A/viewform?usp=sf_link">LINK ZUM GOOGLE FORMS</a><br>
+  			<br>
+  			Alles wie immer ohne Gewähr und unter ausschluss des Rechtsweges.<br>
+  			Viel Glück!<br>
+  			<br>
+  			NEWS<br>
+  			<br>
+  			<a href="https://www.golem.de/news/maglev-switch-mx-selbst-gebauter-hall-effekt-switch-im-mx-format-2202-163063.html">DIY MagLev Switch</a><br>
+  			<a href="https://github.com/jeffminton/keyboard_stl_generator">Keyboard STL Generator</a><br>
+  			<a href="https://www.youtube.com/watch?time_continue=1&v=cv-vlYMLJDE&feature=emb_logo">Dygma Ortho-Keyboard</a><br>
+  			<a href="https://kbd.news/2001-vs-2010-A-Story-in-Keyboards-1252.html">Keyboards in 2001 und 2010</a><br>
+  			<a href="https://docs.google.com/forms/d/e/1FAIpQLSf6w7PlBxi7AR2f1EQma_mH7PMoURgaViRunTaPVy6eI-a5BA/viewform">[IC] Crokoboard</a><br>
+  			<br>
+  			GROUPBUYS<br>
+  			<br>
+  			<a href="https://famouskbd.com/collections/on-sale/products/in-production-enjoypbt-yaqing-cherry-keycaps">[GB] ePBT ABS VOO</a><br>
+  			<a href="https://mykeyboard.eu/catalogue/gmk-manta-base_5626/">[GB] GMK MANTA</a><br>
+  			<a href="https://mechvault.net/products/dcs-input-40-keyboard-keycap-set">[GB] DCS INPUT</a><br>
+  			<a href="https://fruitykeeb.xyz/products/gb-pomelo?variant=41525592817856">[GB] POMELO</a><br>
+  			<a href="https://www.kwubdoes.com/product/room-40">[GB] ROOM40</a><br>
+  			<br>
+  			SWITCHES<br>
+  			<br>
+  			<a href="https://mintlodica.com/products/magic-girl-switches">Magic Girl Switches</a><br>
+  			<a href="https://keygem.store/collections/switches/products/group-buy-strawberry-jelly-v2-switch">Strawberry Jelly V2</a><br>
+  			<br>
+  			IBM MODEL F<br>
+  			<br>
+  			<a href="https://www.ibm.com/de-de?utm_content=SRCWW&p1=Search&p4=43700068004156753&p5=e&gclid=CjwKCAiAx8KQBhAGEiwAD3EiPyZmoZNR7pOQ-FYNa0jfUKBkodNcf8e4eTsjNDQkFIiuN0Ej_C3aiBoCn5gQAvD_BwE&gclsrc=aw.ds">IBM</a><br>
+  			<a href="https://en.wikipedia.org/wiki/IBM_System/23_Datamaster">IBM SYSTEM / 23 DATAMASTER</a><br>
+  			<a href="https://en.wikipedia.org/wiki/Model_F_keyboard#/media/File:IBM_Model_F_XT.png">IBM MODEL F</a><br>
+  			<a href="https://www.nerdbude.com/podcast/015.html">CCH_015 / IBM MODEL M</a><br>
+  			<a href="https://en.wikipedia.org/wiki/Model_F_keyboard#/media/File:IBM_Model_F_122.png">IBM MODEL F 122</a><br>
+  			<a href="https://www.modelfkeyboards.com/">Modern Model F / Model F Labs</a><br>
+  			<br>
+  			<br>
+  			KONTAKT:<br>
+  			--------<br>
+  			WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+  			TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+  			MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+  			INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+  			------
+  			DAMN FINE KEYBOARDS:
+  			<a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS</a><br>
+  			<a href="https://www.twitter.com/damnfinekeebs">@damnfinekeebs</a><br>
+  			<br>
+  			------
+  			MUSIK:<br>
+  			Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+  			Outro: <a href="https://freemusicarchive.org/music/Various_Artists_unfoundsound/Philly_Time/wizards_are_lucky_diss0nance_remix">Miskate - The Wizards are Lucky (CC-BY)</a><br>
+  			<br>
+  			Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+  			<a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+  			Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>NEO / NEO 2 / AdNW</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 07 Feb 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">ljzYXQq0F0WTHfQzIHgCyw</guid>
+				<description><![CDATA[In Episode 026 ging es um das Keyboardlayout DVORAK. Diesmal hab ich mir gedacht, nehmen wir doch mal NEO, NEO 2 und AdNW näher unter die Lupe. Diese Layouts basieren auf DVORAK und teilen sich die gleichen Ziele und Aufgaben. In den Neuigkeiten gibt es die abenteuerliche Geschichte vom langen Weg ein Fifi Keyboard zum laufen zu bringen, einem fast vergessenem Geburtstag (nämlich dem eigenen) und ein kleines T-Shirt Easteregg. News gibt es natürlich auch wieder. Diesmal mit dabei: Ein Tool zum erstellen von Layouts, Keeb-Fashion, Ergonomie Erfahrungen und eine Tastatur mit Joysticks. Also viel wunderbares rund um mechanical Keyboards.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_028.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>38:45</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>In Episode 026 ging es um das Keyboardlayout DVORAK. Diesmal hab ich mir gedacht nehmen wir doch mal NEO, NEO 2 und AdNW näher unter die Lupe. Diese Layouts basieren auf DVORAK und teilen sich die gleichen Ziele und Aufgaben. In den Neuigkeiten gibt es die abenteuerliche Geschichte vom langen Weg ein Fifi Keyboard zum laufen zu bringen, einem fast vergessenem Geburtstag (nämlich dem eigenen) und ein kleines T-Shirt Easteregg. News gibt es natürlich auch wieder. Diesmal mit dabei: Ein Tool zum erstellen von Layouts, Keeb-Fashion, Ergonomie Erfahrungen und eine Tastatur mit Joysticks. Also viel wunderbares rund um mechanical Keyboards.</itunes:subtitle>
+			<itunes:title>NEO / NEO 2 / AdNW</itunes:title>
+			<itunes:episode>28</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[In Episode 026 ging es um das Keyboardlayout DVORAK. Diesmal hab ich mir gedacht nehmen wir doch mal NEO, NEO 2 und AdNW näher unter die Lupe. Diese Layouts basieren auf DVORAK und teilen sich die gleichen Ziele und Aufgaben. In den Neuigkeiten gibt es die abenteuerliche Geschichte vom langen Weg ein Fifi Keyboard zum laufen zu bringen, einem fast vergessenem Geburtstag (nämlich dem eigenen) und ein kleines T-Shirt Easteregg. News gibt es natürlich auch wieder. Diesmal mit dabei: Ein Tool zum erstellen von Layouts, Keeb-Fashion, Ergonomie Erfahrungen und eine Tastatur mit Joysticks. Also viel wunderbares rund um mechanical Keyboards. <br>
+				  <br>
+				  NEUIGKEITEN<br>
+				  <br>
+				  <a href="https://fyyd.de/episode/6332609">Die CCH001 vom 08.02.2021</a><br>
+				  <a href="https://www.nerdbude.com/survey.html">[NB] Blogpost zu den Ergo-Statistiken</a><br>
+				  <a href="https://sendegate.de/t/zeigt-mir-euer-streamdecks-und-ich-sage-was-ihr-fuer-einen-podcast-macht/14858">Sendegate Streamdeck Thread</a><br>
+				  <a href="https://twitter.com/VonMumpitz/status/1489909447115911168">Franks Fifi Keyboard</a><br>
+				  <a href="https://twitter.com/cchpod/status/1484916125519515654">Mein Keyboardrack</a><br>
+				  <br>
+				  NEWS<br>
+				  <br>
+				  <a href="https://ergogen.xyz/">Ergogen Tool</a><br>
+				  <a href="https://mechfashion.com/">Mechfashion</a><br>
+				  <a href="https://kbd.news/The-ergonomic-design-of-Glove80-1211.html">Glove80 Ergonomics</a><br>
+				  <a href="https://github.com/sffubs/dactyl_manuform_gimbal">Dactyl Manuform Gimbal</a><br>
+				  <br>
+				  GROUPBUYS<br>
+				  <br>
+				  <a href="https://mykeyboard.eu/catalogue/dcs-blue-moon-base-kit_5553/">[GB] DCS Blue Moon</a><br>
+				  <a href="https://mykeyboard.eu/catalogue/category/group-buys/keycaps/gmk-ntd_667/">[GB] GMK NTD</a><br>
+				  <a href="https://dailyclack.com/collections/keysets-group-buys/products/gmk-teradrive">[GB] GMK TERADRIVE</a><br>
+				  <br>
+				  SWITCHES<br>
+				  <br>
+				  <a href="https://loobedswitches.com/products/sangria-switches-pre-order">Sangria Switches</a><br>
+				  <br>
+				  NEO / NEO2 / AdNW<br>
+				  <br>
+				  <a href="https://www.neo-layout.org/">NEO / NEO 2</a><br>
+				  <br>
+				  <a href="https://de.wikipedia.org/wiki/Datei:Neo_2.0-Tastaturbelegung_Ebene1.svg">[NEO 2] Layer 1</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Datei:Neo_2.0-Tastaturlayout_Ebene2.svg">[NEO 2] Layer 2</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Datei:Neo_2.0-Tastaturbelegung_Ebene3.svg">[NEO 2] Layer 3</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Datei:Neo_2.0-Tastaturbelegung_Ebene4.svg">[NEO 2] Layer 4</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Datei:Neo_2.0-Tastaturbelegung_Ebene5.svg">[NEO 2] Layer 5</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Datei:Neo_2.0-Tastaturbelegung_Ebene6.svg">[NEO 2] Layer 6</a><br>
+				  <br>
+				  <a href="https://www.neo-layout.org/Benutzerhandbuch/Tote-Tasten-und-Compose/">NEO 2 Compose Key</a><br>
+				  <a href="https://www.neo-layout.org/Layouts/neoqwertz/">NEOWQERTZ</a><br>
+				  <a href="https://www.neo-layout.org/Layouts/bone/">BONE</a><br>
+				  <a href="https://www.neo-layout.org/Layouts/mine/">MINE</a><br>
+				  <br>
+				  <a href="http://www.adnw.de/">Aus der NEO Welt (AdNW)</a><br>
+				  <br>
+				  <br>
+				  KONTAKT:<br>
+				  --------<br>
+				  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+				  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+				  MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+				  INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+				  <br>
+				  MUSIK:<br>
+				  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+				  Outro: <a href="https://freemusicarchive.org/music/Komiku/The_Binge_Watchers__Score_1/Komiku_-_The_Binge_Watchers_-_Score_1_-_20_Action_Techno">Komiku - Action Techno (CC-BY)</a><br>
+				  <br>
+				  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+				  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+				  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.
+				]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>Alps</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 24 Jan 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">Ars0LuVMsUOjrrHEZnOxQg</guid>
+				<description><![CDATA[Ich hab schon viel über MX Switches und MX Clones schwadroniert. Diesmal geht es um Switches die mit den MX-styled Switches nicht viel gemeinsam haben: Alps Switches. Die geballten Informationen über Alps und das Dokumentationschaos von Alps Electric gibt in dieser Episode. Was unterscheidet Alps von MX und warum ihr sie trotzdem nicht außer Acht lassen solltet. Außerdem sind mir *räusper* diverse Sachen in den Warenkorb gehüpft und natürlich gibts auch wieder Möglichkeiten euer Geld in schönem Plastik zu versenken. Obendrauf - als kleines Sahnehäubchen - alles was in den letzten zwei Wochen neues passiert ist.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_027.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>39:31</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Ich hab schon viel über MX Switches und MX Clones schwardroniert. Diesmal geht um Switches die MX nicht viel gemeinsam haben: Alps Switches. Die geballten Informationen über Alps und das Dokumentationschaos von Alps Electric gibt in dieser Episode. Was unterscheidet Alps von MX und warum ihr sie trotzdem nicht außer Acht lassen solltet. Außerdem sind mir *räusper* diverse Sachen in den Warenkorb gehüpft und natürlich gibts auch wieder Möglichkeiten euer Geld in schönem Plastik zu versenken. Obendrauf als kleines Sahnehäubchen, alles was in den letzten zwei Wochen neues passiert ist.</itunes:subtitle>
+			<itunes:title>Alps</itunes:title>
+			<itunes:episode>27</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[<br>
+				Ich hab schon viel über MX Switches und MX Clones schwardroniert. Diesmal geht um Switches die MX nicht viel gemeinsam haben: Alps Switches. Die geballten Informationen über Alps und das Dokumentationschaos von Alps Electric gibt in dieser Episode. Was unterscheidet Alps von MX und warum ihr sie trotzdem nicht außer Acht lassen solltet. Außerdem sind mir *räusper* diverse Sachen in den Warenkorb gehüpft und natürlich gibts auch wieder Möglichkeiten euer Geld in schönem Plastik zu versenken. Obendrauf als kleines Sahnehäubchen, alles was in den letzten zwei Wochen neues passiert ist.<br>
+				  <br>
+				  NEUIGKEITEN<br>
+				  <br>
+				  <a href="https://podcast.hack-the-planet.tv/">Hack the Planet - Podcast</a><br>
+				  <a href="https://www.theremingoat.com/blog/alpaca-v2-switch-review">Alpacas V2 Switches (Theremingoat)</a><br>
+				  <a href="https://github.com/coseyfannitutti/discipline">Discipline V2</a><br>
+				  <a href="https://atreus.technomancy.us/">Atreus</a><br>
+				  <a href="https://keycapsss.com/keyboard-parts/cases/115/crkbd/corne-plate-case-gatsby">CRKBD Gatsby Case (Keycapsss)</a><br>
+				  <a href="https://candykeys.com/product/m-i-n-i-m-a-l-deskmat-series">Tether Deskmat</a><br>
+				  <br>
+				  NEWS<br>
+				  <br>
+				  <a href="https://www.youtube.com/watch?v=UKfeJrRIcxw">Design Workflow (Ben Vallack)</a><br>
+				  <a href="https://www.hakkei.co/">Hakkei Keyboard</a><br>
+				  <a href="https://github.com/halfdane/thorne-keyboard">Thorne Keyboard</a><br>
+				  <a href="https://twitter.com/KbdNews/status/1481285746942222341">Azimuth Keyboard (Tamas / KBD)</a><br>
+				  <a href="https://www.logitech.com/de-de/products/keyboards/pop-keys-wireless-mechanical.html">Logitech Pop Keys</a><br>
+				  <br>
+				  GROUPBUYS<br>
+				  <br>
+				  <a href="https://mykeyboard.eu/catalogue/gmk-liftoff-base_5495/">[GB] GMK Liftoff</a><br>
+				  <a href="https://mykeyboard.eu/catalogue/gmk-grey-on-black-base-kit_5434/">[GB] Grey on Black</a><br>
+				  <a href="https://candykeys.com/group-buys/epbt-acadia">[GB] ePBT Acadia</a><br>
+				  <a href="https://idobao.net/collections/40-kit/products/idobao-id42-40-hot-swappable-mechanical-keyboard-kit">[GB] ID42</a><br>
+				  <br>
+				  SWITCHES<br>
+				  <br>
+				  -- none --<br>
+				  <br>
+				  ALPS<br>
+				  <br>
+				  <a href="https://www.alpsalpine.com/e/">Alps / Alpine</a><br>
+				  <a href="https://deskthority.net/wiki/File:Alps_SKCL-SKCM.jpg">Alps SKCL/SKCM</a><br>
+				  <a href="https://deskthority.net/wiki/File:Alps_SKCM_White_--_disassembled.jpg">Alps Switch zerlegt</a><br>
+				  <a href="https://www.nerdbude.com/podcast/017.html">CCH017: Apple Keyboards</a><br>
+				  <a href="https://deskthority.net/wiki/Alps_SKCP_series">Alps SKCP Serie</a><br>
+				  <a href="https://deskthority.net/wiki/Alps_SKCL/SKCM_series">Alps SKCM/SKCL Serie</a><br>
+				  <a href="https://deskthority.net/wiki/Alps_SKCC_series">Alps SKCC Serie</a><br>
+				  <a href="https://deskthority.net/wiki/Alps_SKFF_series">Alps SKFF Serie</a><br>
+				  <a href="https://deskthority.net/wiki/Alps_SKFL_series">Alps SKFL Serie</a><br>
+				  <a href="https://deskthority.net/wiki/Alps_SKFR/SKFS_series">Alps SKFR/SKFS Serie</a><br>
+				  <a href="http://www.fwd.com.tw/en">Foward Electronics</a><br>
+				  <a href="https://matias.ca/switches/">Matias Switches</a><br>
+				  <br>
+				  ... und wenn jemand gute Videos über Alps macht dann wohl Mr. b****** m*****f****** <a href="https://www.youtube.com/user/Chyrosran22">Chyrosran22</a> ^^.
+				  <br>
+				  <br>
+				  KONTAKT:<br>
+				  --------<br>
+				  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+				  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+				  MAIL: <a href="mailto:cch@nerdbude.com">cch@nerdbude.com</a><br>
+				  <br>
+				  MUSIK:<br>
+				  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+				  Outro: <a href="https://freemusicarchive.org/music/Cronicool_aka_029/Backwards_EP/04029-De_la_Rue-Backwards_EP-SLC34">(029) - De la rue (CC-BY)</a><br>
+				  <br>
+				  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+				  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+				  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.
+
+				]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>Dvorak</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 10 Jan 2022 10:00:00 +0000</pubDate>
+			<guid isPermaLink="false">kPan2RmRH0S2lNwdlROv5w</guid>
+				<description><![CDATA[Die erste Folge im neuen Jahr 2022. Beginnen wir das Jahr etwas ruhiger und schauen wir uns Dvorak an. Ein alternatives Layout zu QWERTY oder QWERTZ. Dvorak verspricht mehr Ergonomie und ein besser an den User angepasstes Tastenlayout. Dvorak hat auch seine Schwächen aber die werden aufgegriffen von diversen Abwandlungen des Layouts. Also eine kleine Zusammenfassung der Vorzüge und Nachteile die Dvorak mit sich bringt. Diesmal gibt es auch wieder Groupbuys und Switches und ein paar News aus Keyboardland.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_026.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>25:34</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Die erste Folge im neuen Jahr 2022. Beginnen wir das Jahr etwas ruhiger und schauen wir uns Dvorak an. Ein alternatives Layout zu QWERTY oder QWERTZ. Dvorak verspricht mehr Ergonomie und ein besser an den User angepasstes Tastenlayout. Dvorak hat auch seine Schwächen aber die werden aufgegriffen von diversen Abwandlungen des Layouts. Also eine kleine Zusammenfassung der Vorzüge und Nachteile die Dvorak mit sich bringt. Diesmal gibt es auch wieder Groupbuys und Switches und ein paar News aus Keyboardland.</itunes:subtitle>
+			<itunes:title>Dvorak</itunes:title>
+			<itunes:episode>26</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[<br>
+				Die erste Folge im neuen Jahr 2022. Beginnen wir das Jahr etwas ruhiger und schauen wir uns Dvorak an. Ein alternatives Layout zu QWERTY oder QWERTZ. Dvorak verspricht mehr Ergonomie und ein besser an den User angepasstes Tastenlayout. Dvorak hat auch seine Schwächen aber die werden aufgegriffen von diversen Abwandlungen des Layouts. Also eine kleine Zusammenfassung der Vorzüge und Nachteile die Dvorak mit sich bringt. Diesmal gibt es auch wieder Groupbuys und Switches und ein paar News aus Keyboardland.
+				<br>
+				NEUIGKEITEN<br>
+				<br>
+				<a href="https://www.nerdbude.com/podcast/025.html">CCH Silvestergala (zum nachhören)</a><br>
+				<a href="https://twitter.com/cchpod/status/1479271115747135488">PLAID</a><br>
+				<a href="https://twitter.com/cchpod/status/1478522807986405376">PLAID PAD</a><br>
+				<a href="https://www.keycapsss.com">Keycapsss</a><br>
+				<br>
+				NEWS<br>
+				<br>
+				<a href="https://github.com/sadekbaroudi/keyboard-cases">Keyboard cases (sadekbaroudi / Github)</a><br>
+				<a href="https://circuitpython.org/board/solderparty_rp2040_stamp/">Raspberry Pi 2040 Stamp</a><br>
+				<a href="https://github.com/PiKeeb/fu-keyboard">FU! Keyboard</a><br>
+				<a href="https://cannonkeys.com/collections/featured/products/cxa-bow-wob">CXA Profile</a><br>
+				<br>
+				GROUPBUYS<br>
+				<br>
+				<a href="https://www.keychron.com/products/keychron-q2-qmk-custom-mechanical-keyboard">Keychron Q2</a><br>
+				<a href="https://kbdfans.com/collections/group-buy/products/ic-bounce-75-mechanical-keyboard-kit">BOUNCE 75</a><br>
+				<br>
+				SWITCHES<br>
+				<br>
+				<a href="https://zealpc.net/products/clickiez?variant=39379354026048">Zeal Clickiez</a><br>
+				<a href="https://zenclack.com/products/oooolong-tea-switches">Oooolong Switch</a><br>
+				<br>
+				DVORAK<br>
+				<br>
+				<a href="https://de.wikipedia.org/wiki/August_Dvorak">August Dvorak</a><br>
+				<a href="https://de.wikipedia.org/wiki/Dvorak-Tastaturbelegung">Dvorak Layout (Wikipedia)</a><br>
+				<a href="https://www.kaufmann.no/roland/dvorak/">Programmer Dvorak</a><br>
+				<a href="https://colemak.com/">Colemak</a><br>
+				<a href="https://www.dvzine.org/zine/index.html">Dvorak Zine</a><br>
+				<br>
+				KONTAKT:<br>
+				--------<br>
+				WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a><br>
+				TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+				MAIL: <a href="mailto:cch@nerdbude.com">cch@nerdbude.com</a><br>
+				<br>
+				MUSIK:<br>
+				Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">(029) - Tribal (CC-BY)</a><br>
+				<br>
+				Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+				<a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+				Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.
+				]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>CCH Silvestergala</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Fri, 31 Dec 2021 10:00:00 +0000</pubDate>
+			<guid isPermaLink="false">qZjYbabJg0CHidbIJVMo-A</guid>
+				<description><![CDATA[Ha! Überraschung! Es gibt doch noch eine Kleinigkeit. Die CCH Silvester-Gala mit euren Fragen und meinen Antworten dazu und natürlich Musik (CC-BY) zum tanzen. Also macht euch schicker als ihr eh schon seid, schnappt euch ein Kaltgetränk eurer Wahl und hört euch die Antworten an. Viel Spaß damit, Danke für ein wundervolles Jahr und für viele nosch schönerer Gespräche wenn auch nur online. Wir hören uns 2022 wieder.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_025.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>01:21:54</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Ha! Überraschung! Es gibt doch noch eine Kleinigkeit. Die CCH Silvester-Gala mit euren Fragen und meinen Antworten dazu und natürlich Musik (CC-BY) zum tanzen. Also macht euch schicker als ihr eh schon seid, schnappt euch ein Kaltgetränk eurer Wahl und hört euch die Antworten an. Viel Spaß damit, Danke für ein wundervolles Jahr und für viele nosch schönerer Gespräche wenn auch nur online. Wir hören uns 2022 wieder.</itunes:subtitle>
+			<itunes:title>CCH Silvestergala</itunes:title>
+			<itunes:episode>25</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[<br>
+				Ha! Überraschung! Es gibt doch noch eine Kleinigkeit. Die CCH Silvester-Gala mit euren Fragen und meinen Antworten dazu und natürlich Musik (CC-BY) zum tanzen. Also macht euch schicker als ihr eh schon seid, schnappt euch ein Kaltgetränk eurer Wahl und hört euch die Antworten an. Viel Spaß damit, Danke für ein wundervolles Jahr und für viele nosch schönerer Gespräche wenn auch nur online. Wir hören uns 2022 wieder. <br>
+				  <br>
+				  PODCASTS:<br>
+				  <br>
+				  <a href="https://podcast.hack-the-planet.tv/">Hack the Planet</a><br>
+				  <a href="https://teleprost.podigee.io/">Teleprost</a><br>
+				  <a href="https://www.trommelspeicher.de/podcast">Mac Mittwoch</a><br>
+				  <a href="https://fyyd.de/podcast/man-nerdet-nie-aus/0">Man nerdet nie aus</a><br>
+				  <a href="https://alternativlos.org/">Alternativlos</a><br>
+				  <a href="https://chaosradio.de/">Chaos Radio</a><br>
+				  <a href="https://theboard.libsyn.com/">The Board</a><br>
+				  <a href="https://devilsanddemons.podigee.io/">Devils and Demons</a><br>
+				  <a href="https://datenkanal.org/">Datenkanal</a><br>
+				  <a href="https://truecrimegermany.podigee.io/">True Crime Germany</a><br>
+				  <a href="https://endemitschrecken.podigee.io/">Ende mit Schrecken</a><br>
+				  <a href="https://track26.podigee.io/">Track26</a><br>
+				  <a href="https://www.audiocortex.de/">AudioCortex</a><br>
+				  <br>
+				  BOOKS:<br>
+				  <br>
+				  <a href="https://de.wikipedia.org/wiki/Illuminatus!">Illuminatus</a><br>
+				  <a href="https://www.ventil-verlag.de/titel/116/shibboleth-my-revolting-life">Shibboleth</a><br>
+				  <a href="https://en.wikipedia.org/wiki/Hackers:_Heroes_of_the_Computer_Revolution">Hackers</a><br>
+				  <br>
+				  MISC:<br>
+				  <br>
+				  <a href="https://fyyd.de/">FYYD</a><br>
+				  <a href="https://www.meetup.com/Mechanical-Keyboard-Meetup-Rhein-Main/">Mechanicon</a><br>
+				  <a href="https://keycapsss.com/">Keycapsss</a><br>
+				  <a href="https://eurkey.steffen.bruentjen.eu/?lang=de">EURKey</a><br>
+				  <a href="https://www.instagram.com/seven_keycaps/?hl=de">Seven_Keycaps</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Holger_Klein">Holger Klein</a><br>
+				  <br>
+				  MUSIC (CC-BY):<br>
+				  <br>
+				  <a href="https://freemusicarchive.org/music/Rolemusic/Pop_Singles_Compilation_2014/Shaanti">Rolemusic - Shaanti (CC-BY)</a><br>
+				  <a href="https://freemusicarchive.org/music/Cronicool_aka_029/Orbea/05Cronicool_Aka_029-90s">(029) - 90s (CC-BY)</a><br>
+				  <a href="https://freemusicarchive.org/music/Cronicool_aka_029/Orbea/03Cronicool_Aka_029-Double_Vision">(029) - Double Vision (CC-BY)</a><br>
+				  <a href="https://freemusicarchive.org/music/Alien_Operator/Acid_Planet_Zuberon/02_-_Alien_Operator_-_AcidPlanet">Alien Operator - Acid Planet (CC-BY)</a><br>
+				  <a href="https://freemusicarchive.org/music/Pocketmaster/Residue/10_-_Information_Rmx">PocketMaster - Information RMX (CC-BY)</a><br>
+				  <a href="https://freemusicarchive.org/music/Pocketmaster/Residue/04_-_Wrong_Calibration">PocketMaster - Wrong Calibration (CC-BY)</a><br>
+				  <br>
+				  KONTAKT:<br>
+				  --------<br>
+				  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a><br>
+				  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+				  MAIL: <a href="mailto:cch@nerdbude.com">cch@nerdbude.com</a><br>
+				  <br>
+				  MUSIK:<br>
+				  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+				  <br>
+				  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+				  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+				  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>ErgoDox</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 27 Dec 2021 10:00:00 +0000</pubDate>
+			<guid isPermaLink="false">ThOuddX3IEyivlo1mxMIHA</guid>
+				<description><![CDATA[Die letzte reguläre Folge im Jahr 2021. Diesmal geht es um die ErgoDox. Viele kennen sie und viele wollen sie haben. Die ErgoDox kann getrost als Herzstück der Split Keyboards betrachtet werden. Entstanden aus der KEY64 ist sie mittlerweile eins der bekanntesten Split Keyboards überhaupt. Zudem hat sie auc heine Menge andere Split Keyboards im Design und Layout beeinflusst. Natürlich gibt es auch die Gewinner des Jahres-End-Specials. Ihr habt mir eure Fragen gestellt - da natürlich auch noch ausgewertet und beantwortet werden und zwei von euch dürfen sich entweder über 65 Kailh Box Navy Switches freuen oder über eine ID80. News und Groupbuys sind natürlich auch wieder mit dabei.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_024.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>31:03</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Die letzte reguläre Folge im Jahr 2021. Diesmal geht es um die ErgoDox. Viele kennen sie und viele wollen sie haben. Die ErgoDox kann getrost als Herzstück der Split Keyboards betrachtet werden. Entstanden aus der KEY64 ist sie mittlerweile eins der bekanntesten Split Keyboards überhaupt. Zudem hat sie auc heine Menge andere Split Keyboards im Design und Layout beeinflusst. Natürlich gibt es auch die Gewinner des Jahres-End-Specials. Ihr habt mir eure Fragen gestellt - da natürlich auch noch ausgewertet und beantwortet werden und zwei von euch dürfen sich entweder über 65 Kailh Box Navy Switches freuen oder über eine ID80. News und Groupbuys sind natürlich auch wieder mit dabei.</itunes:subtitle>
+			<itunes:title>ErgoDox</itunes:title>
+			<itunes:episode>24</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[Die letzte reguläre Folge im Jahr 2021. Diesmal geht es um die ErgoDox. Viele kennen sie und viele wollen sie haben. Die ErgoDox kann getrost als Herzstück der Split Keyboards betrachtet werden. Entstanden aus der KEY64 ist sie mittlerweile eins der bekanntesten Split Keyboards überhaupt. Zudem hat sie auc heine Menge andere Split Keyboards im Design und Layout beeinflusst. Natürlich gibt es auch die Gewinner des Jahres-End-Specials. Ihr habt mir eure Fragen gestellt - da natürlich auch noch ausgewertet und beantwortet werden und zwei von euch dürfen sich entweder über 65 Kailh Box Navy Switches freuen oder über eine ID80. News und Groupbuys sind natürlich auch wieder mit dabei.<br>
+				Neuigkeiten:<br>
+			  <br>
+			  Das Jahresendspecial wird euch zur Verfügung gestellt von den wunderbaren <a href="https://www.candykeys.com">CANDYKEYS</a><br>
+			  <br>
+			  <a href="https://ready-for-review.dev/">Ready for review Podcast</a><br>
+			  <a href="https://www.pine64.org/pinetime/">Pine64 Pinetime</a><br>
+			  <a href="https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/">Pine64 Pinecil</a><br>
+			  <a href="https://epomaker.com/products/akko-neon-keycaps-set">AKKO Neon Keycaps</a><br>
+			  <a href="https://42keebs.eu/shop/kits/discipline-65-ansi-iso-kit-white/">Discipline (1.5)</a><br>
+			  <br>
+			  NEWS<br>
+			  <a href="http://oookaworks.seesaa.net/article/484585466.html?1638889211#gsc.tab=0">Saddle Keycaps</a><br>
+			  <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/rb2c0q/macro_pad_that_is_switchable_between_clicky_and/">Clicky und linear in einem Switch</a><br>
+			  <a href="https://www.angrymiao.com/am-hatsu/">AM HATSU Keyboard</a><br>
+			  <a href="https://twitter.com/unreal5050/status/1472667805078151176">Nowpad</a><br>
+			  <a href="https://imgur.com/a/6C500wi">FU!Keyboard</a><br>
+			  <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/ri3uut/endgame_from_the_space_shuttle/">GRID COMPASS II</a><br>
+			  <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/rag46p/finally_finished_my_project_an_opensource_gaming/">Eternal Keypad</a><br>
+			  <br>
+			  GROUPBUYS<br>
+			  <a href="https://geekhack.org/index.php?topic=112000.0">GMK Mercury</a><br>
+			  <a href="https://licit.ca/ols/products/mk3-copper">MK3 Copper</a><br>
+			  <a href="https://klc-playground.com/collections/keyboard/products/rotor">ROTOR</a><br>
+			  <br>
+			  SWITCHES<br>
+			  Gabs leider keine :)
+			  <br>
+			  ERGODOX<br>
+			  <a href="https://deskthority.net/viewtopic.php?f=7&t=1753&start=">Post von Dox</a><br>
+			  <a href="https://deskthority.net/wiki/ErgoDox">ErgoDox</a><br>
+			  <a href="https://www.key64.org">KEY64 Keyboard</a><br>
+			  <a href="https://github.com/benblazak/ergodox-firmware">Ur-Firmware der ErgoDox</a><br>
+			  <a href="https://ergodox-ez.com/">ErgoDox-EZ</a><br>
+			  <a href="https://www.zsa.io/moonlander/">ZSA Moonlander</a><br>
+			  <a href="https://kono.store/products/infinity-ergodox-keyboard">Infinity ErgoDox</a><br>
+			  <a href="https://falba.tech/customize-your-keyboard/customize-your-ergodox/?v=9b7d173b068d">ErgoDox (Falbatech)</a><br>
+			  <a href="https://github.com/foostan/crkbd">CORNE / CRKBD / HelioDox</a><br>
+			  <a href="https://github.com/mattdibi/redox-keyboard">ReDox</a><br>
+			  <a href="https://geekhack.org/index.php?topic=100592.0">Bireme</a><br>
+			  <a href="https://falba.tech/product-category/keyboard-parts/minidox-parts/cases-minidox/">MiniDox</a><br>
+			  <a href="https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard">Iris Keyboard</a><br>
+			  <a href="https://keyhive.xyz/shop/lily58">Lily58</a><br>
+			  <a href="https://ohkeycaps.com/products/built-to-order-dactyl-manuform-keyboard">Dactyl</a><br>
+			  <br>
+			  <br>
+			  Kommt gut ins neue Jahr 2022, baut, entwickelt, benutzt und fotografiert weiter Keyboards und bleibt alle so toll wie ihr seid.<br>
+			  <br>
+			  KONTAKT:<br>
+			  --------<br>
+			  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a><br>
+			  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+			  MAIL: <a href="mailto:cch@nerdbude.com">cch@nerdbude.com</a><br>
+			  <br>
+			  MUSIK:<br>
+			  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+			  Outro: <a href="https://freemusicarchive.org/music/Rolemusic/~/neogauge">Sputnik Booster - Rocketbasse (CC-BY)</a><br>
+			  <br>
+			  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+			  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+			  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.]]>
+			</content:encoded>
+		</item>
 		<item>
 			<title>G80-3000</title>
 			<link>https://www.nerdbude.com/podcast/index.html</link>
