@@ -1,0 +1,188 @@
+<!--
+8"""8 8"""" 8"""8  8""""8 8""""8   8   8 8""""8 8""""
+8   8 8     8   8  8    8 8    8   8   8 8    8 8
+8e  8 8eeee 8eee8e 8e   8 8eeee8ee 8e  8 8e   8 8eeee
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88    88   8 88   8 88     8 88  8 88   8 88
+88  8 88eee 88   8 88eee8 88eeeee8 88ee8 88eee8 88eee
+
+[website] https://www.nerdbude.com
+[mail] post@nerdbude.com
+[twitter] @PH_0x17
+[github] https://www.github.com/nerdbude
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NERDBUDE</title>
+    <meta charset="utf-8" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@PH_0x17">
+
+    <meta property="og:url" content="https://www.nerdbude.com/en_twterm.html">
+    <meta property="og:title" content="twterm">
+    <meta property="og:description" content="Twitter in the Terminal">
+
+    <meta property="og:image" content="https://www.nerdbude.com/images/fav.png">
+    <link rel="icon" type="image/png" href="https://www.nerdbude.com/images/fav.png">
+    <link rel="alternate" href="https://nerdbude.com/rss/rss.xml" type="application/rss+xml" title="NERDBUDE"/>
+    <link rel="stylesheet" type="text/css" href="https://www.nerdbude.com/css/style.css" media="screen">
+</head>
+
+<body>
+
+  <!--- HEADER -->
+  <header>
+    <div id="headerimage">
+      <h1 id="terminal"><a href="https://www.nerdbude.com/en/en_index.html" class="front">NERDBUDE</a></h1>
+      <h3>[ code. keyboards. terminals. cyber. ]</h3>
+      <table>
+	      <tr>
+		      <th><a href="https://www.nerdbude.com/en/en_readme.html" class="front">[HOWTO]</a></th>
+          <th><a href="https://www.nerdbude.com/en/en_about.html" class="front">[WHOAMI]</a></th>
+          <th><a href="https://www.nerdbude.com/podcast/index.html" class="front">[PODCAST]</a></th>
+          <th><a href="https://www.nerdbude.com/frankenswitches.html" class="front">[FRANKENSWITCHES]</a></th>
+          <th><a href="https://www.nerdbude.com/twterm.html" class="front">[GERMAN]</a></th>
+	      </tr>
+      </table>
+    </div>
+  </header>
+
+
+  <div id="content">
+<!-- ARTIKLE START -->
+<h2>TWTERM</h2>
+<time>2022-04-21</time><br><br>
+<h3>Twitter - but in the Linux terminal</h3>
+<center><img src="https://www.nerdbude.com/images/twterm.png" width="400"></center><br>
+<br>
+The terminal is the natural habitat of many nerdettes and nerds - including mine.<br>
+The vice of social media, especially Twitter, is also involved. Both can be combined well.<br>
+As long as the terminal category is built in here at the Nerdbude (yes spoilers!) here's a little tooltip again for a wonderful little piece of software called <b>twterm</b>.<br>
+ <br>
+The name says it all. It is a Twitter client for the terminal.<br>
+Now there are some of them but twterm is a bit more special. On the one hand runs <b>twterm</b> with Vim-keys (nice!) and on the other hand, it is wonderful to obtain and install via Nix.<br>
+<br>
+<h3>Installation</h3>
+The installation is done quickly. You only need to add the Github repo to the NixOS channel:<br>
+<br>
+<span class="label">Installation (NixOS)</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nix-channel --add https://github.com/ryota-ka/twterm/archive/master.tar.gz twterm</span></ln>
+</pre>
+</div>
+<br>
+<br>
+After this you can install it for your local user:<br>
+<br>
+<span class="label">for user</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">nix-channel --update</span></ln>
+<ln><span class="unixshell">nix-env -iA twterm</span></ln>
+</pre>
+</div>
+<br><br>
+Thanks to <a href="https://twitter.com/fleaz_">fleaz</a> (... again :D ). <b>fleaz</b> give me the Code-Snippet for the <b>configuration.nix</b>:<br>
+<br>
+<span class="label">configuration.nix</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">{ config, pkgs, ... }:</span></ln>
+<ln><span class="unixshell">let</span></ln>
+<ln><span class="unixshell">&nbsp;&nbsp;&nbsp;&nbsp;unstable = import &lt;twterm&gt; {};</span></ln>
+<ln><span class="unixshell">in {</span></ln>
+<ln><span class="unixshell">&nbsp;&nbsp;&nbsp;&nbsp;environment.systemPackages = [</span></ln>
+<ln><span class="unixshell">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;twterm.twterm</span></ln>
+<ln><span class="unixshell">&nbsp;&nbsp;&nbsp;&nbsp;];</span></ln>
+<ln><span class="unixshell">};</span></ln>
+</pre>
+</div>
+<br><br>
+<h3>Config</h3>
+The configuration of <b>twterm</b> lruns very simple over single config files. The files are stored in your $HOME directory, in the folder <b>.twterm</b>. The following config files are located here:<br>
+<br>
+<span class="label">$HOME</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">config</span></ln>
+<ln><span class="unixshell">keys.toml</span></ln>
+<ln><span class="unixshell">preferences.toml</span></ln>
+</pre>
+</div>
+<br>
+<br>
+The <b>config</b> contains your credentials to log in to Twitter:<br><br>
+<span class="label">config</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">:access_token: XXXX</span></ln>
+<ln><span class="unixshell">:access_token_secret: XXXX</span></ln>
+<ln><span class="unixshell">:screen_name: XXXX</span></ln>
+<ln><span class="unixshell">:user_id: XXXX</span></ln>
+</pre>
+</div>
+<br><br>
+The <b>keys.toml</b> contains the keybindings with which <b>twterm</b> is controlled. Here is the content:<br>
+<br>
+<span class="label">keys.toml</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">[app]</span></ln>
+<ln><span class="unixshell">cheatsheet = "F1"</span></ln>
+<ln><span class="unixshell">me = "m"</span></ln>
+<ln><span class="unixshell">quit = "F10"</span></ln>
+<ln><span class="unixshell"> </span></ln>
+<ln><span class="unixshell">[Cursor]</span></ln>
+<ln><span class="unixshell">bottom_of_window = "L"</span></ln>
+<ln><span class="unixshell">middle_of_window = "M"</span></ln>
+<ln><span class="unixshell">top_of_window = "H"</span></ln>
+<ln><span class="unixshell">...</span></ln>
+</pre>
+</div>
+<br><br>
+The <b>preferences.toml</b> contains the configuration for the tool itself. Here you can also define how e.g. images should be handled (imgcat).<br>
+<br>
+<span class="label">preferences.toml</span>
+<div id="cssyn">
+<pre>
+<ln><span class="unixshell">[control]</span></ln>
+<ln><span class="unixshell">scroll_direction = "traditional"</span></ln>
+<ln><span class="unixshell"> </span></ln>
+<ln><span class="unixshell">[notification_backend]</span></ln>
+<ln><span class="unixshell">inline = true</span></ln>
+<ln><span class="unixshell"> </span></ln>
+<ln><span class="unixshell">[photo_viewer_backend]</span></ln>
+<ln><span class="unixshell">imgcat = true</span></ln>
+<ln><span class="unixshell">...</span></ln>
+</pre>
+</div>
+<br><br>
+So lots of configuration possibilities.<br>
+The tool was developed by <a href="https://ryota-ka.me">Ryota Kameoka</a> and was written in Ruby. You can find <b>twterm</b> on Github: <a href="https://github.com/ryota-ka/twterm">twterm</a>.
+<br>
+<br>
+Thanks for the tool and have fun with it!
+<br>
+<br>
+EDIT:<br>
+<edit>[2021-04-21]</edit> - adding configuration.nix code-snippet (THX <a href="https://twitter.com/fleaz_">fleaz</a>)<br>
+<!-- ARTIKEL ENDE -->
+<br>
+<br>
+<br>
+<br>
+<p>//EOF</p>
+  </div>
+
+  <!-- Footer -->
+
+  <div id="footer">
+    <a href="https://www.nerdbude.com/impressum.html">./impressum </a>
+    <a target="_blank" href="https://www.nerdbude.com/datenschutz.html">./datenschutz </a>
+  </div>
+
+</body>
+</html>

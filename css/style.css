@@ -64,7 +64,7 @@ ul {
 }
 
 h1 {color: #ffffff; background-color: #272727;}
-h2 {color: #afd75f; background-color: #272727;}
+h2 {color: #afd75f; background-color: #272727; margin-bottom: 0px;}
 h3 {color: #afd75f; background-color: #272727;}
 
 h1::before {color: #afd75f; content: "$"}
@@ -72,6 +72,20 @@ h1::after {color: #afd75f; content: "_"; animation: flash 0.5s step-end infinite
 
 h2::before {color: #afd75f; content:"~$: "}
 
+time {color: #ff63b3; font-size: 12px;}
+time::before {color: #6e6e6e; content:"└──┤ [last.modified:]──[ "; font-size: 12px; margin-left: 15px;}
+time::after {color: #6e6e6e; content:" ]"; font-size: 12px;}
+
+tool {color: #afd75f; font-size: 12px;}
+tool::before {color: #6e6e6e; content:"├── ["; font-size: 12px; margin-left: 15px;}
+tool::after {color: #6e6e6e; content:" ] "; font-size: 12px;}
+
+toollang {color: #ff63b3; font-size: 12px;}
+toollang::before {color: #6e6e6e; content:"── ["; font-size: 12px;}
+toollang::after {color: #6e6e6e; content:" ] ──── "; font-size: 12px;}
+
+
+edit {color: #ff1f4f;}
 
 #terminal {overflow: hidden;
   white-space: nowrap;

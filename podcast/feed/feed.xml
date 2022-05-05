@@ -26,6 +26,210 @@
 		<itunes:block>no</itunes:block>
 		<itunes:explicit>no</itunes:explicit>
 		<item>
+			<title>Tools! Tools! Tools!</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 02 May 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">oeXxsKc_g0OhFgy2s0MUHA</guid>
+				<description><![CDATA[Diesmal geht es um Tools die euch einerseits helfen beim designen von Keyboards helfen, beim erstellen von PCBs, von Layouts und so weiter. Aber auch Websites mit Switches, Reviews, Tests, Soundbeispielen und mehr. Es gibt aber auch diverse Tools die einfach nur Spaß bringen oder euch die Möglichkeit geben Keyboards zu vergleichen. Die Wissenschaft kommt auch nicht zu kurz aber hört selbst. Ein paar News und Neuigkeiten sind natürlich auch dabei und oben drauf habt ihr die Möglichkeit eine von zwei ARTSEY.IO PCBs abzustauben. Den krönenden Abschluss macht wunderbare düstere elektronische CC Musik von REVENGEDAY.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_034.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>31:55</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Diesmal geht es um Tools die euch einerseits helfen beim designen von Keyboards helfen, beim erstellen von PCBs, von Layouts und so weiter. Aber auch Websites mit Switches, Reviews, Tests, Soundbeispielen und mehr. Es gibt aber auch diverse Tools die einfach nur Spaß bringen oder euch die Möglichkeit geben Keyboards zu vergleichen. Die Wissenschaft kommt auch nicht zu kurz aber hört selbst. Ein paar News und Neuigkeiten sind natürlich auch dabei und oben drauf habt ihr die Möglichkeit eine von zwei ARTSEY.IO PCBs abzustauben. Den krönenden Abschluss macht wunderbare düstere elektronische CC Musik von REVENGEDAY.</itunes:subtitle>
+			<itunes:title>Tools! Tools! Tools!</itunes:title>
+			<itunes:episode>34</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[Diesmal geht es um Tools die euch einerseits helfen beim designen von Keyboards helfen, beim erstellen von PCBs, von Layouts und so weiter. Aber auch Websites mit Switches, Reviews, Tests, Soundbeispielen und mehr. Es gibt aber auch diverse Tools die einfach nur Spaß bringen oder euch die Möglichkeit geben Keyboards zu vergleichen. Die Wissenschaft kommt auch nicht zu kurz aber hört selbst. Ein paar News und Neuigkeiten sind natürlich auch dabei und oben drauf habt ihr die Möglichkeit eine von zwei ARTSEY.IO PCBs abzustauben. Den krönenden Abschluss macht wunderbare düstere elektronische CC Musik von REVENGEDAY.<br>
+				  <br>
+						NEUIGKEITEN<br>
+					  <br>
+					  <a href="https://www.youtube.com/watch?v=b5kmQjUvqQw&t=36s">The Plague Frankenswitch auf Youtube</a><br>
+					  <a href="https://chaos.social/web/accounts/107292276869536563">Der CCH! auf Mastodon</a><br>
+					  <br>SPECIAL<br>
+					  <a href="https://artsey.io/">ARTSEY.IO</a><br>
+					  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Wec66RyzBscPFo_4ac4yd7L_Y71M57Adbkg1q0KuOuot7w/viewform">MITMACHEN</a><br>
+					  <br>
+					  Danke an:
+					  <a href="https://twitter.com/inkOne">inkOne</a><br>
+					  <a href="https://twitter.com/maglab_Fulda">Magrathea Labs Fulda</a><br>
+					  <br>
+					  NEWS<br>
+					  <br>
+					  <a href="https://zmk.dev/">ZMK</a><br>
+					  <a href="https://lowprokb.ca/products/ldsa-low-profile-blank-keycaps">LDSA Keycapprofile</a><br>
+					  <a href="https://www.reddit.com/r/ErgoMechKeyboards/comments/uctedi/new_keyboard_the_btrfld_a_foldable_low_profile/">btrfld Keyboard</a><br>
+					  <a href="https://kbd.news/The-Japanese-duplex-matrix-1391.html">Keyboard Matrix (KBD.NEWS)</a><br>
+					  <a href="https://mykeyboard.eu/catalogue/category/group-buys/keycaps/dcs-estate_712/">[GB] DCS Estate</a><br>
+					  <a href="https://lykkostudio.com/products/dsa-petrikeys">[GB] DSA PetriKeys</a><br>
+					  <br>
+					  KEYBOARD HISTORY<br>
+					  <br>
+					  <a href="https://www.nerdbude.com/podcast/004.html">CCH 004 (Firmwares)</a><br>
+					  <a href="https://www.nerdbude.com/podcast/008.html">CCH 008 (Community)</a><br>
+					  <a href="https://www.nerdbude.com/podcast/009.html">CCH 009 (QMK)</a><br>
+					  <a href="https://www.nerdbude.com/podcast/022.html">CCH 022 (Prototyping)</a><br>
+					  <br>
+					  <a href="https://kbd.news/">KBD News</a><br>
+					  <a href="https://kbd.news/vendors">KBD News Vendorlist</a><br>
+					  <a href="https://switches.mx">Switches.mx</a><br>
+					  <a href="https://switches.mx/vendors/">Switches.mx Vendorlist</a><br>
+					  <a href="https://www.mechgroupbuys.com/">Mechgroupbuys.com</a><br>
+					  <a href="https://www.keeb.gg/">Keeb.gg</a><br>
+					  <a href="https://www.damnfinekeyboards.com">Damn Fine Keyboards</a><br>
+					  <a href="https://monkeytype.com/">MonkeyType</a><br>
+					  <a href="https://typing.io/">Code Typing Test</a><br>
+					  <a href="https://github.com/lemnos/tt">tt - terminal typing test</a><br>
+					  <a href="https://www.theremingoat.com/">Theremin Goat</a><br>
+					  <a href="https://deskthority.net/">Deskthority</a><br>
+					  <a href="https://www.keebtalk.com/">Keebtalk</a><br>
+					  <a href="https://geekhack.org/">Geekhack</a><br>
+					  <a href="https://discord.gg/aE2w858Kmj">Switches.mx (Discord)</a><br>
+					  <a href="https://discord.gg/whnkeys">WHNKeys (Discord)</a><br>
+					  <a href="https://discord.gg/qXzjgBe33B">Keycapsss (Discord)</a><br>
+					  <a href="https://discord.gg/Vw3YKAMgud">MechGroupBuys (Discord)</a><br>
+					  <a href="https://discord.gg/hVZErFVf6p">40% Keyboards (Discord)</a><br>
+					  <a href="https://discord.gg/hVcv3pnGBE">ARTSEY.IO (Discord)</a><br>
+					  <a href="https://github.com/qmk/qmk_toolbox">QMK Toolbox</a><br>
+					  <a href="https://kbfirmware.com">kbfirmware.com</a><br>
+					  <a href="https://github.com/ideasman42/qmk-fromtext">QMK fromtext</a><br>
+					  <a href="https://www.kamsewingtin.com">Layouttester (GB KAM Sewing Tin)</a><br>
+					  <a href="https://github.com/brianoverby/OrthoKeymapSVG">Ortho Keymap Tool</a><br>
+					  <a href="https://github.com/klavgen/klavgen">Klavgen</a><br>
+					  <a href="https://github.com/mryndzionek/cq_keyboard_gen">Keyboard Case Generator</a><br>
+					  <a href="http://www.keyboard-layout-editor.com/">Keyboard Layout Editor</a><br>
+					  <a href="https://wiki.ai03.com/books/pcb-design/page/pcb-guide-part-1---preparations">ai03 PCB Designer Wiki</a><br>
+					  <a href="https://github.com/jeroen94704/klepcbgen">KLE PCB Generator</a><br>
+					  <a href="https://kbs.im/">Keyboard Sound Simulator</a><br>
+					  <a href="https://sharktastica.co.uk/kb_db_finder">IBM Part No. Finder</a><br>
+					  <a href="https://jhelvy.shinyapps.io/splitkbcompare/">Split Keyboard Comparsion</a><br>
+					  <a href="https://www.keycaps.info/">Keycap Comparsion</a><br>
+					  <a href="https://precondition.github.io/qmk-heatmap">QMK Heatmap</a><br>
+					  <a href="https://remap-keys.app/">ReMap</a><br>
+					  <br>
+					  <br>
+					  KONTAKT:<br>
+					  --------<br>
+					  <br>
+					  CLICK! CLACK! HACK!<br>
+					  WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+					  TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+					  MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+					  INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+					  MASTODON: <a href="https://chaos.social/web/accounts/107292276869536563">@ClickClackHack@chaos.social</a><br>
+					  YOUTUBE: <a href="https://www.youtube.com/channel/UC5zAOX74UL-Yx2GfhhXmFrg/featured">CCH!</a><br>
+					  <br>
+					  ------<br>
+					  <br>
+					  DAMN FINE KEYBOARDS<br>
+					  WEB: <a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS</a><br>
+					  TWITTER: <a href="https://www.twitter.com/damnfinekeebs">@damnfinekeebs</a><br>
+					  <br>
+					  ------<br>
+					  MUSIK:<br>
+					  Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+					  Outro: <a href="https://revengeday.de/">REVENGEDAY - THE ARCH (CC-BY)</a><br>
+					  <br>
+					  Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+					  <a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+					  Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.
+				]]>
+			</content:encoded>
+		</item>
+		<item>
+			<title>KEYBOARD HISTORY</title>
+			<link>https://www.nerdbude.com/podcast/index.html</link>
+			<pubDate>Mon, 18 Apr 2022 09:00:00 +0000</pubDate>
+			<guid isPermaLink="false">ow4A58cwzkyKcNIkuLWHaw</guid>
+				<description><![CDATA[Die Idee für diese Episode liegt hier schon seit Beginn des CCH! rum. Die Herkunft der Tastaturen wie wir sie heute kennen und zwar von ganz vorne - ich sag nur 1714. Das ist so ziemlich der weiteste Sprung in die Vergangenheit, den wir je im CCH! hatten und haben werden. Wie immer gibt es natürlich auch News und Neuigkeiten rund um das beste Hobby der Welt.]]></description>
+			<atom:link href="https://www.nerdbude.com/podcast/audio/#"/>
+
+		<enclosure url="https://www.nerdbude.com/podcast/audio/CCH_033.mp3" type="audio/mpeg"/>
+
+			<itunes:duration>33:02</itunes:duration>
+			<itunes:author>PH_0x17</itunes:author>
+			<itunes:subtitle>Die Idee für diese Episode liegt hier schon seit Beginn des CCH! rum. Die Herkunft der Tastaturen wie wir sie heute kennen und zwar von ganz vorne - ich sag nur 1714. Das ist so ziemlich der weiteste Sprung in die Vergangenheit, den wir je im CCH! hatten und haben werden. Wie immer gibt es natürlich auch News und Neuigkeiten rund um das beste Hobby der Welt.</itunes:subtitle>
+			<itunes:title>KEYBOARD HISTORY</itunes:title>
+			<itunes:episode>33</itunes:episode>
+			<itunes:episodeType>full</itunes:episodeType>
+			<content:encoded>
+				<![CDATA[Die Idee für diese Episode liegt hier schon seit Beginn des CCH! rum. Die Herkunft der Tastaturen wie wir sie heute kennen und zwar von ganz vorne - ich sag nur 1714. Das ist so ziemlich der weiteste Sprung in die Vergangenheit, den wir je im CCH! hatten und haben werden. Wie immer gibt es natürlich auch News und Neuigkeiten rund um das beste Hobby der Welt. <br>
+				  <br>
+				  NEUIGKEITEN<br>
+				  <br>
+				  <a href="https://ready-for-review.dev/2022/03/24/rfr020-das-ist-der-weg/">RFR020 - Dsa ist der Weg</a><br>
+				  <a href="https://chaos.social/web/@ClickClackHack">@clickclackhack@chaos.social (Mastodon)</a><br>
+				  <a href="https://github.com/moduloindustries/thinkeys">Thinkeys (Splits for Thinkpads)</a><br>
+				  <a href="https://www.nerdbude.com/the_plague.html">THE PLAGUE Frankenswitch</a><br>
+				  <a href="https://twitter.com/deveth0">@deveth0 (Fragt noch Dump Macropads)</a><br>
+				  <br>
+				  NEWS<br>
+				  <br>
+				  <a href="https://github.com/crides/fusion">Fusion foldable Keyboard</a><br>
+				  <a href="https://www.printables.com/model/161422-cherry-profile-keycap-row-identifier">Cherry row identifier</a><br>
+				  <a href="https://thangs.com/designer/aphillippe/3d-model/Kyria%2520Ergo%2520Split%2520keyboard%2520case%2520%252B%2520extras-58186">Kyria Case mit Trackpadhalter</a><br>
+				  <a href="https://mykeyboard.eu/catalogue/category/group-buys/keycaps/gmk-cinder_707/">[GB] GMK Cinder</a><br>
+				  <br>
+				  KEYBOARD HISTORY<br>
+				  <br>
+				  <a href="https://de.wikipedia.org/wiki/1714">1714 (Wikipedia)</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Henry_Mill">Henry Mill</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Pellegrino_Turri">Pellegrino Turri</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Karl_von_Drais">Karl Drais</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Typenhebel">Typenebel</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Kugelsegment">Kugelkalotte</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Schreibkugel">Malling-Hansen (Schreibkugel)</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Friedrich_Nietzsche">Friedrich Nietzsche</a><br>
+				  <a href="https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter">Sholes-Glidden Typewriter</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Wagnergetriebe">Wagnergetriebe</a><br>
+				  <a href="https://en.wikipedia.org/wiki/Underwood_Typewriter_Company">Underwood Typewriter Company</a><br>
+				  <a href="https://sommeregger.name/typewriters/collection/underwood_5.html">Underwood Typewriter No. 5</a><br>
+				  <a href="https://typewriterdatabase.com/Smith+Premier.10.98.bmys">Smith Premier Type 10</a><br>
+				  <a href="http://www.stb-betzwieser.de/aktuelles/ausstellung/kategorien/erika1.php">Erika No. 1</a><br>
+				  <a href="https://en.wikipedia.org/wiki/IBM_Selectric_typewriter">IBM Selective Typwriter</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Zuse_Z3">Zuse Z3</a><br>
+				  <a href="https://de.wikipedia.org/wiki/ENIAC">ENIAC</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Fernschreiber">Fernschreiber</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Arpanet">ARPANET</a><br>
+				  <a href="https://en.wikipedia.org/wiki/Altair_8800">Altair 8800</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Apple_I">Apple I</a><br>
+				  <a href="https://de.wikipedia.org/wiki/PET_2001">Commodore PET</a><br>
+				  <a href="https://de.wikipedia.org/wiki/Apple_II">APPLE II</a><br>
+				  <a href="https://de.wikipedia.org/wiki/TRS-80">TRS-80</a><br>
+				  <a href="https://www.nerdbude.com/podcast/017.html">CCH017 (Apple Keyboards)</a><br>
+				  <a href="https://www.nerdbude.com/podcast/027.html">CCH027 (Alps Switches)</a><br>
+				  <br>
+				  <br>
+					KONTAKT:<br>
+					--------<br>
+					<br>
+					CLICK! CLACK! HACK!<br>
+					WEB: <a href="https://www.clickclackhack.de">CLICKCLACKHACK.DE</a> (mit C!)<br>
+					TWITTER: <a href="https://www.twitter.com/CCHPOD">@CCHPOD</a><br>
+					MAIL: <a href="mailto:info@clickclackhack.de">info@clickclackhack.de</a><br>
+					INSTA: <a href="https://www.instagram.com/cch_podcast/">@cch_podcast</a><br>
+					MASTODON: <a href="https://chaos.social/web/accounts/107292276869536563">@ClickClackHack@chaos.social</a><br>
+					<br>
+					------<br>
+					<br>
+					DAMN FINE KEYBOARDS<br>
+					WEB: <a href="https://www.damnfinekeyboards.com">DAMN FINE KEYBOARDS</a><br>
+					TWITTER: <a href="https://www.twitter.com/damnfinekeebs">@damnfinekeebs</a><br>
+					<br>
+					------<br>
+					MUSIK:<br>
+					Intro: <a href="http://rolemusic.sawsquarenoise.com/p/discography.html">Rolemusic - Shaanti (CC-BY)</a><br>
+					Outro: <a href="https://freemusicarchive.org/music/Azureflux/Bit_Bops/05_starbox_-_digital_dream__azureflux_remix">Starbox - Digital Dream (CC-BY)</a><br>
+					<br>
+					Wenn ihr den Click! Clack! Hack! supporten wollt, bekommt ihr hier eine amazonfreie Wishlist:<br>
+					<a href="https://www.wishsite.de/wishlist/clickclackhack">WISHLIST</a><br>
+					Der CCH! ist und bleibt selbstverständlich für immer kostenfrei für euch.
+				]]>
+			</content:encoded>
+		</item>
+		<item>
 			<title>BUCKLING SPRING SWITCHES</title>
 			<link>https://www.nerdbude.com/podcast/index.html</link>
 			<pubDate>Mon, 04 Apr 2022 09:00:00 +0000</pubDate>

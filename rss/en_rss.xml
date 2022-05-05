@@ -12,6 +12,27 @@
       <link>https://www.nerdbude.com/en/en_readme.html</link>
     </image>
     <item>
+      <title>[PRO] TOOT</title>
+      <description>Mastodon - but in the terminal</description>
+      <link>https://www.nerdbude.com/en/en_toot.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 26 Apr 2022 14:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[PRO] TWTERM</title>
+      <description>Twitter - but for the commandline</description>
+      <link>https://www.nerdbude.com/en/en_twterm.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Thu, 21 Apr 2022 16:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>[KBD] THE PLAGUE FRANKENSWITCH</title>
+      <description>I build a small sweet frankenswitch. Here is "The Plague".</description>
+      <link>https://www.nerdbude.com/en/en_the_plague.html</link>
+      <author>post@nerdbude.com (PH_0x17)</author>
+      <pubDate>Tue, 12 Apr 2022 14:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>[POD] READY FOR REVIEW</title>
       <description>I talk with Sandra and Daniel about mechanical Keyboards in the READY FOR REVIEW Podcast</description>
       <link>https://www.nerdbude.com/en/en_rfr.html</link>
